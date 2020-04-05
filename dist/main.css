@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'Quicksand';
-  src: url(811a2ebcd3389699a6315c0a0df36883.woff) format("woff"), url(dc4095d9132d9bc8ae5c12759f4cc552.ttf) format("truetype"), url(a70cdee588c9f6e6dfd9b9b91c85cf59.svg) format("svg");
+  src: url(/fonts/Quicksand-Regular.woff) format("woff"), url(/fonts/Quicksand-Regular.ttf) format("truetype"), url(62cf7460da262c1339a33f9f63222105.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url(b5863cada11af8fe7dbe3f0cd4b406dd.woff) format("woff"), url(4901d4edce3cd713d00dae33c8d0bf45.ttf) format("truetype"), url(558f646fddb0a6165f256422ab2753b5.svg) format("svg");
+  src: url(/fonts/Quicksand-Bold.woff) format("woff"), url(/fonts/Quicksand-Bold.ttf) format("truetype"), url(2d37685fa5565122b9f4292f7cdd11fc.svg) format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(21d09ec68fb6ff133f9c1845725756da.woff) format("woff"), url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format("truetype"), url(9bf769484c2fa132993dffbbce86b0c9.svg) format("svg");
+  src: url(/fonts/Montserrat-Regular.woff) format("woff"), url(/fonts/Montserrat-Regular.ttf) format("truetype"), url(1b4442d0020a95f578239999a7f331b6.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(cba95a8412fba481b77a666ecd87b24d.woff) format("woff"), url(079ca05d3ded9bc107ab8a8da013be22.ttf) format("truetype"), url(6aeff22e05a0bc3d78857ccd08aaffd6.svg) format("svg");
+  src: url(/fonts/Montserrat-Bold.woff) format("woff"), url(/fonts/Montserrat-Bold.ttf) format("truetype"), url(58f51f5ecf8f683986a8936d8a636339.svg) format("svg");
   font-weight: bold;
   font-style: normal;
 }
@@ -78,28 +78,28 @@
 
 @font-face {
   font-family: 'Quicksand';
-  src: url(811a2ebcd3389699a6315c0a0df36883.woff) format("woff"), url(dc4095d9132d9bc8ae5c12759f4cc552.ttf) format("truetype"), url(a70cdee588c9f6e6dfd9b9b91c85cf59.svg) format("svg");
+  src: url(/fonts/Quicksand-Regular.woff) format("woff"), url(/fonts/Quicksand-Regular.ttf) format("truetype"), url(62cf7460da262c1339a33f9f63222105.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url(b5863cada11af8fe7dbe3f0cd4b406dd.woff) format("woff"), url(4901d4edce3cd713d00dae33c8d0bf45.ttf) format("truetype"), url(558f646fddb0a6165f256422ab2753b5.svg) format("svg");
+  src: url(/fonts/Quicksand-Bold.woff) format("woff"), url(/fonts/Quicksand-Bold.ttf) format("truetype"), url(2d37685fa5565122b9f4292f7cdd11fc.svg) format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(21d09ec68fb6ff133f9c1845725756da.woff) format("woff"), url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format("truetype"), url(9bf769484c2fa132993dffbbce86b0c9.svg) format("svg");
+  src: url(/fonts/Montserrat-Regular.woff) format("woff"), url(/fonts/Montserrat-Regular.ttf) format("truetype"), url(1b4442d0020a95f578239999a7f331b6.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(cba95a8412fba481b77a666ecd87b24d.woff) format("woff"), url(079ca05d3ded9bc107ab8a8da013be22.ttf) format("truetype"), url(6aeff22e05a0bc3d78857ccd08aaffd6.svg) format("svg");
+  src: url(/fonts/Montserrat-Bold.woff) format("woff"), url(/fonts/Montserrat-Bold.ttf) format("truetype"), url(58f51f5ecf8f683986a8936d8a636339.svg) format("svg");
   font-weight: bold;
   font-style: normal;
 }
