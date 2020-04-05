@@ -8,7 +8,7 @@ const TerserWebpackPlugin = require('terser-webpack-plugin')
 const fs = require('fs');
 
 
-const isDev = process.env.Node_ENV === 'development'
+const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
 
 
