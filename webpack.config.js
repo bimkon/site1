@@ -74,7 +74,7 @@ module.exports = {
         new HTMLWebpackPlugin({
           // для работы с html и pug перебираю все страницы и пропускаю через HTMLWebpackPlugin
           template: `${PAGES_DIR}/${page}`, // точка входа, для HTML и PUG файлов
-          ilename: `${page.replace(/\.pug/, ".html")}`, // имя, для HTML и PUG файлов
+          filename: `${page.replace(/\.pug/, ".html")}`, // имя, для HTML и PUG файлов
           minify: {
             collapseWhitespace: isProd // Опция сжимает html, если мод сборки production
           }
@@ -143,8 +143,8 @@ module.exports = {
         include: [path.resolve(__dirname, "src/assets/fonts/")],
         loader: "file-loader",
         options: {
-          name: "[name].[hash][ext]",
-          publicPath: isDev ? "/fonts/" : "site1/fonts/",
+          name: "[name].[hash].[ext]",
+          publicPath: isDev ? "/fonts/" : "/site1/fonts/",
           outputPath: "fonts/"
         }
       },
