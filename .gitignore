@@ -1,4 +1,4 @@
-node_modules/*
+
 distTests/
 .vscode/
 .idea/ 
