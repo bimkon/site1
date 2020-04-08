@@ -81,6 +81,10 @@ module.exports = {
         })
     ),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin([{
+			from: path.resolve(__dirname, 'src/img'),
+			to: PATHS.dist
+		}]),
     new MiniCssExtractPlugin({
       filename: filename("[name]", "css")
     })

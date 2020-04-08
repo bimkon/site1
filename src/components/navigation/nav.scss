@@ -1,19 +1,22 @@
-.navigation * {
+.bar__navigation * {
   margin: 0;
   padding: 0;
   }
-.navigation  {
-  
+.bar__navigation  {
+  padding-top: 7px;
+  padding-right: 28px;
   ul {
     display: flex;
     justify-content: space-between;
    list-style: none;
     border: dashed 1px red;
-    width: 527px;
+    width: 528px;
     height: 20px;
   }
   img {
       display: inline-block;
+      margin-left: 6px;
+      
     }
   li {
     position: relative;
@@ -21,9 +24,14 @@
   a.active {
     font-weight: bold;
     color: rgba(31, 32, 65, 0.75);
+    
   }
+ 
+ li.fix {
+   margin-right:  -5px;
+ }
   a { 
-    height: 40px;
+    height: 70px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
@@ -31,14 +39,19 @@
     line-height: 17px;
     color: rgba(31, 32, 65, 0.5);
     text-decoration: none;
-    letter-spacing: 0.03em;
-  a.navigation__link-active {
+    letter-spacing: -0.01em;
+    a.navigation__link-active {
       font-weight: bold;
       color: rgba(31, 32, 65, 0.75);
     }
   }
 }
-.logo-toxin{
+.bar__logo-toxin{
   position: relative;
 left: 140px;
 bottom: -10px;}
+
+.bar__right-column {
+  padding-top: 13px;
+  display: flex;
+}

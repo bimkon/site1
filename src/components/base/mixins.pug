@@ -18,13 +18,13 @@ mixin menu(first, second, third, fourth, fifth, sixth)
   li.navig
     a.navig__link.active(href='link.html')= first
   li.navig
-    a(href='link.html')= second
+    a.navig__link(href='link.html')= second
+  li.navig.fix
+    a.navig__link(href='link.html')= third
+    img(src="expand_more.jpg" alt="стрелка - указатель")
   li.navig
-    a.navig__link-active(href='link.html')= third
-    img(src="assets/expand_more.jpg" alt="стрелка - указатель")
+    a.navig__link.px(href='link.html')= fourth
   li.navig
-    a.navig__link-active(href='link.html')= fourth
+    a.navig__link(href='link.html')= fifth
   li.navig
-    a.navig__link-active(href='link.html')= fifth
-  li.navig
-    a.navig__link-active(href='link.html')= sixth
+    a.navig__link(href='link.html')= sixth
