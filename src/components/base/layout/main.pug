@@ -10,10 +10,13 @@ html(lang='en')
     meta(charset='utf-8')
     title #{title}
     link(rel="shortcut icon" href="./Group.svg")
-  body
+  body(class=pageClass)
     header
       include ../header/header
+    main
       block content
+    footer
+      block footer
       
     
     

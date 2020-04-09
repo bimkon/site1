@@ -5,11 +5,14 @@
 
 // blocks
 @import 'components/logo/logo.scss';
+@import 'components/logo-toxin/logo.scss';
 @import 'components/colors/colors.scss';
 @import 'components/type/type.scss';
 @import 'components/navigation/nav.scss';
 @import 'components/nav-bar/nav-bar.scss';
 @import 'components/entry/entry.scss';
+@import 'components/user/user.scss';
+@import 'pug/pages/scss/headerpage.scss';
 
 html {
   margin: 0;
@@ -20,10 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.indent {
-  margin-top: 40px;
-}
-
 .borders {
   border: dashed 1px green;
 }
+

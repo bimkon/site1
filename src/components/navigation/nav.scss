@@ -3,13 +3,14 @@
   padding: 0;
   }
 .bar__navigation  {
-  padding-top: 7px;
-  padding-right: 28px;
+  display: flex;
+  align-items:center;
+  padding-top: 1px;
+  padding-right: 30px;
   ul {
     display: flex;
     justify-content: space-between;
    list-style: none;
-    border: dashed 1px red;
     width: 528px;
     height: 20px;
   }
@@ -46,12 +47,11 @@
     }
   }
 }
-.bar__logo-toxin{
-  position: relative;
-left: 140px;
-bottom: -10px;}
+
 
 .bar__right-column {
-  padding-top: 13px;
-  display: flex;
+display: flex;
+height: 70px;
+align-items:center;
+justify-content: space-between;
 }
