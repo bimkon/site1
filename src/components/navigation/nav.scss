@@ -7,17 +7,9 @@
   align-items:center;
   padding-top: 1px;
   padding-right: 30px;
-  ul {
-    display: flex;
-    justify-content: space-between;
-   list-style: none;
-    width: 528px;
-    height: 20px;
-  }
   img {
       display: inline-block;
-      margin-left: 6px;
-      
+      margin-left: 6px;  
     }
   li {
     position: relative;
@@ -56,6 +48,13 @@ align-items:center;
 justify-content: space-between;
 }
 //submenu
+ul {
+  display: flex;
+  justify-content: space-between;
+ list-style: none;
+  width: 528px;
+  height: 20px;
+}
 .bar__navigation {
   background-color: #f8f8f8;
   display: flex;
@@ -70,11 +69,13 @@ li {
   left: 0;
   padding: 0;
   white-space: nowrap;
+  width: 70px;
 }
 .fix:hover .submenu {
   display: flex;
   flex-direction: column;
   background: gray;
+  z-index: 10;
  } 
 
 // старый вариант
