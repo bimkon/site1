@@ -57,26 +57,25 @@ justify-content: space-between;
 }
 //submenu
 .bar__navigation {
-  position: relative;
   background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
 }
-li:hover > ul.submenu li {
-  display: flex;
-  flex: 1;
+li {
+  position: relative;
 }
-li > ul.submenu {
-  position: absolute;
-  display: flex;
-  left: 0;
-  top: 100%;
-  width: 100%;
-}
-ul.submenu li {
+.submenu {
   display: none;
-  list-style: none;
+  position: absolute;
+  left: 0;
+  padding: 0;
+  white-space: nowrap;
 }
+.fix:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  background: gray;
+ } 
 
 // старый вариант
 //.submenu ul {
