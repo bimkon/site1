@@ -14,13 +14,20 @@ mixin item-type(blockNumber, blockText, textNumber, textText)
     div(class=textNumber).type_right-column
       textText=textText
 
-mixin menu(first, second, third, fourth, fifth, sixth)
+mixin menu(first, second, third, fourth, fifth, sixth, item1, item2, item3)
   li.navig
     a.navig__link.active(href='link.html')= first
   li.navig
     a.navig__link(href='link.html')= second
   li.navig.fix
-    a.navig__link(href='link.html')= third
+    a.navig__link.fa(href='link.html')= third
+    ul.submenu
+      li.submenu__item1
+        a.submenu__link1(href="link.html")= item1
+      li.submenu__item2
+        a.submenu__link1(href="link.html")= item2
+      li.submenu__item3
+        a.submenu__link1(href="link.html")= item3
     img(src="expand_more.jpg" alt="стрелка - указатель")
   li.navig
     a.navig__link.px(href='link.html')= fourth
