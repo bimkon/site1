@@ -11,9 +11,6 @@
       display: inline-block;
       margin-left: 6px;  
     }
-  li {
-    position: relative;
-  }
   a.active {
     font-weight: bold;
     color: rgba(31, 32, 65, 0.75);
@@ -47,13 +44,15 @@ height: 70px;
 align-items:center;
 justify-content: space-between;
 }
-//submenu
-ul {
+.topmenu {
+  width: 528px;
   display: flex;
   justify-content: space-between;
- list-style: none;
-  width: 528px;
   height: 20px;
+}
+//submenu
+ul {
+  list-style: none;
 }
 .bar__navigation {
   background-color: #f8f8f8;
@@ -74,7 +73,7 @@ li {
 .fix:hover .submenu {
   display: flex;
   flex-direction: column;
-  background: gray;
+  background: whitesmoke;
   z-index: 10;
  } 
 
