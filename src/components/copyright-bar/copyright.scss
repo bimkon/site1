@@ -1,0 +1,21 @@
+.copyright__text {
+    // width: 332px;
+    height: 18px;
+  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.1px;
+  
+    /* Dark 75% */
+    color: rgba(31, 32, 65, 0.75);
+  }
+  .copyright-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+  }

@@ -8,3 +8,20 @@
 .GreyBackground main {
     padding-top: 10px;
 }
+.indent-1px-top {
+    margin-top: 1px;
+}
+.container {
+    max-width: 1160px; 
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+.Copyright__wrapper {
+    background: #FFFFFF;
+}
+.Page__wrapper {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+}

@@ -37,6 +37,22 @@
 	font-weight: bold;
 	font-style: normal;
 }
+// 'Font Awesome 5 Brands'
+  @font-face {
+	font-family: 'Font Awesome 5 Brands';
+	src:	
+	 url('./fonts awesome/fa-brands-400.eot');
+	src:
+	  url('./fonts awesome/fa-brands-400.woff') format('woff'),
+	  url('./fonts awesome/fa-brands-400.ttf') format('truetype'),
+	  url('./fonts awesome/fa-brands-400.svg') format('svg'),
+	  url('./fonts awesome/fa-regular-400.woff') format('woff'),
+	  url('./fonts awesome/fa-regular-400.ttf') format('truetype'),
+	  url('./fonts awesome/fa-regular-400.svg') format('svg');	
+	  font-weight: normal;
+	font-style: normal;
+  }
+  
 
 // @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext');

@@ -1,0 +1,59 @@
+
+.colums {
+    background-color: white;
+
+}
+.colums__row  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    height: 372px;
+}
+.colums__Descr {
+    width: 260px;
+
+}
+.colums__Navigation {
+    width: 81px;
+}
+//убираем отступы
+.colums__list {
+    padding: 0px;
+    margin: 0px;
+}
+//шрифты
+.text__footer-desc {
+    height: 96px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+.colums__refers {
+    height: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color:rgba(31, 32, 65, 0.5);
+    text-decoration: none;
+}
+.bold {
+    font-weight: bold;
+    color: #1F2041;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.colums__unordered {
+    padding-bottom: 20px;
+}
+.item__title {
+    padding-bottom: 20px;
+}

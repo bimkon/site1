@@ -1,0 +1,12 @@
+.footer-creative {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 367px;
+}
+//pixel perfect
+.footer-creative__item {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
