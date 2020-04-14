@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const fs = require("fs");
+const webpack = require('webpack')
 
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
@@ -87,6 +88,11 @@ module.exports = {
 		}]),
     new MiniCssExtractPlugin({
       filename: filename("[name]", "css")
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
     })
   ],
   module: {
