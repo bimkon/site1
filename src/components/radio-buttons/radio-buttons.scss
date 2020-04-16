@@ -1,0 +1,81 @@
+.radio-buttons-row {
+    display: flex;
+    width: 220px;
+}
+/* Customize the label  */
+.radio-buttons__lable {
+    font-family: 'Montserrat';
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Hide the browser's default radio*/
+.radio-buttons__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom radio */
+  .radio-buttons__checkmark {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid rgba(31, 32, 65, 0.25); 
+}
+  //When the checkbox is checked, add colored border
+.radio-buttons__lable .radio-buttons__input:checked ~ .radio-buttons__checkmark {
+    border: 1px solid #BC9CFF;
+  }
+/* Create the indicator (circle - hidden when not checked) */
+.radio-buttons__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+/* Show the indicator (circle) when checked */
+.radio-buttons__lable .radio-buttons__input:checked ~ .radio-buttons__checkmark:after {
+    display: block;
+  }
+  //make color for unchecked
+  .radio-buttons__text {
+    color: rgba(31, 32, 65, 0.5);
+  }
+  //make color for checked
+.radio-buttons__input:checked ~ .radio-buttons__text {
+    color: rgba(31, 32, 65, 0.75);
+  } 
+
+/* Style the indicator (/circle) */
+.radio-buttons__lable .radio-buttons__checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+  .radio-buttons__main {
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    padding-bottom: 16px;
+  }
