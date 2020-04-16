@@ -1,5 +1,9 @@
 extends ../../components/base/layout/main
 block variables
-    - var pageClass = "GreyBackground";
+    - var pageClass = "White";
 block content
-    <p>Date: <input type="text" id="datepicker"></p>
+    .form-elements
+        .form-elements__fields
+            include ../../components/text-field-default/text-field-default.pug
+        .form-elements__buttons
+            include ../../components/checkbox-buttons/checkbox-buttons.pug

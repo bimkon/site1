@@ -8,8 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
     "deploy": "npm run build && gh-pages -d dist"
-    },
-  
+  },
   "keywords": [
     "js",
     "javascript",
@@ -41,7 +40,8 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
+    "jquery-ui": "^1.12.1",
     "normalize.css": "^8.0.1"
   }
 }
