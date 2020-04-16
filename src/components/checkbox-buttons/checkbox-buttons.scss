@@ -7,7 +7,6 @@
     user-select: none;
     line-height: 1.125rem;
     color: rgba(31, 32, 65, 0.5);
-
     }
 .checkbox-buttons__main {
   font-family: 'Montserrat';
@@ -47,7 +46,7 @@
     transform: rotate(45deg);
   }
 /* Show the checkmark when checked */
-.checkbox-buttons__input ~ .checkmark:after {
+.checkbox-buttons__input:checked ~ .checkmark:after {
     display: block;
   }
 //checkbox when checked
