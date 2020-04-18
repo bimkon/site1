@@ -1,0 +1,40 @@
+.icon-text__icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 41px;
+    text-transform: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.icon-text__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);  
+}
+.icon-text__describe {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);  
+}
+.icon-text {
+    display: flex;
+    width: 291px;
+    flex-wrap:wrap;
+}
+.icon-text__row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.icon-text__icon {
+    margin-right: 15px;
+}
