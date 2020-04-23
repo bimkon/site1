@@ -1,0 +1,159 @@
+.datepicker--nav i{
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+}
+.datepicker--nav-title {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    color: #1F2041;
+}
+.datepicker--day-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+    text-transform: capitalize;
+}
+.datepicker--cell-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+}
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+}
+.datepicker--cell.-current- {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+}
+.datepicker--content .datepicker--cell:hover {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+}
+.datepicker--cell.-selected- {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+ }
+ .datepicker--cell.-in-range- {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    color: rgba(31, 32, 65, 0.5);
+ }
+ .datepicker--cell.-selected-.-focus-{
+     background-color: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+ }
+ .-range-from-::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    border-radius: 50% 0 0 50%;
+
+  }
+.-range-to-::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    border-radius: 0 50% 50% 0;
+
+  }
+  //стилизация контейнера
+  .datepicker__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 266px;
+    position: relative;
+  }
+.datepicker-here {
+    width: 100%;
+    height: 44px;
+    padding: 0px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.datepicker__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom: 5px;
+}
+.datepicker__arrow {
+    width: 44px;
+    height: 44px;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 0px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+    pointer-events: none;
+    line-height: 44px;
+}
