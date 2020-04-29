@@ -1,6 +1,7 @@
 $('.datepicker-here').datepicker({
     inline: false,
     clearButton: true,
+    dateFormat: 'dd M',
     navTitles: {
         days: 'MM yyyy'
     },
