@@ -23,7 +23,7 @@ $checked-star: 'star';
       white-space: nowrap;
       cursor: pointer;
       &:before {
-        display: inline-block;
+        display: initial;
         text-indent: -9999px;
         content: $unchecked-star;
         text-transform: none;
@@ -43,6 +43,7 @@ $checked-star: 'star';
       background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
+      display: initial;
       
 
     }
@@ -98,20 +99,4 @@ fieldset {
 h1 {
   text-align: center;
 }
-.icon {
-    font-family: 'Material Icons';
-    font-size: 40px;      
-    background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color:transparent;
-   display: initial;
-   line-height: 41px;
-   text-transform: none;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
-label:before {
-  display: initial !important
-}
+
