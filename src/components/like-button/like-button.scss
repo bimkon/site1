@@ -1,0 +1,63 @@
+
+/*
+ Basic button style
+ */
+ .like-button_item {
+  border-radius: 10px;
+  border: 1px solid;
+  display: inline-block;
+  line-height: 18px;
+  position: absolute;
+  font-size: 10px;
+  text-decoration: none;
+}
+/*
+ * Counter button style
+ */
+.like-button_counter:after,
+.like-button_counter:hover:after { text-shadow: none; }
+.like-button_counter:after {
+  color: rgba(31, 32, 65, 0.25);
+  content: attr(data-count);
+  position: absolute;
+  left:18px;
+}
+
+/*
+ * Custom styles
+ */
+.like-button_item {
+  border-color:  rgba(31, 32, 65, 0.25);
+  box-sizing: initial;
+  position: relative;
+  width: 38px;
+  height: 18px;
+}
+
+.like-button_item.active{
+  border-color: #BC9CFF;
+  
+}
+.like-button_counter.active:after {
+  color: #BC9CFF;
+}
+
+.like-button_item .like-button_icon { color:  rgba(31, 32, 65, 0.25); 
+  font-family: 'Material icons';
+  }
+
+
+.like-button_item.active, .like-button_item.active .like-button_icon { color: #BC9CFF; 
+}
+.like-button_item:active .like-button_icon {
+  color: #BC9CFF;
+}
+.like-button_icon {
+  font-family: 'Material icons';
+  color:rgba(31, 32, 65, 0.25);
+  position: absolute;
+  left:5px;
+}
+.like-button {
+  width: max-content;
+}

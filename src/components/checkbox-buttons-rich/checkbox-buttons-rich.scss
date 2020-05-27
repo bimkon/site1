@@ -2,23 +2,19 @@
     display: block;
     position: relative;
     padding-left: 30px;
-    margin-bottom: 3px;
+    margin-bottom: 12px;
     cursor: pointer;
     user-select: none;
     line-height: 1.125rem;
     color: rgba(31, 32, 65, 0.5);
-    font-weight: normal;
-    font-family: 'Montserrat';
-    text-transform: none;
     }
 .checkbox-buttons__main {
   font-family: 'Montserrat';
   font-weight: bold;
   color: #1F2041;
   text-transform: uppercase;
+
 } 
-
-
    //hide old
 .checkbox-buttons__input {
   width: 0;
@@ -28,10 +24,10 @@
 // Create a custom checkbox
 .checkmark {
   position: absolute;
-  top: 9px;
+  top: -1px;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 1.4em;
+  height: 1.4em;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 0.25em;
   }
@@ -41,7 +37,7 @@
     content: '';
     display: none;
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: 7px;
     width: 0.375em;
     height: 0.5em;
@@ -58,4 +54,30 @@
 //checkbox when checked
 .checkbox-buttons__input:checked ~ .checkmark {
     border-color: #BC9CFF;;
+}
+.checkbox-buttons__lable.checkbox-buttons__rich {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.75);
+margin-bottom: 5px;
+}
+.checkbox-buttons__about {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 30px;
+  margin-bottom: 10px;
+  
+  }
+  .checkbox-buttons__title {
+  margin-bottom: 17px;
+}
+.checkbox-buttons__row {
+  width: 266px;
 }
