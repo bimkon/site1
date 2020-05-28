@@ -25,6 +25,7 @@
 .subscription__form {
   position: relative;
   margin-top: 20px;
+  width: 260px;
 }
 
 .subscription__input, .subscribtion__button {
@@ -63,9 +64,10 @@
     align-items: center;
     text-align: center;
     /* Primary Gradient */
-    color: #8BA4F9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-color: white;
-    border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
     border-left: none;
