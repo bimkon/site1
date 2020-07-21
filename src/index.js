@@ -6,7 +6,9 @@ import 'item-quantity-dropdown/lib/item-quantity-dropdown.min.css';
 import 'ion-rangeslider/css/ion.rangeSlider.min.css';
 import 'ion-rangeslider/js/ion.rangeSlider.min.js';
 import 'jquery-mask-plugin/dist/jquery.mask.min.js';
-
+import 'slick-carousel/slick/slick.min.js';
+// import 'slick-carousel/slick/slick-theme.scss';
+// import 'slick-carousel/slick/slick.scss';
 import 'air-datepicker/dist/css/datepicker.min.css';
 import 'air-datepicker/dist/js/datepicker.min.js';
 

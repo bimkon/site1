@@ -13,7 +13,7 @@
   }
 
 /* The slider */
-.slider {
+.toggle__slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -43,11 +43,11 @@
 
     &:checked {
 
-        ~ .slider { 
+        ~ .toggle__slider { 
     border: 1px solid #BC9CFF;
         }
     }
-    &:checked ~ .slider:before {
+    &:checked ~ .toggle__slider:before {
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         -webkit-transform: translateX(18px);
         -ms-transform: translateX(18px);
