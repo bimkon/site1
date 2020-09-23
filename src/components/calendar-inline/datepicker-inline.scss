@@ -120,7 +120,6 @@
   .datepicker__container {
     display: flex;
     flex-wrap: wrap;
-    width: 266px;
     position: relative;
   }
 .datepicker-here {
@@ -156,4 +155,41 @@
     box-sizing: border-box;
     pointer-events: none;
     line-height: 44px;
+}
+.datepicker--button {
+    display: inline-block;
+    max-width: min-content;
+    height: min-content;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    color: rgba(31, 32, 65, 0.5);
+    
+}
+.datepicker--button-apply {
+    color: #BC9CFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.datepicker .datepicker--buttons {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px;
+    border: unset;
+}
+.datepicker {
+    padding: 20px;
 }

@@ -2,5 +2,21 @@ extends ../../components/base/layout/main
 block variables
     - var pageClass = "GreyBackground";
 block content
-    .slick-slider
-        include ../../components/slick-slider/slick-slider.pug
+    .cards
+        .cards__column
+            .cards__row
+                .registration-form
+        .cards__column
+            .cards__row
+                .sign-in
+                    .sign-in__wrapper
+                        include ../../components/cards-sign-in/cards-sign-in.pug
+        .cards__column
+            .cards__row
+                .slick-slider
+                    include ../../components/calendar-inline/datepicker-inline.pug
+                    include ../../components/slick-slider/slick-slider.pug
+                    include ../../components/slick-slider-noarrow/slick-slider-noarrow.pug
+            
+    
+

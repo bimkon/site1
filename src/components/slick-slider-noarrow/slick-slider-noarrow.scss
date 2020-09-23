@@ -1,0 +1,150 @@
+.slick-slider {
+    max-width: 270px;
+    background-color: white;
+}
+.slick-track{
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick__content-noarrow {
+    position: relative; 
+}
+.slick__content-noarrow {
+    height: 152px;
+    width: 271px;
+    & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 0px;
+    padding: 0px;
+    border: none;
+    width: 10px;
+    height: 20px;
+    outline: none;
+    margin: 0px 20px 0px 20px;
+ 
+    // opacity: 0;
+    }
+    & .slick-arrow.slick-prev{
+        left: 0;
+        background: url('../../img/arrow_left.svg') 0 0/ 100% no-repeat;
+    }
+    & .slick-arrow.slick-next{
+        right: 0;
+        background: url('../../img/arrow_right.svg') 0 0/ 100% no-repeat;
+    }
+}
+/* Точки (булиты) */
+.slick__content-noarrow .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px;
+    bottom: 20px;
+}
+.slick__content-noarrow .slick-dots li{
+    list-style: none;
+    margin: 0px 3.75px;
+
+}
+/* Активная точка */
+.slick__content-noarrow .slick-dots li.slick-active button{
+    background-color: white;
+
+}
+    
+
+/* Элемент точки */
+.slick-dots li button{
+    outline: none;
+    height: 7.5px;
+    width: 7.5px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 50%;
+    font-size: 0;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+    box-sizing: border-box;
+    background-color: transparent;
+}
+.slick__room-cost {
+    font-family: 'Montserrat';  
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+.slick__describtion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.slick {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__paragraph {
+        display: block;
+    }
+    &__no, &__number {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+    &__type-of-room {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #BC9CFF;
+    }
+    &__price {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    &__in-time {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    &__reviews-number {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    &__reviews {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    
+}
