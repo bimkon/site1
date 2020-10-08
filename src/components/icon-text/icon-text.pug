@@ -1,13 +1,18 @@
-.icon-text
-    .icon-text__row
-        .icon-text__image
-            i.icon-text__icon insert_emoticon
-        .icon-text__content
-            .icon-text__title Комфорт
-            .icon-text__describe Шумопоглощающие стены
-    .icon-text__row
-        .icon-text__image
-            i.icon-text__icon location_city
-        .icon-text__content
-            .icon-text__title Удобство
-            .icon-text__describe Окно в каждой из спален
+mixin icon-text({icon, title, describe, hasUnderline}={})   
+
+    .icon-text
+        .icon-text__row
+            .icon-text__image
+                i.icon-text__icon=icon 
+            .icon-text__content
+                .icon-text__title=title 
+                .icon-text__describe=describe
+        if hasUnderline 
+            .icon-text__underline 
+
+        //- .icon-text__row
+        //-     .icon-text__image
+        //-         i.icon-text__icon location_city
+        //-     .icon-text__content
+        //-         .icon-text__title Удобство
+        //-         .icon-text__describe Окно в каждой из спален

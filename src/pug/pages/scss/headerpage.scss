@@ -28,12 +28,7 @@
     display: flex;
     align-items: center;
 }
-.form-elements {
-    padding-left: 140px;
-    padding-right: 140px;
-    display: flex;
-    justify-content: space-between;
-}
+
 .cards {
     display: flex;
     padding-left: 141px;
@@ -41,7 +36,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+ul { padding-inline-start: 0; }
+
+//Form elements styles
+.form-elements__container {
+    display: flex;
+}
 .form-elements__datepicker {
     margin-top: 20px;
 }
-ul { padding-inline-start: 0; }
+.form-elements {
+    padding-left: 140px;
+    padding-right: 140px;
+    display: flex;
+    justify-content: space-between;
+}

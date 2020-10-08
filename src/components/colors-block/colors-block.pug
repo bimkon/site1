@@ -1,0 +1,32 @@
+mixin item-colors({ text = 'Color', description = 'Description', backgroundColor = 'backgroundcolor', } = {})
+  - let colorModifier = ''
+  case backgroundColor
+
+    when 'darkest shade'
+      - colorModifier = ' colors__squares_shade100'
+    when 'dark shade'
+      - colorModifier = ' colors__squares_shade75'
+    when 'shade'
+      - colorModifier = ' colors__squares_shade50'
+    when 'light shade'
+      - colorModifier = ' colors__squares_shade25'
+    when 'lightest shade'
+      - colorModifier = ' colors__squares_shade5'
+    when 'purple'
+      - colorModifier = ' colors__squares_purple'
+    when 'green'
+      - colorModifier = ' colors__squares_green'
+
+
+  .colors
+    div(class=`colors__squares${colorModifier}`)
+    .colors__text
+      .colors__text_bold=text
+      span=description
+
+mixin item-type(blockNumber, blockText, textNumber, textText)
+  .type
+    div(class=blockNumber).type__block.type_left-column
+      blockText=blockText
+    div(class=textNumber).type_right-column
+      textText=textText

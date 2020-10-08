@@ -1,14 +1,7 @@
-.radio-buttons
-    .radio-buttons__title
-        span.radio-buttons__main Radio Buttons    
-    .radio-buttons-row 
-        .radio-buttons__button
-        label(class='radio-buttons__lable') 
-                input.radio-buttons__input(type="radio", name="radio-button", checked="checked")
-                span.radio-buttons__text Мужчина
-                span.radio-buttons__checkmark
-        .radio-buttons__button
-        label(class='radio-buttons__lable') 
-                input.radio-buttons__input(type="radio", name="radio-button")
-                span.radio-buttons__text Женщина
-                span.radio-buttons__checkmark
+mixin radio-button({ name = 'radio-button', value, text, isChecked } = {})
+        .radio-buttons-row 
+            .radio-buttons__button
+            label(class='radio-buttons__lable') 
+                    input.radio-buttons__input(type="radio",value=value, name=name, checked=isChecked)
+                    span.radio-buttons__text=text
+                    span.radio-buttons__checkmark

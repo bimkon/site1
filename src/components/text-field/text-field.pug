@@ -1,0 +1,21 @@
+mixin text-field({ type = 'text', name, placeholder, typeOfField,} = {})
+
+    - let maskedThemeModifier = ''
+    
+    case typeOfField
+        when 'Subscribe'
+            form.subscription__form(action="", method="get")
+                input.subscription__input(type="text" name="email" placeholder="Email")
+                button.subscribtion__button(type='submit') arrow_forward
+    case typeOfField
+        when 'masked'
+            - maskedThemeModifier = ' js-text-field__masked'
+            - placeholder = 'ДД.ММ.ГГГГ'
+            input(type=type, name=name, placeholder=placeholder, class= `.input-field${maskedThemeModifier}`)
+    case typeOfField
+        when 'normal'
+            input(type=type, name=name, placeholder=placeholder, class= '.input-field')
+    
+ 
+    
+

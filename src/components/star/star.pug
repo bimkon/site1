@@ -1,14 +1,15 @@
-.star
-    form
-    span.star-cb-group
-        input#rating-4(type='radio', name='rating', value='4', checked='checked')
-        label(for='rating-4') 
-        input#rating-3(type='radio', name='rating', value='3')
-        label(for='rating-3') 
-        input#rating-2(type='radio', name='rating', value='2')
-        label(for='rating-2') 
-        input#rating-1(type='radio', name='rating', value='1')
-        label(for='rating-1') 
-        input#rating-0.star-cb-clear(type='radio', name='rating', value='0')
-        label(for='rating-0') 
+mixin rate-button({name, value, isChecked1,isChecked2,isChecked3,isChecked4,isChecked5}={})   
+    .star
+        form
+        span.star-cb-group
+            input#rating-4(type='radio', name=name, value=value, checked=isChecked5)
+            label(for='rating-4') 
+            input#rating-3(type='radio', name=name, value=value, checked=isChecked4)
+            label(for='rating-3') 
+            input#rating-2(type='radio', name=name, value=value, checked=isChecked3)
+            label(for='rating-2') 
+            input#rating-1(type='radio', name=name, value=value, checked=isChecked2)
+            label(for='rating-1') 
+            input#rating-0.star-cb-clear(type='radio', name=name, value=value, checked=isChecked1)
+            label(for='rating-0') 
 

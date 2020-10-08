@@ -1,37 +1,36 @@
 //- blocks/colors
-mixin item-colors(color, descr, value)
-  .colors
-    div(class=color).colors__squares
-    .colors__text
-      .colors__text_bold=descr
-      span=value
+
+
+//- mixin color-block({ text = 'Color', description = 'Description', backgroundColor = 'darkest-shade', } = {})
+//-   - let colorModifier = ''
+
+//-   case backgroundColor
+//-     when 'darkest shade'
+//-       - colorModifier = ' color-block_color_darkest-shade'
+//-     when 'dark shade'
+//-       - colorModifier = ' color-block_color_dark-shade'
+//-     when 'shade'
+//-       - colorModifier = ' color-block_color_shade'
+//-     when 'light shade'
+//-       - colorModifier = ' color-block_color_light-shade'
+//-     when 'lightest shade'
+//-       - colorModifier = ' color-block_color_lightest-shade'
+//-     when 'purple'
+//-       - colorModifier = ' color-block_color_purple'
+//-     when 'green'
+//-       - colorModifier = ' color-block_color_green'
+
+  .color-block
+    div(class=`color-block__rect${colorModifier}`)
+    .color-block__text
+      p.color-block__title=text
+      p.color-block__description=description
 
 //- blocks/type
-mixin item-type(blockNumber, blockText, textNumber, textText)
-  .type
-    div(class=blockNumber).type__block.type_left-column
-      blockText=blockText
-    div(class=textNumber).type_right-column
-      textText=textText
+//- mixin item-type(blockNumber, blockText, textNumber, textText)
+//-   .type
+//-     div(class=blockNumber).type__block.type_left-column
+//-       blockText=blockText
+//-     div(class=textNumber).type_right-column
+//-       textText=textText
 
-mixin menu(first, second, third, fourth, fifth, sixth, item1, item2, item3)
-  li.navig
-    a.navig__link.active(href='link.html')= first
-  li.navig
-    a.navig__link(href='link.html')= second
-  li.navig.fix
-    a.navig__link.fa(href='link.html')= third
-    ul.submenu
-      li.submenu__item1
-        a.submenu__link1(href="link.html")= item1
-      li.submenu__item2
-        a.submenu__link1(href="link.html")= item2
-      li.submenu__item3
-        a.submenu__link1(href="link.html")= item3
-    img(src="expand_more.jpg" alt="стрелка - указатель")
-  li.navig
-    a.navig__link.px(href='link.html')= fourth
-  li.navig
-    a.navig__link(href='link.html')= fifth
-  li.navig
-    a.navig__link(href='link.html')= sixth

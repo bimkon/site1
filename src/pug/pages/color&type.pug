@@ -1,0 +1,26 @@
+//- используем макет(шаблон)main.pug в качестве основы
+extends ../../components/base/layout/main
+
+//- опишем константы для текущей страницы
+block variables
+  - var title = 'Colors & Type'
+
+block content
+  include ../../components/colors-block/colors-block.pug
+
+  .colors-and-type.side-indent
+    .colors-and-type__colors
+      +item-colors({ text: 'Dark Shade 100%', description: '#1F2041', backgroundColor: 'darkest shade', })
+      +item-colors({ text: 'Dark Shade 75%', description: '#1F2041', backgroundColor: 'dark shade', })
+      +item-colors({ text: 'Dark Shade 50%', description: '#1F2041', backgroundColor: 'shade', })
+      +item-colors({ text: 'Dark Shade 25%', description: '#1F2041', backgroundColor: 'light shade', })
+      +item-colors({ text: 'Dark Shade 5%', description: '#1F2041', backgroundColor: 'lightest shade', })
+      +item-colors({ text: 'Purple', description: '#BC9CFF', backgroundColor: 'purple', })
+      +item-colors({ text: 'Green', description: '#6FCF97', backgroundColor: 'green', })
+
+    .colors-and-type__types
+      +item-type('type__block-1', 'H1', 'type__text-1', 'This one is the sub-section or widget title')
+      +item-type('type__block-2', 'H2', 'type__text-2', 'Next one is the item title inside widgets')
+      +item-type('type__block-3', 'H3', 'type__text-3', 'This is a label or CTA text')
+      +item-type('type__block-4', 'Body', 'type__text-4', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+

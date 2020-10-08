@@ -1,9 +1,8 @@
-.bullet-list
-    .bullet-list__title bullet list
+mixin bullet-list({value1, value2, value3}={})
     ul.bullet-list__list
-        li.bullet-list__items Нельзя с питомцами
+        li.bullet-list__items=value1
             span.circle
-        li.bullet-list__items Без вечеринок и мероприятий
+        li.bullet-list__items=value2
             span.circle
-        li.bullet-list__items Время прибытия — после 13:00, <br> а выезд до 12:0
+        li.bullet-list__items=value3
             span.circle

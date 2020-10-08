@@ -1,51 +1,52 @@
-.colums__row
-    .colums__Descr
-        .colums__items
-            .item__logo
-               include ../logo-toxin/logo 
-            .items__about
-            .items__body 
-                span.text__footer-desc Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis
-    .colums__Navigation
-        .colums__items
-            .colums__links
-                ul.colums__list
-                    li.colums__unordered
-                        a.colums__refers.bold(href='link.html') navigation
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') About US
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') News
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Support
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Products
-    .colums__About-us
-        .colums__items
-            .colums__links
-                ul.colums__list
-                    li.colums__unordered
-                        a.colums__refers.bold(href='link.html') about us
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Who are we
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Our team
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Careers
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Investors
-    .colums__Support
-        .colums__items
-            .colums__links
-                ul.colums__list
-                    li.colums__unordered
-                        a.colums__refers.bold(href='link.html') support
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Documentation
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Community
-                    li.colums__unordered
-                        a.colums__refers(href='link.html') Get in Touch
-    .colums__Sub
-        .colums__items
-                include ../subscribe/subscribe.pug
+mixin footer-links({mainfooterDescribtion,headerOfLink1,link1_1,link1_2,link1_3,link1_4,headerOfLink2,link2_1,link2_2,link2_3,link2_4,headerOfLink3,link3_1,link3_2,link3_3,})
+    .colums__row
+        .colums__Descr
+            .colums__items
+                .item__logo
+                +logo-toxin()
+                .items__about
+                .items__body 
+                    span.text__footer-desc=mainfooterDescribtion
+        .colums__Navigation
+            .colums__items
+                .colums__links
+                    ul.colums__list
+                        li.colums__unordered
+                            a.colums__refers.bold(href='link.html')=headerOfLink1
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link1_1
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link1_2
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link1_3
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link1_4
+        .colums__About-us
+            .colums__items
+                .colums__links
+                    ul.colums__list
+                        li.colums__unordered
+                            a.colums__refers.bold(href='link.html')=headerOfLink2
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link2_1
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link2_2
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link2_3
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link2_4
+        .colums__Support
+            .colums__items
+                .colums__links
+                    ul.colums__list
+                        li.colums__unordered
+                            a.colums__refers.bold(href='link.html')=headerOfLink3
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link3_1
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link3_2
+                        li.colums__unordered
+                            a.colums__refers(href='link.html')=link3_3
+        .colums__Sub
+            .colums__items
+                    include ../subscribe/subscribe.pug

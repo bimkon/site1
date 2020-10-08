@@ -1,7 +1,9 @@
-.pagination
-    a.pagination__items.active(href="link.html")   1
-    a.pagination__items(href="link.html")   2
-    a.pagination__items(href="link.html")   3
-    a.pagination__items.dots(href="link.html")   ...
-    a.pagination__items(href="link.html")   15
-    a.pagination__items.arrow(href="link.html") arrow_forward
+mixin pagination({href, number1,number2,number3,number4,number5, isActive}={})
+
+    .pagination
+        a.pagination__items.active(href=href class = isActive)=number1
+        a.pagination__items(href=href)=number2
+        a.pagination__items(href=href)=number3
+        a.pagination__items.dots(href=href)=number4
+        a.pagination__items(href=href)=number5
+        a.pagination__items.arrow(href=href) arrow_forward

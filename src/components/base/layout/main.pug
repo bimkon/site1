@@ -2,7 +2,7 @@
 //- кто будет использовать этот макет
 block variables
 //- подключим файл с миксинами
-include ../mixins.pug
+include ../../logo/logo.pug
 
 doctype html
 html(lang='en')
@@ -12,9 +12,9 @@ html(lang='en')
     link(rel="shortcut icon" href="./Group.svg")
   body(class=pageClass)
     header
-      include ../header/header
-    main
-      block content
+      +logo-ui()
+
+    block content
     block footer
       
     

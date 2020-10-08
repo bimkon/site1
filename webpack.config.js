@@ -65,7 +65,7 @@ module.exports = {
   devServer: {
     contentBase: PATHS.dist,
     port: 8081,
-    hot: isDev
+    // hot: isDev
     //stats: "errors-only"
   },
 
@@ -132,7 +132,7 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sourceMap: true,
-              sassOptions: {}
+              sassOptions: {},
             }
           }
         ]

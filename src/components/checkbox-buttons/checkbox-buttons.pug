@@ -1,15 +1,16 @@
-.checkbox-buttons__row
-    .checkbox-buttons__title
-        span.checkbox-buttons__main Checkbox Buttons     
-    .checkbox-buttons__button
-        label(class='checkbox-buttons__lable') Можно курить
-                input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                span.checkmark
-    .checkbox-buttons__button
-        label(class='checkbox-buttons__lable') Можно с питомцами
-                input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                span.checkmark
-    .checkbox-buttons__button
-        label(class='checkbox-buttons__lable') Можно пригласить гостей (до 10 человек)
-                input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                span.checkmark
+mixin checkbox-button({ name = 'checkbox-button', text, describtion, typeOfcheckBox } = {})
+
+    case typeOfcheckBox
+        when 'rich-checkbox'
+            .checkbox-buttons__row
+                .checkbox-buttons__button
+                    label.checkbox-buttons__lable.checkbox-buttons__rich=text
+                            input.checkbox-buttons__input(type="checkbox", name=name)
+                            span.checkmark
+                    .checkbox-buttons__about=describtion
+        default
+            .checkbox-buttons__row
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=text
+                            input.checkbox-buttons__input(type="checkbox", name=name)
+                            span.checkmark

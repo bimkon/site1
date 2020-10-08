@@ -1,4 +1,77 @@
-.bar
-  .bar__body.between
-    include ../logo-toxin/logo
-    include ../navigation/nav
+
+mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenuitem2, submenuitem3, isLogged})
+
+  case isLogged
+
+    when 'logged'
+      .bar
+        .bar__body.between
+          .bar__logo-toxin
+            +logo-toxin()
+          .bar__right-column
+            nav.bar__navigation
+              ul.topmenu
+                li.navig
+                  a.navig__link.active(href='link.html')= first
+                li.navig
+                  a.navig__link(href='link.html')= second
+                li.navig.fix
+                  a.navig__link.fa(href='link.html')= third
+                  ul.submenu
+                    li.submenu__item1
+                      a.submenu__link1(href="link.html")= submenuitem1
+                    li.submenu__item2
+                      a.submenu__link1(href="link.html")= submenuitem2
+                    li.submenu__item3
+                      a.submenu__link1(href="link.html")= submenuitem3
+                  img(src="expand_more.jpg" alt="стрелка - указатель")
+                li.navig
+                  a.navig__link.px(href='link.html')= fourth
+                li.navig
+                  a.navig__link(href='link.html')= fifth
+                li.navig
+                  a.navig__link(href='link.html')= sixth  
+              .user
+                img(src="rectangle.png", alt="вертикальная линия")
+                p='Элий Цезарь'
+   
+    default
+        .bar
+          .bar__body.between
+            .bar__logo-toxin
+              +logo-toxin()
+            .bar__right-column
+              nav.bar__navigation
+                ul.topmenu
+                  li.navig
+                    a.navig__link.active(href='link.html')= first
+                  li.navig
+                    a.navig__link(href='link.html')= second
+                  li.navig.fix
+                    a.navig__link.fa(href='link.html')= third
+                    ul.submenu
+                      li.submenu__item1
+                        a.submenu__link1(href="link.html")= submenuitem1
+                      li.submenu__item2
+                        a.submenu__link1(href="link.html")= submenuitem2
+                      li.submenu__item3
+                        a.submenu__link1(href="link.html")= submenuitem3
+                    img(src="expand_more.jpg" alt="стрелка - указатель")
+                  li.navig
+                    a.navig__link.px(href='link.html')= fourth
+                  li.navig
+                    a.navig__link(href='link.html')= fifth
+                  li.navig
+                    a.navig__link(href='link.html')= sixth  
+                .bar__buttons
+                  .bar__entry
+                    form
+                      button.bar__login(name="login" value="login")
+                        span Войти 
+                      button.bar__register(name="register" value="register")
+                        span Зарегистрироваться
+
+
+
+
+

@@ -1,30 +1,31 @@
-.checkbox-buttons__main
-  .expandable-checkbox__block
-    span.expandable-checkbox__arrow expand_more
-    .checkbox-buttons__main expandable checkbox list
-    ul.checkbox-buttons__columns
-        .checkbox-buttons__row
-            .checkbox-buttons__button
-                label(class='checkbox-buttons__lable') Завтрак
-                        input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                        span.checkmark
-            .checkbox-buttons__button
-                label(class='checkbox-buttons__lable') Письменный стол
-                        input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                        span.checkmark
-            .checkbox-buttons__button
-                label(class='checkbox-buttons__lable') Стул для кормления
-                        input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                        span.checkmark
-            .checkbox-buttons__button
-                label(class='checkbox-buttons__lable') Кроватка
-                        input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                        span.checkmark
-            .checkbox-buttons__button
-                label(class='checkbox-buttons__lable') Телевизор
-                        input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                        span.checkmark            
-            .checkbox-buttons__button
-                label(class='checkbox-buttons__lable') Шампунь
-                        input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                        span.checkmark
+mixin expandable({ value1, value2, value3, value4, value5, value6, isChecked}={})
+
+    .expandable-checkbox__block
+        span.expandable-checkbox__arrow expand_more
+        +heading({ type: 'h3', text: 'expandable checkbox list', })
+        ul.checkbox-buttons__columns
+            .checkbox-buttons__row
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=value1
+                            input.checkbox-buttons__input(type="checkbox", name="checkbox")
+                            span.checkmark
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=value2
+                            input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
+                            span.checkmark
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=value3
+                            input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
+                            span.checkmark
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=value4
+                            input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
+                            span.checkmark
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=value5
+                            input.checkbox-buttons__input(type="checkbox", name="checkbox")
+                            span.checkmark            
+                .checkbox-buttons__button
+                    label(class='checkbox-buttons__lable')=value6
+                            input.checkbox-buttons__input(type="checkbox", name="checkbox")
+                            span.checkmark

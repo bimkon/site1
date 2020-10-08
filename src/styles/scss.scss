@@ -1,24 +1,8 @@
 // base
 @import 'assets/fonts/fonts.scss';
-@import 'components/base/header/header.scss';
-@import 'components/base/main/main.scss';
 
-// blocks
-@import 'components/logo/logo.scss';
-@import 'components/logo-toxin/logo.scss';
-@import 'components/colors/colors.scss';
-@import 'components/type/type.scss';
-@import 'components/navigation/nav.scss';
-@import 'components/nav-bar/nav-bar.scss';
-@import 'components/entry/entry.scss';
-@import 'components/user/user.scss';
-@import 'pug/pages/scss/headerpage.scss';
-@import 'components/footer-links/footer-links.scss';
-@import 'components/subscribe/subscribe.scss';
-@import 'components/copyright-text/copyright-text.scss';
-@import 'components/social/social.scss';
-@import 'components/copyright-bar/copyright.scss';
-@import 'components/footer-creative/footer-creative.scss';
+
+
 
 
 
@@ -31,6 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+
 }
 .borders {
   border: dashed 1px green;

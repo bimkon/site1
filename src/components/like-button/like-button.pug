@@ -1,3 +1,11 @@
-.like-button
-    a.like-button_item.like-button_counter.active(href='#', title='Love it', data-count='12') 
-        span.like-button_icon favorite
+mixin like-button({likeNumber = '12', isChecked,}={})
+
+ - let checkedMofidier = ''
+
+    case isChecked
+        when 'checked'
+            - checkedMofidier='active'
+
+    .like-button
+        a(href='#', title='Love it', data-count=likeNumber, class = `like-button_item like-button_counter ${checkedMofidier}`) 
+            span.like-button_icon favorite

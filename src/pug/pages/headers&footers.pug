@@ -1,25 +1,48 @@
 extends ../../components/base/layout/main
+
 block variables
     - var pageClass = "GreyBackground";
+
 block content
-  block var
-    - var userLogin = 0;
+
+  include ../../components/logo-toxin/logo.pug
   include ../../components/nav-bar/nav-bar.pug
-  .indent 
-  block var
-    - var userLogin = 1;
-  include ../../components/nav-bar/nav-bar.pug
+  include ../../components/footer-links/footer-links.pug
+  include ../../components/footer-creative/footer-creative.pug
+  include ../../components/social/social.pug
+
+  main.headers-and-footers
+    article.headers-and-footers__item
+      +nav-bar({first:'Home', second: 'About Us', third: 'Services', fourth: 'Careers', fifth: 'News', sixth: 'Documentation', submenuitem1: 'Repair', submenuitem2: 'Odrer', submenuitem3: 'Paint', })
+    article.headers-and-footers__item
+      +nav-bar({first:'Home', second: 'About Us', third: 'Services', fourth: 'Careers', fifth: 'News', sixth: 'Documentation', submenuitem1: 'Repair', submenuitem2: 'Odrer', submenuitem3: 'Paint', isLogged: 'logged'})
 block footer
-  footer
-    .indent
-    .colums
-      .container
-        include ../../components/footer-links/footer-links.pug
-    .indent-1px-top
-    .Copyright__wrapper
-      .container
-          include ../../components/copyright-bar/copyright-bar.pug
-    .indent
-    .Page__wrapper
-      .container
-        include ../../components/footer-creative/footer-creative.pug
+  article.headers-and-footers__item
+    footer
+      .indent
+      .colums
+        .container
+          include ../../components/footer-links/footer-links.pug
+      .indent-1px-top
+      .Copyright__wrapper
+        .container
+          +footer-links({
+            mainfooterDescribtion: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis',
+            headerOfLink1: 'Навигация',
+            link1_1: 'О нас',
+            link1_2: 'Новости',
+            link1_3: 'Служба поддержки',
+            link1_4: 'Услуги',
+            headerOfLink2: 'О нас',
+            link2_1: 'О сервисе',
+            link2_2: 'Наша команда',
+            link2_3: 'Вакансии',
+            link2_4: 'Инвенторы',
+            headerOfLink3: 'Служба поддержки',
+            link3_1: 'Соглашения',
+            link3_2: 'Сообщества',
+            link3_3: 'Связь с нами',})
+      .indent
+      .Page__wrapper
+        .container
+          +footer-creative()

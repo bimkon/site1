@@ -1,14 +1,20 @@
-.buttons__row
-    .buttons__title
-        span.buttons__text buttons
-    .buttons__column
-        .buttons__item
-            a.button.buttons__hover(href='link.html') click me
-        .buttons__item
-            a.button.buttons__white(href='link.html') click me
-        .buttons__item
-           a.button.buttons__borderless(href='link.html') click me
-        .buttons__item
-            form.buttons__form(action="link.html", method="get")
-                a.button.buttons__long(href='link.html') перейти к оплате
-                button.buttons__arrow(type='submit') arrow_forward
+mixin button({styleType, href, text,}={})
+
+    case styleType
+        when 'simple'
+            .buttons__item
+                a.button.buttons__hover(href=href)=text
+
+        when 'empty'
+            .buttons__item
+                a.button.buttons__white(href=href)=text
+
+        when 'borderless'
+            .buttons__item
+                a.button.buttons__borderless(href=href)=text
+                
+        when 'long'
+            .buttons__item
+                form.buttons__form(action=href, method="get")
+                    a.button.buttons__long(href=href)=text
+                    button.buttons__arrow(type='submit') arrow_forward

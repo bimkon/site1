@@ -1,8 +1,7 @@
-.toggle
-    .toggle__header
-        .toggle__text toggle
+mixin toggle-button({name = 'toggle', text, isChecked, }={})
+    
     .toggle__body
         label(class="toggle__switch") 
-            input.toggle__input(type="checkbox", name="toggle")
+            input.toggle__input(type="checkbox", name=name, checked=isChecked)
             span.toggle__slider
-        span.toggle__descr Получать спецпредложения    
+        span.toggle__descr=text 
