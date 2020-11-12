@@ -26,6 +26,7 @@
     border-radius: 22px;
     color:white;
     box-sizing: border-box;
+
     }
  //first button modif
 .buttons__hover {
@@ -56,7 +57,10 @@
 }
 // long button
 .buttons__long {
-    width: 320px;
+    min-width: 320px;
+    @media (max-width: 380px) {   
+        min-width: 270px;
+      }
 }
 .buttons__form {
     position: relative;
@@ -64,7 +68,7 @@
   }
   
 
- 
+
 .buttons__arrow {
       width: 44px;
       height: 44px;
@@ -90,3 +94,7 @@
       padding-right: 0px;
       outline: none
   }
+.buttons__item {
+    position: relative;
+
+}

@@ -1,0 +1,37 @@
+.landing-page {
+    position: relative;
+    min-height: 830px;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    @media (max-width: 1000px) {
+        min-height: 640px;
+      }
+}
+.landing-page__quote {
+    position: absolute;
+    margin: unset;
+    line-height: 24px;
+    font-family: 'Montserrat';
+    width: 300px;
+    bottom: 8px;
+    right: 16px;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.75);
+
+
+}
+.landing-page__filter {
+    padding-top: 70px;
+    padding-left: 160px;
+    @media (max-width: 650px) {
+        display: flex;
+        padding-top: 20px;
+        padding-left: unset;
+        align-items: center;
+        justify-content: center
+      }
+}

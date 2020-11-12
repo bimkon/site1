@@ -1,12 +1,24 @@
 .footer-creative {
     display: flex;
-    flex-direction:column;
-    justify-content: center;
+    flex-direction:row;
+    justify-content: space-between;
     align-items: center;
-    height: 367px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 //pixel perfect
 .footer-creative__item {
     margin-top: 20px;
     margin-bottom: 25px;
+}
+.footer-creative__text {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat';
+}
+.footer-container {
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
 }

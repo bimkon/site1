@@ -1,21 +1,41 @@
 
-.colums {
-    background-color: white;
-
-}
 .colums__row  {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 1160px;
-    height: 372px;
+    align-items: flex-start;
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 104px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 104px auto 0 auto;
+    box-sizing: border-box;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+.colums__menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    @media (max-width: 950px) {
+        margin: 20px auto;
+      }
+    @media (max-width: 464px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 }
 .colums__Descr {
-    width: 260px;
+    max-width: 260px;
+    padding-top: 0px;
 
 }
 .colums__Navigation {
-    width: 81px;
+
 }
 //убираем отступы
 .colums__list {
@@ -33,7 +53,7 @@
 }
 .colums__refers {
     height: 18px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
