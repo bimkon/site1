@@ -1,0 +1,104 @@
+extends index.pug
+
+block variables
+  - var pageTitle='Search-room'
+
+block content
+
+  include ../../components/filter/filter.pug
+  include ../../components/range-slider/range-slider.pug
+  include ../../components/checkbox-buttons/checkbox-buttons.pug
+  include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
+  include ../../components/slick-slider/slick-slider.pug
+  include ../../components/slick-slider-noarrow/slick-slider-noarrow.pug
+  include ../../components/pagination/pagination.pug
+
+
+  main.search-room
+    section.search-room__filter
+      .search-room__item
+        +heading({ type: 'h3', text: 'даты пребывания в отеле', })
+        +date-dropdown({ inputField: 'single', })  
+      .search-room__item
+        +heading({ type: 'h3', text: 'Гости', })
+        +dropdown({ 
+            text: 'Сколько гостей',
+            hasButtons: true,
+            options: [
+            { text: 'взрослые', group: 'гости' },
+            { text: 'дети', group: 'гости' },
+            { text: 'младенцы' },
+            ],
+        })
+      .search-room__item
+        +range-slider({ 
+          headerText: 'Диапазон цены', 
+          type: 'double', 
+          min: 1000, 
+          max: 15000, 
+          step: 1, 
+          from: 5000, 
+          to: 10000, 
+          })
+        p.range-slider__discribtion Стоимость за сутки пребывания в номере
+      .search-room__item
+        +heading({ type: 'h3', text: 'Правила дома', })
+        +checkbox-button({ name: 'checkbox3', text: 'Можно курить'})
+        +checkbox-button({ name: 'checkbox3', text: 'Можно с питомцами', isChecked: 'checked'})
+        +checkbox-button({ name: 'checkbox3', text: 'Можно пригласить гостей (до 10 человек)', isChecked: 'checked'}) 
+      .search-room__item
+        +heading({ type: 'h3', text: 'Доступность', })
+        +checkbox-button({name: 'rich-checkbox', text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'})
+        +checkbox-button({name: 'rich-checkbox', text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'})                                       
+      .search-room__item
+        +heading({ type: 'h3', text: 'Удобство номера', })
+        +dropdown({ 
+          width: 'short',
+          options: [
+          { text: 'спальни', number: 2, },
+          { text: 'кровати', number: 2, },
+          { text: 'ванные комнаты',number: 2, },
+          ],
+        })
+      .search-room__item
+        +expandable({ header: 'Дополнительные удобства',
+          value1: 'Завтрак',
+          value2: 'Письменный стол',
+          value3: 'Стул для кормления',
+          value4: 'Кроватка',
+          value5: 'Телевизор',
+          value6: 'Шампунь', isChecked: 'checked'})  
+    section.search-room__column
+        .search-room__title Номера, которые мы для вас подобрали
+        .search-toom__rooms
+          .search-room__row
+            .search-room__number
+              +slick-slider({ image1: 'slick.svg', image2: 'slick.svg', image3: 'slick.svg', image4: 'slick.svg', number: '888', isLux: 'Люкс', cost: '9990', votes: '145', rating: '5',})
+            .search-room__number
+              +slick-slider({ image1: 'image2.svg', image2: 'image2.svg', image3: 'image2.svg', image4: 'image2.svg', number: '840', cost: '9900', votes: '65', rating: '4', arrow: 'noarrow' })
+            .search-room__number
+              +slick-slider({ image1: 'image3.svg', image2: 'image3.svg', image3: 'image3.svg', image4: 'image3.svg', number: '980', isLux: 'Люкс', cost: '8500', votes: '35', rating: '3', arrow: 'noarrow'  })
+          .search-room__row
+            .search-room__number
+              +slick-slider({ image1: 'image4.svg', image2: 'image4.svg', image3: 'image4.svg', image4: 'image4.svg', number: '856', cost: '7300', votes: '19', rating: '5', arrow: 'noarrow'  })
+            .search-room__number
+              +slick-slider({ image1: 'image5.svg', image2: 'image5.svg', image3: 'image5.svg', image4: 'image5.svg', number: '740', cost: '6000', votes: '44', rating: '5', arrow: 'noarrow'  })
+            .search-room__number
+              +slick-slider({ image1: 'image6.svg', image2: 'image6.svg', image3: 'image6.svg', image4: 'image6.svg', number: '982', cost: '5800', votes: '56', rating: '3', arrow: 'noarrow'  }) 
+          .search-room__row
+            .search-room__number
+              +slick-slider({ image1: 'image7.svg', image2: 'image7.svg', image3: 'image7.svg', image4: 'image7.svg', number: '678', cost: '5500', votes: '45', rating: '5', arrow: 'noarrow'  })
+            .search-room__number
+              +slick-slider({ image1: 'image8.svg', image2: 'image8.svg', image3: 'image8.svg', image4: 'image8.svg', number: '450', cost: '5300', votes: '39', rating: '4', arrow: 'noarrow'  })
+            .search-room__number
+              +slick-slider({ image1: 'image9.svg', image2: 'image9.svg', image3: 'image9.svg', image4: 'image9.svg', number: '350', cost: '5000', votes: '77', rating: '3', arrow: 'noarrow'  })
+          .search-room__row
+            .search-room__number
+              +slick-slider({ image1: 'image10.svg', image2: 'image10.svg', image3: 'image10.svg', image4: 'image10.svg', number: '666  ', cost: '5000', votes: '25', rating: '5', arrow: 'noarrow'  })
+            .search-room__number
+              +slick-slider({ image1: 'image11.svg', image2: 'image11.svg', image3: 'image11.svg', image4: 'image11.svg', number: '444', cost: '5000', votes: '15', rating: '3', arrow: 'noarrow'  })
+            .search-room__number
+            +slick-slider({ image1: 'image12.svg', image2: 'image12.svg', image3: 'image12.svg', image4: 'image12.svg', number: '352', cost: '5000', votes: '55', rating: '3', arrow: 'noarrow'  })
+        section.search-room__pagination
+            +pagination({href:'link.html', number1: '1',number2: '2',number3: '3',number4: '...',number5: '5', isActive: '.active'})
+  .search-room__border

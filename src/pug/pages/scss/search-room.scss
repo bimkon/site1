@@ -1,0 +1,56 @@
+.search-room {
+  display: flex;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1180px;
+  justify-content: space-between;
+  &__filter {
+    margin-top: 35px;
+  }
+  &__rooms {
+    min-height: 1091px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    max-width: 834px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    min-width: 834px;
+  }
+  &__title {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F2041;
+    margin: 30px 0px 20px 0px;
+    
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__number {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+  }
+  &__pagination {
+    margin-top: 40px;
+    display: flex;
+    align-self: center;
+    padding-bottom: 70px;
+    
+  }
+}
+.search-room__border {
+  display: flex;
+  min-height: 1px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+
+}

@@ -1,16 +1,16 @@
-mixin checkbox-button({ name = 'checkbox-button', text, describtion, typeOfcheckBox } = {})
+mixin checkbox-button({ name = 'checkbox-button', text, describtion, typeOfcheckBox, isChecked } = {})
 
     case typeOfcheckBox
         when 'rich-checkbox'
             .checkbox-buttons__row
                 .checkbox-buttons__button
                     label.checkbox-buttons__lable.checkbox-buttons__rich=text
-                            input.checkbox-buttons__input(type="checkbox", name=name)
+                            input.checkbox-buttons__input(type="checkbox", name=name, checked=isChecked)
                             span.checkmark
                     .checkbox-buttons__about=describtion
         default
             .checkbox-buttons__row
                 .checkbox-buttons__button
                     label(class='checkbox-buttons__lable')=text
-                            input.checkbox-buttons__input(type="checkbox", name=name)
+                            input.checkbox-buttons__input(type="checkbox", name=name, checked=isChecked)
                             span.checkmark

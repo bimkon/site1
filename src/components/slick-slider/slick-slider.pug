@@ -1,29 +1,32 @@
-.slick__content
-    .slider__item
-        img(src=("slick.svg"), alt="комната")
-    .slider__item
-        img(src=("slick.svg"), alt="комната")
-    .slider__item
-        img(src=("slick.svg"), alt="комната")
-    .slider__item
-        img(src=("slick.svg"), alt="комната")
-.slick__describtion
-    .slick__row
-        .slick__paragraph
-            span.slick__no №
-            span.slick__number   888
-            span.slick__type-of-room   люкс
-        .slick__paragraph
-            span.slick__price 9 990
-            span.slick__price ₽
-            span.slick__in-time   в сутки
-    .slick__row
-        .slick__underline
-            img(src=("line.svg"), alt="line")
-    .slick__row
-        .slick__paragraph
-            include ../star/star.pug
-        .slick__paragraph
-            span.slick__reviews-number 145
-            span.slick__reviews   Отзывов
+include ../star/star.pug
 
+mixin slick-slider({ image1, image2, image3, image4, number, isLux, cost, votes, rating, arrow="", }={})
+    .slick__slider(class=`${arrow}`)
+        .slick__content
+            .slider__item
+                img(src=(`${image1}`), alt="комната")
+            .slider__item
+                img(src=(`${image2}`), alt="комната")
+            .slider__item
+                img(src=(`${image3}`), alt="комната")
+            .slider__item
+                img(src=(`${image4}`), alt="комната")
+        .slick__describtion
+            .slick__row
+                .slick__paragraph
+                    span.slick__no №
+                    span.slick__number=number
+                    span.slick__type-of-room=isLux
+                .slick__paragraph
+                    span.slick__price=cost
+                    span.slick__price ₽
+                    span.slick__in-time   в сутки
+            .slick__row
+                .slick__underline
+                    img(src=("line.svg"), alt="line")
+            .slick__row
+                .slick__paragraph
+                    +rate-button({ name: 'rating', value: `${rating}`, isChecked5: 'checked'})
+                .slick__paragraph
+                    span.slick__reviews-number=votes
+                    span.slick__reviews   Отзывов

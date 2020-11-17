@@ -1,8 +1,8 @@
-mixin expandable({ value1, value2, value3, value4, value5, value6, isChecked}={})
+mixin expandable({ header, value1, value2, value3, value4, value5, value6, isChecked}={})
 
     .expandable-checkbox__block
         span.expandable-checkbox__arrow expand_more
-        +heading({ type: 'h3', text: 'expandable checkbox list', })
+        +heading({ type: 'h3', text: `${header}`, })
         ul.checkbox-buttons__columns
             .checkbox-buttons__row
                 .checkbox-buttons__button

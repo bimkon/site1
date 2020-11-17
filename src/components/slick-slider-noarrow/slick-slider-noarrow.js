@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    $('.slick__content-noarrow').slick({
-     dots:true,
-     arrows: false
-    });
-  });
+// $(document).ready(function(){
+//     $('.slick__content-noarrow').slick({
+//      dots:true,
+//      arrows: false
+//     });
+//   });
