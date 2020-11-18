@@ -1,0 +1,72 @@
+extends index.pug
+
+block variables
+  - var pageTitle='Search-room'
+
+block content
+
+  include ../../components/filter/filter.pug
+  include ../../components/range-slider/range-slider.pug
+  include ../../components/checkbox-buttons/checkbox-buttons.pug
+  include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
+  include ../../components/slick-slider/slick-slider.pug
+  include ../../components/slick-slider-noarrow/slick-slider-noarrow.pug
+  include ../../components/pagination/pagination.pug
+  include ../../components/icon-text/icon-text.pug
+  include ../../components/bullet-list/bullet-list.pug
+  include ../../components/comments/comments.pug
+  include ../../components/like-button/like-button.pug
+
+  main.room-page
+    .room-detail
+      .room-detail__preview
+      .room-detail__room  
+        .room-detail__item-one
+        .room-detail__item-two
+    .room-detail__content
+      .room-detail__column
+        .room-detail__info
+          .room-detail__describtion
+            .room-detail__info-header
+              +heading({ type: 'h2', text: 'Сведения о номере', })
+            .room-detail__icon-text
+            +icon-text({icon:'insert_emoticon', title: 'Комфорт', describe: 'Шумопоглощающие стены', hasUnderline: 'Has'})
+            .room-detail__icon-text
+            +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален', hasUnderline: 'Has'})
+            .room-detail__icon-text
+            +icon-text({icon:'whatshot', title: 'Уют', describe: 'Номер оснащён камином', hasUnderline: 'Has'})
+          .room-detail__votes
+            .room-detail__info-header
+              +heading({ type: 'h2', text: 'Впечатления от номера', })
+            .room-detail__chart
+            .room-detail__list
+        .room-detail__reviews
+          .room-detail__reviews-header
+            +heading({ type: 'h2', text: 'Отзывы посетителей номера',  })
+            .room-detail__reviews-count 2 отзыва
+          .room-detail__comment
+            +comment({
+              avatarSourcePath: 'avatar.png',
+              likeNumber: '12',
+              name: 'Мурад Сарафанов',
+              date: '5 дней назад',
+              text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+              isChecked: 'checked',})
+          .room-detail__comment
+            +comment({
+              avatarSourcePath: 'avatar2.png',
+              likeNumber: '2',
+              name: 'Патрисия Стёклышкова',
+              date: 'Неделю назад',
+              text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+        .room-detail__rules
+          .room-detail__rule-list
+            .room-detail__rule-list-header
+              +heading({ type: 'h2', text: 'Правила', })
+            .room-detail__bullet-list
+              +bullet-list({value1: 'Нельзя с питомцами', value2: 'Без вечеринок и мероприятий', value3: 'Время прибытия - после 13:00, а выезд до 12:00'})
+          .room-detail__cancellation
+            .room-detail__cancellation-header
+              +heading({ type: 'h2', text: 'Отмена', })
+              p.room-detail__cancellation-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги
+      .room-detail__column

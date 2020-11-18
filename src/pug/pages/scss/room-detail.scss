@@ -1,0 +1,44 @@
+.room-detail {
+  display: flex;
+  &__room {
+  display: flex;
+  flex-direction: column;
+  }
+  &__preview {
+    background: url('../../../img/room-detail1.svg') center/cover no-repeat;
+    min-height: 485px;
+    width: 100%;
+    max-height: 485px;
+  }
+  &__item-one {
+    background: url('../../../img/room-detail2.svg') center/cover no-repeat;
+    min-height: 243px;
+    width: 461px;
+  }
+  &__item-two {
+    background: url('../../../img/room-detail3.svg') center/cover no-repeat;
+    min-height: 243px;
+    width: 461px;
+  }
+  &__chart {
+    background: url('../../../img/pie.svg') center/cover no-repeat;
+    min-height: 120px;
+    max-width: 121px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info {
+    display: flex;
+  }
+  &__rules {
+    display: flex;
+  }
+  &__reviews-header {
+    display: flex;
+  }
+}

@@ -1,4 +1,6 @@
 extends ../../components/base/layout/main
+include ../../components/filter/filter.pug
+
 block variables
     - var pageClass = "GreyBackground";
 block content
@@ -6,6 +8,7 @@ block content
         .cards__column
             .cards__row
                 .registration-form
+                    +filter()
         .cards__column
             .cards__row
                 .sign-in
