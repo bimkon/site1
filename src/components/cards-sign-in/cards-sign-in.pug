@@ -1,9 +1,18 @@
-.sign-in__header
-    span.sign-in__heading Войти
-.sign-in__email
-    include ../../components/text-field-default_sign-in-form/text-field-default_sign-in-form.pug
-.sign-in__login
-    include ../../components/buttons-sign-in-form/buttons-sign-in-form.pug
-.sign-in__register
-    p.sign-in__login-text Нет аккаунта на Toxin?
-    include ../../components/buttons-sign-in-form-create/buttons-sign-in-form-create.pug
+include ../../components/heading/heading.pug
+include ../../components/text-field/text-field.pug
+
+mixin cards-sign-in({ action='/mock-address/change-me', name='registration', method='post',} = {})
+
+    form.sign-in-form(action=action name=name method=method)
+        .sign-in__wrapper
+            .sign-in__header
+                +heading({ type: 'h1', text: 'Войти', })
+            .sign-in__email
+                +text-field({ type: 'email', name: 'email', placeholder: 'Email', typeOfField: 'normal',})
+            .sign-in__login
+                +text-field({ type: 'password', name: 'password', placeholder: 'Пароль', typeOfField: 'normal',})
+                +button({styleType: 'long', href: 'link.html', text: 'Войти'})
+            .sign-in__register
+                p.sign-in__login-text Нет аккаунта на Toxin?
+            .sign-in__button
+                +button({styleType: 'empty', href: 'link.html', text: 'Войти'})

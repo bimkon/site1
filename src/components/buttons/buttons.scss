@@ -19,7 +19,6 @@
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    margin-bottom: 30px;
     line-height: 44px;
     cursor: pointer;
     text-transform: uppercase;
@@ -49,7 +48,7 @@
 .buttons__borderless {
     color: #BC9CFF;
     background: white;
-    width: auto;
+    width: 99px;
     height: 44px;
     &:hover {
         color: rgba(31, 32, 65, 0.5);

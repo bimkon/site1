@@ -1,0 +1,39 @@
+include ../../components/heading/heading.pug
+include ../../components/radio-buttons/radio-buttons.pug
+include ../../components/toggle/toggle.pug
+
+mixin registration-form( { action='/mock-address/change-me', name='registration-form', method='post', } = {} )
+
+  form.registration-form(action=action name=name method=method)
+    .registration-form__wrapper
+      .registration-form__header
+        +heading({ type: 'h3', text: 'Регистрация аккаунта', })
+      .registration-form__first-name
+        +text-field({ type: 'name', name: 'name-input', placeholder: 'Имя', typeOfField: 'normal' })
+      .registration-form__second-name
+        +text-field({ type: 'second-name', name: 'second-name-input', placeholder: 'Фамилия', typeOfField: 'normal' })
+      .registration-form__radio-buttons
+        .registration-form__radio-button
+          +radio-button({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
+        .registration-form__radio-button
+          +radio-button({name: 'radio-button', value: 'man', text: 'Женщина',  isChecked: 'checked'})
+      .registration-form__birth-header
+        +heading({ type: 'h3', text: 'Дата рождения', })
+      .registration-form__birthday-input
+        +text-field({ placeholder: 'ДД.ММ.ГГГГ',  typeOfField: 'masked', })
+      .registration-form__login-header
+        +heading({ type: 'h3', text: 'Данные для входа', })
+      .registration-form__email
+         +text-field({ type: 'email', name: 'email-input', placeholder: 'Email', typeOfField: 'normal' })
+      .registration-form__password
+         +text-field({ type: 'password', name: 'password-input', placeholder: 'Password', typeOfField: 'normal' })
+      .registration-form__toggle-button
+        +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
+      .registration-form__payment-button
+        +button({styleType: 'long', href: 'link.html', text: 'Перейти к оплате'})
+      .registration-form__login
+        p.sign-in__login-text Нет аккаунта на Toxin?
+        +button({styleType: 'empty', href: 'link.html', text: 'Войти'})
+
+
+

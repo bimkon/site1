@@ -1,0 +1,49 @@
+include ../../components/calendar-two-inputs/calendar-two-inputs.pug
+
+mixin reservation-form( { action='/mock-address/change-me', name='registration-form', method='post', number= '888', isLux='Люкс', costInDay='9990' } = {} )
+  form.reservation-form(action=action name=name method=method)
+    .reservation-form__wrapper
+      .reservation-form__option-row
+        .reservation-form__options
+          span.reservation-form__symbol №
+          span.reservation-form__number=number
+          span.reservation-form__type-of-room=isLux
+        .reservation-form__day-cost
+          span.reservation-form__price=costInDay
+          span.reservation-form__price ₽ 
+          span.reservation-form__price-text в сутки
+      .reservation-form__calendar
+        +date-dropdown({ inputField: 'two-inputs', firstHeading: 'Прибытие', secondHeading: 'Выезд', })
+      .reservation-form__header
+        +heading({ type: 'h3', text: 'Гости',  })
+      .reservation-form__dropdown
+        +dropdown({ 
+            text: 'Сколько гостей',
+            hasButtons: true,
+            options: [
+            { text: 'взрослые', group: 'гости' },
+            { text: 'дети', group: 'гости' },
+            { text: 'младенцы' },
+            ],
+        })
+      .reservation-form__room-info
+        .reservation-form__text-row
+          span.reservation-form__text 9 990₽ х 4 суток
+          span.reservation-form__text 39 960₽
+        .reservation-form__text-row
+          span.reservation-form__item
+            span.reservation-form__text Сбор за услуги: скидка 2 179₽
+            span.reservation-form__text-icon i
+          span.reservation-form__text 0₽
+        .reservation-form__text-row
+          span.reservation-form__item
+            span.reservation-form__text Сбор за дополнительные услуги
+            span.reservation-form__text-icon i
+          span.reservation-form__text 300₽
+      .reservation-form__summary
+        .reservation-form__summary-text Итого
+        .reservation-form__summary-dashed-border
+        .reservation-form__summary-text 38 081₽
+      .reservation-form__button
+        +button({styleType: 'long', href: 'link.html', text: 'Забронировать'})
+      

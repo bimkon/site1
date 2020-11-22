@@ -1,29 +1,41 @@
 extends ../../components/base/layout/main
-include ../../components/filter/filter.pug
+
 
 block variables
-    - var pageClass = "GreyBackground";
+    - var pageTitle = 'Cards';
+
+
 block content
-    .cards
-        .cards__column
-            .cards__row
-                .registration-form
+
+    include ../../components/filter/filter.pug
+    include ../../components/cards-sign-in/cards-sign-in.pug
+    include ../../components/range-slider/range-slider.pug
+    include ../../components/buttons/buttons.pug
+    include ../../components/registration-form/registration-form.pug
+    include ../../components/reservation-form/reservation-form.pug
+    include ../../components/heading/heading.pug
+    include ../../components/slick-slider/slick-slider.pug
+
+    article.cards
+        .cards__body
+            section.cards__column
+                .cards__row
                     +filter()
-        .cards__column
-            .cards__row
-                .sign-in
-                    .sign-in__wrapper
-                        include ../../components/cards-sign-in/cards-sign-in.pug
-            .cards__row
-                .reservation
-                    .reservation-wrapper
-                        include ../../components/calendar-two-inputs/calendar-two-inputs.pug
-        .cards__column
-            .cards__row
-                .slick-slider
-                    include ../../components/calendar-inline/datepicker-inline.pug
-                    include ../../components/slick-slider/slick-slider.pug
-                    include ../../components/slick-slider-noarrow/slick-slider-noarrow.pug
+                .cards__row
+                    +registration-form()
+            section.cards__column
+                .cards__row
+                    +cards-sign-in()
+                .cards__row
+                    +reservation-form()
+            section.cards__column   
+                .cards__row
+                    +date-dropdown({ inputField: 'single',isInline: 'inline', type: 'hidden' }) 
+                .cards__row
+                    +slick-slider({ image1: 'slick.svg', image2: 'slick.svg', image3: 'slick.svg', image4: 'slick.svg', number: '888', isLux: 'Люкс', cost: '9990', votes: '145', rating: '5',})
+                .cards__row
+                    +slick-slider({ image1: 'image2.svg', image2: 'image2.svg', image3: 'image2.svg', image4: 'image2.svg', number: '840', cost: '9900', votes: '65', rating: '4', arrow: 'noarrow' })
+
             
     
 

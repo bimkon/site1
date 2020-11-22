@@ -119,12 +119,13 @@
   //стилизация контейнера
   .datepicker__container {
     display: flex;
-    flex-wrap: wrap;
-    width: 266px;
-    position: relative;
+    justify-content: space-between;
+    width: 320px;
+
+
   }
 .datepicker-two-inputs {
-    width: 100%;
+    max-width: 150px;
     height: 44px;
     padding: 0px;
     padding-left: 15px;
