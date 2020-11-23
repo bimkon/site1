@@ -1,0 +1,22 @@
+.sign-in-page {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  position: relative;
+  min-height: 683px;  
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  @media (max-width: 1000px) {
+      min-height: 640px;
+    }
+  @media (max-width: 342px) {
+      min-height: 550px;
+  }
+  &__form {
+    display: flex;
+    align-self: center;
+  }
+}

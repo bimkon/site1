@@ -1,0 +1,14 @@
+extends index.pug
+
+block variables
+  - var pageTitle='Registration-page'
+
+block content
+
+  include ../../components/registration-form/registration-form.pug
+  include ../../components/text-field/text-field.pug
+  include ../../components/buttons/buttons.pug
+
+  main.registration-page(style="background-image: url('../../registration-page.png')")
+    section.registration-page__form
+      +registration-form()

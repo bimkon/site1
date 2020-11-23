@@ -16,6 +16,7 @@ block content
   include ../../components/bullet-list/bullet-list.pug
   include ../../components/comments/comments.pug
   include ../../components/like-button/like-button.pug
+  include ../../components/reservation-form/reservation-form.pug
 
   main.room-page
     .room-detail
@@ -24,7 +25,7 @@ block content
         .room-detail__item-one
         .room-detail__item-two
     .room-detail__content
-      .room-detail__column
+      .room-detail__first-column
         .room-detail__info
           .room-detail__describtion
             .room-detail__info-header
@@ -34,7 +35,7 @@ block content
             .room-detail__icon-text
             +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален', hasUnderline: 'Has'})
             .room-detail__icon-text
-            +icon-text({icon:'whatshot', title: 'Уют', describe: 'Номер оснащён камином', hasUnderline: 'Has'})
+            +icon-text({icon:'whatshot', title: 'Уют', describe: 'Номер оснащён камином', })
           .room-detail__votes
             .room-detail__info-header
               +heading({ type: 'h2', text: 'Впечатления от номера', })
@@ -69,4 +70,5 @@ block content
             .room-detail__cancellation-header
               +heading({ type: 'h2', text: 'Отмена', })
               p.room-detail__cancellation-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги
-      .room-detail__column
+      .room-detail__second-column
+        +reservation-form()

@@ -3,6 +3,7 @@
   &__room {
   display: flex;
   flex-direction: column;
+  margin-bottom: 70px;
   }
   &__preview {
     background: url('../../../img/room-detail1.svg') center/cover no-repeat;
@@ -21,24 +22,80 @@
     width: 461px;
   }
   &__chart {
+    display: flex;
     background: url('../../../img/pie.svg') center/cover no-repeat;
     min-height: 120px;
     max-width: 121px;
   }
   &__content {
     display: flex;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1180px;
+    justify-content: space-between;
   }
-  &__column {
+  &__first-column {
     display: flex;
     flex-direction: column;
+    max-width: 712px;
+  }
+  &__second-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
   }
   &__info {
     display: flex;
+    justify-content: space-between;
+    max-width: 672px;
+    &-header {
+      margin-bottom: 20px;
+    }
   }
   &__rules {
     display: flex;
+    max-width: 703px;
+    justify-content: space-between;
   }
-  &__reviews-header {
-    display: flex;
+  &__reviews {
+    margin-top: 30px;
+    &-header {
+      margin-bottom: 20px;
+    }
+    &-count {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__comment {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  &__cancellation {
+    max-width: 341px;
+    &-text {
+      margin: 0;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+  }
+  &__rule-list {
+    max-width: 250px;
   }
 }

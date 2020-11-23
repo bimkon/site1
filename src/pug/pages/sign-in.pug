@@ -1,0 +1,14 @@
+extends index.pug
+
+block variables
+  - var pageTitle='Sign-in'
+
+block content
+
+  include ../../components/cards-sign-in/cards-sign-in.pug
+  include ../../components/text-field/text-field.pug
+  include ../../components/buttons/buttons.pug
+
+  main.sign-in-page(style="background-image: url('../../registration-page.png')")
+    section.sign-in-page__form
+      +cards-sign-in()
