@@ -1,8 +1,5 @@
-//- через variables будем получать константы от тех,
-//- кто будет использовать этот макет
 block variables
-//- подключим файл с миксинами
-include ../../logo/logo.pug
+
 
 doctype html
 html(lang='en')
@@ -10,9 +7,12 @@ html(lang='en')
     meta(charset='utf-8')
     title #{title}
     link(rel="shortcut icon" href="./Group.svg")
-  body(class=pageClass)
-    header
-      +logo-ui()
+  body
+
+    include ../../logo/logo.pug
+  
+
+    +logo-ui()
 
     block content
     block footer

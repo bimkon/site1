@@ -1,0 +1,31 @@
+.colors-and-type {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 67px;
+  &__colors {
+    
+    margin-left: 150px;
+  }
+  &__types {
+    margin-right: 150px;
+    width: 436px;
+    height: 321px;
+  }
+}
+.colors-block__type {
+  margin-bottom: 51px;
+  &:nth-child(1){
+    margin-bottom: 52px;
+  }
+  &:nth-child(2){
+    margin-left: 1px;
+  }
+  &:nth-child(3){
+  margin-left: 12px;
+  margin-bottom: 48px;
+  }
+  &:nth-child(4){
+    position: relative;
+    right: 8px;
+    }
+}

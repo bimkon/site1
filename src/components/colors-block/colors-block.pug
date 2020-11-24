@@ -1,5 +1,6 @@
 mixin item-colors({ text = 'Color', description = 'Description', backgroundColor = 'backgroundcolor', } = {})
   - let colorModifier = ''
+
   case backgroundColor
 
     when 'darkest shade'
@@ -18,15 +19,14 @@ mixin item-colors({ text = 'Color', description = 'Description', backgroundColor
       - colorModifier = ' colors__squares_green'
 
 
-  .colors
+  .colors-block
     div(class=`colors__squares${colorModifier}`)
-    .colors__text
-      .colors__text_bold=text
-      span=description
+    .colors-block__text
+      .colors-block__text-bold=text
+      span.colors-block__describtion=description
 
-mixin item-type(blockNumber, blockText, textNumber, textText)
-  .type
-    div(class=blockNumber).type__block.type_left-column
-      blockText=blockText
-    div(class=textNumber).type_right-column
-      textText=textText
+mixin item-type({blockNumber, blockText, textNumber, textText})
+  .colors-block__type
+    div(class=blockNumber)=blockText
+    div(class=textNumber)
+      .textText=textText
