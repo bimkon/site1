@@ -1,6 +1,6 @@
 .radio-buttons-row {
     display: flex;
-    width: 220px;
+    // width: 220px;
 }
 /* Customize the label  */
 .radio-buttons__lable {
@@ -9,7 +9,6 @@
     position: relative;
     padding-left: 30px;
     padding-right: 20px;
-    margin-bottom: 12px;
     cursor: pointer;
     font-size: 14px;
     line-height: 24px;
@@ -17,6 +16,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
   }
   /* Hide the browser's default radio*/
 .radio-buttons__input {
@@ -54,6 +54,9 @@
   //make color for unchecked
   .radio-buttons__text {
     color: rgba(31, 32, 65, 0.5);
+    position: relative;
+    bottom: 2px;
+    
   }
   //make color for checked
 .radio-buttons__input:checked ~ .radio-buttons__text {
@@ -62,8 +65,8 @@
 
 /* Style the indicator (/circle) */
 .radio-buttons__lable .radio-buttons__checkmark:after {
-    top: 4px;
-    left: 4px;
+    top: 3px;
+    left: 3px;
     width: 12px;
     height: 12px;
     border-radius: 10px;

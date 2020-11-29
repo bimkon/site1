@@ -2,7 +2,7 @@
   margin: 0;
   font-family: 'Quicksand', 'Open Sans', Arial, sans-serif;
   font-weight: bold;
-  color: rgba(31, 32, 65, 0.75);
+  color: #1F2041;
 
   &_type {
     &_h1 {
@@ -15,9 +15,10 @@
     }
 
     &_h3 {
-      font-family: 'Montserrat', Arial, sans-serif;
+      font-family: 'Montserrat';
       font-size: 12px;
       text-transform: uppercase;
+      margin-bottom: 5px;
     }
   }
 

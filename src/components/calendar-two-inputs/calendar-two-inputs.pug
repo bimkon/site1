@@ -1,4 +1,5 @@
-mixin date-dropdown({ inputField = 'single', firstHeading, secondHeading, isInline=' ', type='text'  } = {})
+include ../../components/heading/heading.pug
+mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= '', isInline=' ', type='text'  } = {})
  
     //- - let darkThemeModifier = ''
     //- - let maskedThemeModifier = ''
@@ -7,7 +8,7 @@ mixin date-dropdown({ inputField = 'single', firstHeading, secondHeading, isInli
     case inputField
         when 'single'
             .datepicker__container
-                span.datepicker__title #{firstHeading}
+                +heading({ type: 'h3', text: `${firstHeading}`, }) 
                 i.datepicker__arrow.inline expand_more
                 input.datepicker-here(type=type
                         class=`${isInline}` 
@@ -22,7 +23,7 @@ mixin date-dropdown({ inputField = 'single', firstHeading, secondHeading, isInli
             .datepicker__container
                 .datepicker__item
                     .datepicker__header
-                        span.datepicker__title #{firstHeading}
+                        +heading({ type: 'h3', text: `${firstHeading}`, })
                     .datepicker__inputs
                         i.datepicker__arrow expand_more
                         input.datepicker-two-inputs.datepicker__start(type="text" 
@@ -35,7 +36,7 @@ mixin date-dropdown({ inputField = 'single', firstHeading, secondHeading, isInli
                             )
                 .datepicker__item
                     .datepicker__header
-                        span.datepicker__title #{secondHeading}
+                        +heading({ type: 'h3', text: `${secondHeading}`, })
                     .datepicker__inputs
                         i.datepicker__arrow expand_more
                         input.datepicker-two-inputs.datepicker__start(type="text" 

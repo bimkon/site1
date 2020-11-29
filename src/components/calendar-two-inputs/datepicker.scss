@@ -119,8 +119,11 @@
   //стилизация контейнера
   .datepicker__container {
     display: flex;
-    justify-content: space-between;
     width: 320px;
+    position: relative;
+    &:nth-child(2) {
+        width: 266px;
+    }
 
 
   }

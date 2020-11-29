@@ -30,18 +30,22 @@
     display: flex;
     width: 291px;
     flex-wrap:wrap;
-    margin-top: 20px;
+    &__content {
+        padding-left: 9px;
+    }
+    &__image {
+        margin-top: 5px;
+    }
+
 }
 .icon-text__row {
     display: flex;
+    padding-top: 10px;
 
-}
-.icon-text__icon {
-    margin-right: 15px;
 }
 .icon-text__underline {
     
-margin-top: 20px;
+margin-top: 13px;
 max-width: 280px;
 width: 100%;
 height: 1px;

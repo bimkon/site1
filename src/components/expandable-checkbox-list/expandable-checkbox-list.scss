@@ -3,8 +3,8 @@
   clear: both;
   list-style: outside none none;
   margin: 0;
-  padding-bottom: 10px;
   display: none;
+  padding: 0px;
 }
 .expandable-checkbox__arrow {
   width: 44px;
@@ -32,9 +32,12 @@ transform: rotate(-180deg);
 position: relative;
 width: 266px;
 }
-.checkbox-buttons__main {
-  margin-bottom: 18px;
+.checkbox-buttons__text {
+  padding-left: 30px;
 }
-.checkbox-buttons__colums {
-  padding-inline-start: initial;
-}
+// .checkbox-buttons__main {
+//   margin-bottom: 18px;
+// }
+// .checkbox-buttons__colums {
+//   padding-inline-start: initial;
+// }

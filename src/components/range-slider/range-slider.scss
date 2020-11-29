@@ -1,6 +1,9 @@
 
   .range-slider {
     max-width: 266px;
+    &__inner {
+      margin-top: -8px;
+    }
   
     &__header {
       display: flex;
@@ -16,12 +19,14 @@
     }
   
     &__price {
-      width: auto;
-      max-width: 50%;
-      text-align: end;
+      // display: flex;
+      // align-items: center;
+      max-width: 102px;
+      // text-align: end;
+      margin-bottom: 5px;
       border: none;
       pointer-events: none;
-      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      font-family: 'Montserrat';
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;
@@ -30,7 +35,7 @@
   
     &__label {
       margin: 0;
-      white-space: nowrap;
+      // white-space: nowrap;
     }
   
     span.irs.irs--flat {
@@ -46,9 +51,9 @@
       }
     
       .irs-handle {
-        width: 14Px;
-        height: 14Px;
-        margin-top: -1px;
+        width: 16Px;
+        height: 16Px;
+        margin-top: -2px;
         background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
         border: 2px solid #FFFFFF;
         border-radius: 50%;

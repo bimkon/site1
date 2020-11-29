@@ -65,27 +65,20 @@ block content
                         ],
                     })
                 .form-elements__wrapper
-                    +expandable({ value1: 'Завтрак',
+                    +expandable({ header: 'expandable checkbox list',
+                                value1: 'Завтрак',
                                 value2: 'Письменный стол',
                                 value3: 'Стул для кормления',
                                 value4: 'Кроватка',
                                 value5: 'Телевизор',
-                                value6: 'Шампунь', isChecked: 'checked'})  
-                .form-elements__wrapper
-                    +icon-text({icon:'insert_emoticon', title: 'Комфорт', describe: 'Шумопоглощающие стены', hasUnderline: 'Has'})
-                .form-elements__wrapper 
-                    +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален'})                                                                                                                
+                                value6: 'Шампунь', isChecked: 'checked'})                                                                                                            
             article.form-elements__check-buttons
-                .form-elements__wrapper
-                    .form-elements__heading
+                .form-elements__column-second
+                    .form-elements__checkbox-heading
                         +heading({ type: 'h3', text: 'checkbox buttons', })
                     .form-elements__checkbox-button
-                        +checkbox-button({ name: 'checkbox1', text: 'Можно курить'})  
-                    .form-elements__checkbox-button
-                        +checkbox-button({ name: 'checkbox2', text: 'Можно с питомцами'})
-                    .form-elements__checkbox-button
-                        +checkbox-button({ name: 'checkbox3', text: 'Можно пригласить гостей (до 10 человек)'})
-                .form-elements__wrapper
+                        +checkbox-button({ name: 'checkbox1', text1: 'Можно курить', text2: 'Можно с питомцами', text3: 'Можно пригласить гостей (до 10 человек)', isChecked: 'checked' })  
+                .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'radio buttons', })
                     .form-elements__radio-buttons
@@ -93,40 +86,31 @@ block content
                             +radio-button({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
                         .form-elements__radio-button
                             +radio-button({name: 'radio-button', value: 'woman', text: 'Женщина', })
-                .form-elements__wrapper
+                .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'toggle', })
                     .form-elements__toggle
                         +toggle-button({ name: 'toggle', text: 'Получать спецпредложения', isChecked: 'checked' })
                         +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
-                .form-elements__wrapper
+                .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'like button',  })
                     .form-elements__like-button
                         +like-button({likeNumber: '2' })
                         +like-button({likeNumber: '12', isChecked: 'checked' })
-                .form-elements__wrapper
+                .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'rate button',  })
                     .form-elements__rate-button
                         +rate-button({ name: 'rating', value: '4', isChecked4: 'checked'})
-                    .form-elements__rate-button
-                        +rate-button({ name: 'rating', value: '5', isChecked5: 'checked'})
-                .form-elements__wrapper
+                .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })   
                     .form-elements__rich-checkbox
-                        +checkbox-button({name: 'rich-checkbox', text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'})
-                        +checkbox-button({name: 'rich-checkbox', text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'})
-                .form-elements__wrapper 
-                    +comment({
-                        avatarSourcePath: 'avatar.png',
-                        likeNumber: '15',
-                        name: 'Мурад Сарафанов',
-                        date: '5 дней назад',
-                        text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+                        +checkbox-button({name: 'rich-checkbox', text1: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'})
+                        +checkbox-button({name: 'rich-checkbox', text1: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'})
             article.form-elements__buttons
-                .form-elements__wrapper
+                .form-elements__column-third
                     +range-slider({ 
                         headerText: 'range slider', 
                         type: 'double', 
@@ -136,7 +120,7 @@ block content
                         from: 5000, 
                         to: 10000, 
                         })
-                .form-elements__wrapper
+                .form-elements__column-third
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'buttons',  })
                     .form-elements__button
@@ -147,13 +131,28 @@ block content
                         +button({styleType: 'borderless', href: 'link.html', text: 'click me'})
                     .form-elements__button
                         +button({styleType: 'long', href: 'link.html', text: 'Перейти к оплате'})
-                .form-elements__wrapper
+                .form-elements__column-third
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'pagination',  })
                         .form-elements__pagination
                             +pagination({href:'link.html', number1: '1',number2: '2',number3: '3',number4: '...',number5: '5', isActive: '.active'})
-                .form-elements__wrapper
+                .form-elements__column-third
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'bullet list', })
                         .form-elements__bullet-list
-                            +bullet-list({value1: 'Нельзя с питомцами', value2: 'Без вечеринок и мероприятий', value3: 'Время прибытия - после 13:00, а выезд до 12:00'})
+                            +bullet-list({value1: 'Нельзя с питомцами', value2: 'Без вечеринок и мероприятий', value3: 'Время прибытия — после 13:00, а выезд до 12:00'})
+        .form-elements__bottom-container
+            .form-elements__bottom-wrapper
+                .form-elements__icon-block
+                    .form-elements__icon-item
+                        +icon-text({icon:'insert_emoticon', title: 'Комфорт', describe: 'Шумопоглощающие стены', hasUnderline: 'Has'})
+                    .form-elements__icon-item
+                        +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален'})    
+                .form-elements__comment-wrapper
+                    +comment({
+                        avatarSourcePath: 'avatar.png',
+                        likeNumber: '12',
+                        isChecked: 'checked',
+                        name: 'Мурад Сарафанов',
+                        date: '5 дней назад',
+                        text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})

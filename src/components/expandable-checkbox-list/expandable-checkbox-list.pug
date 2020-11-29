@@ -6,26 +6,32 @@ mixin expandable({ header, value1, value2, value3, value4, value5, value6, isChe
         ul.checkbox-buttons__columns
             .checkbox-buttons__row
                 .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')=value1
+                    label(class='checkbox-buttons__lable')
+                            span.checkbox-buttons__text=value1
                             input.checkbox-buttons__input(type="checkbox", name="checkbox")
                             span.checkmark
                 .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')=value2
+                    label(class='checkbox-buttons__lable')
+                            span.checkbox-buttons__text=value2
                             input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
                             span.checkmark
                 .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')=value3
+                    label(class='checkbox-buttons__lable')
+                            span.checkbox-buttons__text=value3
                             input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
                             span.checkmark
                 .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')=value4
+                    label(class='checkbox-buttons__lable')
+                            span.checkbox-buttons__text=value4
                             input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
                             span.checkmark
                 .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')=value5
+                    label(class='checkbox-buttons__lable')
+                            span.checkbox-buttons__text=value5
                             input.checkbox-buttons__input(type="checkbox", name="checkbox")
                             span.checkmark            
                 .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')=value6
+                    label(class='checkbox-buttons__lable')
+                            span.checkbox-buttons__text=value6
                             input.checkbox-buttons__input(type="checkbox", name="checkbox")
                             span.checkmark
