@@ -6,9 +6,12 @@
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px 30px 32px 30px;
+    &__wrapper {
+        padding: 40px 30px 32px 29px;
+
+    }
 }
-.sign-in__heading {
+.sign-in-form__heading {
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 24px;
@@ -17,21 +20,32 @@
     margin-bottom: 20px;
 
 }
-.sign-in__email {
-    margin-bottom: 20px;
+.sign-in-form__email {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 320px;
 }
-.sign-in__register {
+.sign-in-form__login {
+    max-width: 320px;
+    &-button {
+    margin-top: 20px;
+    }
+    &-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+
+    }
+}
+
+.sign-in-form__register {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.sign-in__login-text {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 18px;
-display: flex;
-align-items: center;
-color: #000000;
+    margin-top: 29px;
 }

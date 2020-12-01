@@ -4,15 +4,16 @@ include ../../components/text-field/text-field.pug
 mixin cards-sign-in({ action='/mock-address/change-me', name='registration', method='post',} = {})
 
     form.sign-in-form(action=action name=name method=method)
-        .sign-in__wrapper
-            .sign-in__header
+        .sign-in-form__wrapper
+            .sign-in-form__header
                 +heading({ type: 'h1', text: 'Войти', })
-            .sign-in__email
+            .sign-in-form__email
                 +text-field({ type: 'email', name: 'email', placeholder: 'Email', typeOfField: 'normal',})
-            .sign-in__login
+            .sign-in-form__login
                 +text-field({ type: 'password', name: 'password', placeholder: 'Пароль', typeOfField: 'normal',})
+            .sign-in-form__login-button
                 +button({styleType: 'long', href: 'link.html', text: 'Войти'})
-            .sign-in__register
-                p.sign-in__login-text Нет аккаунта на Toxin?
-            .sign-in__button
-                +button({styleType: 'empty', href: 'registration-page.html', text: 'Создать'})
+            .sign-in-form__register
+                .sign-in-form__login-text Нет аккаунта на Toxin?
+                .sign-in-form__button
+                    +button({styleType: 'empty', href: 'registration-page.html', text: 'Создать'})

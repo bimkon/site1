@@ -44,6 +44,7 @@
     &:hover {
         border: 2px solid rgba(188, 156, 255, 0.5);
     }
+    box-sizing: border-box;
 }
 //3rd button(borderless)
 .buttons__borderless {
@@ -58,6 +59,12 @@
 // long button
 .buttons__long {
     min-width: 320px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-right: 4px;
     @media (max-width: 380px) {   
         min-width: 270px;
       }
@@ -97,5 +104,6 @@
   }
 .buttons__item {
     position: relative;
+    box-sizing: border-box;
 
 }

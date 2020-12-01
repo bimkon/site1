@@ -1,11 +1,12 @@
 .reservation-form {
+  max-width: 380px;
   &__wrapper {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 30px 30px 30px;
+  padding: 42px 29px 29px 29px;
   max-height: 511px;
   }
   &__option-row {
@@ -16,11 +17,16 @@
     margin-bottom: 5px;
   }
   &__dropdown {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   &__option-row {
     display: flex;
     justify-content: space-between;
+  }
+  &__item {
+    &-short { 
+    margin-top: 3px;
+    }
   }
   &__price {
     font-family: 'Montserrat';
@@ -54,6 +60,7 @@
     font-size: 24px;
     line-height: 17px;
     color: #1F2041;
+    vertical-align: center;
   }
   &__symbol {
     font-family: 'Montserrat';
@@ -62,6 +69,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #1F2041;
+    
   }
   &__text {
     display: flex;
@@ -71,11 +79,20 @@
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
+    &-short {
+      line-height: 18px;
+    }
     &-row {
       margin-bottom: 10px;
+      &:nth-child(2) {
+        margin-bottom: 10px;
+      }
       &:last-child {
         margin-bottom: 30px;
       }
+    }
+    &-up {
+      align-self: flex-start;
     }
     &-icon {
       margin-left: 5px;
@@ -112,11 +129,16 @@
     font-size: 19px;
     line-height: 23px;
     color: #1F2041;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+    &-text-right {
+      position: relative;
+      left: 10px;
+    }
     &-dashed-border {
+      width: 100%;
       position: relative;
       bottom: 4px;
-      width: 180px;
+      max-width: 182px;
       border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
     }
   }

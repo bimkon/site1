@@ -18,11 +18,12 @@ $root-font-size: 14px;
     width: 44px;
     height: 44px;
     right: 0;
+    top: 1px;
     justify-content: center;
     align-items: center;
     pointer-events: none;
     z-index: 9;
-    color: rgba(31, 32, 65, 0.85);
+    color: rgba(31, 32, 65, 0.5);
   }
 
   &__option {

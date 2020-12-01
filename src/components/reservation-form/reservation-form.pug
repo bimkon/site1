@@ -1,11 +1,11 @@
 include ../../components/calendar-two-inputs/calendar-two-inputs.pug
 
-mixin reservation-form( { action='/mock-address/change-me', name='registration-form', method='post', number= '888', isLux='Люкс', costInDay='9990' } = {} )
+mixin reservation-form( { action='/mock-address/change-me', name='registration-form', method='post', number= '888', isLux='Люкс', costInDay='9 990' } = {} )
   form.reservation-form(action=action name=name method=method)
     .reservation-form__wrapper
       .reservation-form__option-row
         .reservation-form__options
-          span.reservation-form__symbol №
+          span.reservation-form__symbol № 
           span.reservation-form__number=number
           span.reservation-form__type-of-room=isLux
         .reservation-form__day-cost
@@ -36,14 +36,14 @@ mixin reservation-form( { action='/mock-address/change-me', name='registration-f
             span.reservation-form__text-icon i
           span.reservation-form__text 0₽
         .reservation-form__text-row
-          span.reservation-form__item
-            span.reservation-form__text Сбор за дополнительные услуги
+          span.reservation-form__item.reservation-form__item-short
+            span.reservation-form__text.reservation-form__text-short Сбор за дополнительные услуги
             span.reservation-form__text-icon i
-          span.reservation-form__text 300₽
+          span.reservation-form__text.reservation-form__text-up 300₽
       .reservation-form__summary
-        .reservation-form__summary-text Итого
+        .reservation-form__summary-text-left Итого
         .reservation-form__summary-dashed-border
-        .reservation-form__summary-text 38 081₽
+        .reservation-form__summary-text-right 38 081₽
       .reservation-form__button
         +button({styleType: 'long', href: 'link.html', text: 'Забронировать'})
       
