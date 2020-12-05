@@ -26,7 +26,6 @@
     border-radius: 22px;
     color:white;
     box-sizing: border-box;
-
     }
  //first button modif
 .buttons__hover {
@@ -106,4 +105,19 @@
     position: relative;
     box-sizing: border-box;
 
+}
+.buttons__white_short {
+    display: flex;
+    width: 87px;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons__long_short {
+    display: flex;
+    width: 196px;
+    height: 34px;
+    min-width: unset;
+    align-items: center;
+    justify-content: center;
 }

@@ -9,7 +9,7 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
         when 'single'
             .datepicker__container
                 +heading({ type: 'h3', text: `${firstHeading}`, }) 
-                i.datepicker__arrow.inline expand_more
+                //- i.datepicker__arrow.inline expand_more
                 input.datepicker-here(type=type
                         class=`${isInline}` 
                         data-multiple-dates="2"

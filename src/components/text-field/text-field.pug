@@ -1,11 +1,11 @@
-mixin text-field({ type = 'text', name, placeholder, typeOfField,} = {})
+mixin text-field({ type = 'text', name, placeholder, typeOfField, isShort=' '} = {})
 
     - let maskedThemeModifier = ''
     
     case typeOfField
         when 'Subscribe'
-            form.subscription__form(action="", method="get")
-                input.subscription__input(type="text" name="email" placeholder="Email")
+            form.subscription__form(action="", method="get", class=`subscription__form_${isShort}`)
+                input(type="text" name="email" placeholder="Email" class='subscription__input')
                 button.subscribtion__button(type='submit') arrow_forward
     case typeOfField
         when 'masked'

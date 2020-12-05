@@ -18,6 +18,13 @@
     text-align: center;
     color: #1F2041;
 }
+.datepicker--nav {
+    border-bottom: unset;
+    max-width: 286px;
+    margin: 0 auto;
+    padding: 0px;
+}
+    
 .datepicker--day-name {
     font-family: 'Montserrat';
     font-style: normal;
@@ -29,6 +36,18 @@
     text-align: center;
     color: #BC9CFF;
     text-transform: capitalize;
+    &:nth-child(-n+6) {
+        // margin-right: 22px;
+    }
+   
+    
+}
+.datepicker--days-names {
+    display: flex;
+    width: 280px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 13px;
 }
 .datepicker--cell-day {
     font-family: 'Montserrat';
@@ -116,6 +135,22 @@
     border-radius: 0 50% 50% 0;
 
   }
+  .datepicker {
+      width: unset;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
+    padding: 0px;
+    &-inline {
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+  }
+.datepicker {
+    padding: 15px 3px 20px 3px;
+  }
   //стилизация контейнера
   .datepicker__container {
     // display: flex;
@@ -168,4 +203,10 @@
 .datepicker__inputs {
     position: relative;
     margin-right: 20px;
+}
+.datepicker--cell {
+    height: 40px;
+}
+.datepicker--button {
+    color: #BC9CFF;
 }

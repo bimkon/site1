@@ -1,3 +1,4 @@
+include ../../components/buttons/buttons.pug
 
 mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenuitem2, submenuitem3, isLogged})
 
@@ -9,31 +10,37 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
           .bar__logo-toxin
             +logo-toxin()
           .bar__right-column
-            nav.bar__navigation
-              ul.topmenu
-                li.navig
-                  a.navig__link.active(href='link.html')= first
-                li.navig
-                  a.navig__link(href='link.html')= second
-                li.navig.fix
-                  a.navig__link.fa(href='link.html')= third
-                  ul.submenu
-                    li.submenu__item1
-                      a.submenu__link1(href="link.html")= submenuitem1
-                    li.submenu__item2
-                      a.submenu__link1(href="link.html")= submenuitem2
-                    li.submenu__item3
-                      a.submenu__link1(href="link.html")= submenuitem3
-                  img(src="expand_more.jpg" alt="стрелка - указатель")
-                li.navig
-                  a.navig__link.px(href='link.html')= fourth
-                li.navig
-                  a.navig__link(href='link.html')= fifth
-                li.navig
-                  a.navig__link(href='link.html')= sixth  
+              nav.bar__navigation
+                ul.topmenu
+                  li.navig
+                    a.navig__link.active(href='link.html')= first
+                  li.navig
+                    a.navig__link(href='link.html')= second
+                    ul.submenu
+                      li.submenu__item1
+                        a.submenu__link1(href="link.html")= submenuitem1
+                      li.submenu__item2
+                        a.submenu__link1(href="link.html")= submenuitem2
+                      li.submenu__item3
+                        a.submenu__link1(href="link.html")= submenuitem3
+                    img.navig__image(src="expand_more.jpg" alt="стрелка - указатель")
+                  li.navig
+                    a.navig__link(href='link.html')= third
+                  li.navig
+                    a.navig__link.px(href='link.html')= fourth
+                  li.navig
+                    a.navig__link(href='link.html')= fifth
+                    ul.submenu
+                      li.submenu__item1
+                        a.submenu__link1(href="link.html")= submenuitem1
+                      li.submenu__item2
+                        a.submenu__link1(href="link.html")= submenuitem2
+                      li.submenu__item3
+                        a.submenu__link1(href="link.html")= submenuitem3
+                    img.navig__image(src="expand_more.jpg" alt="стрелка - указатель")
               .user
-                img.navig__arrow(src="rectangle.png", alt="вертикальная линия")
-                p='Элий Цезарь'
+                img.user__arrow(src="rectangle.png", alt="вертикальная линия")
+                .user-text='Юлий Цезарь'
    
     default
         .bar
@@ -47,8 +54,6 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                     a.navig__link.active(href='link.html')= first
                   li.navig
                     a.navig__link(href='link.html')= second
-                  li.navig.fix
-                    a.navig__link.fa(href='link.html')= third
                     ul.submenu
                       li.submenu__item1
                         a.submenu__link1(href="link.html")= submenuitem1
@@ -56,20 +61,26 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                         a.submenu__link1(href="link.html")= submenuitem2
                       li.submenu__item3
                         a.submenu__link1(href="link.html")= submenuitem3
-                    img(src="expand_more.jpg" alt="стрелка - указатель")
+                    img.navig__image(src="expand_more.jpg" alt="стрелка - указатель")
+                  li.navig
+                    a.navig__link(href='link.html')= third
                   li.navig
                     a.navig__link.px(href='link.html')= fourth
                   li.navig
                     a.navig__link(href='link.html')= fifth
-                  li.navig
-                    a.navig__link(href='link.html')= sixth  
+                    ul.submenu
+                      li.submenu__item1
+                        a.submenu__link1(href="link.html")= submenuitem1
+                      li.submenu__item2
+                        a.submenu__link1(href="link.html")= submenuitem2
+                      li.submenu__item3
+                        a.submenu__link1(href="link.html")= submenuitem3
+                    img.navig__image(src="expand_more.jpg" alt="стрелка - указатель")
                 .bar__buttons
-                  .bar__entry
-                    form
-                      button.bar__login(name="login" value="login")
-                        span Войти 
-                      button.bar__register(name="register" value="register")
-                        span Зарегистрироваться
+                  .bar__login-button
+                    +button({styleType: 'empty', href: 'link.html', text: 'Войти', isShort: 'short'})
+                  .bar__password-button
+                    +button({styleType: 'long', href: 'link.html', text: 'Зарегистрироваться', isShort: 'short'})
 
 
 
