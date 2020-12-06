@@ -4,17 +4,17 @@ mixin slick-slider({ image1, image2, image3, image4, number, isLux, cost, votes,
     .slick__slider(class=`${arrow}`)
         .slick__content
             .slider__item
-                img(src=(`${image1}`), alt="комната")
+                img.slider__image(src=(`${image1}`), alt="комната")
             .slider__item
-                img(src=(`${image2}`), alt="комната")
+                img.slider__image(src=(`${image2}`), alt="комната")
             .slider__item
-                img(src=(`${image3}`), alt="комната")
+                img.slider__image(src=(`${image3}`), alt="комната")
             .slider__item
-                img(src=(`${image4}`), alt="комната")
+                img.slider__image(src=(`${image4}`), alt="комната")
         .slick__describtion
             .slick__row
                 .slick__paragraph
-                    span.slick__no №
+                    span.slick__symbol  № 
                     span.slick__number=number
                     span.slick__type-of-room=isLux
                 .slick__paragraph
@@ -25,8 +25,8 @@ mixin slick-slider({ image1, image2, image3, image4, number, isLux, cost, votes,
                 .slick__underline
                     img(src=("line.svg"), alt="line")
             .slick__row
-                .slick__paragraph
+                .slick__star-button
                     +rate-button({ name: 'rating', value: `${rating}`, isChecked5: 'checked'})
-                .slick__paragraph
+                .slick__reviews-block
                     span.slick__reviews-number=votes
                     span.slick__reviews   Отзывов

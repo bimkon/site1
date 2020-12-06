@@ -90,8 +90,10 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'toggle', })
                     .form-elements__toggle
-                        +toggle-button({ name: 'toggle', text: 'Получать спецпредложения', isChecked: 'checked' })
-                        +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
+                        .form-elements__toggle-item
+                            +toggle-button({ name: 'toggle', text: 'Получать спецпредложения', isChecked: 'checked' })
+                        .form-elements__toggle-item
+                            +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'like button',  })
@@ -130,7 +132,7 @@ block content
                     .form-elements__button
                         +button({styleType: 'borderless', href: 'link.html', text: 'click me'})
                     .form-elements__button
-                        +button({styleType: 'long', href: 'link.html', text: 'Перейти к оплате'})
+                        +button({styleType: 'long-arrow', href: 'link.html', text: 'Перейти к оплате'})
                 .form-elements__column-third
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'pagination',  })

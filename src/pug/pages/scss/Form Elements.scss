@@ -131,4 +131,12 @@
     padding-top: 27px;
     padding-left: 155px;
   }
+  &__toggle-item {
+    &:first-child {
+    margin-top: 14px;
+    }
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
 }

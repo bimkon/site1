@@ -36,9 +36,6 @@
     text-align: center;
     color: #BC9CFF;
     text-transform: capitalize;
-    &:nth-child(-n+6) {
-        // margin-right: 22px;
-    }
    
     
 }
@@ -151,13 +148,7 @@
 .datepicker {
     padding: 15px 3px 20px 3px;
   }
-  //стилизация контейнера
-  .datepicker__container {
-    // display: flex;
-    // flex-wrap: wrap;
-    // width: 266px;
-    // position: relative;
-  }
+
 .datepicker-here {
     max-width: 266px;
     height: 44px;
