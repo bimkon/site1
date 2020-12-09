@@ -3,7 +3,7 @@
   &__room {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
   }
   &__preview {
     background: url('../../../img/room-detail1.svg') center/cover no-repeat;
@@ -23,8 +23,12 @@
   }
   &__chart {
     display: flex;
-    background: url('../../../img/pie.svg') center/cover no-repeat;
+  }
+  &__chart-icon {
+    display: flex;
+    background: url('../../../img/pie.svg') center/120px 121px no-repeat;
     min-height: 120px;
+    min-width: 121px;
     max-width: 121px;
   }
   &__content {
@@ -34,6 +38,11 @@
     padding-right: 10px;
     max-width: 1180px;
     justify-content: space-between;
+  }
+  &__icon-text {
+    &:nth-child(1) {
+      margin-bottom: 11px;
+    }
   }
   &__first-column {
     display: flex;
@@ -50,7 +59,7 @@
     justify-content: space-between;
     max-width: 672px;
     &-header {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
   &__rules {
@@ -97,5 +106,8 @@
   }
   &__rule-list {
     max-width: 250px;
+  }
+  &__list {
+    margin-left: 30px;
   }
 }

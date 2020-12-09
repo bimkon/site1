@@ -1,6 +1,6 @@
 .heading {
   margin: 0;
-  font-family: 'Quicksand', 'Open Sans', 'Montserrat', Arial, sans-serif;
+  // font-family: 'Quicksand', 'Open Sans', 'Montserrat', Arial, sans-serif;
   font-weight: bold;
   color: #1F2041;
 
@@ -12,7 +12,9 @@
     }
 
     &_h2 {
+      font-family:'Montserrat';
       font-size: 19px;
+      line-height: 23px;
     }
 
     &_h3 {

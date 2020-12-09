@@ -31,16 +31,24 @@ block content
             .room-detail__info-header
               +heading({ type: 'h2', text: 'Сведения о номере', })
             .room-detail__icon-text
-            +icon-text({icon:'insert_emoticon', title: 'Комфорт', describe: 'Шумопоглощающие стены', hasUnderline: 'Has'})
+              +icon-text({icon:'insert_emoticon', title: 'Комфорт', describe: 'Шумопоглощающие стены', hasUnderline: 'Has'})
             .room-detail__icon-text
-            +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален', hasUnderline: 'Has'})
+              +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален', hasUnderline: 'Has'})
             .room-detail__icon-text
-            +icon-text({icon:'whatshot', title: 'Уют', describe: 'Номер оснащён камином', })
+              +icon-text({icon:'whatshot', title: 'Уют', describe: 'Номер оснащён камином', })
           .room-detail__votes
             .room-detail__info-header
               +heading({ type: 'h2', text: 'Впечатления от номера', })
             .room-detail__chart
-            .room-detail__list
+              .room-detail__chart-icon
+              .room-detail__list
+                +bullet-list({values: [
+                  { text: 'Великолепно', circleColor: 'gold', isShort: 'short', },
+                  { text: 'Хорошо', circleColor: 'green', isShort: 'short', },
+                  { text: 'Удовлетворительно', circleColor: 'pink', isShort: 'short', },
+                  { text: 'Разочарован', circleColor: 'black', isShort: 'short', },
+                ],
+              })
         .room-detail__reviews
           .room-detail__reviews-header
             +heading({ type: 'h2', text: 'Отзывы посетителей номера',  })
@@ -65,7 +73,12 @@ block content
             .room-detail__rule-list-header
               +heading({ type: 'h2', text: 'Правила', })
             .room-detail__bullet-list
-              +bullet-list({value1: 'Нельзя с питомцами', value2: 'Без вечеринок и мероприятий', value3: 'Время прибытия - после 13:00, а выезд до 12:00'})
+              +bullet-list({values: [
+                { text: 'Нельзя с питомцами', },
+                { text: 'Без вечеринок и мероприятий', },
+                { text: 'Время прибытия — после 13:00, а выезд до 12:00', },
+              ],
+            })
           .room-detail__cancellation
             .room-detail__cancellation-header
               +heading({ type: 'h2', text: 'Отмена', })
