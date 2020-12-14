@@ -135,3 +135,35 @@
     border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   }
 }
+@media (max-width: 1110px) {
+  .room-detail__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .room-detail__first-column {
+    min-width: unset;
+  }
+  .room-detail__item-one {
+    width: calc(100vw - 50%);
+    height: calc(100vw - 50%);
+  }
+  .room-detail__item-two {
+    width: calc(100vw - 50%);
+    height: calc(100vw - 50%);
+  }
+  .room-detail__preview {
+    width: calc(100vw - 30%);
+    height: calc(100vw - 50%);
+  }
+}
+@media (max-width: 625px) {
+  .room-detail__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .room-detail__rules {
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px;
+  }
+}

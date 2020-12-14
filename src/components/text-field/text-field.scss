@@ -60,9 +60,9 @@
 }
 .subscription__form {
   position: relative;
-  width: 266px;
+  max-width: 266px;
   &_short {
-    width: 260px;
+    max-width: 260px;
   }
 
 }

@@ -9,7 +9,7 @@ $root-font-size: 14px;
 .dropdown {
   position: relative;
   display: inline-block;
-  width: 100%;
+  min-width: 266px;
   // max-width: 266px;
 
   &__arrow {

@@ -26,14 +26,26 @@
     max-width: 1180px;
     width: 100%;
     max-height: 70px;
-
-    @media (max-width: 1000px) {
-      flex-direction: column;
-      padding-bottom: 20px;
-    }
-
   }
-
+  @media (max-width: 1000px) {
+    .between {
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-height: unset;
+    }
+    .bar__logo-toxin {
+      align-self: center;
+    }
+  }
+  @media (max-width: 888px) {
+    .topmenu {
+    flex-direction: column;
+    min-width: 320px;
+    }
+    .bar__navigation {
+      flex-direction: column;
+    }
+  }
   .bar__navigation  {
     display: flex;
     align-items:center;
@@ -63,21 +75,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 888px) {
-      flex-direction: column;
-      min-width: 320px;
-    }
   }
   //submenu
   ul {
     list-style: none;
     margin: 0;
   }
+
   .bar__navigation {
     justify-content: space-between;
-    @media (max-width: 888px) {
-      flex-direction: column;
-    }
   }
   li {
     position: relative;

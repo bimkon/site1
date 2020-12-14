@@ -92,3 +92,35 @@
 .search-room__rich-button {
   margin-top: -1px;
 }
+@media (max-width: 1130px) {
+  .search-room {
+    flex-direction: column;
+    &__column {
+      align-self: center;
+    }
+    &__filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__item {
+      margin: 10px 10px;
+    }
+  }
+}
+@media (max-width: 841px) {
+  .search-room {
+    &__filter {
+      justify-content: center;
+    }
+    &__rooms {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__row {
+      min-width: unset;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
