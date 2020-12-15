@@ -142,6 +142,8 @@
   }
   .room-detail__first-column {
     min-width: unset;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .room-detail__item-one {
     width: calc(100vw - 50%);
@@ -152,8 +154,7 @@
     height: calc(100vw - 50%);
   }
   .room-detail__preview {
-    width: calc(100vw - 30%);
-    height: calc(100vw - 50%);
+    width: calc(100vw - 50%);
   }
 }
 @media (max-width: 625px) {

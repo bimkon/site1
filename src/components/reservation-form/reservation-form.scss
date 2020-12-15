@@ -143,3 +143,13 @@
     }
   }
 }
+@media (max-width: 430px) {
+  .reservation-form__wrapper {
+    padding: 10px;
+    max-height: unset;
+  }
+  .reservation-form__summary-dashed-border {
+      max-width: 130px;
+  } 
+}
+
