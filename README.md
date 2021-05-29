@@ -1,4 +1,4 @@
-# FSD project step2
+# Project #2
 Установка проекта - npm i
 
 Запуск сервера - npm run start
