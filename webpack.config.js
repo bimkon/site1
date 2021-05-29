@@ -46,7 +46,6 @@ module.exports = {
   mode: "development",
   entry: {
     main: "./src/index.js",
-    analytics: "./src/analytics.js"
   },
   resolve: {
     modules: [
