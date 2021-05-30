@@ -1,15 +1,10 @@
 include ../../components/heading/heading.pug
 mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= '', isInline=' ', type='text'  } = {})
- 
-    //- - let darkThemeModifier = ''
-    //- - let maskedThemeModifier = ''
-    //- - let isClickableModifier = ''
 
     case inputField
         when 'single'
             .datepicker__container
                 +heading({ type: 'h3', text: `${firstHeading}`, }) 
-                i.datepicker__arrow.inline expand_more
                 input.datepicker-here(type=type
                         class=`${isInline}` 
                         data-multiple-dates="2"
@@ -47,16 +42,3 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
                                 placeholder="ДД.ММ.ГГГГ"
                                 readonly
                             )
-    
-  
- 
- 
-
-//- <body>
-
-//-   <div class="one">
-//-     <label for="start_one">С:</label>
-//-     <input type="text" id="start_one" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here"/>
-//-     <label for="start_one">До:</label>
-//-     <input type='text' id='end_one'>
-//-   </div>

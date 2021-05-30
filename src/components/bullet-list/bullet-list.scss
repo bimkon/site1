@@ -1,55 +1,66 @@
+
 .bullet-list {
-    // margin-top: 28px;
-}
-.bullet-list__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.bullet-list__items {
-    padding-left: 20px;
+  &__items {
+    color: rgba(31, 32, 65, 0.75);
     font-family: 'Montserrat';
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    list-style-type: none;
     margin-bottom: 10px;
     max-width: 265px;
-    list-style-type: none;
-    
+    padding-left: 20px;
+        
     &_short {
-        margin: 0px;
-        padding-left: 15px;
+      margin: 0;
+      padding-left: 15px;
     }
-}
-.bullet-list__title {
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    color: #1f2041;
     font-family: 'Montserrat';
+    font-size: 12px;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px; 
-    text-transform: uppercase;
-    color: #1F2041;
+    line-height: 15px;
     margin-bottom: 16px;
-}
-.bullet-list__color {
-    position: absolute;
-    top: 7px;
-    left: 0px;
-    width: 10px;
-    height: 10px;
+    text-transform: uppercase;
+  }
+
+  &__color {
     background: rgba(31, 32, 65, 0.25);
     border-radius: 50%;
+    height: 10px;
+    left: 0;
     line-height: 24px;
+    position: absolute;
+    top: 7px;
+    width: 10px;
+
     &_gold {
-        background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+      background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
     }
+
     &_green {
-        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     }
+
     &_pink {
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     }
+
     &_black {
-        background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+      background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
     }
+  }
+}
+
+.form-elements__bullet-list {
+  margin-top: 14px;
 }

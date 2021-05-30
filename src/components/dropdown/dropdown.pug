@@ -1,6 +1,5 @@
 include ../dropdown-option/dropdown-option.pug
 include ../option-button/option-button.pug
-include ../material-icons/material-icons.pug
 
 mixin dropdown({ text, options = [], hasButtons = false, width, } = {})
   - let widthModifier
@@ -9,11 +8,8 @@ mixin dropdown({ text, options = [], hasButtons = false, width, } = {})
       - widthModifier = 'dropdown_width_short'
 
   section.dropdown.js-dropdown(class=widthModifier)
-    .dropdown__arrow
-      +material-icons({
-        type: 'keyboard_arrow_down', 
-        color: 'dark shade',
-      })
+    .dropdown__section
+      i.dropdown__arrow expand_more
     .dropdown__select.js-dropdown__select
       span.dropdown__select-text=text
     .dropdown__options.js-dropdown__options

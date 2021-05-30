@@ -1,29 +1,24 @@
-$darkest-shade : #1F2041;
-$dark-shade : rgba(31, 32, 65, 0.75);
-$shade : rgba(31, 32, 65, 0.50);
-$light-shade : rgba(31, 32, 65, 0.25);
-$lightest-shade : rgba(31, 32, 65, 0.05);
-$purple : #BC9CFF ;
-$green : #6FCF97;
-$root-font-size: 14px;
 .dropdown {
-  position: relative;
   display: inline-block;
-  min-width: 266px;
-  // max-width: 266px;
+  position: relative;
+  width: 100%;
 
   &__arrow {
-    display: flex;
-    position: absolute;
-    width: 44px;
+    box-sizing: border-box;
+    color: rgba(31, 32, 65, 0.75);
+    display: block;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
     height: 44px;
-    right: 0;
-    top: 1px;
-    justify-content: center;
-    align-items: center;
+    line-height: 44px;
     pointer-events: none;
-    z-index: 9;
-    color: rgba(31, 32, 65, 0.5);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 1px;
+    width: 44px;
   }
 
   &__option {
@@ -33,25 +28,25 @@ $root-font-size: 14px;
   &__option-button {
     display: flex;
     justify-content: space-between;
-    padding-top: 19px;
     padding-bottom: 13px;
+    padding-top: 19px;
   }
 
   &__options {
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+    box-sizing: border-box;
     display: none;
     flex-direction: column;
     height: 0;
-    width: 100%;
     max-width: 320px;
-    position: absolute;
-    padding-right: 7px;
     padding-left: 15px;
-    background: #FFFFFF;
-    border: 1px solid $shade;
-    border-top: none;
-    box-sizing: border-box;
-    box-shadow: 0px 10px 20px $lightest-shade;
-    border-radius: 0 0 4px 4px;
+    padding-right: 7px;
+    position: absolute;
+    width: 100%;
     z-index: 10;
 
     &_active {
@@ -61,23 +56,23 @@ $root-font-size: 14px;
   }
 
   &__select {
-    position: relative;
-    height: max-content;
-    padding-left: 14px;
-    border: 1px solid $light-shade;
+    border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
     box-sizing: border-box;
+    color: rgba(31, 32, 65, 0.75);
+    cursor: pointer;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    height: max-content;
     line-height: 42px;
-    color: $dark-shade;
-    cursor: pointer;
-    user-select: none;   
+    padding-left: 14px;
+    position: relative;
+    user-select: none;
 
-   &_active {
-      border: 1px solid $shade;
+    &_active {
+      border: 1px solid rgba(31, 32, 65, 0.5);
       border-radius: 4px 4px 0 0;
       outline: none;
     }
@@ -88,20 +83,19 @@ $root-font-size: 14px;
   }
 
   &_width_short & { 
-    
     &__options {
-      min-width: 266px;
       height: auto;
+      min-width: 266px;
       padding-bottom: 8px;
     }
 
     &__select {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      min-width: 266px;
-      padding-right: 90px;
       margin: 0;
+      min-width: 266px;
+      overflow: hidden;
+      padding-right: 90px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 }

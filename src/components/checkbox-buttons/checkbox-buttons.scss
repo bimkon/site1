@@ -1,96 +1,166 @@
-.checkbox-buttons__lable {
-  // padding-top: 2px;
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-    line-height: 18px;
+.checkbox-buttons {
+  &__lable {
     color: rgba(31, 32, 65, 0.5);
-    font-weight: normal;
+    cursor: pointer;
+    display: flex;
     font-family: 'Montserrat';
-    text-transform: none;
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    width: 243px;
+    font-weight: normal;
+    line-height: 18px;
     margin-bottom: 12px;
-    // &:nth-child(3) {
-    //   margin-bottom: 10px;
-    // }
+    position: relative;
+    text-transform: none;
+    user-select: none;
+    width: 243px;
+  }
 
-    }
-// .checkbox-buttons__main {
-//   font-family: 'Montserrat';
-//   font-weight: bold;
-//   color: #1F2041;
-//   text-transform: uppercase;
-// } 
+  &__input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
 
+  &____rich-text {
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+  }
 
-   //hide old
-.checkbox-buttons__input {
-  width: 0;
-  height: 0;
-  opacity: 0;
+  &__text-simple {
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    padding-left: 24px;
+  }
 }
-// Create a custom checkbox
+
+
 .checkmark {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 20px;
-  height: 20px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  }
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
   
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: '';
-    display: none;
-    position: absolute;
-    top: 5px;
-    left: 7px;
-    width: 0.375em;
-    height: 0.5em;
-    border-width: 0 2px 2px 0;
-    border-style: solid;
-    border-image: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
-    border-image-slice: 1;
-    transform: rotate(45deg);
-  }
-/* Show the checkmark when checked */
-.checkbox-buttons__input:checked ~ .checkmark:after {
-    display: block;
-  }
-//checkbox when checked
-.checkbox-buttons__input:checked ~ .checkmark {
-    border-color: #BC9CFF;;
-}
-.checkbox-buttons____rich-text {
-  display: flex;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
 
+.checkmark::after {
+  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: none;
+  height: 0.5em;
+  left: 7px;
+  position: absolute;
+  top: 5px;
+  transform: rotate(45deg);
+  width: 0.375em;
 }
-.checkbox-buttons__text-simple {
-  display: flex;
-  // margin-top: 5px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  padding-left: 24px;
+
+.checkbox-buttons__input:checked ~ .checkmark::after {
+  display: block;
 }
+
+.checkbox-buttons__input:checked ~ .checkmark {
+  border-color: #bc9cff;;
+}
+
 .checkbox-buttons__rich-text {
   padding-left: 30px;
 }
-.checkbox-buttons__about {
+.checkbox-buttons {
+  &__input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
 
+  &__row {
+    margin-top: 18px;
+    max-width: 266px;
+    width: 266px;
+
+    &:nth-child(2) {
+      margin-top: 11px;
+    }
+
+    &:nth-child(1) {
+      width: 233px;
+    }
+  }
+
+  &__about {
+    color: rgba(31, 32, 65, 0.5);
+    display: flex;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
+    margin-bottom: 5px;
+    max-width: 256px;
+    padding-left: 30px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+  }
+}
+
+.checkmark {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.25em;
+  height: 1.4em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1.4em;
+}
+  
+
+.checkmark::after {
+  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-image-slice: 1;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: none;
+  height: 0.5em;
+  left: 7px;
+  position: absolute;
+  top: 4px;
+  transform: rotate(45deg);
+  width: 0.375em;
+}
+
+.checkbox-buttons__input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkbox-buttons__input:checked ~ .checkmark {
+  border-color: #bc9cff;;
+}
+
+.checkbox-buttons__lable.checkbox-buttons__rich {
+  color: rgba(31, 32, 65, 0.75);
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 5px;
 }

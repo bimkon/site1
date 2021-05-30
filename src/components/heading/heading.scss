@@ -1,18 +1,18 @@
 .heading {
-  margin: 0;
+  color: #1f2041;
   // font-family: 'Quicksand', 'Open Sans', 'Montserrat', Arial, sans-serif;
   font-weight: bold;
-  color: #1F2041;
+  margin: 0;
 
   &_type {
     &_h1 {
-      font-family:'Montserrat';
+      font-family: 'Montserrat';
       font-size: 24px;
       line-height: 29px;
     }
 
     &_h2 {
-      font-family:'Montserrat';
+      font-family: 'Montserrat';
       font-size: 19px;
       line-height: 23px;
     }
@@ -20,24 +20,22 @@
     &_h3 {
       font-family: 'Montserrat';
       font-size: 12px;
-      text-transform: uppercase;
-      margin-bottom: 5px;
       font-style: normal;
       font-weight: bold;
       line-height: 14,63px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
     }
   }
 
   &_color {
-
     &_light-shade {
       color: rgba(31, 32, 65, 0.25);
     }
   }
 
-  &_weight{
-
-    &_normal{
+  &_weight {
+    &_normal {
       font-weight: normal;
     }
   }

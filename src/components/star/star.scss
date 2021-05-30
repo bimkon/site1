@@ -28,6 +28,7 @@ $checked-star: 'star';
         content: $unchecked-star;
         text-transform: none;
         background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+          /* stylelint-disable property-no-vendor-prefix */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Material Icons';
@@ -43,6 +44,7 @@ $checked-star: 'star';
         font-family: 'Material Icons';
       content: $checked-star;
       background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+        /* stylelint-disable property-no-vendor-prefix */
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
       display: initial;
@@ -59,6 +61,7 @@ $checked-star: 'star';
   &:hover > input + label:before {
     content: $unchecked-star;
     background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+      /* stylelint-disable property-no-vendor-prefix */
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
     text-shadow: none;
@@ -67,6 +70,7 @@ $checked-star: 'star';
   &:hover > input + label:hover:before {
     content: $checked-star;
     background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+      /* stylelint-disable property-no-vendor-prefix */
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
   }

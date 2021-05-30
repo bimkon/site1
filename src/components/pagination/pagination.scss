@@ -1,51 +1,56 @@
 .pagination {
+  display: flex;
+  margin: 0;
+  max-width: 240px;
+  padding: 0;
+  text-align: center;
+
+  &__text {
+    color: rgba(31, 32, 65, 0.75);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    margin-top: 8px;
+    padding-left: 6px;
+  }
+
+  a.active {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 22px;
+    color: #fff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+  }
+
+  & a:hover:not(.active) {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    border-radius: 22px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__items {
+    color: rgba(31, 32, 65, 0.5);
+    display: inline-block;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    height: 40px;
+    line-height: 42px;
     text-align: center;
-    padding: 0;
-    margin: 0;
-    max-width: 240px;
-    display: flex;
-    &__text {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: rgba(31, 32, 65, 0.75);
-        margin-top: 8px;
-        padding-left: 6px;
-    }
-    a.active {
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        text-decoration: none;
-        color: #fff;
-        border-radius: 22px;
-        font-family: 'Montserrat';
-    }
-    & a:hover:not(.active) {
-        text-decoration: none;
-        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-        border-radius: 22px;
-        color: #fff;
-    }
-    &__items {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        color: rgba(31, 32, 65, 0.5);;
-        line-height: 42px;
-        user-select: none;
-        text-decoration: none;
-        font-family: 'Montserrat';
-    }
+    text-decoration: none;
+    user-select: none;
+    width: 40px;
+  }
 }
+
 .arrow {
-width: 40px;
-height: 40px;
-font-family: 'Material Icons';
-font-size: 24px;
-line-height: 40px;
+  font-family: 'Material Icons';
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
 
 }

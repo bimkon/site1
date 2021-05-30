@@ -6,7 +6,7 @@ mixin text-field({ type = 'text', name, placeholder, typeOfField, isShort=' '} =
         when 'Subscribe'
             form.subscription__form(action="", method="get", class=`subscription__form_${isShort}`)
                 input(type="text" name="email" placeholder="Email" class='subscription__input')
-                button.subscribtion__button(type='submit') arrow_forward
+                button.subscription__button(type='submit') arrow_forward
     case typeOfField
         when 'masked'
             - maskedThemeModifier = ' js-text-field__masked'

@@ -20,7 +20,3 @@ $('.datepicker-two-inputs').datepicker({
         })
     }
  
-// кнопка уже добавляется другими календарями
-// var okButton = '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>'; 
-// $('.datepicker--button[data-action="clear"]').each(function( index ) { $(okButton).insertAfter($(this)); });
-

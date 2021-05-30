@@ -1,17 +1,19 @@
 .cards {
   display: flex;
+
   &__column {
 
   }
 
   &__body {
-  width: 1160px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1160px;
   
   }
 }
+
 .cards__row {
   margin-bottom: 40px;
 }

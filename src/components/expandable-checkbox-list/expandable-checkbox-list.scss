@@ -1,43 +1,40 @@
 
 .expandable-checkbox__block ul {
   clear: both;
+  display: none;
   list-style: outside none none;
   margin: 0;
-  display: none;
-  padding: 0px;
+  padding: 0;
 }
+
 .expandable-checkbox__arrow {
-  width: 44px;
-  height: 44px;
+  box-sizing: border-box;
+  color: rgba(31, 32, 65, 0.5);
   font-family: 'Material Icons';
   font-size: 24px;
-  position: absolute;
-  right: 0px;
-  top: -15px;
   font-style: normal;
   font-weight: normal;
-  text-align: center;
-  color: black;
-  box-sizing: border-box;
-  //pointer-events: none;
+  height: 44px;
   line-height: 44px;
-  color: rgba(31, 32, 65, 0.5);
-  text-transform:none
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: none;
+  top: -15px;
+  width: 44px;
   
 }
+
 .rotate {
-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
+
 .expandable-checkbox__block {
-position: relative;
-width: 266px;
+  position: relative;
+  width: 266px;
 }
+
 .checkbox-buttons__text {
   padding-left: 30px;
 }
-// .checkbox-buttons__main {
-//   margin-bottom: 18px;
-// }
-// .checkbox-buttons__colums {
-//   padding-inline-start: initial;
-// }
+

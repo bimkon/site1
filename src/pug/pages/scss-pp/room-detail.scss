@@ -1,96 +1,113 @@
 .room-detail {
   display: flex;
+
   &__icon-text {
     &:nth-child(2) {
-      margin-top: 11px;
       margin-bottom: 10px;
+      margin-top: 11px;
     }
+
     &:nth-child(3) {
       margin-bottom: 10px;
     }
   }
+
   &__room {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 69px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 69px;
   
   }
+
   &__preview {
     background: url('../../../img/room-detail1.svg') center/cover no-repeat;
+    max-height: 485px;
     min-height: 485px;
     width: 100%;
-    max-height: 485px;
   }
+
   &__item-one {
     background: url('../../../img/room-detail2.svg') center/cover no-repeat;
     min-height: 243px;
     width: 461px;
   }
+
   &__item-two {
     background: url('../../../img/room-detail3.svg') center/cover no-repeat;
     min-height: 242px;
     width: 461px;
   }
+
   &__chart {
     display: flex;
     margin-top: 20px;
   }
+
   &__chart-icon {
-    display: flex;
     background: url('../../../img/pie.svg') center/120px 121px no-repeat;
+    display: flex;
+    max-width: 121px;
     min-height: 120px;
     min-width: 121px;
-    max-width: 121px;
   }
+
   &__content {
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
+    margin-bottom: 63px;
+    max-width: 1180px;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 1180px;
-    justify-content: space-between;
-    margin-bottom: 63px;
   }
+
   &__first-column {
     display: flex;
     flex-direction: column;
     max-width: 712px;
   }
+
   &__second-column {
     display: flex;
     flex-direction: column;
-    max-width: 380px;
     margin-top: 1px;
+    max-width: 380px;
   }
+
   &__info {
     display: flex;
     justify-content: space-between;
     max-width: 672px;
+
     &-header {
       margin-bottom: 10px;
     }
   }
+
   &__rules {
     display: flex;
-    max-width: 702px;
     justify-content: space-between;
     margin-top: 33px;
+    max-width: 702px;
   }
+
   &__reviews {
-    margin-top: 27px;
     margin-left: -1px;
+    margin-top: 27px;
+
     &-header {
       margin-bottom: 18px;
     }
+
     &-count {
+      color: rgba(31, 32, 65, 0.5);
       display: flex;
-      margin-top: 3px;
       font-family: 'Montserrat';
+      font-size: 14px;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
       line-height: 23px;
-      color: rgba(31, 32, 65, 0.5);
+      margin-top: 3px;
     }
 
     &-header {
@@ -98,73 +115,86 @@
       justify-content: space-between;
     }
   }
+
   &__bullet-list {
     margin-top: 18px;
   }
+
   &__comment {
     &:last-child {
       margin-top: 23px;
     }
   }
+
   &__cancellation {
     max-width: 341px;
+
     &-text {
-      margin: 0;
-      margin-top: 18px;
+      color: rgba(31, 32, 65, 0.75);
       font-family: 'Montserrat';
+      font-size: 14px;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
       line-height: 24px;
-      color: rgba(31, 32, 65, 0.75);
+      margin: 0;
+      margin-top: 18px;
     }
   }
+
   &__rule-list {
     max-width: 260px;
+
     &-header {
       margin-left: 20px;
     }
   }
+
   &__list {
     margin-left: 30px;
     margin-top: 28px;
   }
+
   &__border {
+    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
     display: flex;
     min-height: 1px;
-    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   }
 }
 @media (max-width: 1110px) {
   .room-detail__content {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
+
   .room-detail__first-column {
     min-width: unset;
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .room-detail__item-one {
-    width: calc(100vw - 50%);
     height: calc(100vw - 50%);
+    width: calc(100vw - 50%);
   }
+
   .room-detail__item-two {
-    width: calc(100vw - 50%);
     height: calc(100vw - 50%);
+    width: calc(100vw - 50%);
   }
+
   .room-detail__preview {
     width: calc(100vw - 50%);
   }
 }
 @media (max-width: 625px) {
   .room-detail__info {
-    flex-direction: column;
     align-items: center;
-  }
-  .room-detail__rules {
     flex-direction: column;
-    align-items: center; 
+  }
+
+  .room-detail__rules {
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 20px;
   }
 }

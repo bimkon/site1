@@ -1,155 +1,179 @@
 .reservation-form {
   max-width: 380px;
+
   &__wrapper {
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 42px 29px 29px 29px;
-  max-height: 511px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    max-height: 511px;
+    padding: 42px 29px 29px;
   }
+
   &__option-row {
     margin-bottom: 20px;
   }
+
   &__header {
-    margin-top: 20px;
     margin-bottom: 5px;
+    margin-top: 20px;
   }
+
   &__dropdown {
     margin-bottom: 18px;
   }
+
   &__option-row {
     display: flex;
     justify-content: space-between;
   }
+
   &__item {
     &-short { 
-    margin-top: 3px;
+      margin-top: 3px;
     }
   }
+
   &__price {
+    color: rgba(31, 32, 65, 0.5);
     font-family: 'Montserrat';
+    font-size: 14px;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
+
     &-text {
+      color: rgba(31, 32, 65, 0.5);
       font-family: 'Montserrat';
+      font-size: 12px;
       font-style: normal;
       font-weight: normal;
-      font-size: 12px;
       line-height: 18px;
-      color: rgba(31, 32, 65, 0.5);
     }
   }
+
   &__type-of-room {
+    color: #bc9cff;
     font-family: 'Montserrat';
+    font-size: 12px;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
-    }
+  }
+
   &__number {
+    color: #1f2041;
     font-family: 'Montserrat';
+    font-size: 24px;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
     line-height: 17px;
-    color: #1F2041;
     vertical-align: center;
   }
+
   &__symbol {
+    color: #1f2041;
     font-family: 'Montserrat';
+    font-size: 14px;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
     line-height: 17px;
-    color: #1F2041;
     
   }
+
   &__text {
+    color: rgba(31, 32, 65, 0.75);
     display: flex;
     font-family: 'Montserrat';
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+
     &-short {
       line-height: 18px;
     }
+
     &-row {
       margin-bottom: 10px;
+
       &:nth-child(2) {
         margin-bottom: 10px;
       }
+
       &:last-child {
         margin-bottom: 30px;
       }
     }
+
     &-up {
       align-self: flex-start;
     }
+
     &-icon {
-      margin-left: 5px;
-      width: 20px;
-      height: 20px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 20px;
-      text-align: center;
-      vertical-align: bottom;
-      color: rgba(31, 32, 65, 0.25);
       border: 1px solid rgba(31, 32, 65, 0.25);
       border-radius: 50%;
+      color: rgba(31, 32, 65, 0.25);
+      font-family: 'Montserrat';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: bold;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 5px;
+      text-align: center;
+      vertical-align: bottom;
+      width: 20px;
       
     }
   }
+
   &__text-row {
     display: flex;
     justify-content: space-between;
   }
+
   &__item {
     display: flex;
     justify-content: space-between;
     max-width: 239px;
   }
+
   &__summary {
+    color: #1f2041;
     display: flex;
-    justify-content: space-around;
     font-family: 'Montserrat';
+    font-size: 19px;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
+    justify-content: space-around;
     line-height: 23px;
-    color: #1F2041;
     margin-bottom: 21px;
+
     &-text-right {
-      position: relative;
       left: 10px;
-    }
-    &-dashed-border {
-      width: 100%;
       position: relative;
+    }
+
+    &-dashed-border {
+      border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
       bottom: 4px;
       max-width: 182px;
-      border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+      position: relative;
+      width: 100%;
     }
   }
 }
 @media (max-width: 430px) {
   .reservation-form__wrapper {
-    padding: 10px;
     max-height: unset;
+    padding: 10px;
   }
+
   .reservation-form__summary-dashed-border {
-      max-width: 130px;
+    max-width: 130px;
   } 
 }
 

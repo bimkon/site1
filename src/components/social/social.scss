@@ -1,41 +1,46 @@
 .social {
-    display: flex;
-    justify-content: center;
-    width: 112px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 112px;
+
+  &__wrapper {
     align-items: center;
-    &__wrapper {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__links {
+    display: flex;
+
+    &:nth-child(2) {
+      padding-left: 6px;
     }
-    &__links {
-      display: flex;
-      &:nth-child(2) {
-        padding-left: 6px;
-      }
-      &:nth-child(3) {
-        
-      }
+
+  }
+
+  &__images,
+  &__images-insta {
+    align-items: center;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-background-clip: text;
+    display: flex;
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    width: 24px;
+
+    &-insta {
+      padding-left: 1px;
     }
-    &__images, &__images-insta {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      text-decoration: none;
-      width: 24px;
-      height: 24px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 24px;
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: 'Font Awesome 5 Brands';
-      &-insta {
-        padding-left: 1px;
-      }
-    }
+  }
 }

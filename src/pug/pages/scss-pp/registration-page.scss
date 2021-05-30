@@ -1,0 +1,28 @@
+.registration-page {
+  align-items: center;
+  background: url('../../../img/registration-page.svg');
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-height: 683px;
+  position: relative;
+  width: 100%;
+  @media (max-width: 1000px) {
+    min-height: 640px;
+  }
+  @media (max-width: 342px) {
+    min-height: 550px;
+  }
+
+  &__form {
+    align-self: center;
+    display: flex;
+    margin-left: 5px;
+    @media (max-width: 342px) {
+      margin-left: unset;
+    }
+  }
+}

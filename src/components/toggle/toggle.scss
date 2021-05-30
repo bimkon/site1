@@ -1,83 +1,86 @@
 
-.toggle__body {
+.toggle {
+  &__body {
     display: flex;
+  }
 
-}
-.toggle__switch {
-    position: relative;
-    display: flex;
-    width: 40px;
-    height: 20px;
+  &__switch {
     align-items: center;
     align-self: center;
-    
-    /* Hide default HTML checkbox */
+    display: flex;
+    height: 20px;
+    position: relative;
+    width: 40px;
+
     .toggle__input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
+      height: 0;
+      opacity: 0;
+      width: 0;
+    }    
   }
 
-/* The slider */
-.toggle__slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FFFFFF;
-    -webkit-transition: .4s;
-    transition: .4s;
+  &__slider {
+    background-color: #fff;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 10px;
+    bottom: 0;
     box-sizing: border-box;
-    &:before {
-        position: absolute;
-        content: "";
-        height: 12px;
-        width: 12px;
-        left: 4px;
-        bottom: 3px;
-        background-color: rgba(31, 32, 65, 0.25);
-        -webkit-transition: .4s;
-        transition: .4s;
-        border-radius: 10px;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+    transition: 0.4s;
+  
+    &::before {
+      background-color: rgba(31, 32, 65, 0.25);
+      border-radius: 10px;
+      bottom: 3px;
+      content: '';
+      height: 12px;
+      left: 4px;
+      position: absolute;
+      transition: 0.4s;
+      transition: 0.4s;
+      width: 12px;
     }
   }
-.toggle__input {
 
+  &__input {
     &:checked {
+      ~ .toggle__slider { 
+        border: 1px solid #bc9cff;
+      }
+    }
+  
+    &:checked ~ .toggle__slider::before {
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      transform: translateX(18px);
+      transform: translateX(18px);
+      transform: translateX(18px);
+    }
 
-        ~ .toggle__slider { 
-    border: 1px solid #BC9CFF;
-        }
+    &__text {
+      color: #1f2041;
+      font-family: 'Montserrat';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 15px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
     }
-    &:checked ~ .toggle__slider:before {
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        -webkit-transform: translateX(18px);
-        -ms-transform: translateX(18px);
-        transform: translateX(18px);
-    }
-}
-//styles text
-.toggle__text {
+  }
+
+  &__descritbtion {
+    color: rgba(31, 32, 65, 0.75);
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1F2041;
-    margin-bottom: 16px;
-}
-.toggle__descritbtion {
-    font-family: 'Montserrat';
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
     margin-left: 10px;
+  }
+
 }

@@ -1,46 +1,54 @@
 .registration-form {
-  background: #FFFFFF;
+  background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  min-height: 646px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
   max-width: 380px;
+  min-height: 646px;
+
   &__wrapper {
-    padding: 39px 29px 29px 29px;
+    padding: 39px 29px 29px;
   }
+
   &__login {
     display: flex;
     margin-top: 29px;
   }
+
   &__first-name {
-    margin-top: 20px;
     margin-bottom: 10px;
+    margin-top: 20px;
   }
+
   &__radio-buttons {
     display: flex;
-    margin-top: 10.44px;
     margin-bottom: 21px;
+    margin-top: 10.44px;
   }
+
   &__birthday-input {
     margin-bottom: 20px;
   }
+
   &__email {
     margin-bottom: 10px;
   }
+
   &__toggle-button {
-    margin-top: 8px;
     margin-bottom: 22px;
+    margin-top: 8px;
   }
+
   &__login-text {
+    align-items: center;
+    color: #000;
+    display: flex;
     font-family: 'Montserrat';
+    font-size: 14px;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
     line-height: 18px;
-    display: flex;
-    align-items: center;
-    color: #000000;
     margin-right: 35px;
   }
 }
@@ -48,8 +56,9 @@
   .registration-form__wrapper {
     padding: 10px;
   }
+
   .registration-form {
-    min-height: unset;
     margin: 10px;
+    min-height: unset;
   } 
 }
