@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $(".expandable-checkbox__block > .expandable-checkbox__arrow").click(function (e) {
-    var showElementDescription = 
-      $(this).parents(".expandable-checkbox__block").find("ul");
+  $(".expandable-checkbox-block > .expandable-checkbox__arrow").click(function (e) {
+    let showElementDescription = 
+      $(this).parents(".expandable-checkbox-block").find("ul");
 
     if ($(showElementDescription).is(":visible")) {
       showElementDescription.hide("fast", "swing");

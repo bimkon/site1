@@ -6,7 +6,7 @@ block content
     include ../../components/heading/heading.pug
     include ../../components/text-field/text-field.pug
     include ../../components/dropdown/dropdown.pug
-    include ../../components/calendar-two-inputs/calendar-two-inputs.pug
+    include ../../components/datepicker-container/datepicker-container.pug
     include ../../components/checkbox-buttons/checkbox-buttons.pug
     include ../../components/radio-buttons/radio-buttons.pug
     include ../../components/toggle/toggle.pug
@@ -15,10 +15,10 @@ block content
     include ../../components/range-slider/range-slider.pug
     include ../../components/button/button.pug
     include ../../components/pagination/pagination.pug
-    include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
+    include ../../components/expandable-checkbox-block/expandable-checkbox-block.pug
     include ../../components/icon-text/icon-text.pug
     include ../../components/bullet-list/bullet-list.pug
-    include ../../components/comments/comments.pug
+    include ../../components/comment/comment.pug
 
     main.form-elements
         .form-elements__container
@@ -142,7 +142,7 @@ block content
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'bullet list', })
                         .form-elements__bullet-list
-                            +bullet-list({values: [{ text: 'Нельзя с питомцами' }, { text: 'Без вечеринок и мероприятий' }, { text: 'Время прибытия — после 13:00, а выезд до 12:00' }, ],})
+                            +bullet-list({values: [{ text: 'Нельзя с питомцами', }, { text: 'Без вечеринок и мероприятий' }, { text: 'Время прибытия — после 13:00, а выезд до 12:00' }, ],})
         .form-elements__bottom-container
             .form-elements__bottom-wrapper
                 .form-elements__icon-block

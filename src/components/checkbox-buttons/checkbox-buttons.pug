@@ -2,15 +2,15 @@ mixin checkbox-button({ name = 'checkbox-button', text1, text2, text3, describti
 
     case typeOfcheckBox
         when 'rich-checkbox'
-            .checkbox-buttons__row
+            .checkbox-buttons
                 .checkbox-buttons__button
-                    label.checkbox-buttons__lable.checkbox-buttons__rich
+                    label.checkbox-buttons__lable.checkbox-buttons_rich
                             span.checkbox-buttons__rich-text=text1
                             input.checkbox-buttons__input(type="checkbox", name=name,)
                             span.checkmark
                     .checkbox-buttons__about=describtion
         default
-            .checkbox-buttons__row
+            .checkbox-buttons
                 .checkbox-buttons__button
                     label(class='checkbox-buttons__lable')
                             input.checkbox-buttons__input(type="checkbox", name=name, )

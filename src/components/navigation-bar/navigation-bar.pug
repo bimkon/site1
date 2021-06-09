@@ -5,12 +5,12 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
   case isLogged
 
     when 'logged'
-      .bar
-        .bar__body.between
-          .bar__logo-toxin
+      .navigation-bar
+        .navigation-bar__body.between
+          .navigation-bar__logo-toxin
             +logo-toxin()
-          .bar__right-column
-              nav.bar__navigation
+          .navigation-bar__right-column
+              nav.navigation-bar__navigation
                 ul.topmenu
                   li.navig
                     a.navig__link.active(href='link.html')= first
@@ -43,12 +43,12 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                 .user-text='Юлий Цезарь'
    
     default
-        .bar
-          .bar__body.between
-            .bar__logo-toxin
+        .navigation-bar
+          .navigation-bar__body.between
+            .navigation-bar__logo-toxin
               +logo-toxin()
-            .bar__right-column
-              nav.bar__navigation
+            .navigation-bar__right-column
+              nav.navigation-bar__navigation
                 ul.topmenu
                   li.navig
                     a.navig__link.active(href='link.html')= first
@@ -76,10 +76,10 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                       li.submenu__item3
                         a.submenu__link1(href="link.html")= submenuitem3
                     img.navig__image(src="expand_more.jpg" alt="стрелка - указатель")
-                .bar__buttons
-                  .bar__login-button
+                .navigation-bar__buttons
+                  .navigation-bar__login-button
                     +button({styleType: 'empty', href: 'link.html', text: 'Войти', isShort: 'short'})
-                  .bar__password-button
+                  .navigation-bar__password-button
                     +button({styleType: 'long', href: 'link.html', text: 'Зарегистрироваться', isShort: 'short'})
 
 

@@ -1,24 +1,20 @@
 .like-button {
-  width: max-content;
+  border: 1px solid;
+  border-color: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  box-sizing: initial;
+  display: inline-block;
+  font-size: 10px;
+  height: 18px;
+  line-height: 18px;
+  position: relative;
+  text-decoration: none;
+  width: 38px;
 
-  &_item {
-    border: 1px solid;
-    border-color: rgba(31, 32, 65, 0.25);
-    border-radius: 10px;
-    box-sizing: initial;
-    display: inline-block;
-    font-size: 10px;
-    height: 18px;
-    line-height: 18px;
-    position: absolute;
-    position: relative;
-    text-decoration: none;
-    width: 38px;
-
-    &.active {
-      border-color: #bc9cff;
-    }
+  &.active {
+    border-color: #bc9cff;
   }
+  
 
   &_icon {
     color: rgba(31, 32, 65, 0.25);
@@ -28,29 +24,29 @@
   }
 }
 
-.like-button_counter::after,
-.like-button_counter:hover::after { text-shadow: none; }
+.like-button_type_counter::after,
+.like-button_type_counter:hover::after { text-shadow: none; }
 
-.like-button_counter::after {
+.like-button_type_counter::after {
   color: rgba(31, 32, 65, 0.25);
   content: attr(data-count);
   left: 20.2px;
   position: absolute;
 }
 
-.like-button_counter.active::after {
+.like-button_type_counter.active::after {
   color: #bc9cff;
 }
 
-.like-button_item .like-button_icon { color: rgba(31, 32, 65, 0.25);
+.like-button .like-button_icon { color: rgba(31, 32, 65, 0.25);
   font-family: 'Material icons';
 }
 
 
-.like-button_item.active,
-.like-button_item.active .like-button_icon { color: #bc9cff; 
+.like-button.active,
+.like-button.active .like-button_icon { color: #bc9cff; 
 }
 
-.like-button_item:active .like-button_icon {
+.like-button:active .like-button_icon {
   color: #bc9cff;
 }

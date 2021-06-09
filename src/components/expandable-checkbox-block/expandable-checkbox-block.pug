@@ -1,9 +1,9 @@
 mixin expandable({ header, value1, value2, value3, value4, value5, value6, isChecked}={})
 
-    .expandable-checkbox__block
+    .expandable-checkbox-block
         span.expandable-checkbox__arrow expand_more
         +heading({ type: 'h3', text: `${header}`, })
-        ul.checkbox-buttons__columns
+        ul.checkbox-buttons
             .checkbox-buttons__row
                 .checkbox-buttons__button
                     label(class='checkbox-buttons__lable')

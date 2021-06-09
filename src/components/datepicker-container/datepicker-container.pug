@@ -3,7 +3,7 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
 
     case inputField
         when 'single'
-            .datepicker__container
+            .datepicker-container
                 +heading({ type: 'h3', text: `${firstHeading}`, }) 
                 input.datepicker-here(type=type
                         class=`${isInline}` 
@@ -15,13 +15,13 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
                         readonly
                     )
         when 'two-inputs'
-            .datepicker__container
-                .datepicker__item
-                    .datepicker__header
+            .datepicker-container
+                .datepicker-container__item
+                    .datepicker-container__header
                         +heading({ type: 'h3', text: `${firstHeading}`, })
-                    .datepicker__inputs
-                        i.datepicker__arrow expand_more
-                        input.datepicker-two-inputs.datepicker__start(type="text" 
+                    .datepicker-container__inputs
+                        i.datepicker-container__arrow expand_more
+                        input.datepicker-two-inputs.datepicker-two-inputs_start(type="text" 
                                 data-multiple-dates="2"
                                 data-multiple-dates-separator=" - "
                                 data-position='right top'
@@ -29,12 +29,12 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
                                 placeholder="ДД.ММ.ГГГГ"
                                 readonly
                             )
-                .datepicker__item
-                    .datepicker__header
+                .datepicker-container__item
+                    .datepicker-container__header
                         +heading({ type: 'h3', text: `${secondHeading}`, })
-                    .datepicker__inputs
-                        i.datepicker__arrow expand_more
-                        input.datepicker-two-inputs.datepicker__end(type="text" 
+                    .datepicker-container__inputs
+                        i.datepicker-container__arrow expand_more
+                        input.datepicker-two-inputs.datepicker-two-inputs_end(type="text" 
                                 data-multiple-dates="2"
                                 data-multiple-dates-separator=" - "
                                 data-position='right top'

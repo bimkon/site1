@@ -199,7 +199,7 @@
   text-transform: uppercase;
 }
 
-.datepicker__arrow {
+.datepicker-container__arrow {
   box-sizing: border-box;
   color: rgba(31, 32, 65, 0.5);
   display: block;
@@ -217,7 +217,7 @@
   width: 44px;
 }
 
-.datepicker__inputs {
+.datepicker-container__inputs {
   margin-right: 20px;
   position: relative;
 }
@@ -397,7 +397,7 @@
 
 }
 
-.datepicker__container {
+.datepicker-container {
   display: flex;
   position: relative;
   width: 320px;
@@ -427,7 +427,7 @@
   text-transform: uppercase;
 }
 
-.datepicker__arrow {
+.datepicker-container__arrow {
   box-sizing: border-box;
   color: black;
   display: block;
