@@ -13,7 +13,7 @@ block content
     include ../../components/like-button/like-button.pug
     include ../../components/star/star.pug
     include ../../components/range-slider/range-slider.pug
-    include ../../components/buttons/buttons.pug
+    include ../../components/button/button.pug
     include ../../components/pagination/pagination.pug
     include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
     include ../../components/icon-text/icon-text.pug
@@ -128,7 +128,7 @@ block content
                     .form-elements__button
                         +button({styleType: 'simple', href: 'link.html', text: 'click me'})
                     .form-elements__button
-                        +button({styleType: 'empty', href: 'link.html', text: 'click me'})
+                        +button({styleType: 'empty', href: 'link.html', text: 'click me', size: 'short', color: 'white'})
                     .form-elements__button
                         +button({styleType: 'borderless', href: 'link.html', text: 'click me'})
                     .form-elements__button

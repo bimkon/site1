@@ -1,0 +1,28 @@
+mixin button({styleType, href, text, size, color }={})
+    - const sizeModifiers = { short: 'button_size_short', long: 'button_size_long' }
+    - const colorModifiers = { white: 'button_color_white' }
+    - const classes = ['button__item', sizeModifiers[size], colorModifiers[color]]
+
+    case styleType
+        when 'simple'
+            .button
+                a(href=href class=classes)=text
+
+        when 'empty'
+            .button
+                a(href=href class=classes)=text
+
+        when 'borderless'
+            .button
+                a.button_type_borderless(href=href class=classes)=text
+                
+        when 'long'
+            .button
+                form.button__form(action=href, method="get")
+                    a.button_type_long(href=href class=classes)=text
+
+        when 'long-arrow'
+            .button
+                form.button__form(action=href, method="get")
+                    a.button_type_long(href=href class=classes)=text
+                    button.button__arrow(type='submit') arrow_forward

@@ -1,5 +1,8 @@
 
 mixin bullet-list({ values = [ { text: 'Enter', circleColor: ' ', isShort: ' ' }, { text: 'text', circleColor: ' ', isShort: ' ' }, { text: 'here', circleColor: ' ', isShort: ' ' }]  } = {})
+    - const sizeModifiers = { short: 'button_size_short', long: 'button_size_long' }
+    - const colorModifiers = { white: 'button_color_white' }
+    - const classes = ['button__item', sizeModifiers[size], colorModifiers[color]]
     .bullet-list
         ul.bullet-list__list
             each value in values
