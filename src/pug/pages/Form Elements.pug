@@ -77,7 +77,7 @@ block content
                     .form-elements__checkbox-heading
                         +heading({ type: 'h3', text: 'checkbox buttons', })
                     .form-elements__checkbox-button
-                        +checkbox-button({ name: 'checkbox1', text1: 'Можно курить', text2: 'Можно с питомцами', text3: 'Можно пригласить гостей (до 10 человек)', isChecked: 'checked' })  
+                        +checkbox-button({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'radio buttons', })
@@ -109,8 +109,7 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })   
                     .form-elements__rich-checkbox
-                        +checkbox-button({name: 'rich-checkbox', text1: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'})
-                        +checkbox-button({name: 'rich-checkbox', text1: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'})
+                        +checkbox-button({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
             article.form-elements__buttons
                 .form-elements__column-third
                     +range-slider({ 

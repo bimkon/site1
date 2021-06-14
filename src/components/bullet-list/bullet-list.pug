@@ -1,21 +1,12 @@
 
-mixin bullet-list({ values = [ { text: 'Enter', circleColor: ' ', size }, { text: 'text', circleColor: ' ', size }, { text: 'here', circleColor: ' ', size }]  } = {})
+mixin bullet-list({ values = [{ text: 'Enter', circleColor, size },]  } = {})
     .bullet-list
         ul.bullet-list__list
-            each value in values
+            each value in values          
                 - const { circleColor, text, size } = value
                 - const sizeModifiers = { short: 'bullet-list__items_short' }
-                - const classes = [sizeModifiers[size]]
-                case circleColor
-                    when 'gold'
-                        - colorModifier = 'bullet-list__color_gold'
-                    when 'green'
-                        - colorModifier = 'bullet-list__color_green'
-                    when 'pink'
-                        - colorModifier = 'bullet-list__color_pink'
-                    when 'black'
-                        - colorModifier = 'bullet-list__color_black'
-                    default
-                        - colorModifier = null
-                li.bullet-list__items(class=classes)=text
-                    span.bullet-list__color(class=colorModifier)
+                - const colorModifiers = { gold: 'bullet-list__color_gold', green: 'bullet-list__color_green', pink: 'bullet-list__color_pink', black: 'bullet-list__color_black' }
+                - const itemClasses = [sizeModifiers[size]]
+                - const colorClasses = [colorModifiers[circleColor]]
+                li.bullet-list__items(class=itemClasses)=text
+                    span.bullet-list__color(class=colorClasses)

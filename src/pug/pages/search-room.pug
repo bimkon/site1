@@ -43,12 +43,11 @@ block content
       .search-room__item
         +heading({ type: 'h3', text: 'Правила дома', })
         .search-room__checkbox-button
-          +checkbox-button({ name: 'checkbox3', text1: 'Можно курить', text2: 'Можно с питомцами',text3: 'Можно пригласить гостей (до 10 человек)', isChecked: 'checked'})
+          +checkbox-button({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
       .search-room__item
         +heading({ type: 'h3', text: 'Доступность', })
         .search-room__rich-button
-          +checkbox-button({name: 'rich-checkbox', text1: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'})
-          +checkbox-button({name: 'rich-checkbox', text1: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'})
+          +checkbox-button({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
       .search-room__item
         +heading({ type: 'h3', text: 'Удобства номера', })
         +dropdown({ 

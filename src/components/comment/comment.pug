@@ -5,7 +5,7 @@ mixin comment({avatarSourcePath, likeNumber, name, date, text, isChecked}={})
             .comment__avatar
                 img.comment__image(src=avatarSourcePath, alt="логотип")
             .comment__like-button
-                +like-button({likeNumber: `${likeNumber}`, isChecked: `${isChecked}` })
+                +like-button({ likeNumber, isChecked })
         .comment__body
             .comment__name=name
             .comment__date=date
