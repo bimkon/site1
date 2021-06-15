@@ -1,47 +1,23 @@
 include ../../components/text-field/text-field.pug
 include ../../components/heading/heading.pug
+include ../../components/footer__menu/footer__menu.pug
 
-mixin footer-links({mainfooterDescribtion,headerOfLink1,link1_1,link1_2,link1_3,link1_4,headerOfLink2,link2_1,link2_2,link2_3,link2_4,headerOfLink3,link3_1,link3_2,link3_3,headerOfLink4,subscribeText,})
+mixin footer-links({ values = [{headerOfLink, links }],mainfooterDescribtion,headerOfSubscribe,subscribeText,})
     .footer
         .footer__wrapper
             .footer__menu
                 .footer__toxin-icon
                     +logo-toxin()
                 .footer__toxin-text=mainfooterDescribtion
+            each value in values
+                - const { headerOfLink, links} = value   
+                .footer__menu
+                    .footer__header
+                        +heading({ type: 'h3', text: headerOfLink, })
+                    +foooter__menu({links})
             .footer__menu
                 .footer__header
-                    +heading({ type: 'h3', text: `${headerOfLink1}`, })
-                .footer__link               
-                    a.footer__refers(href='link.html')=link1_1
-                .footer__link
-                    a.footer__refers(href='link.html')=link1_2
-                .footer__link  
-                    a.footer__refers(href='link.html')=link1_3
-                .footer__link
-                    a.footer__refers(href='link.html')=link1_4
-            .footer__menu
-                .footer__header
-                    +heading({ type: 'h3', text: `${headerOfLink2}`, })
-                .footer__link
-                    a.footer__refers(href='link.html')=link2_1
-                .footer__link
-                    a.footer__refers(href='link.html')=link2_2
-                .footer__link
-                    a.footer__refers(href='link.html')=link2_3
-                .footer__link
-                    a.footer__refers(href='link.html')=link2_4
-            .footer__menu
-                .footer__header
-                    +heading({ type: 'h3', text: `${headerOfLink3}`, })
-                .footer__link
-                    a.footer__refers(href='link.html')=link3_1
-                .footer__link
-                    a.footer__refers(href='link.html')=link3_2
-                .footer__link
-                    a.footer__refers(href='link.html')=link3_3
-            .footer__menu
-                .footer__header
-                    +heading({ type: 'h3', text: `${headerOfLink4}`, })
+                    +heading({ type: 'h3', text: `${headerOfSubscribe}`, })
                 .footer__subscribe-text=subscribeText
                 .footer__subscribe-button
                     +text-field({ placeholder: 'Email',  typeOfField: 'Subscribe', size: 'short' })

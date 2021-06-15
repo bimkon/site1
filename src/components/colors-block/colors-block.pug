@@ -1,29 +1,11 @@
-mixin item-colors({ text = 'Color', description = 'Description', backgroundColor = 'backgroundcolor', } = {})
-  - let colorModifier = ''
-
-  case backgroundColor
-
-    when 'darkest shade'
-      - colorModifier = ' colors__squares_shade100'
-    when 'dark shade'
-      - colorModifier = ' colors__squares_shade75'
-    when 'shade'
-      - colorModifier = ' colors__squares_shade50'
-    when 'light shade'
-      - colorModifier = ' colors__squares_shade25'
-    when 'lightest shade'
-      - colorModifier = ' colors__squares_shade5'
-    when 'purple'
-      - colorModifier = ' colors__squares_purple'
-    when 'green'
-      - colorModifier = ' colors__squares_green'
-
-
-  .colors-block
-    div(class=`colors__squares${colorModifier}`)
-    .colors-block__text
-      .colors-block__text-bold=text
-      span.colors-block__describtion=description
+mixin item-colors({ text = 'Color', description = 'Description', backgroundColor } = {})
+    - const colorModifiers = { 'darkest shade': 'colors__squares_shade100', 'dark shade': 'colors__squares_shade75', 'shade': 'colors__squares_shade50', 'light shade': 'colors__squares_shade25', 'lightest shade': 'colors__squares_shade5', 'purple': 'colors__squares_purple', 'green': 'colors__squares_green'  }
+    - const classes = ['colors__squares', colorModifiers[backgroundColor]]
+    .colors-block
+      div(class=classes)
+      .colors-block__text
+        .colors-block__text-bold=text
+        span.colors-block__describtion=description
 
 mixin item-type({blockNumber, blockText, textNumber, textText})
   .colors-block__type

@@ -1,37 +1,8 @@
-mixin expandable({ header, value1, value2, value3, value4, value5, value6, isChecked}={})
+include ../../components/checkbox-buttons/checkbox-buttons.pug
+mixin expandable({ header }={})
 
     .expandable-checkbox-block
         span.expandable-checkbox__arrow expand_more
         +heading({ type: 'h3', text: `${header}`, })
         ul.checkbox-buttons
-            .checkbox-buttons__row
-                .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')
-                            span.checkbox-buttons__text=value1
-                            input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                            span.checkmark
-                .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')
-                            span.checkbox-buttons__text=value2
-                            input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
-                            span.checkmark
-                .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')
-                            span.checkbox-buttons__text=value3
-                            input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
-                            span.checkmark
-                .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')
-                            span.checkbox-buttons__text=value4
-                            input.checkbox-buttons__input(type="checkbox", name="checkbox", checked=isChecked)
-                            span.checkmark
-                .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')
-                            span.checkbox-buttons__text=value5
-                            input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                            span.checkmark            
-                .checkbox-buttons__button
-                    label(class='checkbox-buttons__lable')
-                            span.checkbox-buttons__text=value6
-                            input.checkbox-buttons__input(type="checkbox", name="checkbox")
-                            span.checkmark
+            +checkbox-button({ values: [{ text: 'Завтрак', }, { text: 'Письменный стол',  isChecked: 'checked'}, { text: 'Стул для кормления',  isChecked: 'checked'}, { text: 'Кроватка',  isChecked: 'checked'},{ text: 'Телевизор'},{ text: 'Шампунь'}], })  

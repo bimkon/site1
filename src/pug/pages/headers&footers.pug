@@ -17,23 +17,37 @@ block content
       +nav-bar({first:'О нас', second: 'Услуги', third: 'Вакансии', fourth: 'Новости', fifth: 'Соглашения', submenuitem1: 'Repair', submenuitem2: 'Odrer', submenuitem3: 'Paint', })
     article.headers-and-footers__item
       +nav-bar({first:'О нас', second: 'Услуги', third: 'Вакансии', fourth: 'Новости', fifth: 'Соглашения', submenuitem1: 'Repair', submenuitem2: 'Odrer', submenuitem3: 'Paint',isLogged: 'logged' })
-    +footer-links({
-      mainfooterDescribtion: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
-      headerOfLink1: 'Навигация',
-      link1_1: 'О нас',
-      link1_2: 'Новости',
-      link1_3: 'Служба поддержки',
-      link1_4: 'Услуги',
-      headerOfLink2: 'О нас',
-      link2_1: 'О сервисе',
-      link2_2: 'Наша команда',
-      link2_3: 'Вакансии',
-      link2_4: 'Инвеcторы',
-      headerOfLink3: 'Служба поддержки',
-      link3_1: 'Соглашения',
-      link3_2: 'Сообщества',
-      link3_3: 'Связь с нами',
-      headerOfLink4: 'Подписка',
-      subscribeText: 'Получайте специальные предложения и новости сервиса'})
+      +footer-links({ values: [
+        { 
+          headerOfLink: 'Навигация',
+          links: [
+            {textLink: 'О нас'},
+            {textLink: 'Новости'},
+            {textLink: 'Служба поддержки'},
+            {textLink: 'Услуги'},
+          ],
+        }, 
+        { 
+          headerOfLink: 'О нас',
+          links: [
+            {textLink: 'О сервисе'},
+            {textLink: 'Наша команда'},
+            {textLink: 'Вакансии'},
+            {textLink: 'Инвесторы'},
+          ],
+        },
+        { 
+          headerOfLink: 'Служба поддержки',
+          links: [
+            {textLink: 'Соглашения'},
+            {textLink: 'Сообщества'},
+            {textLink: 'Связь с нами'},
+          ],
+        },
+        ],
+        mainfooterDescribtion: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+        headerOfSubscribe: 'Подписка',
+        subscribeText: 'Получайте специальные предложения и новости сервиса',
+        })
     +footer-copyright()
     +footer-creative()

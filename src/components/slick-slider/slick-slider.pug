@@ -1,16 +1,12 @@
 include ../star/star.pug
 
-mixin slick-slider({ image1, image2, image3, image4, number, isLux, cost, votes, rating, arrow="", }={})
+mixin slick-slider({ values= [{image}], number, isLux, cost, votes, rating, arrow="", }={})
     .slick__slider(class=`${arrow}`)
         .slick__content
-            .slider__item
-                img.slider__image(src=(`${image1}`), alt="комната")
-            .slider__item
-                img.slider__image(src=(`${image2}`), alt="комната")
-            .slider__item
-                img.slider__image(src=(`${image3}`), alt="комната")
-            .slider__item
-                img.slider__image(src=(`${image4}`), alt="комната")
+                each value in values
+                    - const { image } = value  
+                    .slider__item
+                        img.slider__image(src=(image), alt="комната")
         .slick__describtion
             .slick__row
                 .slick__paragraph

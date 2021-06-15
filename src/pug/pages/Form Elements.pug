@@ -65,13 +65,7 @@ block content
                         ],
                     })
                 .form-elements__wrapper
-                    +expandable({ header: 'expandable checkbox list',
-                                value1: 'Завтрак',
-                                value2: 'Письменный стол',
-                                value3: 'Стул для кормления',
-                                value4: 'Кроватка',
-                                value5: 'Телевизор',
-                                value6: 'Шампунь', isChecked: 'checked'})                                                                                                            
+                    +expandable({ header: 'expandable checkbox list'})                                                                                                            
             article.form-elements__check-buttons
                 .form-elements__column-second
                     .form-elements__checkbox-heading
@@ -104,7 +98,7 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'rate button',  })
                     .form-elements__rate-button
-                        +rate-button({ name: 'rating', value: '4', isChecked4: 'checked'})
+                        +rate-button({ values: [{name: 'rating', checked: 'checked' },{name: 'rating',  },{name: 'rating', },{name: 'rating',  }, {name: 'rating',  }] })
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })   
