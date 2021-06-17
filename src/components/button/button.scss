@@ -82,6 +82,23 @@
     min-width: unset;
     width: 196px;
   }
+
+  &_size_short {
+    align-items: center;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    min-width: unset;
+    width: 87px; 
+  }
+  .button_type_long.button_size_short {
+    align-items: center;
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    min-width: unset;
+    width: 196px; 
+  }
   
   &_color_white {
     background: white;

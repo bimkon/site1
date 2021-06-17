@@ -23,7 +23,6 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                         a.submenu__link1(href="link.html")= submenuitem2
                       li.submenu__item3
                         a.submenu__link1(href="link.html")= submenuitem3
-                    img.navig__image(src="expand_more.svg" alt="стрелка - указатель")
                   li.navig
                     a.navig__link(href='link.html')= third
                   li.navig
@@ -37,7 +36,6 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                         a.submenu__link1(href="link.html")= submenuitem2
                       li.submenu__item3
                         a.submenu__link1(href="link.html")= submenuitem3
-                    img.navig__image(src="expand_more.svg" alt="стрелка - указатель")
               .user
                 img.user__arrow(src="rectangle.svg", alt="вертикальная линия")
                 .user-text='Юлий Цезарь'
@@ -61,7 +59,6 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                         a.submenu__link1(href="link.html")= submenuitem2
                       li.submenu__item3
                         a.submenu__link1(href="link.html")= submenuitem3
-                    img.navig__image(src="expand_more.svg" alt="стрелка - указатель")
                   li.navig
                     a.navig__link(href='link.html')= third
                   li.navig
@@ -75,12 +72,11 @@ mixin nav-bar({first, second, third, fourth, fifth, sixth, submenuitem1, submenu
                         a.submenu__link1(href="link.html")= submenuitem2
                       li.submenu__item3
                         a.submenu__link1(href="link.html")= submenuitem3
-                    img.navig__image(src="expand_more.svg" alt="стрелка - указатель")
                 .navigation-bar__buttons
                   .navigation-bar__login-button
-                    +button({styleType: 'empty', href: 'link.html', text: 'Войти', isShort: 'short'})
+                    +button({styleType: 'empty', href: 'link.html', text: 'Войти', size: 'short', color: 'white'})
                   .navigation-bar__password-button
-                    +button({styleType: 'long', href: 'link.html', text: 'Зарегистрироваться', isShort: 'short'})
+                    +button({styleType: 'long', href: 'link.html', text: 'Зарегистрироваться', size: 'short'})
 
 
 
