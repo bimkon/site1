@@ -1,11 +1,8 @@
 mixin like-button({likeNumber = '', isChecked,}={})
-
- - let checkedMofidier = ''
-
-    case isChecked
-        when 'checked'
-            - checkedMofidier='active'
+    - const checkModifiers = { checked: 'like-button_type_active' }
+    - const classes = ['like-button_type_counter', checkModifiers[isChecked]]
+    - let checkedMofidier = ''
 
     .like-button
-        a(href='#', title='Love it', data-count=likeNumber, class = `like-button like-button_type_counter ${checkedMofidier}`) 
-            span.like-button_icon favorite
+        .like-button__button(  data-count=likeNumber, class=classes) 
+            span.like-button__icon favorite
