@@ -30,7 +30,7 @@ mixin registration-form( { action='/mock-address/change-me', name='registration-
       .registration-form__toggle-button
         +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
       .registration-form__payment-button
-        +button({styleType: 'long-arrow', href: 'link.html', text: 'Перейти к оплате'})
+        +button({styleType: 'long-arrow', href: '/mock-address/change-me', text: 'Перейти к оплате'})
       .registration-form__login
         .registration-form__login-text Уже есть аккаунт на Toxin
         +button({styleType: 'empty', href: 'sign-in.html', text: 'Войти', color: 'white'})
