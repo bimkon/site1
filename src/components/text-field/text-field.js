@@ -1,3 +1,3 @@
-$(document).ready(function(){
-    $('.js-text-field__masked').mask('00.00.0000');
-  });
+$(document).ready(() => {
+  $('.js-text-field__masked').mask('00.00.0000');
+});

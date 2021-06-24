@@ -17,7 +17,7 @@ class DropdownOption {
     this.option.querySelectorAll('.js-dropdown-option__circle').forEach((val) => {
       if (val.textContent === signs.MINUS) {
         this.minusButton = val;
-      } 
+      }
       if (val.textContent === signs.PLUS) {
         this.plusButton = val;
       }

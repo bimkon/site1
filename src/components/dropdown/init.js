@@ -1,6 +1,5 @@
 import Dropdown from './dropdown';
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const optionCases = {
     гости: ['гость', 'гостя', 'гостей'],
