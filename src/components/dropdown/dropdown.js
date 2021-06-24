@@ -55,14 +55,9 @@ class Dropdown {
   }
 
   calculateSelectText() {
-    let summaryText = '';
-    summaryText = this.options.map((option, item) => {
+    const summaryText = this.options.map((option, item) => {
       const groupName = option.group.toLowerCase();
-      let groupValue = 0;
-
-      option.options.forEach((val) => {
-        groupValue += parseInt(val.value, 10);
-      });
+      const groupValue = option.options.reduce((acc, val) => acc + parseInt(val.value, 10), 0);
 
       if (groupValue === 0 && item !== 0) return '';
 
@@ -77,14 +72,12 @@ class Dropdown {
       const groupText = this.titleCases[groupName][cases];
 
       return ` ${groupValue} ${groupText}`;
-    });
-    summaryText = summaryText.filter((entry) => entry.trim() !== '');
+    }).filter((entry) => entry.trim() !== '');
 
-    let finalText = '';
-    summaryText.forEach((item, i) => {
-      if (i === summaryText.length - 1) finalText += item.replace(/,\s/g, '');
-      else finalText += `${item.replace(/,\s/g, '')}, `;
-    });
+    const finalText = summaryText.reduce((acc, item, i) => {
+      if (i === summaryText.length - 1) return acc + item.replace(/,\s/g, '');
+      return `${acc}${item.replace(/,\s/g, '')}, `;
+    }, []);
 
     return this.setSelectText(finalText);
   }
@@ -159,17 +152,11 @@ class Dropdown {
   }
 
   checkPad(num) {
-    const lastOne = num.toString().split('').pop();
-    const isNumBetweenOneAndFive = Number(lastOne) > 1 && Number(lastOne) < 5;
-    const isNumBetweenNineAndTwentyOne = Number(num) > 9 && Number(num) < 21;
-    let tmp;
-    if (Number(lastOne) === 1) tmp = 0;
-    else if (isNumBetweenOneAndFive) tmp = 1;
-    else tmp = 2;
-    if (isNumBetweenNineAndTwentyOne) {
-      tmp = 2;
-    }
-    return tmp;
+    this.lastOne = num.toString().split('').pop();
+    this.isNumBetweenOneAndFive = Number(this.lastOne) > 1 && Number(this.lastOne) < 5;
+    if (Number(this.lastOne) === 1) return 0;
+    if (this.isNumBetweenOneAndFive) return 1;
+    return 2;
   }
 }
 
