@@ -9,8 +9,8 @@ $('.datepicker-two-inputs').datepicker({
     navTitles: {
         days: 'MM yyyy'
     },
-    prevHtml: '<i classs="ma">arrow_back</i>',
-    nextHtml: '<i classs="ma">arrow_forward</i>'
+    prevHtml: '<i class="datepicker--nav-arrow-left">arrow_back</i>',
+    nextHtml: '<i class="datepicker--nav-arrow-right">arrow_forward</i>'
 });
 
 
