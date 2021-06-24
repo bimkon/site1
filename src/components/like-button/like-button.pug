@@ -1,7 +1,5 @@
 mixin like-button({likeNumber = '', isChecked,}={})
-    - const checkModifiers = { checked: 'like-button_type_active' }
-    - const classes = ['like-button_type_counter', checkModifiers[isChecked]]
-    - let checkedMofidier = ''
+    - const classes = ['like-button_type_counter', isChecked && 'like-button_type_active']
 
     .like-button
         .like-button__button(  data-count=likeNumber, class=classes) 
