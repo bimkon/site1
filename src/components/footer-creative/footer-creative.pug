@@ -1,4 +1,5 @@
 include ../../components/logo-toxin/logo-toxin.pug
+include ../social/social.pug
 
 mixin footer-creative()
     .footer-creative
@@ -8,9 +9,4 @@ mixin footer-creative()
                         +logo-toxin
                     .footer-creative__text Copyright © 2018 Toxin отель. Все права зачищены.
                     .footer-creative__icons
-                        .footer-creative__links
-                            a.footer-creative__images(href='/mock-address/change-me') 
-                        .footer-creative__links
-                            a.footer-creative__images(href='/mock-address/change-me') 
-                        .footer-creative__links
-                            a.footer-creative__images(href='/mock-address/change-me') 
+                        +social({ values: [{href:'/mock-address/change-me', textIcon: '',},{href:'/mock-address/change-me', textIcon: '',},{href:'/mock-address/change-me', textIcon: '',} ] })

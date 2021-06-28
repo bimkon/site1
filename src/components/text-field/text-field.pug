@@ -12,9 +12,7 @@ mixin text-field({ type = 'text', name, placeholder, typeOfField, size} = {})
 
     case typeOfField
         when 'masked'
-            - maskedThemeModifier = ' js-text-field__masked'
-            - placeholder = 'ДД.ММ.ГГГГ'
-            input(type=type, name=name, placeholder=placeholder, class= `input-field${maskedThemeModifier}`)
+            input(type=type, name=name, placeholder='ДД.ММ.ГГГГ', class= `input-field js-text-field__masked`)
 
     case typeOfField
         when 'normal'
