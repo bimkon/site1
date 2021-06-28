@@ -98,7 +98,15 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'rate button',  })
                     .form-elements__rate-button
-                        +rate-button({ values: [{name: 'rating', checked: 'checked' },{name: 'rating',  },{name: 'rating', },{name: 'rating',  }, {name: 'rating',  }] })
+                        +star({ 
+                            values: [
+                                {name:'1', value:1, },
+                                {name:'2', value:2, },
+                                {name:'3', value:3, },
+                                {name:'4', value:4, },
+                                {name:'5', value:5, },
+                            ] 
+                        })
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })   
@@ -130,7 +138,15 @@ block content
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'pagination',  })
                         .form-elements__pagination
-                            +pagination({href:'/mock-address/change-me', number1: '1',number2: '2',number3: '3',number4: '...',number5: '15', isActive: '.active'})
+                            +pagination({ 
+                                values: [
+                                {href:'/mock-address/change-me', number: '1', isActive: true},
+                                {href:'/mock-address/change-me', number: '2', },
+                                {href:'/mock-address/change-me', number: '3', },
+                                {href:'/mock-address/change-me', number: '...', },
+                                {href:'/mock-address/change-me', number: '15', },
+                                ],
+                            })
                 .form-elements__column-third
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'bullet list', })

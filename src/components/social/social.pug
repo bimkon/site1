@@ -1,9 +1,7 @@
-mixin social()
+mixin social({ values = [{href:'/mock-address/change-me', textIcon, isChecked}] })  
   .social
     .social__wrapper
-      .social__links
-        a.social__images(href='/mock-address/change-me') 
-      .social__links
-        a.social__images(href='/mock-address/change-me') 
-      .social__links
-        a.social__images-insta(href='/mock-address/change-me') 
+        each value in values
+          - const {href, textIcon } = value
+          .social__links
+             a.social__images(href=href)=textIcon

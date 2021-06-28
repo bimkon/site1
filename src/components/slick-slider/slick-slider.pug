@@ -22,7 +22,15 @@ mixin slick-slider({ values= [{image}], number, isLux, cost, votes, rating, arro
                     img(src=("underline.svg"), alt="line")
             .slick__row
                 .slick__star-button
-                    +rate-button({ name: 'rating', value: `${rating}`, isChecked5: 'checked'})
+                    +star({ 
+                            values: [
+                            {name:'1', value:1, },
+                            {name:'2', value:2, },
+                            {name:'3', value:3, },
+                            {name:'4', value:4, },
+                            {name:'5', value:5, },
+                        ] 
+                    })
                 .slick__reviews-block
                     span.slick__reviews-number=votes
                     span.slick__reviews   Отзывов

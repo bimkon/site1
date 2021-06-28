@@ -16,7 +16,7 @@
     padding-left: 6px;
   }
 
-  a.active {
+  .pagination__items_active {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     color: #fff;
@@ -24,7 +24,7 @@
     text-decoration: none;
   }
 
-  & a:hover:not(.active) {
+  & a:hover:not(.pagination__items_active) {
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     border-radius: 22px;
     color: #fff;

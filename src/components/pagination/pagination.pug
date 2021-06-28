@@ -1,10 +1,10 @@
-mixin pagination({ href, number1,number2,number3,number4,number5, isActive}={})
+mixin pagination({ values = [{href, number, isActive}] })
+    
 
     .pagination
-        a.pagination__items.active(href=href class = isActive)=number1
-        a.pagination__items(href=href)=number2
-        a.pagination__items(href=href)=number3
-        a.pagination__items.dots(href=href)=number4
-        a.pagination__items(href=href)=number5
-        a.pagination__items.arrow(href=href) arrow_forward
+        each value in values
+            - const {href, number, isActive} = value
+            - const classes = ['pagination__items', isActive && 'pagination__items_active']
+            a(href=href class = classes)=number
+        a.pagination__items.arrow arrow_forward
     .pagination__text 1 – 12 из 100+ вариантов аренды
