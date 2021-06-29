@@ -1,4 +1,4 @@
-import Dropdown from './dropdown';
+import Dropdown from './Dropdown';
 
 document.addEventListener('DOMContentLoaded', () => {
   const optionCases = {
