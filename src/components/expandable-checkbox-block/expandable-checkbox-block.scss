@@ -32,6 +32,20 @@
 .expandable-checkbox-block {
   position: relative;
   width: 266px;
+  
+  & .checkbox-buttons {
+    &:nth-child(4) {
+      margin-top: 8px;
+    }
+
+    &:nth-child(5) {
+      margin-top: 8px;
+    }
+
+    &:nth-child(6) {
+      margin-top: 8px;
+    }
+  }
 }
 
 .checkbox-buttons__text {

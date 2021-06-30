@@ -96,6 +96,10 @@
     width: 233px;
   }
 
+  &:nth-child(3) {
+    margin-top: 11px;
+  }
+
   &__input {
     height: 0;
     opacity: 0;

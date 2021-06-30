@@ -2,8 +2,8 @@ mixin star({ values = [{name, number, isChecked}] })
 
     .star
         form.star-form
-        span.star-button
-            each value in values
-                - const {name, number, isChecked} = value
-                    input(type='radio' value=number checked=isChecked class='star__item' id=name)
-                    label.star-label(for=name)
+            span.star-button
+                each value in values
+                    - const {name, number, isChecked} = value
+                        input(type='radio' value=number checked=isChecked class='star__item' id=name)
+                        label.star-label(for=name)

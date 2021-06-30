@@ -1,4 +1,4 @@
-import DatePicker from './DatePicker';
+import DatePickerSingleInput from './DatePickerSingleInput';
 import DatePickerTwoInputs from './DatePickerTwoInputs';
 
 $(() => {
@@ -7,7 +7,7 @@ $(() => {
 
   $DatePicker.each((i, val) => {
     /* eslint-disable no-unused-vars */
-    const newDatePicker = new DatePicker(val);
+    const newDatePicker = new DatePickerSingleInput(val);
   });
   $DatePickerTwoInputs.each((i, val) => {
     /* eslint-disable no-unused-vars */

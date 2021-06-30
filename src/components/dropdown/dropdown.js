@@ -1,5 +1,5 @@
-import DropdownOption from '../dropdown-option/dropdown-option';
-import OptionButton from '../option-button/option-button';
+import DropdownOption from '../dropdown-option/DropdownOption';
+import OptionButton from '../option-button/OptionButton';
 
 class Dropdown {
   constructor(htmlElem, titleCases) {

@@ -1,4 +1,4 @@
-class DatePicker {
+class DatePickerSingleInput {
   constructor(elem) {
     this.$datePicker = $(elem);
     this.initDatePicker();
@@ -19,4 +19,4 @@ class DatePicker {
     $('.datepicker--button[data-action="clear"]').each(function addButton() { $(okButton).insertAfter($(this)); });
   }
 }
-export default DatePicker;
+export default DatePickerSingleInput;
