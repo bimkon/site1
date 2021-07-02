@@ -13,10 +13,12 @@ class ExpandableCheckbox {
         showElementDescription.hide('fast', 'swing');
         $this.text('expand_more');
         $this.addClass('rotate');
+        $this.addClass('rotate-back');
       } else {
         showElementDescription.show('fast', 'swing');
         $this.text('expand_more');
         $this.removeClass('rotate');
+        $this.removeClass('rotate-back');
       }
     });
   }

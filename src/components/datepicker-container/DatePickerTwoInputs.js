@@ -18,6 +18,7 @@ class DatePickerTwoInputs {
       },
       prevHtml: '<i class="datepicker--nav-arrow-left">arrow_back</i>',
       nextHtml: '<i class="datepicker--nav-arrow-right">arrow_forward</i>',
+      position: 'bottom left',
     });
 
     if ($('.datepicker-here').hasClass('inline')) {

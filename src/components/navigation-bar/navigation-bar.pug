@@ -1,9 +1,9 @@
 include ../../components/button/button.pug
 include ../../components/submenu/submenu.pug
-mixin nav-bar({ values= [{link, text, links}], isLogged})
+mixin nav-bar({ values= [{link, text, links}], isLogged, subMenu})
 
   case isLogged
-
+  
     when 'logged'
       .navigation-bar
         .navigation-bar__body.between
@@ -32,7 +32,8 @@ mixin nav-bar({ values= [{link, text, links}], isLogged})
                     - const { link, text, links} = value   
                     li.navig
                       a.navig__link(href=link)=text
-                      +submenu({links})
+                      if Array.isArray(links) && links.length != 0
+                        +submenu({links})
                 .navigation-bar__buttons
                   .navigation-bar__login-button
                     +button({styleType: 'empty', href: '/mock-address/change-me', text: 'Войти', size: 'short', color: 'white'})

@@ -9,7 +9,6 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
                         class=`${isInline}` 
                         data-multiple-dates="2"
                         data-multiple-dates-separator=" - "
-                        data-position='right top'
                         data-range="true"
                         placeholder="ДД.МЕС - ДД.МЕС"
                         readonly
@@ -23,8 +22,7 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
                         i.datepicker-container__arrow expand_more
                         input.datepicker-two-inputs.datepicker-two-inputs_start(type="text" 
                                 data-multiple-dates="2"
-                                data-multiple-dates-separator=" - "
-                                data-position='right top'
+                                data-multiple-dates-separator=" - "                                
                                 data-range="true"
                                 placeholder="ДД.ММ.ГГГГ"
                                 readonly
@@ -37,7 +35,6 @@ mixin date-dropdown({ inputField = 'single', firstHeading=' ', secondHeading= ''
                         input.datepicker-two-inputs.datepicker-two-inputs_end(type="text" 
                                 data-multiple-dates="2"
                                 data-multiple-dates-separator=" - "
-                                data-position='right top'
                                 data-range="true"
                                 placeholder="ДД.ММ.ГГГГ"
                                 readonly

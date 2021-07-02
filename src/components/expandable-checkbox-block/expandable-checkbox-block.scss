@@ -22,11 +22,25 @@
   text-transform: none;
   top: -15px;
   width: 44px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    width: 270px;
+    height: 20px;
+    cursor: pointer;
+ 
+  }
   
 }
 
 .rotate {
   transform: rotate(-180deg);
+  &-back::before {
+    left: 0px;
+  }
 }
 
 .expandable-checkbox-block {
