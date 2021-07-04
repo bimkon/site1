@@ -127,13 +127,13 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'buttons',  })
                     .form-elements__button
-                        +button({styleType: 'simple', href: '/mock-address/change-me', text: 'click me'})
+                        +button({type: 'button', text: 'click me'})
                     .form-elements__button
-                        +button({styleType: 'empty', href: '/mock-address/change-me', text: 'click me', color: 'white'})
+                        +button({type: 'button', text: 'click me', color: 'white'})
                     .form-elements__button
-                        +button({styleType: 'borderless', href: '/mock-address/change-me', text: 'click me'})
+                        +button({type: 'button', text: 'click me', theme: 'borderless'})
                     .form-elements__button
-                        +button({styleType: 'long-arrow', href: '/mock-address/change-me', text: 'Перейти к оплате'})
+                        +button({type: 'submit', href:'/mock-address/change-me',text:'Перейти к оплате', size: 'long', })
                 .form-elements__column-third
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'pagination',  })

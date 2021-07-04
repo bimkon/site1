@@ -36,9 +36,9 @@ mixin nav-bar({ values= [{link, text, links}], isLogged, subMenu})
                         +submenu({links})
                 .navigation-bar__buttons
                   .navigation-bar__login-button
-                    +button({styleType: 'empty', href: '/mock-address/change-me', text: 'Войти', size: 'short', color: 'white'})
+                    +button({type: 'button', text: 'Войти', color: 'white', size: 'short'})
                   .navigation-bar__password-button
-                    +button({styleType: 'long', href: '/mock-address/change-me', text: 'Зарегистрироваться', size: 'short'})
+                    +button({type: 'button', href:'/mock-address/change-me',text:'Зарегистрироваться', size: 'long', })
 
 
 

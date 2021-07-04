@@ -12,8 +12,8 @@ mixin cards-sign-in({ action='/mock-address/change-me', name='registration', met
             .sign-in-form__login
                 +text-field({ type: 'password', name: 'password', placeholder: 'Пароль', typeOfField: 'normal',})
             .sign-in-form__login-button
-                +button({styleType: 'long-arrow', href: 'link.html', text: 'Войти'})
+                +button({type: 'submit', href:'/mock-address/change-me',text:'Войти', size: 'long', })
             .sign-in-form__register
                 .sign-in-form__login-text Нет аккаунта на Toxin?
                 .sign-in-form__button
-                    +button({styleType: 'empty', href: 'registration-page.html', text: 'Создать', color: 'white'})
+                    +button({type: 'button', text: 'Создать', color: 'white'})

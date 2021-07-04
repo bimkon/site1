@@ -1,28 +1,26 @@
-mixin button({styleType, href, text, size, color }={})
-    - const sizeModifiers = { short: 'button_size_short', long: 'button_size_long', }
-    - const colorModifiers = { white: 'button_color_white' }
-    - const classes = ['button__item', sizeModifiers[size], colorModifiers[color]]
+mixin button({ type, href, text, size, color, theme } = {})
+    -
+        const sizeModifiers = { 
+            short: 'button_size_short', 
+            long: 'button_size_long', 
+        };
+        const typeModifiers = {
+            submit: 'button_type_submit',
+        };
+        const themeModifiers = {
+            borderless: 'button_theme_borderless',
+        };
+        const colorModifiers = { 
+            white: 'button_color_white' 
+        };
+        const classes = [
+            'button', 
+            sizeModifiers[size], 
+            colorModifiers[color],
+            typeModifiers[type],
+            themeModifiers[theme],
+        ];
+        const tag = href ? 'a' : 'button';
+        const buttonType = !href && type;
 
-    case styleType
-        when 'simple'
-            .button
-                a(href=href class=classes)=text
-
-        when 'empty'
-            .button
-                a(href=href class=classes)=text
-
-        when 'borderless'
-            .button
-                a.button_type_borderless(href=href class=classes)=text
-                
-        when 'long'
-            .button
-                form.button__form(action=href, method="get")
-                    a.button_type_long(href=href class=classes)=text
-
-        when 'long-arrow'
-            .button
-                form.button__form(action=href, method="get")
-                    a.button_type_long(href=href class=classes)=text
-                    button.button__arrow(type='submit') arrow_forward
+    #{tag}(type=buttonType class=classes href=href)=text                    

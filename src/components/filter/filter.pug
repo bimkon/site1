@@ -23,8 +23,4 @@ mixin filter({ name='filter', action='/mock-address/change-me', method='get', } 
             ],
           })
       .filter__button
-        +button({
-          styleType: 'long-arrow', 
-          href: '/mock-address/change-me', 
-          text: 'Подобрать номер',
-        })
+        +button({type: 'submit', href:'/mock-address/change-me',text:'подобрать номер', size: 'long', })
