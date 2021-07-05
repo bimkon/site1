@@ -198,31 +198,23 @@
   .room-detail {
     display: flex;
     justify-content: center;
+    &__room {
+      width: 100%;
+    }
   }
 
-}
-@media (max-width: 470px) {
-
   .room-detail__item-one {
-    width: 350px;
+    width: 100%;
   }
 
   .room-detail__item-two {
-    width: 350px;
+    width: 100%;
   }
-
 }
 
 @media (max-width: 355px) {
   .room-detail__list {
     margin-left: 5px;
-  }
-  .room-detail__item-one {
-    width: 250px;
-  }
-
-  .room-detail__item-two {
-    width: 250px;
   }
 
 }
