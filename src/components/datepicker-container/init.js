@@ -5,13 +5,12 @@ $(() => {
   const $DatePicker = $('.datepicker-here');
   const $DatePickerTwoInputs = $('.datepicker-two-inputs');
 
-  $DatePickerTwoInputs.each((i, val) => {
+  $DatePickerTwoInputs.each((index, val) => {
     /* eslint-disable no-unused-vars */
-    const newDatePicker = new DatePickerTwoInputs(val);
+    const newDatePicker = new DatePickerTwoInputs(index, val);
   });
-  $DatePicker.each((i, val) => {
+  $DatePicker.each((index, val) => {
     /* eslint-disable no-unused-vars */
-    const newDatePicker = new DatePickerSingleInput(val);
+    const newDatePicker = new DatePickerSingleInput(index, val);
   });
-
 });

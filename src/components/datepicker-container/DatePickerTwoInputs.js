@@ -1,5 +1,6 @@
 class DatePickerTwoInputs {
-  constructor(elem) {
+  constructor(index, elem) {
+    this.index = index;
     this.$datePickerTwoInputs = $(elem);
     this.initDatePickerTwoInputs();
   }
@@ -20,7 +21,8 @@ class DatePickerTwoInputs {
       nextHtml: '<i class="datepicker--nav-arrow-right">arrow_forward</i>',
       position: 'bottom left',
     });
-
+    const okButton = '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>';
+    $(okButton).insertAfter($('.datepicker--button[data-action="clear"]').eq(this.index));
     if ($('.datepicker-here').hasClass('inline')) {
       $('.datepicker-here').datepicker({
         inline: true,

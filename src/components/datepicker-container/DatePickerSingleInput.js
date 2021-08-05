@@ -1,5 +1,6 @@
 class DatePickerSingleInput {
-  constructor(elem) {
+  constructor(index, elem) {
+    this.index = index;
     this.$datePicker = $(elem);
     this.initDatePicker();
   }
@@ -17,7 +18,7 @@ class DatePickerSingleInput {
       position: 'bottom left',
     });
     const okButton = '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>';
-    $('.datepicker--button[data-action="clear"]').each(function addButton() { $(okButton).insertAfter($(this)); });
+    $(okButton).insertAfter($('.datepicker--button[data-action="clear"]').eq(this.index));
   }
 }
 export default DatePickerSingleInput;
