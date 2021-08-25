@@ -20,6 +20,7 @@ class SlickSlider {
   initArrow() {
     if (this.$slider.hasClass('noarrow')) {
       $('.noarrow').find('.slick-arrow').hide();
+      $('.noarrow').find('.slick__content').addClass('slick__no-pseudo');
     }
   }
 }

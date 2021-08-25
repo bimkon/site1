@@ -5,10 +5,14 @@
   &__like-button {
     padding-left: 3px;
   }
+  &__avatar {
+    margin-bottom: 9px;
+  }
 
   &__avatar-block {
     display: flex;
     flex-direction: column;
+
   }
 
   &__image {

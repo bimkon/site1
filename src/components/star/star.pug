@@ -1,9 +1,8 @@
-mixin star({ values = [{name, number, isChecked}] })   
-
-    .star
-        form.star-form
-            span.star-button
-                each value in values
-                    - const {name, number, isChecked} = value
-                        input(type='radio' value=number checked=isChecked class='star__item' id=name)
-                        label.star-label(for=name)
+mixin star({rating})
+   
+  - const classes = []
+  - for (let i = 0; i < 5; i++)
+  -      rating < (i+1) ? classes[i] = "star_empty" : classes[i] = "star_filled"
+  .star
+    each value in classes
+      div(class=value)

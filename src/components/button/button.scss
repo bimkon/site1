@@ -5,6 +5,7 @@
   position: relative;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border: none;
+  max-height: 44px;
   border-radius: 22px;
   box-sizing: border-box;
   color: white;
@@ -13,7 +14,7 @@
   font-family: 'Montserrat';
   font-size: 12px;
   font-weight: bold;
-  height: 44px;
+  height: 100%;
   line-height: 44px;
   text-align: center;
   text-decoration: none;
@@ -23,7 +24,7 @@
 
   &_type_submit::after {
     position: absolute;
-    right:8px;
+    right: 8px;
     content: "\e5c8";
     font-family: 'Material Icons';
     font-size: 24px;
@@ -45,12 +46,23 @@
     text-transform: uppercase;
     align-items: center;
     display: flex;
-    height: 34px;
+    height: 100%;
     justify-content: center;
     width: 100%;
-      
   }
-
+  &_size_longer {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;   
+  }
   &_size_short {
     align-items: center;
     display: flex;
@@ -60,15 +72,8 @@
     width: 87px;
     color: white;
   }
-  // .button_type_long.button_size_short {
-  //   align-items: center;
-  //   display: flex;
-  //   height: 34px;
-  //   justify-content: center;
-  //   min-width: unset;
-  //   width: 196px; 
-  // }
-  
+
+
   &_color_white {
     background: white;
     border: 2px solid #bc9cff;

@@ -1,6 +1,6 @@
 .registration-page {
   align-items: center;
-  background: url('../../../img/registration-page.jpg');
+  background: url('../registration-page.jpg');
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,6 +20,7 @@
   &__form {
     align-self: center;
     display: flex;
+    margin-top: 1px;
     margin-left: 5px;
     @media (max-width: 342px) {
       margin-left: unset;

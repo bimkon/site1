@@ -5,7 +5,6 @@
   width: 112px;
 
   &__wrapper {
-    align-items: center;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -14,15 +13,14 @@
 
   &__links {
     display: flex;
-
     &:nth-child(2) {
-      padding-left: 6px;
+      background-image: url('./facebook-icon.svg');
+      background-repeat: no-repeat;
     }
 
   }
 
-  &__images,
-  &__images-insta {
+  &__images {
     align-items: center;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     /* stylelint-disable property-no-vendor-prefix */
@@ -38,9 +36,6 @@
     text-decoration: none;
     -webkit-text-fill-color: transparent;
     width: 24px;
-
-    &-insta {
-      padding-left: 1px;
-    }
   }
+
 }
