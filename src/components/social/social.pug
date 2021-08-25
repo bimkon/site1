@@ -4,4 +4,4 @@ mixin social({ values = [{href:'/mock-address/change-me', textIcon }] })
         each value in values
           - const {href, textIcon } = value
           .social__links
-             a.social__images(href=href)=textIcon
+             a.social__images(href=href target="_blank" rel="noopener noreferrer")=textIcon
