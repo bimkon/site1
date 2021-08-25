@@ -1,0 +1,36 @@
+.test-page {
+  display: flex;
+  height: 450px;
+  margin-top: 250px;
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: rgba(31, 32, 65, 0.5);
+    font-family: 'Montserrat';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: blue;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+  }
+
+}
