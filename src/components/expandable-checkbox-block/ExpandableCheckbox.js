@@ -7,7 +7,7 @@ class ExpandableCheckbox {
   initExpandableCheckbox() {
     this.$ExpandableCheckbox.click(function ClickHandler(event) {
       const $this = $(event.currentTarget);
-      const showElementDescription = $(this).parents('.expandable-checkbox-block').find('ul');
+      const showElementDescription = $(this).parents('.js-expandable-checkbox-block').find('ul');
 
       if ($(showElementDescription).is(':visible')) {
         showElementDescription.hide('fast', 'swing');

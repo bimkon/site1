@@ -1,7 +1,7 @@
 include ../../components/checkbox-buttons/checkbox-buttons.pug
 mixin expandable({ header }={})
 
-    .expandable-checkbox-block
+    .expandable-checkbox-block.js-expandable-checkbox-block
         span.expandable-checkbox__arrow expand_more
         +heading({ type: 'h3', text: `${header}`, })
         ul.checkbox-buttons
