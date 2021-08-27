@@ -94,6 +94,50 @@ module.exports = {
         from: path.resolve(__dirname, 'src/components/logo-toxin/img'),
         to: PATHS.dist,
       },
+      {
+        from: path.resolve(__dirname, 'src/pages/room-detail/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/pages/search-room/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/components/slick-slider/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/components/base/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/components/social/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/pages/cards/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/pages/form-elements/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/pages/landing-page/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/pages/registration-page/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/pages/sign-in/img'),
+        to: PATHS.dist,
+      },
     ]),
     new MiniCssExtractPlugin({
       filename: filename('[name]', 'css'),
