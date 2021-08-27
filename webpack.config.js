@@ -11,6 +11,21 @@ const webpack = require('webpack');
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
+const pages = [];
+fs
+  .readdirSync(path.resolve(__dirname, 'src', 'pages'))
+  .filter((file) => file.indexOf('base') !== 0)
+  .forEach((file) => {
+    pages.push(file.split('/', 2));
+  });
+
+const htmlPlugins = pages.map((fileName) => new HTMLWebpackPlugin({
+  filename: `${fileName}.html`,
+  template: `./src/pages/${fileName}/${fileName}.pug`,
+  alwaysWriteToDisk: true,
+  inject: 'body',
+  hash: true,
+}));
 const optimization = () => {
   const config = {
     // splitChunks: {
@@ -33,7 +48,7 @@ const PATHS = {
 };
 
 // Путm к страницам, чтобы взять все страницы в формате pug
-const PAGES_DIR = `${PATHS.src}/pug/pages/`;
+const PAGES_DIR = `${PATHS.src}/pages/`;
 const PAGES = fs
   .readdirSync(PAGES_DIR)
   .filter((fileName) => fileName.endsWith('.pug'));
@@ -68,21 +83,18 @@ module.exports = {
   },
 
   plugins: [
-    ...PAGES.map(
-      (page) => new HTMLWebpackPlugin({
-        // для работы с html и pug перебираю все страницы и пропускаю через HTMLWebpackPlugin
-        template: `${PAGES_DIR}/${page}`, // точка входа, для HTML и PUG файлов
-        filename: `${page.replace(/\.pug/, '.html')}`, // имя, для HTML и PUG файлов
-        minify: {
-          collapseWhitespace: isProd, // Опция сжимает html, если мод сборки production
-        },
-      }),
-    ),
+
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([{
-      from: path.resolve(__dirname, 'src/img'),
-      to: PATHS.dist,
-    }]),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'src/components/logo-toxin/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/components/logo-toxin/img'),
+        to: PATHS.dist,
+      },
+    ]),
     new MiniCssExtractPlugin({
       filename: filename('[name]', 'css'),
     }),
@@ -91,7 +103,7 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
     }),
-  ],
+  ].concat(htmlPlugins),
   module: {
     rules: [
       {
