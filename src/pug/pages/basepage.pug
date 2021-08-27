@@ -20,71 +20,71 @@ html(lang='en')
       include ../../components/logo-toxin/logo-toxin.pug
       include ../../components/social/social.pug
 
-
-      +nav-bar({ values: [
-        {
-          link: '/mock-address/change-me', 
-          text: 'О нас', 
-        },
-        {
-          link: '/mock-address/change-me', 
-          text: 'Услуги', 
-          links: [
-            {href:'/mock-address/change-me', textLink:'Book'},
-            {href:'/mock-address/change-me', textLink:'Order'},
-        ]
-        },
-        {
-          link: '/mock-address/change-me', 
-          text: 'Вакансии', 
-        },
-        {
-          link: '/mock-address/change-me', 
-          text: 'Новости', 
-        },
-        {
-          link: '/mock-address/change-me', 
-          text: 'Соглашения', 
-          links: [
-            {href:'/mock-address/change-me', textLink:'Book'},
-            {href:'/mock-address/change-me', textLink:'Order'},
-        ]
-        },                             
-      ], 
-      })
-    
-      block content
-
-      +footer-links({ values: [
-        { 
-          headerOfLink: 'Навигация',
-          links: [
-            {textLink: 'О нас'},
-            {textLink: 'Новости'},
-            {textLink: 'Служба поддержки'},
-            {textLink: 'Услуги'},
-          ],
-        }, 
-        { 
-          headerOfLink: 'О нас',
-          links: [
-            {textLink: 'О сервисе'},
-            {textLink: 'Наша команда'},
-            {textLink: 'Вакансии'},
-            {textLink: 'Инвесторы'},
-          ],
-        },
-        { 
-          headerOfLink: 'Служба поддержки',
-          links: [
-            {textLink: 'Соглашения'},
-            {textLink: 'Сообщества'},
-            {textLink: 'Связь с нами'},
-          ],
-        },
-        ],
-        mainfooterDescribtion: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
-        headerOfSubscribe: 'Подписка',
-        subscribeText: 'Получайте специальные предложения и новости сервиса',
-        })
-      +footer-copyright()
+      .layout-wrapper
+        header.layout-header
+          +nav-bar({ values: [
+            {
+              link: '/mock-address/change-me', 
+              text: 'О нас', 
+            },
+            {
+              link: '/mock-address/change-me', 
+              text: 'Услуги', 
+              links: [
+                {href:'/mock-address/change-me', textLink:'Book'},
+                {href:'/mock-address/change-me', textLink:'Order'},
+            ]
+            },
+            {
+              link: '/mock-address/change-me', 
+              text: 'Вакансии', 
+            },
+            {
+              link: '/mock-address/change-me', 
+              text: 'Новости', 
+            },
+            {
+              link: '/mock-address/change-me', 
+              text: 'Соглашения', 
+              links: [
+                {href:'/mock-address/change-me', textLink:'Book'},
+                {href:'/mock-address/change-me', textLink:'Order'},
+            ]
+            },                             
+          ], 
+          })
+        block content
+        footer.layout-footer
+          +footer-links({ values: [
+            { 
+              headerOfLink: 'Навигация',
+              links: [
+                {textLink: 'О нас'},
+                {textLink: 'Новости'},
+                {textLink: 'Служба поддержки'},
+                {textLink: 'Услуги'},
+              ],
+            }, 
+            { 
+              headerOfLink: 'О нас',
+              links: [
+                {textLink: 'О сервисе'},
+                {textLink: 'Наша команда'},
+                {textLink: 'Вакансии'},
+                {textLink: 'Инвесторы'},
+              ],
+            },
+            { 
+              headerOfLink: 'Служба поддержки',
+              links: [
+                {textLink: 'Соглашения'},
+                {textLink: 'Сообщества'},
+                {textLink: 'Связь с нами'},
+              ],
+            },
+            ],
+            mainfooterDescribtion: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+            headerOfSubscribe: 'Подписка',
+            subscribeText: 'Получайте специальные предложения и новости сервиса',
+            })
+          +footer-copyright()
