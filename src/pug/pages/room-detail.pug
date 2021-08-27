@@ -17,6 +17,7 @@ block content
   include ../../components/comment/comment.pug
   include ../../components/like-button/like-button.pug
   include ../../components/reservation-form/reservation-form.pug
+  include ../../components/pie-chart/pie-chart.pug
 
   main.room-page
     .room-detail
@@ -40,15 +41,7 @@ block content
             .room-detail__info-header
               +heading({ type: 'h2', text: 'Впечатления от номера', })
             .room-detail__chart
-              .room-detail__chart-icon
-              .room-detail__list
-                +bullet-list({values: [
-                  { text: 'Великолепно', circleColor: 'gold', size: 'short', },
-                  { text: 'Хорошо', circleColor: 'green', size: 'short', },
-                  { text: 'Удовлетворительно', circleColor: 'pink', size: 'short', },
-                  { text: 'Разочарован', circleColor: 'black', size: 'short', },
-                ],
-              })
+              +donut-chart
         .room-detail__reviews
           .room-detail__reviews-header
             +heading({ type: 'h2', text: 'Отзывы посетителей номера',  })

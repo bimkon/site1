@@ -1,0 +1,22 @@
+.donut-chart {
+  width: 100%;
+  max-width: 450px;
+  // margin: 10px;
+  // box-sizing: border-box;
+  overflow: visible;
+}
+.apexcharts-legend {
+  
+  &-text {
+      padding-left: 3px;  
+      line-height: 20px;
+  }
+}
+#SvgjsText1041 {
+  font-weight: bold;
+
+}
+.apexcharts-svg .apexcharts-legend.apexcharts-align-center.position-right {
+  padding: 0px;
+  min-width: 195px;
+}

@@ -1,6 +1,7 @@
 .room-detail {
   display: flex;
 
+
   &__icon-text {
     &:nth-child(2) {
       margin-bottom: 10px;
@@ -37,10 +38,17 @@
     min-height: 242px;
     width: 461px;
   }
+  &__votes {
+
+  }
 
   &__chart {
     display: flex;
     margin-top: 20px;
+    width: 100%;
+    min-width: 350px;
+    height: 100%;
+    overflow-x: visible;
   }
 
   &__chart-icon {
@@ -77,7 +85,6 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    max-width: 672px;
 
     &-header {
       margin-bottom: 10px;
