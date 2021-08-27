@@ -1,7 +1,18 @@
-
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 16px;
+  color: #1F2041;
+  background: #fff;
+
 }
 
 .layout-wrapper {
