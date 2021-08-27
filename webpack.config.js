@@ -107,15 +107,15 @@ module.exports = {
         to: PATHS.dist,
       },
       {
-        from: path.resolve(__dirname, 'src/components/base/img'),
-        to: PATHS.dist,
-      },
-      {
         from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
         to: PATHS.dist,
       },
       {
         from: path.resolve(__dirname, 'src/components/social/img'),
+        to: PATHS.dist,
+      },
+      {
+        from: path.resolve(__dirname, 'src/components/base/layout/img'),
         to: PATHS.dist,
       },
       {
