@@ -63,13 +63,13 @@
   }
 
   & .slick-arrow.slick-prev {
-    background: url('../../img/arrow_left.svg') 0 0/ 100% no-repeat;
+    background: url('./img/arrow-left.svg') 0 0/ 100% no-repeat;
     background-size: 8px 15px;
     left: 0;
   }
 
   & .slick-arrow.slick-next {
-    background: url('../../img/arrow_right.svg') 0 0/ 100% no-repeat;
+    background: url('./img/arrow-right.svg') 0 0/ 100% no-repeat;
     background-size: 8px 15px;
     right: 0;
   }
