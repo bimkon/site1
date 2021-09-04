@@ -138,6 +138,7 @@ module.exports = {
         from: path.resolve(__dirname, 'src/pages/sign-in/img'),
         to: PATHS.dist,
       },
+
     ]),
     new MiniCssExtractPlugin({
       filename: filename('[name]', 'css'),
@@ -207,7 +208,6 @@ module.exports = {
         loader: 'file-loader',
         options: {
           name: '[name].[hash].[ext]',
-          publicPath: isDev ? '/fonts/' : '/site1/fonts/',
           outputPath: 'fonts/',
         },
       },

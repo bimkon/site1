@@ -56,8 +56,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('./material-icons/materialIcons-regular.eot'); 
-  src: local('material icons'),
-    local('materialIcons-regular'),
+  src: 
     url('./material-icons/materialIcons-regular.woff2') format('woff2'),
     url('./material-icons/materialIcons-regular.woff') format('woff'),
     url('./material-icons/materialIcons-regular.ttf') format('truetype');
