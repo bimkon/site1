@@ -28,10 +28,10 @@ block content
                 .cards__row
                     +reservation-form()
                 .cards__row
-                    +cards-sign-in()
+                    +sign-in-form()
             section.cards__column   
                 .cards__row
-                    +date-dropdown({ inputField: 'single',isInline: 'inline', type: 'hidden' }) 
+                    +datepicker-container({ inputField: 'single',isInline: 'inline', type: 'hidden' }) 
                 .cards__row
                     +slick-slider({ values: [{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'}], number: '888', isLux: ' Люкс', cost: '9 990', votes: '145', rating: '5',})
                 .cards__row

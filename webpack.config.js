@@ -87,7 +87,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src/components/logo/img'),
+        from: path.resolve(__dirname, 'src/components/logo-icon/img'),
         to: PATHS.dist,
       },
       {

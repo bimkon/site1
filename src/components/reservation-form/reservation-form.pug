@@ -13,7 +13,7 @@ mixin reservation-form( { action='/mock-address/change-me', name='registration-f
           span.reservation-form__price ₽ 
           span.reservation-form__price-text в сутки
       .reservation-form__calendar
-        +date-dropdown({ inputField: 'two-inputs', firstHeading: 'Прибытие', secondHeading: 'Выезд', })
+        +datepicker-container({ inputField: 'two-inputs', firstHeading: 'Прибытие', secondHeading: 'Выезд', })
       .reservation-form__header
         +heading({ type: 'h3', text: 'Гости',  })
       .reservation-form__dropdown

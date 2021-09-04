@@ -17,7 +17,7 @@ block content
     section.search-room__filter
       .search-room__item
         +heading({ type: 'h3', text: 'даты пребывания в отеле', })
-        +date-dropdown({ inputField: 'single', })  
+        +datepicker-container({ inputField: 'single', })  
       .search-room__item
         +heading({ type: 'h3', text: 'Гости', })
         +dropdown({ 
@@ -43,11 +43,11 @@ block content
       .search-room__item
         +heading({ type: 'h3', text: 'Правила дома', })
         .search-room__checkbox-button
-          +checkbox-button({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
+          +checkbox-buttons({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
       .search-room__item
         +heading({ type: 'h3', text: 'Доступность', })
         .search-room__rich-button
-          +checkbox-button({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
+          +checkbox-buttons({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
       .search-room__item
         +heading({ type: 'h3', text: 'Удобства номера', })
         +dropdown({ 
@@ -59,7 +59,7 @@ block content
           ],
         })
       .search-room__item
-        +expandable({ header: 'Дополнительные удобства'})  
+        +expandable-checkbox-block({ header: 'Дополнительные удобства'})  
     section.search-room__column
         .search-room__title Номера, которые мы для вас подобрали
         .search-room__rooms

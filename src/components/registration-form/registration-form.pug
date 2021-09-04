@@ -14,9 +14,9 @@ mixin registration-form( { action='/mock-address/change-me', name='registration-
         +text-field({ type: 'second-name', name: 'second-name-input', placeholder: 'Фамилия', typeOfField: 'normal' })
       .registration-form__radio-buttons
         .registration-form__radio-button
-          +radio-button({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
+          +radio-buttons({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
         .registration-form__radio-button
-          +radio-button({name: 'radio-button', value: 'man', text: 'Женщина', })
+          +radio-buttons({name: 'radio-button', value: 'man', text: 'Женщина', })
       .registration-form__birth-header
         +heading({ type: 'h3', text: 'Дата рождения', })
       .registration-form__birthday-input
@@ -28,7 +28,7 @@ mixin registration-form( { action='/mock-address/change-me', name='registration-
       .registration-form__password
          +text-field({ type: 'password', name: 'password-input', placeholder: 'Пароль', typeOfField: 'normal' })
       .registration-form__toggle-button
-        +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
+        +toggle({ name: 'toggle', text: 'Получать спецпредложения'})
       .registration-form__payment-button
         +button({type: 'submit', href:'/mock-address/change-me',text:'Перейти к оплате', size: 'long', })
       .registration-form__login

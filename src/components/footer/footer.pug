@@ -1,6 +1,5 @@
 include ../../components/text-field/text-field.pug
 include ../../components/heading/heading.pug
-include ../../components/footer__menu/footer__menu.pug
 
 mixin footer-links({ values = [{headerOfLink, links }],mainfooterDescribtion,headerOfSubscribe,subscribeText,})
         .footer
@@ -14,7 +13,10 @@ mixin footer-links({ values = [{headerOfLink, links }],mainfooterDescribtion,hea
                     .footer__menu
                         .footer__header
                             +heading({ type: 'h3', text: headerOfLink, })
-                        +foooter__menu({links})
+                        each link in links
+                            - const { textLink} = link  
+                            .footer__link
+                                a.footer__refers(href='/mock-address/change-me')=textLink
                 .footer__menu
                     .footer__header
                         +heading({ type: 'h3', text: `${headerOfSubscribe}`, })

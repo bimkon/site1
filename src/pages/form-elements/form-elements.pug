@@ -44,11 +44,11 @@ block content
                         +heading({ type: 'h3', text: 'Masked text field', })
                     +text-field({ placeholder: 'ДД.ММ.ГГГГ',  typeOfField: 'masked', })
                 .form-elements__wrapper
-                    +date-dropdown({ inputField: 'two-inputs', firstHeading: 'date dropdown', secondHeading: 'date dropdown', })
+                    +datepicker-container({ inputField: 'two-inputs', firstHeading: 'date dropdown', secondHeading: 'date dropdown', })
                 .form-elements__wrapper
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'filter date dropdown', })
-                    +date-dropdown({ inputField: 'single', })
+                    +datepicker-container({ inputField: 'single', })
                 .form-elements__wrapper
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'subscription text field', })
@@ -65,29 +65,29 @@ block content
                         ],
                     })
                 .form-elements__wrapper
-                    +expandable({ header: 'expandable checkbox list'})                                                                                                            
+                    +expandable-checkbox-block({ header: 'expandable checkbox list'})                                                                                                            
             article.form-elements__check-buttons
                 .form-elements__column-second
                     .form-elements__checkbox-heading
                         +heading({ type: 'h3', text: 'checkbox buttons', })
                     .form-elements__checkbox-button
-                        +checkbox-button({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
+                        +checkbox-buttons({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'radio buttons', })
                     .form-elements__radio-buttons
                         .form-elements__radio-button
-                            +radio-button({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
+                            +radio-buttons({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
                         .form-elements__radio-button
-                            +radio-button({name: 'radio-button', value: 'woman', text: 'Женщина', })
+                            +radio-buttons({name: 'radio-button', value: 'woman', text: 'Женщина', })
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'toggle', })
                     .form-elements__toggle
                         .form-elements__toggle-item
-                            +toggle-button({ name: 'toggle', text: 'Получать спецпредложения', isChecked: 'checked' })
+                            +toggle({ name: 'toggle', text: 'Получать спецпредложения', isChecked: 'checked' })
                         .form-elements__toggle-item
-                            +toggle-button({ name: 'toggle', text: 'Получать спецпредложения'})
+                            +toggle({ name: 'toggle', text: 'Получать спецпредложения'})
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'like button',  })
@@ -103,7 +103,7 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })   
                     .form-elements__rich-checkbox
-                        +checkbox-button({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
+                        +checkbox-buttons({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
             article.form-elements__buttons
                 .form-elements__column-third
                     +range-slider({ 
