@@ -1,11 +1,10 @@
-mixin icon-text({icon, title, describe, hasUnderline}={})   
-
+mixin icon-text({icon, title, describe, hasUnderline}={})
     .icon-text
         .icon-text__row
             .icon-text__image
-                i.icon-text__icon=icon 
+                i.icon-text__icon=icon
             .icon-text__content
-                .icon-text__title=title 
+                .icon-text__title=title
                 .icon-text__describe=describe
-        if hasUnderline 
+        if hasUnderline
             .icon-text__underline 

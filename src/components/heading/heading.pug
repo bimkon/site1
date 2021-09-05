@@ -1,6 +1,6 @@
 mixin heading({ type = 'h3', text = 'Header', color, weight, } = {})
-  - const headingTypeModifiers = {h1: 'heading_type_h1', h2: 'heading_type_h2', h3: 'heading_type_h3'}
-  - const weightModifiers = { normal: 'heading_weight_normal' }
-  - const colorModifiers = { 'light-shade': 'heading_color_light-shade' }
-  - const classes = [ headingTypeModifiers[type],weightModifiers[weight], colorModifiers[color] ]
-  #{type}.heading(class = classes)=text
+    - const headingTypeModifiers = {h1: 'heading_type_h1', h2: 'heading_type_h2', h3: 'heading_type_h3'}
+    - const weightModifiers = { normal: 'heading_weight_normal' }
+    - const colorModifiers = { 'light-shade': 'heading_color_light-shade' }
+    - const classes = [ headingTypeModifiers[type],weightModifiers[weight], colorModifiers[color] ]
+    #{type}.heading(class = classes)=text

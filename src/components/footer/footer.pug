@@ -1,25 +1,24 @@
 include ../../components/text-field/text-field.pug
 include ../../components/heading/heading.pug
-
 mixin footer({ values = [{headerOfLink, links }],mainfooterDescribtion,headerOfSubscribe,subscribeText,})
-        .footer
-            .footer__wrapper
-                .footer__menu
-                    .footer__toxin-icon
-                        +logo-toxin()
-                    .footer__toxin-text=mainfooterDescribtion
-                each value in values
-                    - const { headerOfLink, links} = value   
-                    .footer__menu
-                        .footer__header
-                            +heading({ type: 'h3', text: headerOfLink, })
-                        each link in links
-                            - const { textLink} = link  
-                            .footer__link
-                                a.footer__refers(href='/mock-address/change-me')=textLink
+    .footer
+        .footer__wrapper
+            .footer__menu
+                .footer__toxin-icon
+                    +logo-toxin()
+                .footer__toxin-text=mainfooterDescribtion
+            each value in values
+                - const { headerOfLink, links} = value
                 .footer__menu
                     .footer__header
-                        +heading({ type: 'h3', text: `${headerOfSubscribe}`, })
-                    .footer__subscribe-text=subscribeText
-                    .footer__subscribe-button
-                        +text-field({ placeholder: 'Email',  typeOfField: 'Subscribe', size: 'short' })
+                        +heading({ type: 'h3', text: headerOfLink, })
+                    each link in links
+                        - const { textLink} = link
+                        .footer__link
+                            a.footer__refers(href='/mock-address/change-me')=textLink
+            .footer__menu
+                .footer__header
+                    +heading({ type: 'h3', text: `${headerOfSubscribe}`, })
+                .footer__subscribe-text=subscribeText
+                .footer__subscribe-button
+                    +text-field({ placeholder: 'Email',  typeOfField: 'Subscribe', size: 'short' })

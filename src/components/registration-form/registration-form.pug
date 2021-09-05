@@ -1,39 +1,34 @@
 include ../../components/heading/heading.pug
 include ../../components/radio-buttons/radio-buttons.pug
 include ../../components/toggle/toggle.pug
-
 mixin registration-form( { action='/mock-address/change-me', name='registration-form', method='post', } = {} )
-
-  form.registration-form(action=action name=name method=method)
-    .registration-form__wrapper
-      .registration-form__header
-        +heading({ type: 'h1', text: 'Регистрация аккаунта', })
-      .registration-form__first-name
-        +text-field({ type: 'name', name: 'name-input', placeholder: 'Имя', typeOfField: 'normal' })
-      .registration-form__second-name
-        +text-field({ type: 'second-name', name: 'second-name-input', placeholder: 'Фамилия', typeOfField: 'normal' })
-      .registration-form__radio-buttons
-        .registration-form__radio-button
-          +radio-buttons({name: 'radio-button', value: 'man', text: 'Мужчина',  isChecked: 'checked'})
-        .registration-form__radio-button
-          +radio-buttons({name: 'radio-button', value: 'man', text: 'Женщина', })
-      .registration-form__birth-header
-        +heading({ type: 'h3', text: 'Дата рождения', })
-      .registration-form__birthday-input
-        +text-field({ placeholder: 'ДД.ММ.ГГГГ',  typeOfField: 'masked', })
-      .registration-form__login-header
-        +heading({ type: 'h3', text: 'Данные для входа в сервис', })
-      .registration-form__email
-         +text-field({ type: 'email', name: 'email-input', placeholder: 'Email', typeOfField: 'normal' })
-      .registration-form__password
-         +text-field({ type: 'password', name: 'password-input', placeholder: 'Пароль', typeOfField: 'normal' })
-      .registration-form__toggle-button
-        +toggle({ name: 'toggle', text: 'Получать спецпредложения'})
-      .registration-form__payment-button
-        +button({type: 'submit', href:'/mock-address/change-me',text:'Перейти к оплате', size: 'long', })
-      .registration-form__login
-        .registration-form__login-text Уже есть аккаунт на Toxin
-        +button({type: 'button', text: 'Войти', color: 'white'})
-
-
-
+    form.registration-form(action=action name=name method=method)
+        .registration-form__wrapper
+            .registration-form__header
+                +heading({ type: 'h1', text: 'Регистрация аккаунта', })
+            .registration-form__first-name
+                +text-field({ type: 'name', name: 'name-input', placeholder: 'Имя', typeOfField: 'normal' })
+            .registration-form__second-name
+                +text-field({ type: 'second-name', name: 'second-name-input', placeholder: 'Фамилия', typeOfField: 'normal' })
+            .registration-form__radio-buttons
+                .registration-form__radio-button
+                    +radio-buttons({name: 'radio-button', value: 'man', text: 'Мужчина',    isChecked: 'checked'})
+                .registration-form__radio-button
+                    +radio-buttons({name: 'radio-button', value: 'man', text: 'Женщина', })
+            .registration-form__birth-header
+                +heading({ type: 'h3', text: 'Дата рождения', })
+            .registration-form__birthday-input
+                +text-field({ placeholder: 'ДД.ММ.ГГГГ',    typeOfField: 'masked', })
+            .registration-form__login-header
+                +heading({ type: 'h3', text: 'Данные для входа в сервис', })
+            .registration-form__email
+                 +text-field({ type: 'email', name: 'email-input', placeholder: 'Email', typeOfField: 'normal' })
+            .registration-form__password
+                 +text-field({ type: 'password', name: 'password-input', placeholder: 'Пароль', typeOfField: 'normal' })
+            .registration-form__toggle-button
+                +toggle({ name: 'toggle', text: 'Получать спецпредложения'})
+            .registration-form__payment-button
+                +button({type: 'submit', href:'/mock-address/change-me',text:'Перейти к оплате', size: 'long', })
+            .registration-form__login
+                .registration-form__login-text Уже есть аккаунт на Toxin
+                +button({type: 'button', text: 'Войти', color: 'white'})

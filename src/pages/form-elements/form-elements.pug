@@ -2,7 +2,6 @@ extends ../../components/base/layout/main
 block variables
     - var title = "form-elements";
 block content
-
     include ../../components/heading/heading.pug
     include ../../components/text-field/text-field.pug
     include ../../components/dropdown/dropdown.pug
@@ -19,7 +18,6 @@ block content
     include ../../components/icon-text/icon-text.pug
     include ../../components/bullet-list/bullet-list.pug
     include ../../components/comment/comment.pug
-
     main.form-elements
         .form-elements__container
             article.form-elements__fields
@@ -30,7 +28,7 @@ block content
                 .form-elements__wrapper
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'dropdown', })
-                    +dropdown({ 
+                    +dropdown({
                         text: 'Сколько гостей',
                         hasButtons: true,
                         options: [
@@ -56,7 +54,7 @@ block content
                 .form-elements__wrapper
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'dropdown', })
-                    +dropdown({ 
+                    +dropdown({
                         width: 'short',
                         options: [
                         { text: 'спальни', number: 2, },
@@ -65,13 +63,13 @@ block content
                         ],
                     })
                 .form-elements__wrapper
-                    +expandable-checkbox-block({ header: 'expandable checkbox list'})                                                                                                            
+                    +expandable-checkbox-block({ header: 'expandable checkbox list'})
             article.form-elements__check-buttons
                 .form-elements__column-second
                     .form-elements__checkbox-heading
                         +heading({ type: 'h3', text: 'checkbox buttons', })
                     .form-elements__checkbox-button
-                        +checkbox-buttons({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })  
+                        +checkbox-buttons({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',  isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',  isChecked: 'checked'}], })
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'radio buttons', })
@@ -101,19 +99,19 @@ block content
                         +star({rating:3})
                 .form-elements__column-second
                     .form-elements__heading
-                        +heading({ type: 'h3', text: 'Rich checkbox buttons', })   
+                        +heading({ type: 'h3', text: 'Rich checkbox buttons', })
                     .form-elements__rich-checkbox
                         +checkbox-buttons({values: [{ text: 'Широкий коридор', describtion: 'Ширина коридоров в номере не менее 91 см.', typeOfcheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', describtion: 'На 1 этаже вас встретит специалист  и проводит до номера.', typeOfcheckBox: 'rich-checkbox'}] })
             article.form-elements__buttons
                 .form-elements__column-third
-                    +range-slider({ 
-                        headerText: 'range slider', 
-                        type: 'double', 
-                        min: 1000, 
-                        max: 15000, 
-                        step: 1, 
-                        from: 5000, 
-                        to: 10000, 
+                    +range-slider({
+                        headerText: 'range slider',
+                        type: 'double',
+                        min: 1000,
+                        max: 15000,
+                        step: 1,
+                        from: 5000,
+                        to: 10000,
                         })
                 .form-elements__column-third
                     .form-elements__heading
@@ -130,7 +128,7 @@ block content
                         .form-elements__heading
                             +heading({ type: 'h3', text: 'pagination',  })
                         .form-elements__pagination
-                            +pagination({ 
+                            +pagination({
                                 values: [
                                 {href:'/mock-address/change-me', number: '1', isActive: true},
                                 {href:'/mock-address/change-me', number: '2', },
@@ -150,7 +148,7 @@ block content
                     .form-elements__icon-item
                         +icon-text({icon:'insert_emoticon', title: 'Комфорт', describe: 'Шумопоглощающие стены', hasUnderline: 'Has'})
                     .form-elements__icon-item
-                        +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален'})    
+                        +icon-text({icon:'location_city', title: 'Удобство', describe: 'Окно в каждой из спален'})
                 .form-elements__comment-wrapper
                     +comment({
                         avatarSourcePath: 'avatar.jpg',

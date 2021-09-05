@@ -47,12 +47,6 @@ const PATHS = {
   dist: path.resolve(__dirname, 'dist'), // Куда ложить: __dirname - корневая директория, dist - папка куда все сложить
 };
 
-// Путm к страницам, чтобы взять все страницы в формате pug
-const PAGES_DIR = `${PATHS.src}/pages/`;
-const PAGES = fs
-  .readdirSync(PAGES_DIR)
-  .filter((fileName) => fileName.endsWith('.pug'));
-
 // Функция собирает имя для файлов в зависимости от мода сборки
 const filename = (name, ext) => (isDev ? `${name}.${ext}` : `${name}.[hash].${ext}`);
 

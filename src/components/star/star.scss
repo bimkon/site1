@@ -1,17 +1,17 @@
 .star {
-  display: flex;
-  justify-content: start;
-  width: 100%;
-  min-width: 1.5rem;
-  max-width: 7.5rem;
-
-  background: -moz-linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
-  background: -webkit-linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
-  background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
+  /* stylelint-disable property-no-vendor-prefix */
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+  display: flex;
+  justify-content: start;
+  max-width: 7.5rem;
+  min-width: 1.5rem;
   -webkit-text-fill-color: transparent;
+  width: 100%;
 
   &_filled {
     &::before {

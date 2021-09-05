@@ -1,13 +1,9 @@
 extends ../basepage/basepage.pug
-
 block variables
-  - var pageTitle='Landing-page'
-
+    - var pageTitle='Landing-page'
 block content
-
-  include ../../components/filter/filter.pug
-
-  main.landing-page
-    section.landing-page__filter
-      +filter()
-    p.landing-page__quote Лучшие номера для вашей работы, отдыха и просто вдохновения
+    include ../../components/filter/filter.pug
+    main.landing-page
+        section.landing-page__filter
+            +filter()
+        p.landing-page__quote Лучшие номера для вашей работы, отдыха и просто вдохновения

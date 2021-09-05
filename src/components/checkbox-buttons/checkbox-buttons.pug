@@ -1,20 +1,20 @@
 mixin checkbox-buttons({ values = [ { name: 'checkbox-button', text: ' ', describtion, typeOfcheckBox, isChecked }] } = {})
-            each value in values
-                - const { name, text, describtion, typeOfcheckBox, isChecked } = value
-                case typeOfcheckBox
-                    when 'rich-checkbox'
-                        .checkbox-buttons
-                            .checkbox-buttons__button
-                                label.checkbox-buttons__lable.checkbox-buttons_rich
-                                        span.checkbox-buttons__rich-text=text
-                                        input.checkbox-buttons__input(type="checkbox", name=name,)
-                                        span.checkmark
-                                .checkbox-buttons__about=describtion
-                    default
-                        .checkbox-buttons
-                            .checkbox-buttons__button
-                                label(class='checkbox-buttons__lable')
-                                        input.checkbox-buttons__input(type="checkbox", name=name,checked=isChecked )
-                                        span.checkmark
-                                        span.checkbox-buttons__text-simple=text
-                                            .checkbox-buttons__button
+    each value in values
+        - const { name, text, describtion, typeOfcheckBox, isChecked } = value
+        case typeOfcheckBox
+            when 'rich-checkbox'
+                .checkbox-buttons
+                    .checkbox-buttons__button
+                        label.checkbox-buttons__lable.checkbox-buttons_rich
+                                span.checkbox-buttons__rich-text=text
+                                input.checkbox-buttons__input(type="checkbox", name=name,)
+                                span.checkmark
+                        .checkbox-buttons__about=describtion
+            default
+                .checkbox-buttons
+                    .checkbox-buttons__button
+                        label(class='checkbox-buttons__lable')
+                                input.checkbox-buttons__input(type="checkbox", name=name,checked=isChecked )
+                                span.checkmark
+                                span.checkbox-buttons__text-simple=text
+                                    .checkbox-buttons__button

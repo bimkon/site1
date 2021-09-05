@@ -1,16 +1,15 @@
 include ../star/star.pug
-
 mixin slick-slider({ values= [{image}], number, isLux, cost, votes, rating, arrow="", }={})
     .slick__slider(class=`${arrow}`)
         .slick__content
                 each value in values
-                    - const { image } = value  
+                    - const { image } = value
                     .slider__item
                         img.slider__image(src=(image), alt="комната")
         .slick__describtion
             .slick__row
                 .slick__paragraph
-                    span.slick__symbol  № 
+                    span.slick__symbol  №
                     span.slick__number=number
                     span.slick__type-of-room=isLux
                 .slick__paragraph

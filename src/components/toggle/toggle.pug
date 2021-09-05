@@ -1,7 +1,6 @@
 mixin toggle({name = 'toggle', text, isChecked, }={})
-    
     .toggle
-        label(class="toggle__switch") 
+        label(class="toggle__switch")
             input.toggle__input(type="checkbox", name=name, checked=isChecked)
             span.toggle__slider
         span.toggle__descritbtion=text 

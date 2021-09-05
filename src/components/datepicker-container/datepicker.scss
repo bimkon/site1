@@ -219,6 +219,7 @@
 .datepicker-container__item {
   margin-right: 20px;
   position: relative;
+
   &:nth-child(2) {
     margin-right: unset;
   }
@@ -412,10 +413,10 @@
 .datepicker-two-inputs {
   cursor: pointer;
   height: 44px;
-  width: 100%;
   padding: 0;
   padding-bottom: 2px;
   padding-left: 14px;
+  width: 100%;
 }
 
 .datepicker__title {
@@ -431,7 +432,7 @@
 
 .datepicker-container__arrow {
   box-sizing: border-box;
-  color: black;
+  color: #000;
   display: block;
   font-family: 'Material Icons';
   font-size: 24px;

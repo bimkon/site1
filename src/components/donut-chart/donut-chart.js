@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-underscore-dangle */
 import ApexCharts from 'apexcharts';
 
 const options = {

@@ -1,6 +1,6 @@
 mixin submenu({ links=[] } = {})
-  ul.submenu
-    each link in links
-      - const { href , textLink} = link
-      li.submenu__item
-        a.submenu__link(href=href)=textLink
+    ul.submenu
+        each link in links
+            - const { href , textLink} = link
+            li.submenu__item
+                a.submenu__link(href=href)=textLink

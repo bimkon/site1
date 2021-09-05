@@ -77,6 +77,7 @@
 
   &__input {
     background: #fff;
+    /* stylelint-disable  declaration-property-value-disallowed-list */
     border: none;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;

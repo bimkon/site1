@@ -1,8 +1,7 @@
 mixin star({rating})
-   
-  - const classes = []
-  - for (let i = 0; i < 5; i++)
-  -      rating < (i+1) ? classes[i] = "star_empty" : classes[i] = "star_filled"
-  .star
-    each value in classes
-      div(class=value)
+    - const classes = []
+    - for (let i = 0; i < 5; i++)
+    -            rating < (i+1) ? classes[i] = "star_empty" : classes[i] = "star_filled"
+    .star
+        each value in classes
+            div(class=value) 

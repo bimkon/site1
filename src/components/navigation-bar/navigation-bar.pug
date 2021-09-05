@@ -1,46 +1,39 @@
 include ../../components/button/button.pug
 include ../../components/submenu/submenu.pug
 mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
-
-  case isLogged
-  
-    when 'logged'
-      .navigation-bar
-        .navigation-bar__body.between
-          .navigation-bar__logo-toxin
-            +logo-toxin()
-          .navigation-bar__right-column
-              nav.navigation-bar__navigation
-                ul.topmenu
-                  each value in values
-                    - const { link, text, links} = value   
-                    li.navig
-                      a.navig__link(href=link)=text
-                      +submenu({links})
-              .user
-                img.user__arrow(src="rectangle.svg", alt="вертикальная линия")
-                .user-text='Юлий Цезарь'
-    default
-        .navigation-bar
-          .navigation-bar__body.between
-            .navigation-bar__logo-toxin
-              +logo-toxin()
-            .navigation-bar__right-column
-              nav.navigation-bar__navigation
-                ul.topmenu
-                  each value in values
-                    - const { link, text, links} = value   
-                    li.navig
-                      a.navig__link(href=link)=text
-                      if Array.isArray(links) && links.length != 0
-                        +submenu({links})
-                .navigation-bar__buttons
-                  .navigation-bar__login-button
-                    +button({type: 'button', text: 'Войти', color: 'white', size: 'short'})
-                  .navigation-bar__password-button
-                    +button({type: 'button', href:'/mock-address/change-me',text:'Зарегистрироваться', size: 'long', })
-
-
-
-
-
+    case isLogged
+        when 'logged'
+            .navigation-bar
+                .navigation-bar__body.between
+                    .navigation-bar__logo-toxin
+                        +logo-toxin()
+                    .navigation-bar__right-column
+                            nav.navigation-bar__navigation
+                                ul.topmenu
+                                    each value in values
+                                        - const { link, text, links} = value
+                                        li.navig
+                                            a.navig__link(href=link)=text
+                                            +submenu({links})
+                            .user
+                                img.user__arrow(src="rectangle.svg", alt="вертикальная линия")
+                                .user-text='Юлий Цезарь'
+        default
+                .navigation-bar
+                    .navigation-bar__body.between
+                        .navigation-bar__logo-toxin
+                            +logo-toxin()
+                        .navigation-bar__right-column
+                            nav.navigation-bar__navigation
+                                ul.topmenu
+                                    each value in values
+                                        - const { link, text, links} = value
+                                        li.navig
+                                            a.navig__link(href=link)=text
+                                            if Array.isArray(links) && links.length != 0
+                                                +submenu({links})
+                                .navigation-bar__buttons
+                                    .navigation-bar__login-button
+                                        +button({type: 'button', text: 'Войти', color: 'white', size: 'short'})
+                                    .navigation-bar__password-button
+                                        +button({type: 'button', href:'/mock-address/change-me',text:'Зарегистрироваться', size: 'long', })

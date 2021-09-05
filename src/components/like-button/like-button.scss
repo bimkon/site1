@@ -4,6 +4,7 @@
     border-color: rgba(31, 32, 65, 0.25);
     border-radius: 10px;
     box-sizing: initial;
+    cursor: pointer;
     display: inline-block;
     font-size: 10px;
     height: 18px;
@@ -11,7 +12,6 @@
     position: relative;
     text-decoration: none;
     width: 38px;
-    cursor: pointer;
   }
 
   &_type_active {
@@ -35,8 +35,8 @@
 .like-button_type_counter::after {
   color: rgba(31, 32, 65, 0.25);
   content: attr(data-count);
-  position: absolute;
   left: 20px;
+  position: absolute;
 }
 
 .like-button_type_counter.like-button_type_active::after {
@@ -46,8 +46,8 @@
 .like-button .like-button__icon { 
   color: rgba(31, 32, 65, 0.25);
   font-family: 'Material icons';
-  position: relative;
   left: 5px;
+  position: relative;
 }
 
 

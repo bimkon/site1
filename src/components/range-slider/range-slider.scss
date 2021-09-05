@@ -21,6 +21,7 @@
   }
   
   &__price {
+    /* stylelint-disable  declaration-property-value-disallowed-list */
     border: none;
     color: rgba(31, 32, 65, 0.5);
     font-family: 'Montserrat';
@@ -35,7 +36,7 @@
   &__label {
     margin: 0;
   }
-  
+  /* stylelint-disable  selector-no-qualifying-type */
   span.irs.irs--flat {
     .irs-line {
       background: #fff;
@@ -57,7 +58,8 @@
       margin-top: -2px;
       outline: none;
       width: 16Px;
-    
+      /* stylelint-disable   max-nesting-depth */
+      /* stylelint-disable   selector-max-compound-selectors */
       i {
         display: none;
       }

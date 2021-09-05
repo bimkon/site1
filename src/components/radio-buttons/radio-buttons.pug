@@ -1,7 +1,7 @@
 mixin radio-buttons({ name = 'radio-button', value, text, isChecked } = {})
-        .radio-buttons
-            .radio-buttons__button
-            label(class='radio-buttons__lable') 
-                    input.radio-buttons__input(type="radio",value=value, name=name, checked=isChecked)
-                    span.radio-buttons__text=text
-                    span.radio-buttons__checkmark
+    .radio-buttons
+        .radio-buttons__button
+        label(class='radio-buttons__lable')
+            input.radio-buttons__input(type="radio",value=value, name=name, checked=isChecked)
+            span.radio-buttons__text=text
+            span.radio-buttons__checkmark

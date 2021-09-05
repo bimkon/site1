@@ -2,13 +2,7 @@ mixin colors-block({ text = 'Color', description = 'Description', backgroundColo
     - const colorModifiers = { 'darkest shade': 'colors__squares_shade100', 'dark shade': 'colors__squares_shade75', 'shade': 'colors__squares_shade50', 'light shade': 'colors__squares_shade25', 'lightest shade': 'colors__squares_shade5', 'purple': 'colors__squares_purple', 'green': 'colors__squares_green'  }
     - const classes = ['colors__squares', colorModifiers[backgroundColor]]
     .colors-block
-      div(class=classes)
-      .colors-block__text
-        .colors-block__text-bold=text
-        span.colors-block__describtion=description
-
-mixin colors-block-type({blockNumber, blockText, textNumber, textText})
-  .colors-block__type
-    div(class=blockNumber)=blockText
-    div(class=textNumber)
-      .textText=textText
+        div(class=classes)
+        .colors-block__text
+            .colors-block__text-bold=text
+            span.colors-block__describtion=description

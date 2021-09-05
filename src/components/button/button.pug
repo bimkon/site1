@@ -1,10 +1,9 @@
 mixin button({ type, href, text, size, color, theme } = {})
     -
-        const sizeModifiers = { 
-            short: 'button_size_short', 
+        const sizeModifiers = {
+            short: 'button_size_short',
             long: 'button_size_long',
             longer: 'button_size_longer'
-
         };
         const typeModifiers = {
             submit: 'button_type_submit',
@@ -12,17 +11,16 @@ mixin button({ type, href, text, size, color, theme } = {})
         const themeModifiers = {
             borderless: 'button_theme_borderless',
         };
-        const colorModifiers = { 
-            white: 'button_color_white' 
+        const colorModifiers = {
+            white: 'button_color_white'
         };
         const classes = [
-            'button', 
-            sizeModifiers[size], 
+            'button',
+            sizeModifiers[size],
             colorModifiers[color],
             typeModifiers[type],
             themeModifiers[theme],
         ];
         const tag = href ? 'a' : 'button';
         const buttonType = !href && type;
-
-    #{tag}(type=buttonType class=classes href=href)=text                    
+    #{tag}(type=buttonType class=classes href=href)=text

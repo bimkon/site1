@@ -1,8 +1,6 @@
 include ../../components/heading/heading.pug
 include ../../components/text-field/text-field.pug
-
 mixin sign-in-form({ action='/mock-address/change-me', name='registration', method='post',} = {})
-
     form.sign-in-form(action=action name=name method=method)
         .sign-in-form__wrapper
             .sign-in-form__header

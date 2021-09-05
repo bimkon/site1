@@ -16,7 +16,6 @@
   }
 
   &__text {
-    text-align: center;
     align-self: center;
     color: rgba(31, 32, 65, 0.75);
     font-family: 'Montserrat';
@@ -26,11 +25,11 @@
     line-height: 23px;
 
     margin-bottom: 23px;
+    text-align: center;
   }
 
   &__logo {
     align-self: center;
-    // margin-top: 3px;
     margin-bottom: 18px;
 
   }

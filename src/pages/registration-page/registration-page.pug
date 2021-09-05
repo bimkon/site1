@@ -1,14 +1,10 @@
 extends ../basepage/basepage.pug
-
 block variables
-  - var pageTitle='Registration-page'
-
+    - var pageTitle='Registration-page'
 block content
-
-  include ../../components/registration-form/registration-form.pug
-  include ../../components/text-field/text-field.pug
-  include ../../components/button/button.pug
-
-  main.registration-page
-    section.registration-page__form
-      +registration-form()
+    include ../../components/registration-form/registration-form.pug
+    include ../../components/text-field/text-field.pug
+    include ../../components/button/button.pug
+    main.registration-page
+        section.registration-page__form
+            +registration-form()

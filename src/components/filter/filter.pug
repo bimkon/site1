@@ -2,25 +2,24 @@ include ../../components/heading/heading.pug
 include ../../components/datepicker-container/datepicker-container.pug
 include ../../components/dropdown/dropdown.pug
 include ../../components/button/button.pug
-
 mixin filter({ name='filter', action='/mock-address/change-me', method='get', } = {})
-  form.filter(name=name action=action method=method)
-    .filter__wrapper
-      .filter__heading
-        +heading({ type: 'h1', text: 'Найдём номера под ваши пожелания', })
-      .filter__dropdown-date
-        +datepicker-container({ inputField: 'two-inputs', firstHeading: 'Прибытие', secondHeading: 'Выезд', })
-      .filter__dropdown
-        +heading({ type: 'h3', text: 'Гости', })
-        .filter__dropdown-container
-         +dropdown({ 
-            text: 'Сколько гостей',
-            hasButtons: true,
-            options: [
-              { text: 'взрослые', group: 'гости', },
-              { text: 'дети', group: 'гости', },
-              { text: 'младенцы', },
-            ],
-          })
-      .filter__button
-        +button({type: 'submit', href:'/mock-address/change-me',text:'подобрать номер', size: 'long', })
+    form.filter(name=name action=action method=method)
+        .filter__wrapper
+            .filter__heading
+                +heading({ type: 'h1', text: 'Найдём номера под ваши пожелания', })
+            .filter__dropdown-date
+                +datepicker-container({ inputField: 'two-inputs', firstHeading: 'Прибытие', secondHeading: 'Выезд', })
+            .filter__dropdown
+                +heading({ type: 'h3', text: 'Гости', })
+                .filter__dropdown-container
+                +dropdown({
+                    text: 'Сколько гостей',
+                    hasButtons: true,
+                    options: [
+                    { text: 'взрослые', group: 'гости', },
+                    { text: 'дети', group: 'гости', },
+                    { text: 'младенцы', },
+                    ],
+                })
+            .filter__button
+                +button({type: 'submit', href:'/mock-address/change-me',text:'подобрать номер', size: 'long', })

@@ -20,8 +20,8 @@
   &__form {
     align-self: center;
     display: flex;
-    margin-top: 1px;
     margin-left: 5px;
+    margin-top: 1px;
     @media (max-width: 342px) {
       margin-left: unset;
     }

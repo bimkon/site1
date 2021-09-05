@@ -1,8 +1,7 @@
-
 mixin bullet-list({ values = [{ text: 'Enter', circleColor, size },]  } = {})
     .bullet-list
         ul.bullet-list__list
-            each value in values          
+            each value in values
                 - const { circleColor, text, size } = value
                 - const sizeModifiers = { short: 'bullet-list__items_short' }
                 - const colorModifiers = { gold: 'bullet-list__color_gold', green: 'bullet-list__color_green', pink: 'bullet-list__color_pink', black: 'bullet-list__color_black' }

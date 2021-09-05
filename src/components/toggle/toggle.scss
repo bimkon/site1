@@ -3,7 +3,6 @@
 
   display: flex;
 
-
   &__switch {
     align-items: center;
     align-self: center;
@@ -18,6 +17,9 @@
       width: 0;
     }    
   }
+
+
+
 
   &__slider {
     background-color: #fff;
@@ -49,6 +51,7 @@
 
   &__input {
     &:checked {
+      /* stylelint-disable  max-nesting-depth */  
       ~ .toggle__slider { 
         border: 1px solid #bc9cff;
       }
