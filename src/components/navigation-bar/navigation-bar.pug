@@ -25,6 +25,7 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
                             +logo-toxin()
                         .navigation-bar__right-column
                             nav.navigation-bar__navigation
+                                .navig-bar
                                 ul.topmenu
                                     each value in values
                                         - const { link, text, links} = value

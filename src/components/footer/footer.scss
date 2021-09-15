@@ -66,7 +66,7 @@
 
   &__menu {
     padding-top: 24px;
-        
+
     &:first-child {
       max-height: 132px;
       max-width: 260px;
@@ -145,11 +145,10 @@
 }
 
 @media (max-width: 768px) {
-  .footer,
-  .footer-copyright {
+  .footer {
     display: none;
   }
-  
+
   .footer-creative {
     display: block;
   }
@@ -158,10 +157,16 @@
   .topmenu {
     flex-direction: column;
     min-width: 320px;
-    
+
   }
 
   .bar__navigation {
     flex-direction: column;
+  }
+}
+@media (max-width: 415px) {
+  .footer-copyright__wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }

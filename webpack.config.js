@@ -132,6 +132,10 @@ module.exports = {
         from: path.resolve(__dirname, 'src/pages/sign-in/img'),
         to: PATHS.dist,
       },
+      {
+        from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
+        to: PATHS.dist,
+      },
 
     ]),
     new MiniCssExtractPlugin({
