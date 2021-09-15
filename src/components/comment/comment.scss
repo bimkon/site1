@@ -1,59 +1,57 @@
 .comment {
-  display: flex;
-  flex-direction: row;
-
-  &__like-button {
-    padding-left: 3px;
-  }
-
-  &__avatar {
-    margin-bottom: 9px;
-  }
-
-  &__avatar-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-  }
+    &__like-button {
+        padding-left: 3px;
+    }
 
-  &__image {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.1);
-    height: 48px;
-    width: 48px;
+    &__avatar {
+        margin-bottom: 9px;
+    }
 
-  }
+    &__avatar-block {
+        display: flex;
+        flex-direction: column;
+    }
 
-  &__avatar-block {
-    display: flex;
-    margin-right: 10px;
-  }
-    
-  &__name {
-    color: rgba(31, 32, 65, 0.75);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 24px;
-  }
+    &__image {
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 10px 20px rgba(31, 32, 65, 0.1);
+        height: 48px;
+        width: 48px;
+    }
 
-  &__date,
-  &__text {
-    color: rgba(31, 32, 65, 0.75);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 24px;
-  }
+    &__avatar-block {
+        display: flex;
+        margin-right: 10px;
+    }
 
-  &__body {
-    max-width: 653px;
-  }
+    &__name {
+        color: rgba(31, 32, 65, 0.75);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 24px;
+    }
 
-  &__text {
-    margin-top: 10px;
-  }
+    &__date,
+    &__text {
+        color: rgba(31, 32, 65, 0.75);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 24px;
+    }
+
+    &__body {
+        max-width: 653px;
+    }
+
+    &__text {
+        margin-top: 10px;
+    }
 }

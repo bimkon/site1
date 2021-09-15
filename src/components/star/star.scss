@@ -1,31 +1,31 @@
 .star {
-  /* stylelint-disable property-no-vendor-prefix */
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  display: flex;
-  justify-content: start;
-  max-width: 7.5rem;
-  min-width: 1.5rem;
-  -webkit-text-fill-color: transparent;
-  width: 100%;
+    /* stylelint-disable property-no-vendor-prefix */
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    display: flex;
+    justify-content: start;
+    max-width: 7.5rem;
+    min-width: 1.5rem;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
 
-  &_filled {
-    &::before {
-      content: 'star';
-      font-family: 'Material Icons';
-      font-size: 24px;
+    &_filled {
+        &::before {
+            content: 'star';
+            font-family: 'Material Icons';
+            font-size: 24px;
+        }
     }
-  }
-  
-  &_empty {
-    &::before {
-      content: 'star_border';
-      font-family: 'Material Icons';
-      font-size: 24px;
+
+    &_empty {
+        &::before {
+            content: 'star_border';
+            font-family: 'Material Icons';
+            font-size: 24px;
+        }
     }
-  }
 }

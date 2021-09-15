@@ -1,252 +1,253 @@
 .slick__slider {
-  background: #fff;
-  border-top-left-radius: 4px;
-  min-height: 257px;
-  width: 270px;
-   
+    background: #fff;
+    border-top-left-radius: 4px;
+    min-height: 257px;
+    width: 270px;
 }
 
 .slick-track {
-  display: flex;
+    display: flex;
 }
 
 .slick-list {
-  overflow: hidden;
-    
+    overflow: hidden;
 }
 
 .slick__content {
-  position: relative; 
-    
+    position: relative;
 }
 
 .slick__content {
-  height: 151px;
-  width: 270px;
-
-
-  &::before {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-    content: '';
-    display: block;
     height: 151px;
-    position: absolute;
-    width: 42px;
-    z-index: 8;
-  }
+    width: 270px;
 
-  &::after {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-    content: '';
-    display: block;
-    height: 151px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    width: 42px;
-    z-index: 8;
-  }
-  /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
-  & .slick-arrow { 
-    /* stylelint-disable  declaration-property-value-disallowed-list */  
-    border: none;
-    font-size: 0;
-    height: 15px;
-    margin: 0 18px;
-    outline: none;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    z-index: 10;
-  }
+    &::before {
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0) 99.99%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        content: '';
+        display: block;
+        height: 151px;
+        position: absolute;
+        width: 42px;
+        z-index: 8;
+    }
 
-  & .slick-arrow.slick-prev {
-    background: url('./img/arrow-left.svg') 0 0/ 100% no-repeat;
-    background-size: 8px 15px;
-    left: 0;
-  }
+    &::after {
+        background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0) 99.99%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        content: '';
+        display: block;
+        height: 151px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 42px;
+        z-index: 8;
+    }
+    /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
+    & .slick-arrow {
+        /* stylelint-disable  declaration-property-value-disallowed-list */
+        border: none;
+        font-size: 0;
+        height: 15px;
+        margin: 0 18px;
+        outline: none;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        z-index: 10;
+    }
 
-  & .slick-arrow.slick-next {
-    background: url('./img/arrow-right.svg') 0 0/ 100% no-repeat;
-    background-size: 8px 15px;
-    right: 0;
-  }
+    & .slick-arrow.slick-prev {
+        background: url('./img/arrow-left.svg') 0 0/ 100% no-repeat;
+        background-size: 8px 15px;
+        left: 0;
+    }
+
+    & .slick-arrow.slick-next {
+        background: url('./img/arrow-right.svg') 0 0/ 100% no-repeat;
+        background-size: 8px 15px;
+        right: 0;
+    }
 }
 
 .slick__content .slick-dots {
-  align-items: center;
-  bottom: 37px;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  position: relative;
-  right: 15px;
+    align-items: center;
+    bottom: 37px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    position: relative;
+    right: 15px;
 }
 
 .slick__content .slick-dots li {
-  list-style: none;
+    list-style: none;
 
-  &:nth-child(-n+3) {
-    margin-right: 3.75px;
-  }
+    &:nth-child(-n + 3) {
+        margin-right: 3.75px;
+    }
 }
 /* stylelint-disable  selector-max-compound-selectors */
-/* stylelint-disable  selector-no-qualifying-type */    
+/* stylelint-disable  selector-no-qualifying-type */
 .slick__content .slick-dots li.slick-active button {
-  background-color: #fff;
-
+    background-color: #fff;
 }
-    
+
 .slick-dots li button {
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  box-sizing: border-box;
-  filter: drop-shadow(0 5px 5px rgba(31, 32, 65, 0.3));
-  font-size: 0;
-  height: 7.5px;
-  margin: 0;
-  outline: none;
-  padding: 0;
-  width: 7.5px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    filter: drop-shadow(0 5px 5px rgba(31, 32, 65, 0.3));
+    font-size: 0;
+    height: 7.5px;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    width: 7.5px;
 }
 
 .slick__room-cost {
-  color: rgba(31, 32, 65, 0.5);
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
 }
 
 .slick__paragraph {
-  display: flex;
+    display: flex;
 }
 
 .slick__describtion {
-  align-items: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.slick {
-  &__underline {
-    display: flex;
-    margin-top: 10px;   
-  }
-
-  &__row {
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    width: 233px;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    &:nth-child(1) {
-      margin-top: 25px;
+.slick {
+    &__underline {
+        display: flex;
+        margin-top: 10px;
     }
-  }
 
-  &__star-button {
-    padding-left: 2px;
-    padding-top: 8px;
-  }
+    &__row {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        width: 233px;
 
-  &__reviews-block {
-    display: flex;
-    margin-top: 6px;
-    padding-right: 2px;
+        &:nth-child(1) {
+            margin-top: 25px;
+        }
+    }
 
-  }
+    &__star-button {
+        padding-left: 2px;
+        padding-top: 8px;
+    }
 
-  &__reviews-number {
-    margin-right: 3px;
-  }
+    &__reviews-block {
+        display: flex;
+        margin-top: 6px;
+        padding-right: 2px;
+    }
 
-  &__symbol {
-    color: #1f2041;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 17px;
-    margin-left: 2px;
-  }
+    &__reviews-number {
+        margin-right: 3px;
+    }
 
-  &__number {
-    color: #1f2041;
-    font-family: 'Montserrat';
-    font-size: 19px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 17px;
-    margin-bottom: 2px;
-    margin-left: 2px;
-    vertical-align: center;
+    &__symbol {
+        color: #1f2041;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 17px;
+        margin-left: 2px;
+    }
 
+    &__number {
+        color: #1f2041;
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 17px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        vertical-align: center;
+    }
 
-  }
+    &__type-of-room {
+        color: #bc9cff;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 15px;
+        margin-left: 11px;
+        margin-top: 3px;
+        text-transform: uppercase;
+    }
 
-  &__type-of-room {
-    color: #bc9cff;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 15px;
-    margin-left: 11px;
-    margin-top: 3px;
-    text-transform: uppercase;
-  }
+    &__price {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+    }
 
-  &__price {
-    color: rgba(31, 32, 65, 0.5);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 18px;
-  }
+    &__in-time {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+        margin-left: 3px;
+    }
 
-  &__in-time {
-    color: rgba(31, 32, 65, 0.5);
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
-    margin-left: 3px;
-  }
+    &__reviews-number {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+        text-align: right;
+    }
 
-  &__reviews-number {
-    color: rgba(31, 32, 65, 0.5);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 18px;
-    text-align: right;
-  }
-
-  &__reviews {
-    color: rgba(31, 32, 65, 0.5);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
-    text-align: right;
-  }
-
+    &__reviews {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+        text-align: right;
+    }
 }
 
 .slick__content.slick__no-pseudo::before,
 .slick__content.slick__no-pseudo::after {
-  display: none;
+    display: none;
 }

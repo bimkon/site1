@@ -9,6 +9,6 @@ import 'air-datepicker/dist/css/datepicker.min.css';
 import 'air-datepicker/dist/js/datepicker.min.js';
 
 function importAll(resolve) {
-  resolve.keys().forEach(resolve);
+    resolve.keys().forEach(resolve);
 }
 importAll(require.context('../src/', true, /\.js$|\.scss$/));

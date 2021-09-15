@@ -1,191 +1,187 @@
 /* stylelint-disable  max-nesting-depth */
 .reservation-form {
-  height: 100%;
-  max-height: 512px;
-  max-width: 380px;
-
-  &__wrapper {
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
     height: 100%;
-    padding: 47px 29px 29px;
-  }
+    max-height: 512px;
+    max-width: 380px;
 
-  &__day-cost {
-    padding-top: 2px;
-  }
-
-  &__type-of-room {
-    padding-left: 8px;
-
-  }
-
-  &__option-row {
-    margin-bottom: 21px;
-  }
-
-  &__header {
-    margin-bottom: 5px;
-    margin-top: 20px;
-  }
-
-  &__dropdown {
-    margin-bottom: 18px;
-  }
-
-  &__option-row {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item {
-    &-short { 
-      margin-top: 3px;
-    }
-  }
-
-  &__price {
-    color: rgba(31, 32, 65, 0.5);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 18px;
-
-    &-text {
-      color: rgba(31, 32, 65, 0.5);
-      font-family: 'Montserrat';
-      font-size: 12px;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 18px;
-    }
-  }
-
-  &__type-of-room {
-    color: #bc9cff;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 15px;
-    text-transform: uppercase;
-  }
-
-  &__number {
-    color: #1f2041;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 17px;
-    vertical-align: center;
-  }
-
-  &__symbol {
-    color: #1f2041;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 17px;
-    
-  }
-
-  &__text {
-    color: rgba(31, 32, 65, 0.75);
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 24px;
-
-    &-short {
-      line-height: 18px;
+    &__wrapper {
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        height: 100%;
+        padding: 47px 29px 29px;
     }
 
-    &-row {
-      margin-bottom: 10px;
-
-      &:nth-child(2) {
-        margin-bottom: 10px;
-      }
-
-      &:last-child {
-        margin-bottom: 30px;
-      }
+    &__day-cost {
+        padding-top: 2px;
     }
 
-    &-up {
-      align-self: flex-start;
+    &__type-of-room {
+        padding-left: 8px;
     }
 
-    &-icon {
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      border-radius: 50%;
-      color: rgba(31, 32, 65, 0.25);
-      font-family: 'Montserrat';
-      font-size: 12px;
-      font-style: normal;
-      font-weight: bold;
-      height: 20px;
-      line-height: 20px;
-      margin-left: 5px;
-      text-align: center;
-      vertical-align: bottom;
-      width: 20px;
-      
-    }
-  }
-
-  &__text-row {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    max-width: 239px;
-  }
-
-  &__summary {
-    color: #1f2041;
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 19px;
-    font-style: normal;
-    font-weight: bold;
-    justify-content: space-around;
-    line-height: 23px;
-    margin-bottom: 21px;
-
-    &-text-right {
-      left: 10px;
-      position: relative;
+    &__option-row {
+        margin-bottom: 21px;
     }
 
-    &-dashed-border {
-      border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
-      bottom: 4px;
-      max-width: 182px;
-      position: relative;
-      width: 100%;
+    &__header {
+        margin-bottom: 5px;
+        margin-top: 20px;
     }
-  }
+
+    &__dropdown {
+        margin-bottom: 18px;
+    }
+
+    &__option-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &-short {
+            margin-top: 3px;
+        }
+    }
+
+    &__price {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+
+        &-text {
+            color: rgba(31, 32, 65, 0.5);
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 18px;
+        }
+    }
+
+    &__type-of-room {
+        color: #bc9cff;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    &__number {
+        color: #1f2041;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 17px;
+        vertical-align: center;
+    }
+
+    &__symbol {
+        color: #1f2041;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 17px;
+    }
+
+    &__text {
+        color: rgba(31, 32, 65, 0.75);
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 24px;
+
+        &-short {
+            line-height: 18px;
+        }
+
+        &-row {
+            margin-bottom: 10px;
+
+            &:nth-child(2) {
+                margin-bottom: 10px;
+            }
+
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+
+        &-up {
+            align-self: flex-start;
+        }
+
+        &-icon {
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 50%;
+            color: rgba(31, 32, 65, 0.25);
+            font-family: 'Montserrat';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: bold;
+            height: 20px;
+            line-height: 20px;
+            margin-left: 5px;
+            text-align: center;
+            vertical-align: bottom;
+            width: 20px;
+        }
+    }
+
+    &__text-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        max-width: 239px;
+    }
+
+    &__summary {
+        color: #1f2041;
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 19px;
+        font-style: normal;
+        font-weight: bold;
+        justify-content: space-around;
+        line-height: 23px;
+        margin-bottom: 21px;
+
+        &-text-right {
+            left: 10px;
+            position: relative;
+        }
+
+        &-dashed-border {
+            border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+            bottom: 4px;
+            max-width: 182px;
+            position: relative;
+            width: 100%;
+        }
+    }
 }
 @media (max-width: 430px) {
-  .reservation-form__wrapper {
-    max-height: unset;
-    padding: 10px;
-  }
+    .reservation-form__wrapper {
+        max-height: unset;
+        padding: 10px;
+    }
 
-  .reservation-form__summary-dashed-border {
-    max-width: 130px;
-  } 
+    .reservation-form__summary-dashed-border {
+        max-width: 130px;
+    }
 }
-

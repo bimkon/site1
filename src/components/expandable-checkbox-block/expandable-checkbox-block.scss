@@ -1,69 +1,65 @@
-
 .expandable-checkbox-block ul {
-  clear: both;
-  display: none;
-  list-style: outside none none;
-  margin: 0;
-  padding: 0;
+    clear: both;
+    display: none;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
 }
 
 .expandable-checkbox__arrow {
-  box-sizing: border-box;
-  color: rgba(31, 32, 65, 0.5);
-  font-family: 'Material Icons';
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  height: 44px;
-  line-height: 44px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  text-transform: none;
-  top: -15px;
-  width: 44px;
-
-  &::before {
-    content: '';
-    cursor: pointer;
-    height: 20px;
+    box-sizing: border-box;
+    color: rgba(31, 32, 65, 0.5);
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    height: 44px;
+    line-height: 44px;
     position: absolute;
     right: 0;
-    top: 13px;
-    width: 270px;
- 
-  }
-  
+    text-align: center;
+    text-transform: none;
+    top: -15px;
+    width: 44px;
+
+    &::before {
+        content: '';
+        cursor: pointer;
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: 13px;
+        width: 270px;
+    }
 }
 
 .rotate {
-  transform: rotate(-180deg);
+    transform: rotate(-180deg);
 
-  &-back::before {
-    left: 0;
-  }
+    &-back::before {
+        left: 0;
+    }
 }
 
 .expandable-checkbox-block {
-  position: relative;
-  width: 266px;
-  /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
-  & .checkbox-buttons {
-    &:nth-child(4) {
-      margin-top: 8px;
-    }
+    position: relative;
+    width: 266px;
+    /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
+    & .checkbox-buttons {
+        &:nth-child(4) {
+            margin-top: 8px;
+        }
 
-    &:nth-child(5) {
-      margin-top: 8px;
-    }
+        &:nth-child(5) {
+            margin-top: 8px;
+        }
 
-    &:nth-child(6) {
-      margin-top: 8px;
+        &:nth-child(6) {
+            margin-top: 8px;
+        }
     }
-  }
 }
 
 .checkbox-buttons__text {
-  padding-left: 30px;
+    padding-left: 30px;
 }
-

@@ -1,42 +1,41 @@
 .sign-in-page {
-  align-items: center;
-  background: url('./img/registration-page.jpg');
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  height: auto;
-  justify-content: center;
-  margin-bottom: 18px;
-  min-height: 683px;
-  position: relative;
-  width: 100%;
-  @media (max-width: 1000px) {
-    min-height: 450px;
-  }
-
-  &__form {
-    align-self: center;
+    align-items: center;
+    background: url('./img/registration-page.jpg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    padding-top: 18px;
-  }
+    height: auto;
+    justify-content: center;
+    margin-bottom: 18px;
+    min-height: 683px;
+    position: relative;
+    width: 100%;
+    @media (max-width: 1000px) {
+        min-height: 450px;
+    }
+
+    &__form {
+        align-self: center;
+        display: flex;
+        padding-top: 18px;
+    }
 }
 @media (max-width: 480px) {
-  .sign-in-form__wrapper {
-    padding: 10px;
-  }
+    .sign-in-form__wrapper {
+        padding: 10px;
+    }
 
-  .sign-in-form {
-    height: 100%;
-    width: 100%;
-  }
+    .sign-in-form {
+        height: 100%;
+        width: 100%;
+    }
 
-  .sign-in-page__form {
-    padding-top: 0;
-  }
+    .sign-in-page__form {
+        padding-top: 0;
+    }
 
-  .sign-in-page {
-    min-height: 320px;
-  }
-
+    .sign-in-page {
+        min-height: 320px;
+    }
 }

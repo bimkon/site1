@@ -1,29 +1,29 @@
 .footer-copyright {
-  align-items: center;
-  background: #fff;
-  border-top: 1px solid rgba(31, 32, 65, 0.1);
-  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  justify-content: center;
-  min-height: 70px;
-
-  &__wrapper {
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
     display: flex;
-    justify-content: space-between;
-    max-width: 1180px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-  }
+    justify-content: center;
+    min-height: 70px;
 
-  &__text {
-    color: rgba(31, 32, 65, 0.75);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 23px;
-    margin-left: -1px;
-    margin-top: 1px;
-  }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1180px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+
+    &__text {
+        color: rgba(31, 32, 65, 0.75);
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 23px;
+        margin-left: -1px;
+        margin-top: 1px;
+    }
 }

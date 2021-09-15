@@ -1,22 +1,21 @@
+.option-button {
+    cursor: pointer;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    user-select: none;
 
-.option-button { 
-  cursor: pointer;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  user-select: none;
+    &__apply {
+        color: #bc9cff;
+    }
 
-  &__apply {
-    color: #bc9cff;
-  }
+    &__clear {
+        color: rgba(31, 32, 65, 0.5);
+    }
 
-  &__clear {
-    color: rgba(31, 32, 65, 0.5);
-  }
-
-  &_hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
+    &_hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 }

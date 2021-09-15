@@ -1,57 +1,53 @@
 .like-button {
-  &__button {
-    border: 1px solid;
-    border-color: rgba(31, 32, 65, 0.25);
-    border-radius: 10px;
-    box-sizing: initial;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 10px;
-    height: 18px;
-    line-height: 18px;
-    position: relative;
-    text-decoration: none;
-    width: 38px;
-  }
+    &__button {
+        border: 1px solid;
+        border-color: rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+        box-sizing: initial;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 10px;
+        height: 18px;
+        line-height: 18px;
+        position: relative;
+        text-decoration: none;
+        width: 38px;
+    }
 
-  &_type_active {
-    border-color: #bc9cff;
-  }
-  
+    &_type_active {
+        border-color: #bc9cff;
+    }
 
-  &__icon {
-    color: rgba(31, 32, 65, 0.25);
-    font-family: 'Material icons';
-    user-select: none;
-
-  }
+    &__icon {
+        color: rgba(31, 32, 65, 0.25);
+        font-family: 'Material icons';
+        user-select: none;
+    }
 }
 
 .like-button_type_counter::after,
-.like-button_type_counter:hover::after { 
-  text-shadow: none; 
+.like-button_type_counter:hover::after {
+    text-shadow: none;
 }
 
 .like-button_type_counter::after {
-  color: rgba(31, 32, 65, 0.25);
-  content: attr(data-count);
-  left: 20px;
-  position: absolute;
+    color: rgba(31, 32, 65, 0.25);
+    content: attr(data-count);
+    left: 20px;
+    position: absolute;
 }
 
 .like-button_type_counter.like-button_type_active::after {
-  color: #bc9cff;
+    color: #bc9cff;
 }
 
-.like-button .like-button__icon { 
-  color: rgba(31, 32, 65, 0.25);
-  font-family: 'Material icons';
-  left: 5px;
-  position: relative;
+.like-button .like-button__icon {
+    color: rgba(31, 32, 65, 0.25);
+    font-family: 'Material icons';
+    left: 5px;
+    position: relative;
 }
 
-
-
-.like-button__button.like-button_type_active .like-button__icon { 
-  color: #bc9cff; 
+.like-button__button.like-button_type_active .like-button__icon {
+    color: #bc9cff;
 }

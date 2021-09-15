@@ -1,169 +1,166 @@
 .checkbox-buttons {
-  &__lable {
-    color: rgba(31, 32, 65, 0.5);
-    cursor: pointer;
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    font-weight: normal;
-    line-height: 18px;
-    margin-bottom: 12px;
-    position: relative;
-    text-transform: none;
-    user-select: none;
-    width: 243px;
-  }
+    &__lable {
+        color: rgba(31, 32, 65, 0.5);
+        cursor: pointer;
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-weight: normal;
+        line-height: 18px;
+        margin-bottom: 12px;
+        position: relative;
+        text-transform: none;
+        user-select: none;
+        width: 243px;
+    }
 
-  &__input {
-    height: 0;
-    opacity: 0;
-    width: 0;
-  }
+    &__input {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
 
-  &____rich-text {
-    color: rgba(31, 32, 65, 0.5);
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
-  }
+    &____rich-text {
+        color: rgba(31, 32, 65, 0.5);
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+    }
 
-  &__text-simple {
-    color: rgba(31, 32, 65, 0.5);
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
-    padding-left: 24px;
-  }
+    &__text-simple {
+        color: rgba(31, 32, 65, 0.5);
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+        padding-left: 24px;
+    }
 }
-
 
 .checkbox-buttons__checkmark {
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  height: 20px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
 }
 
-
 .checkbox-buttons__checkmark::after {
-  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-image-slice: 1;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  content: '';
-  display: none;
-  height: 0.5em;
-  left: 7px;
-  position: absolute;
-  top: 5px;
-  transform: rotate(45deg);
-  width: 0.375em;
+    border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-image-slice: 1;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 0.5em;
+    left: 7px;
+    position: absolute;
+    top: 5px;
+    transform: rotate(45deg);
+    width: 0.375em;
 }
 
 .checkbox-buttons__input:checked ~ .checkbox-buttons__checkmark::after {
-  display: block;
+    display: block;
 }
 
 .checkbox-buttons__input:checked ~ .checkbox-buttons__checkmark {
-  border-color: #bc9cff;;
+    border-color: #bc9cff;
 }
 
 .checkbox-buttons__rich-text {
-  padding-left: 30px;
+    padding-left: 30px;
 }
 
 .checkbox-buttons {
-  margin-top: 18px;
-  max-width: 266px;
-  width: 266px;
+    margin-top: 18px;
+    max-width: 266px;
+    width: 266px;
 
-  &:nth-child(2) {
-    margin-top: 11px;
-  }
+    &:nth-child(2) {
+        margin-top: 11px;
+    }
 
-  &:nth-child(1) {
-    width: 233px;
-  }
+    &:nth-child(1) {
+        width: 233px;
+    }
 
-  &:nth-child(3) {
-    margin-top: 11px;
-  }
+    &:nth-child(3) {
+        margin-top: 11px;
+    }
 
-  &__input {
-    height: 0;
-    opacity: 0;
-    width: 0;
-  }
+    &__input {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
 
-  &__about {
-    color: rgba(31, 32, 65, 0.5);
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 14px;
-    margin-bottom: 5px;
-    max-width: 256px;
-    padding-left: 30px;
-  }
+    &__about {
+        color: rgba(31, 32, 65, 0.5);
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 14px;
+        margin-bottom: 5px;
+        max-width: 256px;
+        padding-left: 30px;
+    }
 
-  &__title {
-    margin-bottom: 17px;
-  }
+    &__title {
+        margin-bottom: 17px;
+    }
 }
 
 .checkbox-buttons__checkmark {
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 0.25em;
-  height: 1.4em;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1.4em;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 0.25em;
+    height: 1.4em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1.4em;
 }
 
-
 .checkbox-buttons__checkmark::after {
-  border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-image-slice: 1;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  content: '';
-  display: none;
-  height: 0.5em;
-  left: 7px;
-  position: absolute;
-  top: 4px;
-  transform: rotate(45deg);
-  width: 0.375em;
+    border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-image-slice: 1;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 0.5em;
+    left: 7px;
+    position: absolute;
+    top: 4px;
+    transform: rotate(45deg);
+    width: 0.375em;
 }
 
 .checkbox-buttons__input:checked ~ .checkbox-buttons__checkmark::after {
-  display: block;
+    display: block;
 }
 
 .checkbox-buttons__input:checked ~ .checkbox-buttons__checkmark {
-  border-color: #bc9cff;;
+    border-color: #bc9cff;
 }
 
 .checkbox-buttons__lable.checkbox-buttons_rich {
-  color: rgba(31, 32, 65, 0.75);
-  font-family: 'Montserrat';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 18px;
-  margin-bottom: 5px;
+    color: rgba(31, 32, 65, 0.75);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 5px;
 }

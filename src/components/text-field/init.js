@@ -1,10 +1,10 @@
 import TextField from './TextField';
 
 $(() => {
-  const $textField = $('.js-text-field__masked');
+    const $textField = $('.js-text-field__masked');
 
-  $textField.each((_i, item) => {
-    /* eslint-disable no-unused-vars */
-    const newTextField = new TextField(item);
-  });
+    $textField.each((_i, item) => {
+        /* eslint-disable no-unused-vars */
+        const newTextField = new TextField(item);
+    });
 });

@@ -1,178 +1,172 @@
 .form-elements {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 65px;
-
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    width: 1159px;
-  }
-
-  &__checkbox-heading {
-    // padding-bottom: 11px;
-  }
-
-  &__fields {
+    align-items: center;
     display: flex;
     flex-direction: column;
-  }
+    margin-top: 65px;
 
-  &__check-buttons {
-    display: flex;
-    flex-direction: column;
-    margin-left: 126px;
-  }
-
-  &__buttons {
-    display: flex;
-    flex-direction: column;
-    margin-left: 126px;
-  }
-
-  &__bottom-container {
-    display: flex;
-    margin-top: 163px;
-    width: 1159px;
-  }
-
-  &__bottom-wrapper {
-    display: flex;
-  }
-
-  &__wrapper {
-    margin-bottom: 20px;
-
-    &:nth-child(1) {
-      margin-bottom: 104px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 1159px;
     }
 
-    &:nth-child(2) {
-      margin-bottom: 22px;
+    &__fields {
+        display: flex;
+        flex-direction: column;
     }
 
-    &:nth-child(3) {
-      margin-bottom: 41px;
+    &__check-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 126px;
     }
 
-    &:nth-child(4) {
-      margin-bottom: 41px;
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 126px;
     }
 
-    &:nth-child(5) {
-      margin-bottom: 41px;
+    &__bottom-container {
+        display: flex;
+        margin-top: 163px;
+        width: 1159px;
     }
 
-    &:nth-child(6) {
-      margin-bottom: 100px;
+    &__bottom-wrapper {
+        display: flex;
     }
 
-    &:nth-child(7) {
-      margin-bottom: 314px;
-    }
-  }
+    &__wrapper {
+        margin-bottom: 20px;
 
-  &__column-second {
-    margin-bottom: 29px;
+        &:nth-child(1) {
+            margin-bottom: 104px;
+        }
 
-    &:nth-child(2) {
-      margin-bottom: 37px; 
-    }
+        &:nth-child(2) {
+            margin-bottom: 22px;
+        }
 
-    &:nth-child(3) {
-      margin-bottom: 43px; 
-    }
+        &:nth-child(3) {
+            margin-bottom: 41px;
+        }
 
-    &:nth-child(4) {
-      margin-bottom: 40px; 
-    }
+        &:nth-child(4) {
+            margin-bottom: 41px;
+        }
 
-    &:nth-child(5) {
-      margin-bottom: 505px;
+        &:nth-child(5) {
+            margin-bottom: 41px;
+        }
 
-    }
-  }
+        &:nth-child(6) {
+            margin-bottom: 100px;
+        }
 
-  &__column-third {
-    margin-bottom: 34px;
-
-    &:nth-child(2) {
-      margin-bottom: 9px;
-    }
-
-    &:nth-child(3) {
-      margin-bottom: 552px;
-    }
-  }
-
-  &__heading {
-    margin-bottom: 5px;
-
-  }
-
-  &__radio-buttons {
-    display: flex;
-    margin-top: 15px;
-  }
-
-  &__like-button {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    width: 90px;
-  }
-
-  &__rate-button {
-    margin-top: 17px;
-  }
-
-  &__rich-checkbox {
-    position: relative;
-    top: -1px;
-  }
-
-  &__button {
-    margin-bottom: 30px;
-    margin-top: 16px;
-
-    &:nth-child(3) {
-      margin-bottom: unset;
+        &:nth-child(7) {
+            margin-bottom: 314px;
+        }
     }
 
-    &:nth-child(4) {
-      left: -18px;
-      margin-bottom: unset;
-      position: relative;
-    }
-  }
+    &__column-second {
+        margin-bottom: 29px;
 
-  &__pagination {
-    margin-top: 17px;
-  }
+        &:nth-child(2) {
+            margin-bottom: 37px;
+        }
 
-  &__icon-block {
-    display: flex;
-    flex-direction: column;
-    margin-top: 7px;
-  }
+        &:nth-child(3) {
+            margin-bottom: 43px;
+        }
 
-  &__icon-item {
-    margin-bottom: 10px;
-  }
+        &:nth-child(4) {
+            margin-bottom: 40px;
+        }
 
-  &__comment-wrapper {
-    padding-left: 155px;
-    padding-top: 27px;
-  }
-
-  &__toggle-item {
-    &:first-child {
-      margin-top: 14px;
+        &:nth-child(5) {
+            margin-bottom: 505px;
+        }
     }
 
-    &:last-child {
-      margin-top: 10px;
+    &__column-third {
+        margin-bottom: 34px;
+
+        &:nth-child(2) {
+            margin-bottom: 9px;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 552px;
+        }
     }
-  }
+
+    &__heading {
+        margin-bottom: 5px;
+    }
+
+    &__radio-buttons {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    &__like-button {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 90px;
+    }
+
+    &__rate-button {
+        margin-top: 17px;
+    }
+
+    &__rich-checkbox {
+        position: relative;
+        top: -1px;
+    }
+
+    &__button {
+        margin-bottom: 30px;
+        margin-top: 16px;
+
+        &:nth-child(3) {
+            margin-bottom: unset;
+        }
+
+        &:nth-child(4) {
+            left: -18px;
+            margin-bottom: unset;
+            position: relative;
+        }
+    }
+
+    &__pagination {
+        margin-top: 17px;
+    }
+
+    &__icon-block {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+    }
+
+    &__icon-item {
+        margin-bottom: 10px;
+    }
+
+    &__comment-wrapper {
+        padding-left: 155px;
+        padding-top: 27px;
+    }
+
+    &__toggle-item {
+        &:first-child {
+            margin-top: 14px;
+        }
+
+        &:last-child {
+            margin-top: 10px;
+        }
+    }
 }

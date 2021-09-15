@@ -1,107 +1,103 @@
-
 .button {
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  /* stylelint-disable  declaration-property-value-disallowed-list */
-  border: none;
-  border-radius: 22px;
-  box-sizing: border-box;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  display: inline-block;
-  font-family: 'Montserrat';
-  font-size: 12px;
-  font-weight: bold;
-  height: 100%;
-  line-height: 44px;
-  max-height: 44px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-  width: 99px;
-
-  &_type_submit::after {
-    content: '\e5c8';
-    cursor: pointer;
-    font-family: 'Material Icons';
-    font-size: 24px;
-    position: absolute;
-    right: 8px;
-  }
-  
-  &:hover {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    opacity: 0.5;
-  } 
-
-  &_size_long {
-    align-items: center;
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    height: 100%;
-    justify-content: center;
-    padding-right: 4px;
-    text-transform: uppercase;
-    width: 100%;
-    width: 100%;
-  }
-
-  &_size_longer {
-    align-items: center;
-    display: flex;
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    height: 100%;
-    justify-content: center;
-    text-transform: uppercase;
-    width: 100%;
-    width: 100%;   
-  }
-
-  &_size_short {
-    align-items: center;
-    color: #fff;
-    display: flex;
-    height: 34px;
-    justify-content: center;
-    min-width: unset;
-    width: 87px;
-  }
-
-
-  &_color_white {
-    background: #fff;
-    border: 2px solid #bc9cff;
+    /* stylelint-disable  declaration-property-value-disallowed-list */
+    border: none;
+    border-radius: 22px;
     box-sizing: border-box;
-    color: #bc9cff;
-    line-height: 42px;
-
-    &:hover {
-      background: unset;
-      border: 2px solid rgba(188, 156, 255, 0.5);
-      opacity: unset;
-    }
-  }
-  
-  &_theme_borderless {
-    background: #fff;
-    color: #bc9cff;
-    height: 44px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 44px;
+    max-height: 44px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
     width: 99px;
 
-    &:hover {
-      background: unset;
-      color: rgba(31, 32, 65, 0.5);
-      
+    &_type_submit::after {
+        content: '\e5c8';
+        cursor: pointer;
+        font-family: 'Material Icons';
+        font-size: 24px;
+        position: absolute;
+        right: 8px;
     }
-  }
-    
+
+    &:hover {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        opacity: 0.5;
+    }
+
+    &_size_long {
+        align-items: center;
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        height: 100%;
+        justify-content: center;
+        padding-right: 4px;
+        text-transform: uppercase;
+        width: 100%;
+        width: 100%;
+    }
+
+    &_size_longer {
+        align-items: center;
+        display: flex;
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        height: 100%;
+        justify-content: center;
+        text-transform: uppercase;
+        width: 100%;
+        width: 100%;
+    }
+
+    &_size_short {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        height: 34px;
+        justify-content: center;
+        min-width: unset;
+        width: 87px;
+    }
+
+    &_color_white {
+        background: #fff;
+        border: 2px solid #bc9cff;
+        box-sizing: border-box;
+        color: #bc9cff;
+        line-height: 42px;
+
+        &:hover {
+            background: unset;
+            border: 2px solid rgba(188, 156, 255, 0.5);
+            opacity: unset;
+        }
+    }
+
+    &_theme_borderless {
+        background: #fff;
+        color: #bc9cff;
+        height: 44px;
+        width: 99px;
+
+        &:hover {
+            background: unset;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
 }
