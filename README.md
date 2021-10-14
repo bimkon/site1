@@ -14,9 +14,7 @@
 [jQuery-Mask-Plugin](https://github.com/igorescobar/jQuery-Mask-Plugin),
 [slick-carousel](https://github.com/kenwheeler/slick),
 
-## Navigation page
-
-### [Navigation Page](https://bimkon.github.io/site1/index.html)
+## [Navigation Page](https://bimkon.github.io/site1/index.html)
 
 ## UI kit pages
 
