@@ -19,8 +19,8 @@
         border: 2px solid #fff;
         border-radius: 50%;
         box-shadow: 0 10px 20px rgba(31, 32, 65, 0.1);
-        height: 48px;
-        width: 48px;
+        max-height: 48px;
+        max-width: 48px;
     }
 
     &__avatar-block {
@@ -30,7 +30,7 @@
 
     &__name {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: bold;
@@ -40,7 +40,7 @@
     &__date,
     &__text {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;

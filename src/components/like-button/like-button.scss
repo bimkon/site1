@@ -7,11 +7,11 @@
         cursor: pointer;
         display: inline-block;
         font-size: 10px;
-        height: 18px;
+        min-height: 18px;
         line-height: 18px;
         position: relative;
         text-decoration: none;
-        width: 38px;
+        min-width: 38px;
     }
 
     &_type_active {

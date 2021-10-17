@@ -46,7 +46,7 @@
     &__title {
         color: #1f2041;
         display: flex;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: bold;
@@ -105,7 +105,7 @@
     min-height: 1px;
 }
 
-.range-slider__discribtion {
+.range-slider__discription {
     margin-top: 5px;
 }
 

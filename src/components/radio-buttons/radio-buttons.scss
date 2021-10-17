@@ -4,7 +4,7 @@
     &__lable {
         cursor: pointer;
         display: block;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         line-height: 24px;
         padding-left: 30px;
@@ -41,7 +41,7 @@
     &__main {
         color: #1f2041;
         display: block;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-weight: bold;
         line-height: 15px;
@@ -75,8 +75,8 @@
 .radio-buttons__lable .radio-buttons__checkmark::after {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 10px;
-    height: 12px;
+    min-height: 12px;
     left: 3px;
     top: 3px;
-    width: 12px;
+    min-width: 12px;
 }

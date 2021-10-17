@@ -28,7 +28,7 @@
 
     &__refers {
         color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
@@ -39,7 +39,7 @@
     &__subscribe-text,
     &__toxin-text {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
@@ -106,9 +106,9 @@
         }
     }
 
-    .bar__logo-toxin {
-        align-self: center;
-    }
+    // .bar__logo-toxin {
+    //     align-self: center;
+    // }
 }
 @media (max-width: 366px) {
     .footer__menu {
@@ -136,34 +136,9 @@
         }
     }
 }
-@media (min-width: 769px) {
-    .footer-creative {
-        display: none;
-    }
-}
 
 @media (max-width: 768px) {
     .footer {
         display: none;
-    }
-
-    .footer-creative {
-        display: block;
-    }
-}
-@media (max-width: 888px) {
-    .topmenu {
-        flex-direction: column;
-        min-width: 320px;
-    }
-
-    .bar__navigation {
-        flex-direction: column;
-    }
-}
-@media (max-width: 415px) {
-    .footer-copyright__wrapper {
-        align-items: center;
-        flex-direction: column;
     }
 }

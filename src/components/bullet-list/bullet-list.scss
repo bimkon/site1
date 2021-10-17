@@ -1,18 +1,13 @@
 .bullet-list {
     &__items {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         line-height: 24px;
         list-style-type: none;
         margin-bottom: 10px;
         max-width: 265px;
         padding-left: 20px;
-
-        &_short {
-            margin: 0;
-            padding-left: 15px;
-        }
     }
 
     &__list {
@@ -21,45 +16,13 @@
         padding: 0;
     }
 
-    &__title {
-        color: #1f2041;
-        font-family: 'Montserrat';
-        font-size: 12px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 15px;
-        margin-bottom: 16px;
-        text-transform: uppercase;
-    }
-
     &__color {
         background: rgba(31, 32, 65, 0.25);
         border-radius: 50%;
         height: 10px;
         left: 0;
-        line-height: 24px;
         position: absolute;
         top: 7px;
         width: 10px;
-
-        &_gold {
-            background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
-        }
-
-        &_green {
-            background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-        }
-
-        &_pink {
-            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-        }
-
-        &_black {
-            background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
-        }
     }
-}
-
-.form-elements__bullet-list {
-    margin-top: 14px;
 }

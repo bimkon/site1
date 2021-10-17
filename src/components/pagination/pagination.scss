@@ -1,4 +1,3 @@
-/* stylelint-disable scss/selector-no-redundant-nesting-selector */
 .pagination {
     display: flex;
     margin: 0;
@@ -8,7 +7,7 @@
 
     &__text {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
@@ -21,11 +20,11 @@
         background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         border-radius: 22px;
         color: #fff;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         text-decoration: none;
     }
 
-    & a:hover:not(.pagination__items_active) {
+    a:hover:not(.pagination__items_active) {
         background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         border-radius: 22px;
         color: #fff;
@@ -35,22 +34,21 @@
     &__items {
         color: rgba(31, 32, 65, 0.5);
         display: inline-block;
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         height: 40px;
         line-height: 42px;
         text-align: center;
         text-decoration: none;
         user-select: none;
-        width: 40px;
+        min-width: 40px;
     }
 }
 
 .arrow {
     font-family: 'Material Icons';
     font-size: 24px;
-    height: 40px;
+    min-height: 40px;
     line-height: 40px;
-    width: 40px;
+    min-width: 40px;
 }

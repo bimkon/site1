@@ -4,6 +4,10 @@
     flex-direction: column;
     margin-top: 65px;
 
+    &__bullet-list {
+        margin-top: 14px;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -30,7 +34,8 @@
     &__bottom-container {
         display: flex;
         margin-top: 163px;
-        width: 1159px;
+        width: 100%;
+        max-width: 1159px;
     }
 
     &__bottom-wrapper {
@@ -114,7 +119,8 @@
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-        width: 90px;
+        width: 100%;
+        max-width: 90px;
     }
 
     &__rate-button {

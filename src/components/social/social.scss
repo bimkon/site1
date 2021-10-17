@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 112px;
+    min-width: 112px;
 
     &__wrapper {
         display: flex;
@@ -30,11 +30,11 @@
         font-size: 24px;
         font-style: normal;
         font-weight: normal;
-        height: 24px;
+        min-height: 24px;
         line-height: 24px;
         text-align: center;
         text-decoration: none;
         -webkit-text-fill-color: transparent;
-        width: 24px;
+        min-width: 24px;
     }
 }

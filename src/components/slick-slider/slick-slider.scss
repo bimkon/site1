@@ -2,7 +2,7 @@
     background: #fff;
     border-top-left-radius: 4px;
     min-height: 257px;
-    width: 270px;
+    max-width: 270px;
 }
 
 .slick-track {
@@ -18,8 +18,8 @@
 }
 
 .slick__content {
-    height: 151px;
-    width: 270px;
+    min-height: 151px;
+    min-width: 270px;
 
     &::before {
         background: linear-gradient(
@@ -32,7 +32,7 @@
         display: block;
         height: 151px;
         position: absolute;
-        width: 42px;
+        min-width: 42px;
         z-index: 8;
     }
 
@@ -50,7 +50,7 @@
         right: 0;
         top: 0;
         transform: matrix(-1, 0, 0, 1, 0, 0);
-        width: 42px;
+        min-width: 42px;
         z-index: 8;
     }
     /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
@@ -65,7 +65,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 8px;
+        min-width: 8px;
         z-index: 10;
     }
 
@@ -99,8 +99,7 @@
         margin-right: 3.75px;
     }
 }
-/* stylelint-disable  selector-max-compound-selectors */
-/* stylelint-disable  selector-no-qualifying-type */
+
 .slick__content .slick-dots li.slick-active button {
     background-color: #fff;
 }
@@ -112,16 +111,16 @@
     box-sizing: border-box;
     filter: drop-shadow(0 5px 5px rgba(31, 32, 65, 0.3));
     font-size: 0;
-    height: 7.5px;
+    min-height: 7.5px;
     margin: 0;
     outline: none;
     padding: 0;
-    width: 7.5px;
+    min-width: 7.5px;
 }
 
 .slick__room-cost {
     color: rgba(31, 32, 65, 0.5);
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: bold;
@@ -132,7 +131,7 @@
     display: flex;
 }
 
-.slick__describtion {
+.slick__description {
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -151,7 +150,7 @@
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
-        width: 233px;
+        max-width: 233px;
 
         &:nth-child(1) {
             margin-top: 25px;
@@ -175,7 +174,7 @@
 
     &__symbol {
         color: #1f2041;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: bold;
@@ -185,7 +184,7 @@
 
     &__number {
         color: #1f2041;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 19px;
         font-style: normal;
         font-weight: bold;
@@ -197,7 +196,7 @@
 
     &__type-of-room {
         color: #bc9cff;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: bold;
@@ -209,7 +208,7 @@
 
     &__price {
         color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: bold;
@@ -218,7 +217,7 @@
 
     &__in-time {
         color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: normal;
@@ -228,7 +227,7 @@
 
     &__reviews-number {
         color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: bold;
@@ -238,7 +237,7 @@
 
     &__reviews {
         color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;

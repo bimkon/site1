@@ -18,12 +18,19 @@
 
     &__text {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
         line-height: 23px;
         margin-left: -1px;
         margin-top: 1px;
+    }
+}
+
+@media (max-width: 415px) {
+    .footer-copyright__wrapper {
+        align-items: center;
+        flex-direction: column;
     }
 }

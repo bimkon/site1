@@ -1,26 +1,22 @@
 .button {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    /* stylelint-disable  declaration-property-value-disallowed-list */
-    border: none;
     border-radius: 22px;
-    box-sizing: border-box;
+    border-style: none;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: flex;
     display: inline-block;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
-    height: 100%;
-    line-height: 44px;
-    max-height: 44px;
+    min-height: 44px;
+    min-width: 99px;
     position: relative;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
-    width: 99px;
+
 
     &_type_submit::after {
         content: '\e5c8';
@@ -39,7 +35,7 @@
     &_size_long {
         align-items: center;
         display: flex;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: normal;
@@ -48,13 +44,12 @@
         padding-right: 4px;
         text-transform: uppercase;
         width: 100%;
-        width: 100%;
     }
 
     &_size_longer {
         align-items: center;
         display: flex;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: normal;
@@ -62,17 +57,15 @@
         justify-content: center;
         text-transform: uppercase;
         width: 100%;
-        width: 100%;
     }
 
     &_size_short {
         align-items: center;
         color: #fff;
         display: flex;
-        height: 34px;
         justify-content: center;
-        min-width: unset;
-        width: 87px;
+        min-height: 34px;
+        min-width: 87px;
     }
 
     &_color_white {
@@ -80,7 +73,6 @@
         border: 2px solid #bc9cff;
         box-sizing: border-box;
         color: #bc9cff;
-        line-height: 42px;
 
         &:hover {
             background: unset;
@@ -92,8 +84,8 @@
     &_theme_borderless {
         background: #fff;
         color: #bc9cff;
-        height: 44px;
-        width: 99px;
+        min-height: 44px;
+        min-width: 99px;
 
         &:hover {
             background: unset;

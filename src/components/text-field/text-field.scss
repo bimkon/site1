@@ -2,9 +2,9 @@
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
-    height: 44px;
+    min-height: 44px;
     line-height: 18px;
     padding-left: 15px;
     width: 100%;
@@ -27,11 +27,11 @@
 }
 
 .text-field {
-    width: 320px;
+    min-width: 320px;
 
     &__text {
         color: #1f2041;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-weight: bold;
         line-height: 15px;
@@ -42,7 +42,7 @@
 .subscription {
     &__subtext {
         color: #1f2041;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         font-style: normal;
         font-weight: bold;
@@ -54,7 +54,7 @@
 
     &__latest-news {
         color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
@@ -62,7 +62,7 @@
         letter-spacing: -0.15px;
         line-height: 24px;
         margin-top: 18px;
-        width: 196px;
+        min-width: 196px;
     }
 
     &__form {
@@ -71,22 +71,20 @@
 
         &_short {
             max-width: 260px;
-            width: 260px;
+            width: 100%;
         }
     }
 
     &__input {
         background: #fff;
-        /* stylelint-disable  declaration-property-value-disallowed-list */
-        border: none;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
         box-sizing: border-box;
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
-        height: 44px;
+        min-height: 44px;
         line-height: 24px;
         outline: none;
         padding-bottom: 3px;
@@ -110,8 +108,7 @@
         );
         /* stylelint-disable property-no-vendor-prefix */
         -webkit-background-clip: text;
-        border: none;
-        border-left: none;
+        border-style: none;
         border-radius: 4px;
         box-sizing: border-box;
         cursor: pointer;
@@ -120,7 +117,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: normal;
-        height: 44px;
+        min-height: 44px;
         line-height: 24px;
         outline: none;
         padding: 0 0 0 10px;
@@ -129,6 +126,6 @@
         text-align: center;
         -webkit-text-fill-color: transparent;
         top: 0;
-        width: 44px;
+        min-width: 44px;
     }
 }

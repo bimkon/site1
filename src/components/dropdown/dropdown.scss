@@ -11,14 +11,14 @@
         font-size: 24px;
         font-style: normal;
         font-weight: normal;
-        height: 44px;
+        min-height: 44px;
         line-height: 44px;
         pointer-events: none;
         position: absolute;
         right: 0;
         text-align: center;
         top: 1px;
-        width: 44px;
+        min-width: 44px;
     }
 
     &__option {
@@ -36,7 +36,6 @@
         background: #fff;
         border: 1px solid rgba(31, 32, 65, 0.5);
         border-radius: 0 0 4px 4px;
-        /* stylelint-disable  declaration-property-value-disallowed-list */
         border-top: none;
         box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
         box-sizing: border-box;

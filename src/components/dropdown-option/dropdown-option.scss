@@ -24,7 +24,7 @@
         height: 30px;
         justify-content: center;
         user-select: none;
-        width: 30px;
+        min-width: 30px;
 
         &_inactive {
             opacity: 0.5;

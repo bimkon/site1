@@ -1,5 +1,6 @@
 .cards {
     display: flex;
+    margin-top: 72px;
 
     &__body {
         display: flex;
@@ -7,12 +8,8 @@
         margin: 0 auto;
         width: 1160px;
     }
-}
 
-.cards__row {
-    margin-bottom: 40px;
-}
-//Pixel perfect
-.cards {
-    margin-top: 72px;
+    &__row {
+        margin-bottom: 40px;
+    }
 }

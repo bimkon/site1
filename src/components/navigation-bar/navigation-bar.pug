@@ -4,7 +4,7 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
     case isLogged
         when 'logged'
             .navigation-bar
-                .navigation-bar__body.between
+                .navigation-bar__body
                     .navigation-bar__logo-toxin
                         +logo-toxin()
                     .navigation-bar__right-column
@@ -20,7 +20,7 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
                                 .user-text='Юлий Цезарь'
         default
                 .navigation-bar
-                    .navigation-bar__body.between
+                    .navigation-bar__body
                         .navigation-bar__logo-toxin
                             +logo-toxin()
                         .navigation-bar__right-column

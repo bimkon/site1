@@ -22,10 +22,9 @@ class DatePickerTwoInputs {
                 '<i class="datepicker--nav-arrow-right">arrow_forward</i>',
             position: 'bottom left',
         });
-        const okButton =
-            '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>';
+        const okButton = '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>';
         $(okButton).insertAfter(
-            $('.datepicker--button[data-action="clear"]').eq(this.index)
+            $('.datepicker--button[data-action="clear"]').eq(this.index),
         );
         if ($('.datepicker-here').hasClass('inline')) {
             $('.datepicker-here').datepicker({

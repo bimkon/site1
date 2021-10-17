@@ -29,29 +29,29 @@ class Dropdown {
     bindEventListeners() {
         this.select.addEventListener(
             'click',
-            this.handleSelectClick.bind(this)
+            this.handleSelectClick.bind(this),
         );
         this.dropdown.addEventListener(
             'changeOption',
-            this.handleDocumentChangeOption.bind(this)
+            this.handleDocumentChangeOption.bind(this),
         );
         if (this.clearButton) {
             this.clearButton.eventListenerBind(
                 'click',
-                this.handleClearButtonClick.bind(this)
+                this.handleClearButtonClick.bind(this),
             );
         }
         if (this.applyButton) {
             this.applyButton.eventListenerBind(
                 'click',
-                this.handleApplyButtonClick.bind(this)
+                this.handleApplyButtonClick.bind(this),
             );
         }
     }
 
     setOptions() {
         const optionsList = this.dropdown.querySelectorAll(
-            '.js-dropdown__option'
+            '.js-dropdown__option',
         );
         optionsList.forEach((currentOption) => {
             const newOption = new DropdownOption(currentOption);
@@ -81,16 +81,15 @@ class Dropdown {
                 const groupName = option.group.toLowerCase();
                 const groupValue = option.options.reduce(
                     (acc, val) => acc + parseInt(val.value, 10),
-                    0
+                    0,
                 );
 
                 if (groupValue === 0 && item !== 0) return '';
 
                 const cases = this.checkPad(groupValue);
-                const isTitlesAvailable =
-                    this.titleCases ||
-                    this.titleCases[groupName] ||
-                    this.titleCases[groupName][cases];
+                const isTitlesAvailable = this.titleCases
+                    || this.titleCases[groupName]
+                    || this.titleCases[groupName][cases];
 
                 if (!isTitlesAvailable) {
                     return ` ${groupValue} ${groupName}`;
@@ -102,8 +101,7 @@ class Dropdown {
             .filter((entry) => entry.trim() !== '');
 
         const finalText = summaryText.reduce((acc, item, i) => {
-            if (i === summaryText.length - 1)
-                return acc + item.replace(/,\s/g, '');
+            if (i === summaryText.length - 1) return acc + item.replace(/,\s/g, '');
             return `${acc}${item.replace(/,\s/g, '')}, `;
         }, []);
 
@@ -138,8 +136,7 @@ class Dropdown {
 
     handleDocumentClick(event) {
         const { target } = event;
-        const itsMenu =
-            target === this.dropdown || this.dropdown.contains(target);
+        const itsMenu = target === this.dropdown || this.dropdown.contains(target);
         if (!itsMenu) {
             this.hideDropdown(event);
         }
@@ -182,8 +179,7 @@ class Dropdown {
 
     checkPad(num) {
         this.lastOne = num.toString().split('').pop();
-        this.isNumBetweenOneAndFive =
-            Number(this.lastOne) > 1 && Number(this.lastOne) < 5;
+        this.isNumBetweenOneAndFive = Number(this.lastOne) > 1 && Number(this.lastOne) < 5;
         if (Number(this.lastOne) === 1) return 0;
         if (this.isNumBetweenOneAndFive) return 1;
         return 2;

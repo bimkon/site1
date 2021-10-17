@@ -10,20 +10,11 @@
         justify-content: space-between;
     }
 
-    &__discribtion {
-        color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
-        font-size: 12px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 14px;
-    }
 
     &__price {
-        /* stylelint-disable  declaration-property-value-disallowed-list */
-        border: none;
+        border-style: none;
         color: rgba(31, 32, 65, 0.5);
-        font-family: 'Montserrat';
+        font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
         line-height: 15px;
         margin-bottom: 5px;
@@ -42,7 +33,7 @@
             border: 1px solid rgba(31, 32, 65, 0.25);
             border-radius: 3px;
             box-sizing: border-box;
-            height: 6px;
+            min-height: 6px;
             max-width: 266px;
             width: 100%;
         }
@@ -53,12 +44,11 @@
             border-radius: 50%;
             box-sizing: border-box;
             cursor: pointer;
-            height: 16px;
+            min-height: 16px;
             margin-top: -2px;
             outline: none;
-            width: 16px;
-            /* stylelint-disable   max-nesting-depth */
-            /* stylelint-disable   selector-max-compound-selectors */
+            min-width: 16px;
+            
             i {
                 display: none;
             }
