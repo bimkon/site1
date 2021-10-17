@@ -14,11 +14,13 @@
 [jQuery-Mask-Plugin](https://github.com/igorescobar/jQuery-Mask-Plugin),
 [slick-carousel](https://github.com/kenwheeler/slick),
 
+## [Navigation Page](https://bimkon.github.io/site1/index.html)
+
 ## UI kit pages
 
 ### [Cards](https://bimkon.github.io/site1/cards.html)
 ### [Colors & type](https://bimkon.github.io/site1/color&type.html)
-### [Form elements](https://bimkon.github.io/site1/Form%20Elements.html)
+### [Form elements](https://bimkon.github.io/site1/form-elements.html)
 ### [Headers and footers](https://bimkon.github.io/site1/headers&footers.html)
 
 ## Website pages
