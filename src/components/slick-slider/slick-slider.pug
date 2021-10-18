@@ -1,6 +1,6 @@
 include ../star/star.pug
-mixin slick-slider({ values= [{image}], number, isLux, cost, votes, rating, arrow="", }={})
-    .slick__slider(class=`${arrow}`)
+mixin slick-slider({ values= [{image}], number, isLux, cost, votes, rating, }={})
+    .slick__slider
         .slick__content
                 each value in values
                     - const { image } = value
@@ -21,7 +21,7 @@ mixin slick-slider({ values= [{image}], number, isLux, cost, votes, rating, arro
                     img(src=("underline.svg"), alt="line")
             .slick__row
                 .slick__star-button
-                    +star({rating})
+                    +star()
                 .slick__reviews-block
                     span.slick__reviews-number=votes
-                    span.slick__reviews   Отзывов
+                    a.slick__reviews(href = '/mock-address/change-me') Отзывов

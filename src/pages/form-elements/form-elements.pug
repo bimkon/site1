@@ -18,6 +18,7 @@ block content
     include ../../components/icon-text/icon-text.pug
     include ../../components/bullet-list/bullet-list.pug
     include ../../components/comment/comment.pug
+    include ../../components/star/star.pug
     main.form-elements
         .form-elements__container
             article.form-elements__fields
@@ -96,7 +97,7 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'rate button',  })
                     .form-elements__rate-button
-                        +star({rating:3})
+                        +star
                 .form-elements__column-second
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })

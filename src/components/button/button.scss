@@ -17,7 +17,6 @@
     text-transform: uppercase;
     vertical-align: middle;
 
-
     &_type_submit::after {
         content: '\e5c8';
         cursor: pointer;
@@ -53,7 +52,7 @@
         font-size: 12px;
         font-style: normal;
         font-weight: normal;
-        height: 100%;
+        min-height: 34px;
         justify-content: center;
         text-transform: uppercase;
         width: 100%;
@@ -69,6 +68,9 @@
     }
 
     &_color_white {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: #fff;
         border: 2px solid #bc9cff;
         box-sizing: border-box;

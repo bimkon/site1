@@ -11,10 +11,18 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
                             nav.navigation-bar__navigation
                                 ul.topmenu
                                     each value in values
-                                        - const { link, text, links} = value
-                                        li.navig
-                                            a.navig__link(href=link)=text
-                                            +submenu({links})
+                                        - const { link, text, links, isActive} = value
+                                        case isActive
+                                            when 'true'
+                                                li.navig
+                                                    a.navig__link.navig__link_active(href=link)=text
+                                                    if Array.isArray(links) && links.length != 0
+                                                        +submenu({links})
+                                            default
+                                                li.navig
+                                                    a.navig__link(href=link)=text
+                                                    if Array.isArray(links) && links.length != 0
+                                                        +submenu({links})
                             .user
                                 img.user__arrow(src="rectangle.svg", alt="вертикальная линия")
                                 .user-text='Юлий Цезарь'
@@ -28,13 +36,20 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
                                 .navig-bar
                                 ul.topmenu
                                     each value in values
-                                        - const { link, text, links} = value
-                                        li.navig
-                                            a.navig__link(href=link)=text
-                                            if Array.isArray(links) && links.length != 0
-                                                +submenu({links})
+                                        - const { link, text, links, isActive} = value
+                                        case isActive
+                                            when 'true'
+                                                li.navig
+                                                    a.navig__link.navig__link_active(href=link)=text
+                                                    if Array.isArray(links) && links.length != 0
+                                                        +submenu({links})
+                                            default
+                                                li.navig
+                                                    a.navig__link(href=link)=text
+                                                    if Array.isArray(links) && links.length != 0
+                                                        +submenu({links})
                                 .navigation-bar__buttons
                                     .navigation-bar__login-button
                                         +button({type: 'button', text: 'Войти', color: 'white', size: 'short'})
                                     .navigation-bar__password-button
-                                        +button({type: 'button', href:'/mock-address/change-me',text:'Зарегистрироваться', size: 'long', })
+                                        +button({type: 'button', href:'/mock-address/change-me',text:'Зарегистрироваться', size: 'longer', })

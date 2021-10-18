@@ -15,11 +15,8 @@
 
 .slick__content {
     position: relative;
-}
-
-.slick__content {
-    min-height: 151px;
-    min-width: 270px;
+    max-height: 151px;
+    max-width: 270px;
 
     &::before {
         background: linear-gradient(
@@ -67,6 +64,7 @@
         transform: translateY(-50%);
         min-width: 8px;
         z-index: 10;
+        cursor: pointer;
     }
 
     & .slick-arrow.slick-prev {
@@ -140,6 +138,12 @@
 }
 
 .slick {
+    &__star-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3px;
+    }
     &__underline {
         display: flex;
         margin-top: 10px;
@@ -150,21 +154,20 @@
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
+        width: 100%;
         max-width: 233px;
 
         &:nth-child(1) {
             margin-top: 25px;
         }
-    }
 
-    &__star-button {
-        padding-left: 2px;
-        padding-top: 8px;
+        &:nth-child(3) {
+            margin-top: 10px;
+        }
     }
 
     &__reviews-block {
         display: flex;
-        margin-top: 6px;
         padding-right: 2px;
     }
 
@@ -243,10 +246,16 @@
         font-weight: normal;
         line-height: 18px;
         text-align: right;
+        text-decoration: none;
     }
 }
 
-.slick__content.slick__no-pseudo::before,
-.slick__content.slick__no-pseudo::after {
+.slick__content::before,
+.slick__content::after {
     display: none;
+}
+
+.slick__slider:hover .slick__content::before,
+.slick__slider:hover .slick__content::after {
+    display: block;
 }

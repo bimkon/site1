@@ -44,6 +44,7 @@
 .expandable-checkbox-block {
     position: relative;
     width: 100%;
+    min-width: 266px;
     max-width: 266px;
     /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
     & .checkbox-buttons {

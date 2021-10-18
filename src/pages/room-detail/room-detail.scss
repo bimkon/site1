@@ -1,5 +1,6 @@
 .room-detail {
     display: flex;
+    width: 100%;
 
     &__icon-text {
         &:nth-child(2) {
@@ -188,6 +189,10 @@
         flex-direction: column;
         margin-bottom: 20px;
     }
+
+    .room-detail__votes {
+      display: none;
+    }
 }
 
 @media (max-width: 642px) {
@@ -217,4 +222,7 @@
     .room-detail__list {
         margin-left: 5px;
     }
+}
+.room-page {
+  width: 100%;
 }

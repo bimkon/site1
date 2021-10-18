@@ -3,15 +3,14 @@
         border: 1px solid;
         border-color: rgba(31, 32, 65, 0.25);
         border-radius: 10px;
-        box-sizing: initial;
+        box-sizing: border-box;
         cursor: pointer;
-        display: inline-block;
+        display: flex;
         font-size: 10px;
-        min-height: 18px;
-        line-height: 18px;
+        min-height: 20px;
         position: relative;
         text-decoration: none;
-        min-width: 38px;
+        max-width: 40px;
     }
 
     &_type_active {
@@ -34,6 +33,7 @@
     color: rgba(31, 32, 65, 0.25);
     content: attr(data-count);
     left: 20px;
+    top: 2px;
     position: absolute;
 }
 
@@ -45,6 +45,7 @@
     color: rgba(31, 32, 65, 0.25);
     font-family: 'Material icons';
     left: 5px;
+    top: 3px;
     position: relative;
 }
 

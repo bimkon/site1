@@ -27,7 +27,7 @@
     }
 
     .sign-in-form {
-      min-width: unset;
+        min-width: unset;
         height: 100%;
         width: 100%;
     }
@@ -38,5 +38,13 @@
 
     .sign-in-page {
         min-height: 320px;
+    }
+
+    .sign-in-form__login-text {
+      margin-bottom: 6px;
+    }
+    .sign-in-form__register {
+      margin-top: 7px;
+      flex-direction: column;
     }
 }

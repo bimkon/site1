@@ -64,6 +64,7 @@
         &:nth-child(2) {
             margin-bottom: 29px;
             min-width: 266px;
+            max-width: 266px;
         }
 
         &:nth-child(3) {
@@ -79,7 +80,7 @@
         }
 
         &:nth-child(6) {
-            margin-bottom: 24px;
+            margin-bottom: 25px;
         }
     }
 
@@ -105,7 +106,7 @@
     min-height: 1px;
 }
 
-.range-slider__discription {
+.range-slider__description {
     margin-top: 5px;
 }
 

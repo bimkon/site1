@@ -66,10 +66,10 @@
     }
 
     &__form {
-        max-width: 266px;
         position: relative;
 
         &_short {
+            min-width: 260px;
             max-width: 260px;
             width: 100%;
         }
