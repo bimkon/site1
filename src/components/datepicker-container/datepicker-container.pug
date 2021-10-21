@@ -1,12 +1,18 @@
 include ../../components/heading/heading.pug
-mixin datepicker-container({ inputField = 'single', firstHeading=' ', secondHeading= '', isInline=' ', type='text'  } = {})
+mixin datepicker-container({ inputField = 'single', firstHeading=' ', secondHeading= '', type='text'  } = {})
     case inputField
         when 'single'
             .datepicker-container
                 +heading({ type: 'h3', text: `${firstHeading}`, })
+                i.datepicker-container__arrow expand_more
                 input.datepicker-here(type=type
-                        class=`${isInline}`
-                        data-multiple-dates="2", data-multiple-dates-separator=" - ", data-range="true", placeholder="ДД.МЕС - ДД.МЕС"
+                        data-multiple-dates="2", inline='true', data-multiple-dates-separator=" - ", data-range="true", placeholder="ДД.МЕС - ДД.МЕС"
+                        readonly
+                    )
+        when 'inline'
+            .datepicker-container
+                .datepicker-here(type=type
+                         class='datepicker-here_inline', data-multiple-dates="2", inline='true', data-multiple-dates-separator=" - ", data-range="true", placeholder="ДД.МЕС - ДД.МЕС"
                         readonly
                     )
         when 'two-inputs'
@@ -24,6 +30,6 @@ mixin datepicker-container({ inputField = 'single', firstHeading=' ', secondHead
                         +heading({ type: 'h3', text: `${secondHeading}`, })
                     .datepicker-container__inputs
                         i.datepicker-container__arrow expand_more
-                        input.datepicker-two-inputs.datepicker-two-inputs_end(type="text", data-multiple-dates="2", data-multiple-dates-separator=" - ", data-range="true", placeholder="ДД.ММ.ГГГГ"
+                        input.datepicker-two-inputs_end(type="text", data-multiple-dates="2", data-multiple-dates-separator=" - ", data-range="true", placeholder="ДД.ММ.ГГГГ"
                                 readonly
                             )

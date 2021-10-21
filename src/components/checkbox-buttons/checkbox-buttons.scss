@@ -1,18 +1,6 @@
 .checkbox-buttons {
-    margin-top: 18px;
+    padding-bottom: 13px;
     max-width: 266px;
-
-    &:nth-child(2) {
-        margin-top: 11px;
-    }
-
-    &:nth-child(1) {
-        max-width: 233px;
-    }
-
-    &:nth-child(3) {
-        margin-top: 11px;
-    }
 
     &__lable {
         color: rgba(31, 32, 65, 0.5);
@@ -23,7 +11,6 @@
         font-style: normal;
         font-weight: normal;
         line-height: 18px;
-        margin-bottom: 12px;
         max-width: 243px;
         position: relative;
         text-transform: none;
@@ -52,7 +39,7 @@
         font-style: normal;
         font-weight: normal;
         line-height: 18px;
-        padding-left: 24px;
+        padding-left: 23px;
     }
 
     &__about {
@@ -63,9 +50,9 @@
         font-style: normal;
         font-weight: normal;
         line-height: 14px;
-        margin-bottom: 5px;
         max-width: 256px;
         padding-left: 30px;
+        margin-bottom: -2px;
     }
 
     &__checkmark {
@@ -100,10 +87,10 @@
         font-style: normal;
         font-weight: bold;
         line-height: 18px;
-        margin-bottom: 5px;
     }
 
     &__rich-text {
         padding-left: 30px;
+        padding-bottom: 5px;
     }
 }

@@ -1,3 +1,7 @@
-.logo-icon {
-    min-width: 48px;
+.logo {
+    display: flex;
+    &-icon {
+        min-width: 48px;
+        display: flex;
+    }
 }

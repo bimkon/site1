@@ -46,11 +46,6 @@
     padding: 15px 3px 20px;
     width: unset;
 
-    &-inline {
-        box-sizing: border-box;
-        max-width: 320px;
-    }
-
     &-here {
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
@@ -62,11 +57,13 @@
         font-style: normal;
         font-weight: normal;
         line-height: 24px;
-        max-width: 266px;
         min-height: 44px;
-        padding: 0;
         padding-left: 15px;
         width: 100%;
+    }
+
+    &-here_inline {
+        padding-left: 0;
     }
 
     &__title {
@@ -82,7 +79,7 @@
 
     &-container__arrow {
         box-sizing: border-box;
-        color: #000;
+        color: rgba(31, 32, 65, 0.5);
         display: block;
         font-family: 'Material Icons';
         font-size: 24px;
@@ -229,6 +226,7 @@
 
     &-two-inputs {
         border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
         color: rgba(31, 32, 65, 0.75);
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
@@ -240,9 +238,30 @@
         padding-bottom: 2px;
         padding-left: 14px;
         width: 100%;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none;
+        }
 
         &_end {
-            pointer-events: none;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            color: rgba(31, 32, 65, 0.75);
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: normal;
+            cursor: pointer;
+            min-height: 44px;
+            padding: 0;
+            padding-bottom: 2px;
+            padding-left: 14px;
+            width: 100%;
+            border-radius: 4px;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }
@@ -294,4 +313,14 @@
     top: 0;
     top: 0;
     width: 100%;
+}
+
+@media (max-width: 700px) {
+    .datepicker {
+        max-width: 280px;
+    }
+
+    .datepicker--days-names {
+        min-width: 250px;
+    }
 }

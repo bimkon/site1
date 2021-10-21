@@ -21,6 +21,10 @@ mixin button({ type, href, text, size, color, theme } = {})
             typeModifiers[type],
             themeModifiers[theme],
         ];
-        const tag = href ? 'a' : 'button';
-        const buttonType = !href && type;
-    #{tag}(type=buttonType class=classes href=href)=text
+        const isLink = href ? 'true' : 'false';
+    case isLink
+        when 'true'
+            a.button__container(href=href)
+                button(type='button' class=classes )=text
+        default
+            button(type='button' class=classes href=href)=text

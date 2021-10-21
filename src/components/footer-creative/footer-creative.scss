@@ -76,5 +76,11 @@
 @media (max-width: 768px) {
     .footer-creative {
         display: block;
+        margin-top: 0;
+        padding: 0 10px;
+    }
+
+    .footer-creative__wrapper {
+        min-height: 200px;
     }
 }

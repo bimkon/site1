@@ -36,11 +36,13 @@ block content
                     })
                 .range-slider__description Стоимость за сутки пребывания в номере
             .search-room__item
-                +heading({ type: 'h3', text: 'Правила дома', })
+                .search-room__checkbox-heading
+                    +heading({ type: 'h3', text: 'Правила дома', })
                 .search-room__checkbox-button
                     +checkbox-buttons({ values: [{ text: 'Можно курить', }, { text: 'Можно с питомцами',    isChecked: 'checked'}, { text: 'Можно пригласить гостей (до 10 человек)',    isChecked: 'checked'}], })
             .search-room__item
-                +heading({ type: 'h3', text: 'Доступность', })
+                .search-room__checkbox-heading-rich
+                    +heading({ type: 'h3', text: 'Доступность', })
                 .search-room__rich-button
                     +checkbox-buttons({values: [{ text: 'Широкий коридор', description: 'Ширина коридоров в номере не менее 91 см.', typeOfCheckBox: 'rich-checkbox'},{ text: 'Помощник для инвалидов', description: 'На 1 этаже вас встретит специалист    и проводит до номера.', typeOfCheckBox: 'rich-checkbox'}] })
             .search-room__item

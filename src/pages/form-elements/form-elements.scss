@@ -4,6 +4,10 @@
     flex-direction: column;
     margin-top: 65px;
 
+    &__checkbox-heading {
+        margin-bottom: 16px;
+    }
+
     &__bullet-list {
         margin-top: 14px;
     }
@@ -22,7 +26,7 @@
     &__check-buttons {
         display: flex;
         flex-direction: column;
-        margin-left: 126px;
+        margin-left: 120px;
     }
 
     &__buttons {
@@ -90,7 +94,7 @@
         }
 
         &:nth-child(5) {
-            margin-bottom: 505px;
+            margin-bottom: 517px;
         }
     }
 
@@ -110,6 +114,10 @@
         margin-bottom: 5px;
     }
 
+    &__heading-rich {
+        margin-bottom: 17px;
+    }
+
     &__radio-buttons {
         display: flex;
         margin-top: 15px;
@@ -118,12 +126,18 @@
     &__like-button {
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
+        margin-top: 16px;
         width: 100%;
         max-width: 90px;
     }
 
     &__rate-button {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 120px;
         margin-top: 17px;
     }
 
@@ -133,6 +147,7 @@
     }
 
     &__button {
+        min-width: 320px;
         margin-bottom: 30px;
         margin-top: 16px;
 

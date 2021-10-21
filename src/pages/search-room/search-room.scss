@@ -7,16 +7,20 @@
     padding-right: 10px;
     width: 100%;
 
+    &__checkbox-heading {
+        margin-bottom: 18px;
+    }
+
+    &__checkbox-heading-rich {
+        margin-bottom: 18px;
+    }
+
     &__filter {
         margin-top: 31px;
     }
 
     &__rooms {
         min-height: 1091px;
-    }
-
-    &__checkbox-button {
-        margin-left: -1px;
     }
 
     &__column {
@@ -72,11 +76,11 @@
         }
 
         &:nth-child(4) {
-            margin-bottom: 32px;
+            margin-bottom: 17px;
         }
 
         &:nth-child(5) {
-            margin-bottom: 30px;
+            margin-bottom: 19px;
         }
 
         &:nth-child(6) {
@@ -106,14 +110,10 @@
     min-height: 1px;
 }
 
-.range-slider__description {
-    margin-top: 5px;
-}
-
 .search-room__rich-button {
     margin-top: -1px;
 }
-@media (max-width: 1130px) {
+@media (max-width: 1150px) {
     .search-room {
         flex-direction: column;
 

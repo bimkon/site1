@@ -86,7 +86,7 @@ const options = {
                         formatter(w) {
                             return w.globals.seriesTotals.reduce(
                                 (a, b) => a + b,
-                                0
+                                0,
                             );
                         },
                         label: 'голосов',

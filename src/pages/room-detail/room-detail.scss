@@ -16,7 +16,7 @@
     &__room {
         display: flex;
         flex-direction: column;
-        margin-bottom: 69px;
+        padding-bottom: 69px;
     }
 
     &__preview {
@@ -162,7 +162,7 @@
         min-height: 1px;
     }
 }
-@media (max-width: 1110px) {
+@media (max-width: 1140px) {
     .room-detail__content {
         align-items: center;
         flex-direction: column;

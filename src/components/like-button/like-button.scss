@@ -1,4 +1,8 @@
 .like-button {
+    display: block;
+    min-width: 40px;
+    min-height: 20px;
+
     &__button {
         border: 1px solid;
         border-color: rgba(31, 32, 65, 0.25);

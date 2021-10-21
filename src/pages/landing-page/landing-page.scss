@@ -7,11 +7,22 @@
     min-height: 830px;
     position: relative;
     width: 100%;
+    justify-content: center;
+
     @media (max-width: 1000px) {
         min-height: 540px;
     }
     @media (max-width: 650px) {
         min-height: 460px;
+    }
+
+    &__container {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1180px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
     }
 }
 
@@ -33,7 +44,6 @@
 }
 
 .landing-page__filter {
-    padding-left: 140px;
     padding-top: 70px;
     @media (max-width: 650px) {
         align-items: center;

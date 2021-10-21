@@ -95,6 +95,8 @@ li {
     position: absolute;
     white-space: nowrap;
     min-width: 70px;
+
+
 }
 
 .navig:hover .submenu {
@@ -102,6 +104,9 @@ li {
     display: flex;
     flex-direction: column;
     z-index: 10;
+    width:100%;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
 }
 
 .submenu__item:hover {
@@ -217,6 +222,12 @@ li {
         display: flex;
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navigation-bar__navigation_active {
+      flex-direction: column;
     }
 
     .navigation-bar__logo-toxin {

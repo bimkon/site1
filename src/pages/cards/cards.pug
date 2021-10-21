@@ -24,8 +24,8 @@ block content
                 .cards__row
                     +sign-in-form()
             section.cards__column
-                .cards__row
-                    +datepicker-container({ inputField: 'single',isInline: 'inline', type: 'hidden' })
+                .cards__row-datepicker
+                    +datepicker-container({ inputField: 'inline',  })
                 .cards__row
                     +slick-slider({ values: [{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'}], number: '888', isLux: ' Люкс', cost: '9 990', votes: '145', rating: '5',})
                 .cards__row

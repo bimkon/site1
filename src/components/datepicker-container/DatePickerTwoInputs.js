@@ -26,11 +26,13 @@ class DatePickerTwoInputs {
         $(okButton).insertAfter(
             $('.datepicker--button[data-action="clear"]').eq(this.index),
         );
-        if ($('.datepicker-here').hasClass('inline')) {
-            $('.datepicker-here').datepicker({
-                inline: true,
-            });
-        }
+        const twoInputs = document.querySelector('.datepicker-two-inputs_end');
+        twoInputs.addEventListener('focus', () => {});
+        $('.datepicker-two-inputs_end').click(() => {
+            $('.datepicker-two-inputs_start').focus();
+        });
+
+
     }
 }
 export default DatePickerTwoInputs;

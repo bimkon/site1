@@ -7,9 +7,10 @@ class DatePickerSingleInput {
 
     initDatePicker() {
         this.$datePicker.datepicker({
-            inline: false,
+
             clearButton: true,
             dateFormat: 'dd M',
+            inline: true,
             navTitles: {
                 days: 'MM yyyy',
             },
