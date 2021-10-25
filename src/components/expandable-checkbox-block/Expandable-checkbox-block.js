@@ -28,7 +28,7 @@ class ExpandableCheckbox {
 
     handleDocumentClick(event) {
         this.textElement = $(
-            '.js-expandable-checkbox-block > .expandable-checkbox__arrow',
+            '.js-expandable-checkbox-block > .expandable-checkbox-block__arrow',
         )
             .parents('.js-expandable-checkbox-block')
             .find('ul');

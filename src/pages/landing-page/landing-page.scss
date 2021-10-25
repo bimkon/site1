@@ -18,11 +18,13 @@
 
     &__container {
         display: flex;
+        position: relative;
         margin: 0 auto;
         max-width: 1180px;
         padding-left: 10px;
         padding-right: 10px;
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -34,12 +36,15 @@
     line-height: 24px;
     margin: unset;
     position: absolute;
-    right: 135px;
+    right: 5px;
     text-align: right;
     max-width: 300px;
     @media (max-width: 650px) {
         align-self: center;
-        right: 25%;
+        top: 0;
+    }
+    @media (max-width: 1200px) {
+        padding-right: 20px;
     }
 }
 
@@ -54,6 +59,10 @@
     }
 }
 @media (max-width: 430px) {
+    .landing-page__quote {
+        display: none;
+    }
+
     .filter {
         margin: 10px;
         max-width: 370px;
@@ -80,15 +89,5 @@
 
     .buttons__long {
         min-width: 100%;
-    }
-
-    .landing-page__quote {
-        display: none;
-    }
-}
-
-@media (max-width: 430px) {
-    .button_type_long {
-        min-width: 250px;
     }
 }

@@ -14,6 +14,7 @@ class SlickSlider {
     }
 
     hideAllArrows() {
+      $('.slick-arrow').text('')
         this.$slider = $('.slick__slider');
         this.$slider.find('.slick-arrow').hide();
     }
