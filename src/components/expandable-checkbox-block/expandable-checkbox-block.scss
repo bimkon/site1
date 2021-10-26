@@ -1,64 +1,58 @@
-.expandable-checkbox-block ul {
-    clear: both;
-    display: none;
-    list-style: outside none none;
-    margin: 0;
-    padding: 0;
-}
-
-.expandable-checkbox-block__arrow {
-    box-sizing: border-box;
-    color: rgba(31, 32, 65, 0.5);
-    font-family: 'Material Icons';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: normal;
-    height: 44px;
-    line-height: 44px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-transform: none;
-    top: -15px;
-    min-width: 44px;
-
-    &::before {
-        content: '';
-        cursor: pointer;
-        min-height: 20px;
-        position: absolute;
-        right: 0;
-        top: 13px;
-        min-width: 270px;
-    }
-}
-
-.rotate {
-    transform: rotate(-180deg);
-
-    &-back::before {
-        left: 0;
-    }
-}
-
 .expandable-checkbox-block {
+    max-width: 266px;
+    min-width: 266px;
     position: absolute;
     width: 100%;
-    min-width: 266px;
-    max-width: 266px;
     /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
+
+    @media (max-width: 1150px) {
+        position: relative;
+    }
 
     &__heading {
         margin-bottom: 18px;
     }
-}
 
-.checkbox-buttons__text {
-    padding-left: 30px;
-}
+    &__container {
+        clear: both;
+        display: none;
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+    }
 
-@media (max-width: 1150px) {
-    .expandable-checkbox-block {
-        position: relative;
+    &__arrow {
+        box-sizing: border-box;
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Material Icons';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;
+        height: 44px;
+        line-height: 44px;
+        min-width: 44px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-transform: none;
+        top: -15px;
+
+        &::before {
+            content: '';
+            cursor: pointer;
+            min-height: 20px;
+            min-width: 270px;
+            position: absolute;
+            right: 0;
+            top: 13px;
+        }
+    }
+
+    &__rotate {
+        transform: rotate(-180deg);
+    }
+
+    &__rotate-back::before {
+        left: 0;
     }
 }

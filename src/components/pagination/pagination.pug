@@ -4,5 +4,5 @@ mixin pagination({ values = [{href, number, isActive}] })
             - const {href, number, isActive} = value
             - const classes = ['pagination__items', isActive && 'pagination__items_active']
             a(href=href class = classes)=number
-        a.pagination__items.arrow arrow_forward
+        a.pagination__items.pagination__items_arrow arrow_forward
     .pagination__text 1 – 12 из 100+ вариантов аренды

@@ -1,4 +1,4 @@
-class SlickSlider {
+class SlickSliders {
     constructor(elem) {
         this.$slickSlider = $(elem);
         this.initSlickSlider();
@@ -14,8 +14,8 @@ class SlickSlider {
     }
 
     hideAllArrows() {
-      $('.slick-arrow').text('')
-        this.$slider = $('.slick__slider');
+        $('.slick-arrow').text('');
+        this.$slider = $('.slick-sliders');
         this.$slider.find('.slick-arrow').hide();
     }
 
@@ -25,8 +25,8 @@ class SlickSlider {
                 $(this).find('.slick-arrow').show();
             })
             .on('mouseleave', () => {
-                $('.slick__slider').find('.slick-arrow').hide();
+                $('.slick-sliders').find('.slick-arrow').hide();
             });
     }
 }
-export default SlickSlider;
+export default SlickSliders;

@@ -10,7 +10,6 @@ block content
     include ../../components/radio-buttons/radio-buttons.pug
     include ../../components/toggle/toggle.pug
     include ../../components/like-button/like-button.pug
-    include ../../components/star/star.pug
     include ../../components/range-slider/range-slider.pug
     include ../../components/button/button.pug
     include ../../components/pagination/pagination.pug
@@ -18,7 +17,7 @@ block content
     include ../../components/icon-text/icon-text.pug
     include ../../components/bullet-list/bullet-list.pug
     include ../../components/comment/comment.pug
-    include ../../components/star/star.pug
+    include ../../components/rating/rating.pug
     main.form-elements
         .form-elements__container
             article.form-elements__fields
@@ -97,7 +96,7 @@ block content
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'rate button',  })
                     .form-elements__rate-button
-                        +star
+                        +rating
                 .form-elements__column-second
                     .form-elements__heading-rich
                         +heading({ type: 'h3', text: 'Rich checkbox buttons', })

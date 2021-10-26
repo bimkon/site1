@@ -1,11 +1,15 @@
 .footer {
     align-items: center;
     background: #fff;
+    border-top: 1px solid rgba(31, 32, 65, 0.25);
     box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
     display: flex;
     justify-content: center;
     min-height: 372px;
-    border-top: 1px solid rgba(31, 32, 65, 0.25);
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 
     &__wrapper {
         align-items: flex-start;
@@ -16,6 +20,14 @@
         padding-right: 10px;
         padding-top: 1px;
         width: 100%;
+
+        @media (max-width: 1000px) {
+            align-self: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            max-height: unset;
+        }
     }
 
     &__link {
@@ -78,70 +90,50 @@
             max-height: 132px;
             max-width: 260px;
             padding-top: 19px;
+
+            @media (max-width: 1000px) {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 366px) {
+                max-height: 132px;
+                max-width: 260px;
+                padding-top: 19px;
+            }
         }
 
         &:nth-child(2) {
             padding-left: 39px;
+
+            @media (max-width: 366px) {
+                padding-left: 0;
+            }
         }
 
         &:nth-child(3) {
             padding-left: 58px;
+
+            @media (max-width: 366px) {
+                padding-left: 10px;
+            }
         }
 
         &:nth-child(4) {
             padding-left: 93px;
+
+            @media (max-width: 366px) {
+                padding-left: 0;
+            }
         }
 
         &:nth-child(5) {
             max-width: 300px;
             padding-left: 52px;
-        }
-    }
-}
-@media (max-width: 1000px) {
-    .footer__wrapper {
-        align-self: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 20px;
-        max-height: unset;
-    }
 
-    .footer__menu {
-        &:first-child {
-            margin-bottom: 20px;
+            @media (max-width: 366px) {
+                max-width: 300px;
+                padding-left: 0;
+            }
         }
-    }
-}
-@media (max-width: 366px) {
-    .footer__menu {
-        &:first-child {
-            max-height: 132px;
-            max-width: 260px;
-            padding-top: 19px;
-        }
-
-        &:nth-child(2) {
-            padding-left: 0;
-        }
-
-        &:nth-child(3) {
-            padding-left: 10px;
-        }
-
-        &:nth-child(4) {
-            padding-left: 0;
-        }
-
-        &:nth-child(5) {
-            max-width: 300px;
-            padding-left: 0;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .footer {
-        display: none;
     }
 }

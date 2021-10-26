@@ -6,8 +6,8 @@
         align-self: center;
         display: flex;
         min-height: 20px;
-        position: relative;
         min-width: 40px;
+        position: relative;
 
         .toggle__input {
             height: 0;
@@ -36,9 +36,9 @@
             content: '';
             height: 12px;
             left: 4px;
+            min-width: 12px;
             position: absolute;
             transition: 0.4s;
-            min-width: 12px;
         }
     }
 

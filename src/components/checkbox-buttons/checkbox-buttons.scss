@@ -1,6 +1,6 @@
 .checkbox-buttons {
-    padding-bottom: 13px;
     max-width: 266px;
+    padding-bottom: 13px;
 
     &__lable {
         color: rgba(31, 32, 65, 0.5);
@@ -50,9 +50,9 @@
         font-style: normal;
         font-weight: normal;
         line-height: 14px;
+        margin-bottom: -2px;
         max-width: 256px;
         padding-left: 30px;
-        margin-bottom: -2px;
     }
 
     &__checkmark {
@@ -90,7 +90,7 @@
     }
 
     &__rich-text {
-        padding-left: 30px;
         padding-bottom: 5px;
+        padding-left: 30px;
     }
 }

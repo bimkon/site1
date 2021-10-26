@@ -8,9 +8,9 @@
     height: auto;
     justify-content: center;
     min-height: 683px;
+    min-height: 701px;
     position: relative;
     width: 100%;
-    min-height: 701px;
     @media (max-width: 1000px) {
         min-height: 450px;
     }
@@ -26,8 +26,8 @@
     }
 
     .sign-in-form {
-        min-width: unset;
         height: 100%;
+        min-width: unset;
         width: 100%;
     }
 
@@ -40,10 +40,11 @@
     }
 
     .sign-in-form__login-text {
-      margin-bottom: 6px;
+        margin-bottom: 6px;
     }
+
     .sign-in-form__register {
-      margin-top: 7px;
-      flex-direction: column;
+        flex-direction: column;
+        margin-top: 7px;
     }
 }

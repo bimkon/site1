@@ -14,14 +14,13 @@
     }
 }
 
-.colors-block__type {
-    margin-bottom: 51px;
-
+.colors-block-types__item {
     &:nth-child(1) {
         margin-bottom: 52px;
     }
 
     &:nth-child(2) {
+        margin-bottom: 51px;
         margin-left: 1px;
     }
 
@@ -31,6 +30,7 @@
     }
 
     &:nth-child(4) {
+        max-width: 200px;
         position: relative;
         right: 8px;
     }

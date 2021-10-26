@@ -9,23 +9,23 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
                         +logo-toxin()
                     .navigation-bar__right-column
                             nav.navigation-bar__navigation
-                                ul.topmenu
+                                ul.navigation-bar__top-menu
                                     each value in values
                                         - const { link, text, links, isActive} = value
                                         case isActive
                                             when 'true'
-                                                li.navig
-                                                    a.navig__link.navig__link_active(href=link)=text
+                                                li.navigation-bar__links
+                                                    a.navigation-bar__link.navigation-bar__link_active(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
                                                         +submenu({links})
                                             default
-                                                li.navig
-                                                    a.navig__link(href=link)=text
+                                                li.navigation-bar__links
+                                                    a.navigation-bar__link(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
                                                         +submenu({links})
-                            .user
-                                img.user__arrow(src="rectangle.svg", alt="вертикальная линия")
-                                .user-text='Юлий Цезарь'
+                            .navigation-bar__user
+                                img.navigation-bar__arrow(src="rectangle.svg", alt="вертикальная линия")
+                                .navigation-bar__text='Юлий Цезарь'
         default
                 .navigation-bar
                     .navigation-bar__body
@@ -33,19 +33,19 @@ mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
                             +logo-toxin()
                         .navigation-bar__right-column
                             nav.navigation-bar__navigation
-                                .navig-bar
-                                ul.topmenu
+                                .navigation-bar__burger
+                                ul.navigation-bar__top-menu
                                     each value in values
                                         - const { link, text, links, isActive} = value
                                         case isActive
                                             when 'true'
-                                                li.navig
-                                                    a.navig__link.navig__link_active(href=link)=text
+                                                li.navigation-bar__links
+                                                    a.navigation-bar__link.navigation-bar__link_active(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
                                                         +submenu({links})
                                             default
-                                                li.navig
-                                                    a.navig__link(href=link)=text
+                                                li.navigation-bar__links
+                                                    a.navigation-bar__link(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
                                                         +submenu({links})
                                 .navigation-bar__buttons

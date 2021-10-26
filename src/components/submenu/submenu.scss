@@ -1,0 +1,23 @@
+.submenu {
+    display: none;
+    left: 0;
+    min-width: 70px;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+
+    &__item {
+        position: relative;
+    }
+
+    &__item:hover {
+        background: rgb(190, 190, 190);
+    }
+
+    &__link {
+        color: rgba(31, 32, 65, 0.5);
+        text-decoration: none;
+    }
+}

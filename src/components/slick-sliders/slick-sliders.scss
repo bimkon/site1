@@ -1,8 +1,8 @@
-.slick__slider {
+.slick-sliders {
     background: #fff;
-    min-height: 257px;
-    max-width: 270px;
     border-radius: 4px;
+    max-width: 270px;
+    min-height: 257px;
 }
 
 .slick-track {
@@ -13,67 +13,65 @@
     overflow: hidden;
 }
 
-.slick__content {
-    position: relative;
+.slick-sliders__content {
     max-height: 151px;
     max-width: 270px;
+    position: relative;
 
     & .slick-arrow {
-        background: linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.5) 0%,
-            rgba(0, 0, 0, 0) 99.99%,
-            rgba(255, 255, 255, 0) 100%
-        );
+        background: linear-gradient(90deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 99.99%,
+        rgba(255, 255, 255, 0) 100%);
         border: none;
-        outline: none;
-        height: 100%;
-        width: 44px;
-        padding: 0;
         cursor: pointer;
+        height: 100%;
+        outline: none;
+        padding: 0;
         position: absolute;
         top: 0;
+        width: 44px;
 
 
     }
 
     & .slick-arrow.slick-prev {
-        z-index: 1;
-        left: 0;
         border-top-left-radius: 4px;
+        left: 0;
+        z-index: 1;
 
         &::before {
+            color: #fff;
             content: 'expand_more';
             display: block;
             font-family: 'Material Icons';
+            font-size: 24px;
             font-style: normal;
             font-weight: normal;
-            color: #ffffff;
-            font-size: 24px;
             transform: rotate(90deg);
         }
     }
 
     & .slick-arrow.slick-next {
-        z-index: 1;
+        border-bottom-left-radius: 4px;
         right: 0;
         transform: rotate(180deg);
-        border-bottom-left-radius: 4px;
+        z-index: 1;
 
         &::before {
+            color: #fff;
             content: 'expand_more';
             display: block;
             font-family: 'Material Icons';
+            font-size: 24px;
             font-style: normal;
             font-weight: normal;
-            color: #ffffff;
-            font-size: 24px;
             transform: rotate(90deg);
         }
     }
 }
 
-.slick__content .slick-dots {
+.slick-sliders__content .slick-dots {
     align-items: center;
     bottom: 37px;
     display: flex;
@@ -84,7 +82,7 @@
     z-index: 6;
 }
 
-.slick__content .slick-dots li {
+.slick-sliders__content .slick-dots li {
     list-style: none;
 
     &:nth-child(-n + 3) {
@@ -92,7 +90,7 @@
     }
 }
 
-.slick__content .slick-dots li.slick-active button {
+.slick-sliders__content .slick-dots li.slick-active button {
     background-color: #fff;
 }
 
@@ -103,14 +101,14 @@
     box-sizing: border-box;
     filter: drop-shadow(0 5px 5px rgba(31, 32, 65, 0.3));
     font-size: 0;
-    min-height: 7.5px;
     margin: 0;
+    min-height: 7.5px;
+    min-width: 7.5px;
     outline: none;
     padding: 0;
-    min-width: 7.5px;
 }
 
-.slick__room-cost {
+.slick-sliders__room-cost {
     color: rgba(31, 32, 65, 0.5);
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
@@ -119,26 +117,27 @@
     line-height: 18px;
 }
 
-.slick__paragraph {
+.slick-sliders__paragraph {
     display: flex;
 }
 
-.slick__description {
+.slick-sliders__description {
     align-items: center;
+    border-radius: 4px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 4px;
 }
 
-.slick {
+.slick-sliders {
     &__star-button {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: center;
         padding-left: 3px;
     }
+
     &__underline {
         display: flex;
         margin-top: 10px;
@@ -149,8 +148,8 @@
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
-        width: 100%;
         max-width: 233px;
+        width: 100%;
 
         &:nth-child(1) {
             margin-top: 25px;
@@ -245,13 +244,13 @@
     }
 }
 
-.slick__slider:hover .slick__content::before,
-.slick__slider:hover .slick__content::after {
+.slick-sliders:hover .slick-sliders__content::before,
+.slick-sliders:hover .slick-sliders__content::after {
     display: block;
 
 }
 
-.slider__image {
+.slick-sliders__image {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }

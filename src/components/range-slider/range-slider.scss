@@ -8,9 +8,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 14px;
-    }
-
-    &__description {
         padding-top: 5px;
     }
 
@@ -30,15 +27,15 @@
         line-height: 15px;
         margin-bottom: 5px;
         max-width: 109px;
+        padding: 0;
         pointer-events: none;
         text-transform: uppercase;
-        padding: 0;
     }
 
     &__label {
         margin: 0;
     }
-    /* stylelint-disable  selector-no-qualifying-type */
+
     span.irs.irs--flat {
         .irs-line {
             background: #fff;
@@ -46,8 +43,8 @@
             border-radius: 3px;
             box-sizing: border-box;
             height: 100%;
-            min-height: 6px;
             max-width: 266px;
+            min-height: 6px;
             width: 100%;
         }
 
@@ -58,10 +55,10 @@
             box-sizing: border-box;
             cursor: pointer;
             height: 100%;
-            max-height: 16px;
             margin-top: -2px;
-            outline: none;
+            max-height: 16px;
             min-width: 16px;
+            outline: none;
 
             i {
                 display: none;

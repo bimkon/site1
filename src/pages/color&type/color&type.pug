@@ -14,7 +14,13 @@ block content
             +colors-block({ text: 'Purple', description: '#BC9CFF', backgroundColor: 'purple', })
             +colors-block({ text: 'Green', description: '#6FCF97', backgroundColor: 'green', })
         .colors-and-type__types
-            +colors-block-type({ blockNumber:'colors-block__type-block-1',blockText: 'H1',textNumber: 'colors-block__type-text-1',textText: 'This one is the sub-section or widget title'})
-            +colors-block-type({ blockNumber:'colors-block__type-block-2',blockText: 'H2',textNumber: 'colors-block__type-text-2',textText: 'Next one is the item title inside widgets'})
-            +colors-block-type({ blockNumber:'colors-block__type-block-3',blockText: 'H3',textNumber: 'colors-block__type-text-3',textText: 'This is a label or CTA text'})
-            +colors-block-type({ blockNumber:'colors-block__type-block-4',blockText: 'Body',textNumber: 'colors-block__type-text-4',textText: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.'})
+            .colors-block-types__item
+                +colors-block-type({ blockNumber:'block-1',blockText: 'H1',typeOfTextBlock: 'text-1',textOfBlock: 'This one is the sub-section or widget title'})
+            .colors-block-types__item
+                +colors-block-type({ blockNumber:'block-2',blockText: 'H2',typeOfTextBlock: 'text-2',textOfBlock: 'Next one is the item title inside widgets'})
+            .colors-block-types__item
+                +colors-block-type({ blockNumber:'block-3',blockText: 'H3',typeOfTextBlock: 'text-3',textOfBlock: 'This is a label or CTA text'})
+            .colors-block-types__item
+                +colors-block-type({ blockNumber:'block-4',blockText: 'Body',typeOfTextBlock: 'text-4',textOfBlock: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.'})
+
+

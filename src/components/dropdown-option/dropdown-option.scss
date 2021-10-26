@@ -23,17 +23,13 @@
         font-size: 18px;
         height: 30px;
         justify-content: center;
-        user-select: none;
         min-width: 30px;
+        user-select: none;
 
         &_inactive {
             opacity: 0.5;
             pointer-events: none;
         }
-    }
-
-    &_hidden {
-        display: none;
     }
 
     &__number {
@@ -49,5 +45,9 @@
         text-align: center;
         text-transform: uppercase;
         user-select: none;
+    }
+
+    &_hidden {
+        display: none;
     }
 }

@@ -19,6 +19,7 @@
         line-height: 18px;
         margin-bottom: 40px;
         margin-top: 40px;
+        list-style: none;
     }
 
     &__link {
@@ -29,5 +30,9 @@
         font-weight: normal;
         line-height: 18px;
         text-decoration: none;
+    }
+
+    &__list {
+        list-style: none;
     }
 }

@@ -1,7 +1,8 @@
 .logo {
     display: flex;
+
     &-icon {
-        min-width: 48px;
         display: flex;
+        min-width: 48px;
     }
 }

@@ -13,206 +13,206 @@ const isProd = !isDev;
 
 const pages = [];
 fs
-  .readdirSync(path.resolve(__dirname, 'src', 'pages'))
-  .filter((file) => file.indexOf('base') !== 0)
-  .forEach((file) => {
-    pages.push(file.split('/', 2));
-  });
+    .readdirSync(path.resolve(__dirname, 'src', 'pages'))
+    .filter((file) => file.indexOf('base') !== 0)
+    .forEach((file) => {
+        pages.push(file.split('/', 2));
+    });
 
 const htmlPlugins = pages.map((fileName) => new HTMLWebpackPlugin({
-  filename: `${fileName}.html`,
-  template: `./src/pages/${fileName}/${fileName}.pug`,
-  alwaysWriteToDisk: true,
-  inject: 'body',
-  hash: true,
+    filename: `${fileName}.html`,
+    template: `./src/pages/${fileName}/${fileName}.pug`,
+    alwaysWriteToDisk: true,
+    inject: 'body',
+    hash: true,
 }));
 const optimization = () => {
-  const config = {
+    const config = {
     // splitChunks: {
     // chunks: 'all'
     // }
-  };
-  if (isProd) {
-    config.minimizer = [
-      new OptimizeCssAssetWebpackPlugin(),
-      new TerserWebpackPlugin(),
-    ];
-  }
-  return config;
+    };
+    if (isProd) {
+        config.minimizer = [
+            new OptimizeCssAssetWebpackPlugin(),
+            new TerserWebpackPlugin(),
+        ];
+    }
+    return config;
 };
 
 // Объект для быстрого обращения к путям
 const PATHS = {
-  src: path.resolve(__dirname, 'src'),
-  dist: path.resolve(__dirname, 'dist'), // Куда ложить: __dirname - корневая директория, dist - папка куда все сложить
+    src: path.resolve(__dirname, 'src'),
+    dist: path.resolve(__dirname, 'dist'), // Куда ложить: __dirname - корневая директория, dist - папка куда все сложить
 };
 
 // Функция собирает имя для файлов в зависимости от мода сборки
 const filename = (name, ext) => (isDev ? `${name}.${ext}` : `${name}.[hash].${ext}`);
 
 module.exports = {
-  mode: 'development',
-  entry: {
-    main: './src/index.js',
-  },
-  resolve: {
-    modules: [
-      path.resolve(`${__dirname}/node_modules`),
-      path.resolve(`${__dirname}/src`),
-    ],
-  },
+    mode: 'development',
+    entry: {
+        main: './src/index.js',
+    },
+    resolve: {
+        modules: [
+            path.resolve(`${__dirname}/node_modules`),
+            path.resolve(`${__dirname}/src`),
+        ],
+    },
 
-  output: {
-    filename: filename('[name]', 'js'), // Имя будет собирать функция
-    path: PATHS.dist,
-  },
+    output: {
+        filename: filename('[name]', 'js'), // Имя будет собирать функция
+        path: PATHS.dist,
+    },
 
-  optimization: optimization(),
+    optimization: optimization(),
 
-  devServer: {
-    contentBase: PATHS.dist,
-    port: 8081,
+    devServer: {
+        contentBase: PATHS.dist,
+        port: 8081,
     // hot: isDev
     // stats: "errors-only"
-  },
+    },
 
-  plugins: [
+    plugins: [
 
-    new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, 'src/components/logo-icon/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/components/logo-toxin/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/room-detail/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/search-room/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/components/slick-slider/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/components/social/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/components/base/layout/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/cards/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/form-elements/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/landing-page/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/registration-page/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/pages/sign-in/img'),
-        to: PATHS.dist,
-      },
-      {
-        from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
-        to: PATHS.dist,
-      },
-
-    ]),
-    new MiniCssExtractPlugin({
-      filename: filename('[name]', 'css'),
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-    }),
-  ].concat(htmlPlugins),
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-              reloadAll: true,
+        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, 'src/components/logo-icon/img'),
+                to: PATHS.dist,
             },
-          },
-          'css-loader',
+            {
+                from: path.resolve(__dirname, 'src/components/logo-toxin/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/room-detail/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/search-room/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/components/slick-sliders/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/components/social/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/components/base/layout/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/cards/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/form-elements/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/landing-page/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/registration-page/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/pages/sign-in/img'),
+                to: PATHS.dist,
+            },
+            {
+                from: path.resolve(__dirname, 'src/components/navigation-bar/img'),
+                to: PATHS.dist,
+            },
+
+        ]),
+        new MiniCssExtractPlugin({
+            filename: filename('[name]', 'css'),
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery',
+        }),
+    ].concat(htmlPlugins),
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: isDev,
+                            reloadAll: true,
+                        },
+                    },
+                    'css-loader',
+                ],
+            },
+
+            {
+                test: /\.s[ac]ss$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: isDev,
+                            reloadAll: true,
+                        },
+                    },
+                    'css-loader',
+                    {
+                        loader: 'resolve-url-loader',
+                        options: {
+                            engine: 'rework',
+                        },
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                            sassOptions: {},
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: isDev,
+                },
+            },
+            {
+                test: /\.(png|jpg|svg|gif)$/,
+                use: ['file-loader'],
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                include: [path.resolve(__dirname, 'src/assets/fonts/')],
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[hash].[ext]',
+                    outputPath: 'fonts/',
+                },
+            },
+            {
+                test: /\.xml$/,
+                use: ['xml-loader'],
+            },
         ],
-      },
-
-      {
-        test: /\.s[ac]ss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-              reloadAll: true,
-            },
-          },
-          'css-loader',
-          {
-            loader: 'resolve-url-loader',
-            options: {
-              engine: 'rework',
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              sassOptions: {},
-            },
-          },
-        ],
-      },
-      {
-        test: /\.pug$/,
-        loader: 'pug-loader',
-        options: {
-          pretty: isDev,
-        },
-      },
-      {
-        test: /\.(png|jpg|svg|gif)$/,
-        use: ['file-loader'],
-      },
-      {
-        test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        include: [path.resolve(__dirname, 'src/assets/fonts/')],
-        loader: 'file-loader',
-        options: {
-          name: '[name].[hash].[ext]',
-          outputPath: 'fonts/',
-        },
-      },
-      {
-        test: /\.xml$/,
-        use: ['xml-loader'],
-      },
-    ],
-  },
+    },
 };

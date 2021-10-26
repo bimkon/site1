@@ -1,9 +1,9 @@
 .colors-block {
-    &__type {
+    &-type {
         display: flex;
     }
 
-    &__type-block-1 {
+    &-type_block-1 {
         color: rgba(31, 32, 65, 0.25);
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 24px;
@@ -13,7 +13,7 @@
         margin-right: 30px;
     }
 
-    &__type-block-2 {
+    &-type_block-2 {
         color: rgba(31, 32, 65, 0.25);
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 19px;
@@ -23,7 +23,7 @@
         margin-right: 30px;
     }
 
-    &__type-block-3 {
+    &-type_block-3 {
         color: rgba(31, 32, 65, 0.25);
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
@@ -35,7 +35,7 @@
         text-transform: uppercase;
     }
 
-    &__type-block-4 {
+    &-type_block-4 {
         color: rgba(31, 32, 65, 0.25);
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
@@ -45,7 +45,7 @@
         margin-right: 30px;
     }
 
-    &__type-text-1 {
+    &-type_text-1 {
         color: #1f2041;
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 24px;
@@ -53,8 +53,8 @@
         font-weight: bold;
         line-height: 29px;
     }
-    
-    &__type-text-2 {
+
+    &-type_text-2 {
         color: #1f2041;
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 19px;
@@ -63,7 +63,7 @@
         line-height: 23px;
     }
 
-    &__type-text-3 {
+    &-type_text-3 {
         color: #1f2041;
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 12px;
@@ -73,13 +73,13 @@
         text-transform: uppercase;
     }
 
-    &__type-text-4 {
+    &-type_text-4 {
         color: rgba(31, 32, 65, 0.75);
         font-family: 'Montserrat', Arial, sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
         line-height: 24px;
-        width: 301px;
+        min-width: 301px;
     }
 }

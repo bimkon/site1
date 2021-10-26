@@ -11,14 +11,14 @@
         font-size: 24px;
         font-style: normal;
         font-weight: normal;
-        min-height: 44px;
         line-height: 44px;
+        min-height: 44px;
+        min-width: 44px;
         pointer-events: none;
         position: absolute;
         right: 0;
         text-align: center;
         top: 1px;
-        min-width: 44px;
     }
 
     &__option {

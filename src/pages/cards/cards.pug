@@ -10,7 +10,7 @@ block content
     include ../../components/registration-form/registration-form.pug
     include ../../components/reservation-form/reservation-form.pug
     include ../../components/heading/heading.pug
-    include ../../components/slick-slider/slick-slider.pug
+    include ../../components/slick-sliders/slick-sliders.pug
     article.cards
         .cards__body
             section.cards__column
@@ -27,6 +27,6 @@ block content
                 .cards__row-datepicker
                     +datepicker-container({ inputField: 'inline',  })
                 .cards__row
-                    +slick-slider({ values: [{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'}], number: '888', isLux: ' Люкс', cost: '9 990', votes: '145', rating: '5',})
+                    +slick-sliders({ values: [{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'}], number: '888', isLux: ' Люкс', cost: '9 990', votes: '145', rating: '5',})
                 .cards__row
-                    +slick-slider({ values: [{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'}], number: '840', cost: '9 900', votes: '65', rating: '4',  })
+                    +slick-sliders({ values: [{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'}], number: '840', cost: '9 900', votes: '65', rating: '4',  })

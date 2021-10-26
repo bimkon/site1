@@ -15,13 +15,13 @@ class ExpandableCheckbox {
             if ($(this.showElementDescription).is(':visible')) {
                 this.showElementDescription.hide();
                 $this.text('expand_more');
-                $this.addClass('rotate');
-                $this.addClass('rotate-back');
+                $this.addClass('expandable-checkbox-block__rotate');
+                $this.addClass('expandable-checkbox-block__rotate-back');
             } else {
                 this.showElementDescription.show();
                 $this.text('expand_more');
-                $this.removeClass('rotate');
-                $this.removeClass('rotate-back');
+                $this.removeClass('expandable-checkbox-block__rotate');
+                $this.removeClass('expandable-checkbox-block__rotate-back');
             }
         });
     }

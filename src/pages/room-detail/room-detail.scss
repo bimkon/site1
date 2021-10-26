@@ -222,20 +222,22 @@
 
 @media (max-width: 710px) {
     .room-detail__info {
-        flex-direction: column;
         align-self: center;
+        flex-direction: column;
     }
 
     .room-detail__chart {
         min-width: unset;
     }
+
     .room-detail__info-header {
-      display: flex;
-      justify-content: center;
-      margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
     }
+
     .room-detail__first-column {
-      justify-content: center;
+        justify-content: center;
     }
 }
 

@@ -1,0 +1,27 @@
+include ../rating/rating.pug
+mixin slick-sliders({ values= [{image}], number, isLux, cost, votes, rating, }={})
+    .slick-sliders
+        .slick-sliders__content
+                each value in values
+                    - const { image } = value
+                    .slick-sliders__item
+                        img.slick-sliders__image(src=(image), alt="комната")
+        .slick-sliders__description
+            .slick-sliders__row
+                .slick-sliders__paragraph
+                    span.slick-sliders__symbol  №
+                    span.slick-sliders__number=number
+                    span.slick-sliders__type-of-room=isLux
+                .slick-sliders__paragraph
+                    span.slick-sliders__price=cost
+                    span.slick-sliders__price ₽
+                    span.slick-sliders__in-time   в сутки
+            .slick-sliders__row
+                .slick-sliders__underline
+                    img.slick-sliders__image-underline(src=("underline.svg"), alt="line")
+            .slick-sliders__row
+                .slick-sliders__star-button
+                    +rating
+                .slick-sliders__reviews-block
+                    span.slick-sliders__reviews-number=votes
+                    a.slick-sliders__reviews(href = '/mock-address/change-me') Отзывов

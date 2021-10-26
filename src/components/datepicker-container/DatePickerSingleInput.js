@@ -10,7 +10,7 @@ class DatePickerSingleInput {
 
             clearButton: true,
             dateFormat: 'dd M',
-            inline: true,
+            inline: false,
             navTitles: {
                 days: 'MM yyyy',
             },

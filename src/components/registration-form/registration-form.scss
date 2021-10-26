@@ -7,8 +7,17 @@
     max-width: 380px;
     min-height: 646px;
 
+    @media (max-width: 430px) {
+        margin: 10px;
+        min-height: unset;
+    }
+
     &__wrapper {
         padding: 39px 29px 29px;
+
+        @media (max-width: 430px) {
+            padding: 10px;
+        }
     }
 
     &__login {
@@ -50,15 +59,5 @@
         font-weight: normal;
         line-height: 18px;
         margin-right: 35px;
-    }
-}
-@media (max-width: 430px) {
-    .registration-form__wrapper {
-        padding: 10px;
-    }
-
-    .registration-form {
-        margin: 10px;
-        min-height: unset;
     }
 }
