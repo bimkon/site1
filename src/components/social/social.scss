@@ -14,27 +14,5 @@
     &__links {
         display: flex;
 
-        &:nth-child(2) {
-            background-image: url('./img/facebook-icon.svg');
-            background-repeat: no-repeat;
-        }
-    }
-
-    &__images {
-        align-items: center;
-        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-        /* stylelint-disable property-no-vendor-prefix */
-        -webkit-background-clip: text;
-        display: flex;
-        font-family: 'Font Awesome 5 Brands';
-        font-size: 24px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 24px;
-        min-height: 24px;
-        min-width: 24px;
-        text-align: center;
-        text-decoration: none;
-        -webkit-text-fill-color: transparent;
     }
 }

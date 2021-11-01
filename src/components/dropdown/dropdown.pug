@@ -1,6 +1,6 @@
 include ../dropdown-option/dropdown-option.pug
 include ../option-button/option-button.pug
-mixin dropdown({ text, options = [], hasButtons = false, width, } = {})
+mixin dropdown({ text, options = [], hasButtons = false, width })
     - const widthModifiers = { short: 'dropdown_width_short' }
     - const classes = [widthModifiers[width]]
     section.dropdown.js-dropdown(class=classes)

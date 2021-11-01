@@ -1,5 +1,5 @@
 include ../../components/datepicker-container/datepicker-container.pug
-mixin reservation-form( { action='/mock-address/change-me', name='registration-form', method='post', number= '888', isLux='Люкс', costInDay='9 990' } = {} )
+mixin reservation-form({ action='/mock-address/change-me', name='registration-form', method='post', number= '888', isLux='Люкс', costInDay='9 990' } = {} )
     form.reservation-form(action=action name=name method=method)
         .reservation-form__wrapper
             .reservation-form__option-row

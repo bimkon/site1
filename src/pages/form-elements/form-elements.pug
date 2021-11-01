@@ -1,23 +1,23 @@
-extends ../../components/base/layout/main
+extends ../base-ui/base-ui
+include ../../components/heading/heading.pug
+include ../../components/text-field/text-field.pug
+include ../../components/dropdown/dropdown.pug
+include ../../components/datepicker-container/datepicker-container.pug
+include ../../components/checkbox-buttons/checkbox-buttons.pug
+include ../../components/radio-buttons/radio-buttons.pug
+include ../../components/toggle/toggle.pug
+include ../../components/like-button/like-button.pug
+include ../../components/range-slider/range-slider.pug
+include ../../components/button/button.pug
+include ../../components/pagination/pagination.pug
+include ../../components/expandable-checkbox-block/expandable-checkbox-block.pug
+include ../../components/icon-text/icon-text.pug
+include ../../components/bullet-list/bullet-list.pug
+include ../../components/comment/comment.pug
+include ../../components/rating/rating.pug
 block variables
     - var title = "form-elements";
 block content
-    include ../../components/heading/heading.pug
-    include ../../components/text-field/text-field.pug
-    include ../../components/dropdown/dropdown.pug
-    include ../../components/datepicker-container/datepicker-container.pug
-    include ../../components/checkbox-buttons/checkbox-buttons.pug
-    include ../../components/radio-buttons/radio-buttons.pug
-    include ../../components/toggle/toggle.pug
-    include ../../components/like-button/like-button.pug
-    include ../../components/range-slider/range-slider.pug
-    include ../../components/button/button.pug
-    include ../../components/pagination/pagination.pug
-    include ../../components/expandable-checkbox-block/expandable-checkbox-block.pug
-    include ../../components/icon-text/icon-text.pug
-    include ../../components/bullet-list/bullet-list.pug
-    include ../../components/comment/comment.pug
-    include ../../components/rating/rating.pug
     main.form-elements
         .form-elements__container
             article.form-elements__fields

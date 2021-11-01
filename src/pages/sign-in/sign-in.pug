@@ -1,10 +1,10 @@
 extends ../basepage/basepage.pug
+include ../../components/sign-in-form/sign-in-form.pug
+include ../../components/text-field/text-field.pug
+include ../../components/button/button.pug
 block variables
     - var pageTitle='Sign-in'
 block content
-    include ../../components/sign-in-form/sign-in-form.pug
-    include ../../components/text-field/text-field.pug
-    include ../../components/button/button.pug
     main.sign-in-page
         section.sign-in-page__form
             +sign-in-form()

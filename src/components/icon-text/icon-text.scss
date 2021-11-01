@@ -20,8 +20,10 @@
             from(#bc9cff),
             to(#8ba4f9)
         );
-        /* stylelint-disable property-no-vendor-prefix */
+
         -webkit-background-clip: text;
+        background-clip: text;
+        background-clip: text;
         display: inline-block;
         font-family: 'Material Icons';
         font-size: 48px;

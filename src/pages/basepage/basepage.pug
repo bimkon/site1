@@ -1,3 +1,10 @@
+include ../../components/navigation-bar/navigation-bar.pug
+include ../../components/footer/footer.pug
+include ../../components/footer-copyright/footer-copyright.pug
+include ../../components/footer-creative/footer-creative.pug
+include ../../components/logo-toxin/logo-toxin.pug
+include ../../components/social/social.pug
+include ./layout/layout.pug
 block variables
     - keywords = 'FSD, frontend'
     - description = 'junior frontend разработчика'
@@ -12,80 +19,76 @@ html(lang='en')
         link(rel="icon", href="favicon.png", type="image/png", sizes="16x16 32x32" )
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
     body
-        include ../../components/navigation-bar/navigation-bar.pug
-        include ../../components/footer/footer.pug
-        include ../../components/footer-copyright/footer-copyright.pug
-        include ../../components/footer-creative/footer-creative.pug
-        include ../../components/logo-toxin/logo-toxin.pug
-        include ../../components/social/social.pug
-        .layout-wrapper
-            header.layout-header
-                +navigation-bar({ values: [
-                    {
-                        link: '/mock-address/change-me',
-                        text: 'О нас',
-                        isActive: 'true',
-                    },
-                    {
-                        link: '/mock-address/change-me',
-                        text: 'Услуги',
-                        links: [
-                            {href:'/mock-address/change-me', textLink:'Book'},
-                            {href:'/mock-address/change-me', textLink:'Order'},
-                    ]
-                    },
-                    {
-                        link: '/mock-address/change-me',
-                        text: 'Вакансии',
-                    },
-                    {
-                        link: '/mock-address/change-me',
-                        text: 'Новости',
-                    },
-                    {
-                        link: '/mock-address/change-me',
-                        text: 'Соглашения',
-                        links: [
-                            {href:'/mock-address/change-me', textLink:'Book'},
-                            {href:'/mock-address/change-me', textLink:'Order'},
-                    ]
-                    },
-                ],
-                })
-            main.layout-main
-                block content
-            footer.layout-footer
-                +footer({ values: [
-                    {
-                        headerOfLink: 'Навигация',
-                        links: [
-                            {textLink: 'О нас'},
-                            {textLink: 'Новости'},
-                            {textLink: 'Служба поддержки'},
-                            {textLink: 'Услуги'},
-                        ],
-                    },
-                    {
-                        headerOfLink: 'О нас',
-                        links: [
-                            {textLink: 'О сервисе'},
-                            {textLink: 'Наша команда'},
-                            {textLink: 'Вакансии'},
-                            {textLink: 'Инвесторы'},
-                        ],
-                    },
-                    {
-                        headerOfLink: 'Служба поддержки',
-                        links: [
-                            {textLink: 'Соглашения'},
-                            {textLink: 'Сообщества'},
-                            {textLink: 'Связь с нами'},
-                        ],
-                    },
+        +layout
+            +layout__header
+                block header
+                    +navigation-bar({ values: [
+                        {
+                            link: '/mock-address/change-me',
+                            text: 'О нас',
+                            isActive: 'true',
+                        },
+                        {
+                            link: '/mock-address/change-me',
+                            text: 'Услуги',
+                            links: [
+                                {href:'/mock-address/change-me', textLink:'Book'},
+                                {href:'/mock-address/change-me', textLink:'Order'},
+                        ]
+                        },
+                        {
+                            link: '/mock-address/change-me',
+                            text: 'Вакансии',
+                        },
+                        {
+                            link: '/mock-address/change-me',
+                            text: 'Новости',
+                        },
+                        {
+                            link: '/mock-address/change-me',
+                            text: 'Соглашения',
+                            links: [
+                                {href:'/mock-address/change-me', textLink:'Book'},
+                                {href:'/mock-address/change-me', textLink:'Order'},
+                        ]
+                        },
                     ],
-                    mainfooterDescribtion: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
-                    headerOfSubscribe: 'Подписка',
-                    subscribeText: 'Получайте специальные предложения и новости сервиса',
                     })
-                +footer-copyright()
-                +footer-creative()
+            +layout__main
+                block content
+            +layout__footer
+                block footer
+                    +footer({ values: [
+                        {
+                            headerOfLink: 'Навигация',
+                            links: [
+                                {textLink: 'О нас'},
+                                {textLink: 'Новости'},
+                                {textLink: 'Служба поддержки'},
+                                {textLink: 'Услуги'},
+                            ],
+                        },
+                        {
+                            headerOfLink: 'О нас',
+                            links: [
+                                {textLink: 'О сервисе'},
+                                {textLink: 'Наша команда'},
+                                {textLink: 'Вакансии'},
+                                {textLink: 'Инвесторы'},
+                            ],
+                        },
+                        {
+                            headerOfLink: 'Служба поддержки',
+                            links: [
+                                {textLink: 'Соглашения'},
+                                {textLink: 'Сообщества'},
+                                {textLink: 'Связь с нами'},
+                            ],
+                        },
+                        ],
+                        mainfooterDescribtion: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+                        headerOfSubscribe: 'Подписка',
+                        subscribeText: 'Получайте специальные предложения и новости сервиса',
+                        })
+                    +footer-copyright()
+                    +footer-creative()

@@ -1,12 +1,9 @@
 .expandable-checkbox-block {
-    max-width: 266px;
-    min-width: 266px;
-    position: absolute;
+    position: relative;
     width: 100%;
-    /* stylelint-disable  scss/selector-no-redundant-nesting-selector */
 
     @media (max-width: 1150px) {
-        position: relative;
+        min-width: 266px;
     }
 
     &__heading {
@@ -28,7 +25,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: normal;
-        height: 44px;
+        min-height: 44px;
         line-height: 44px;
         min-width: 44px;
         position: absolute;
@@ -48,11 +45,13 @@
         }
     }
 
-    &__rotate {
-        transform: rotate(-180deg);
-    }
+    &_rotated {
+        .expandable-checkbox-block__arrow {
+            transform: rotate(-180deg);
+        }
 
-    &__rotate-back::before {
-        left: 0;
+        .expandable-checkbox-block__container {
+            display: block;
+        }
     }
 }

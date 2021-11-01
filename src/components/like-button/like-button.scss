@@ -1,6 +1,5 @@
 .like-button {
     display: block;
-    min-height: 20px;
     min-width: 40px;
 
     &__icon {
@@ -8,7 +7,7 @@
         font-family: 'Material icons';
         user-select: none;
     }
-    
+
     &__button {
         border: 1px solid;
         border-color: rgba(31, 32, 65, 0.25);
@@ -18,7 +17,7 @@
         display: flex;
         font-size: 10px;
         max-width: 40px;
-        min-height: 20px;
+        padding: 4px 0 4px;
         position: relative;
         text-decoration: none;
     }
@@ -50,7 +49,7 @@
     font-family: 'Material icons';
     left: 5px;
     position: relative;
-    top: 3px;
+
 }
 
 .like-button__button.like-button_type_active .like-button__icon {

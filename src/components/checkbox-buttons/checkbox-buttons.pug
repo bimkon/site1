@@ -1,4 +1,4 @@
-mixin checkbox-buttons({ values = [ { name: 'checkbox-button', text: ' ', description, typeOfCheckBox, isChecked }] } = {})
+mixin checkbox-buttons({ values = [{ name: 'checkbox-button', text: ' ', description, typeOfCheckBox, isChecked }] })
     each value in values
         - const { name, text, description, typeOfCheckBox, isChecked } = value
         case typeOfCheckBox

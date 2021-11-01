@@ -1,18 +1,18 @@
-.colors-block {
+.colors-intro {
     display: flex;
     margin-bottom: 20px;
 
     &__text {
         padding-left: 39px;
         padding-top: 7px;
+    }
 
-        &-bold {
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-size: 19px;
-            font-style: normal;
-            font-weight: bold;
-            line-height: 28px;
-        }
+    &__text-bold {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 28px;
     }
 
     &__description {
@@ -22,38 +22,38 @@
         font-weight: normal;
         line-height: 28px;
     }
-}
 
-.colors__squares {
-    border-radius: 6px;
-    min-height: 70px;
-    min-width: 70px;
+    &__squares {
+        border-radius: 6px;
+        min-height: 70px;
+        min-width: 70px;
 
-    &_shade100 {
-        background: rgba(31, 32, 65, 1);
-    }
+        &_color_shade100 {
+            background: rgba(31, 32, 65, 1);
+        }
 
-    &_shade75 {
-        background: rgba(31, 32, 65, 0.75);
-    }
+        &_color_shade75 {
+            background: rgba(31, 32, 65, 0.75);
+        }
 
-    &_shade50 {
-        background: rgba(31, 32, 65, 0.5);
-    }
+        &_color_shade50 {
+            background: rgba(31, 32, 65, 0.5);
+        }
 
-    &_shade25 {
-        background: rgba(31, 32, 65, 0.25);
-    }
+        &_color_shade25 {
+            background: rgba(31, 32, 65, 0.25);
+        }
 
-    &_shade5 {
-        background: rgba(31, 32, 65, 0.05);
-    }
+        &_color_shade5 {
+            background: rgba(31, 32, 65, 0.05);
+        }
 
-    &_purple {
-        background: #bc9cff;
-    }
+        &_color_purple {
+            background: #bc9cff;
+        }
 
-    &_green {
-        background: #6fcf97;
+        &_color_green {
+            background: #6fcf97;
+        }
     }
 }

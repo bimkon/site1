@@ -5,7 +5,7 @@
     box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
     display: flex;
     justify-content: center;
-    min-height: 70px;
+    padding: 22px 0;
 
     @media (max-width: 768px) {
         display: none;

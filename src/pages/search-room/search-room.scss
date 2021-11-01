@@ -19,10 +19,6 @@
         margin-top: 31px;
     }
 
-    &__rooms {
-        min-height: 1091px;
-    }
-
     &__column {
         display: flex;
         flex-direction: column;
@@ -35,11 +31,11 @@
         min-width: 834px;
 
         &:first-child {
-            margin-bottom: 21px;
+            margin-bottom: 20px;
         }
 
         &:nth-child(2) {
-            margin-bottom: 20px;
+            margin-bottom: 19px;
         }
 
         &:nth-child(3) {

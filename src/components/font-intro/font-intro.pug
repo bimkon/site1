@@ -1,0 +1,6 @@
+mixin font-intro({ typeOfBlock, blockText, textOfBlock })
+    - const blockModifiers = { 'H1': 'font-intro_type_h1', 'H2': 'font-intro_type_h2', 'H3': 'font-intro_type_h3', 'Body': 'font-intro_type_body',  }
+    - const typeOfBlockClasses = [blockModifiers[typeOfBlock]]
+    .font-intro(class=typeOfBlockClasses)
+        .font-intro__name=blockText
+        .font-intro__description=textOfBlock

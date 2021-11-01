@@ -16,26 +16,6 @@ html {
     font-size: 16px;
 }
 
-.layout-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.layout-header {
-    flex: 0 0 auto;
-}
-
-.layout-main {
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: center;
-}
-
-.layout-footer {
-    flex: 0 0 auto;
-}
-
 a:hover {
     color: rgba(31, 32, 65, 0.75);
 }

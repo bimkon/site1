@@ -1,13 +1,13 @@
-extends ../../components/base/layout/main
+extends ../base-ui/base-ui
+include ../../components/logo-toxin/logo-toxin.pug
+include ../../components/navigation-bar/navigation-bar.pug
+include ../../components/footer/footer.pug
+include ../../components/footer-copyright/footer-copyright.pug
+include ../../components/footer-creative/footer-creative.pug
+include ../../components/social/social.pug
 block variables
-        - var pageClass = "GreyBackground";
+        - var pageClass = "background";
 block content
-    include ../../components/logo-toxin/logo-toxin.pug
-    include ../../components/navigation-bar/navigation-bar.pug
-    include ../../components/footer/footer.pug
-    include ../../components/footer-copyright/footer-copyright.pug
-    include ../../components/footer-creative/footer-creative.pug
-    include ../../components/social/social.pug
     main.headers-and-footers
         article.headers-and-footers__item
             +navigation-bar({ values: [

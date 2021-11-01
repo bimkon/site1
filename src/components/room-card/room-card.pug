@@ -1,0 +1,27 @@
+include ../rating/rating.pug
+mixin room-card({ values= [{image}], number, isLux, cost, votes, rating, })
+    .room-card
+        .room-card__content
+                each value in values
+                    - const { image } = value
+                    .room-card__item
+                        img.room-card__image(src=(image), alt="комната")
+        .room-card__description
+            .room-card__row
+                .room-card__paragraph
+                    span.room-card__symbol  №
+                    span.room-card__number=number
+                    span.room-card__type-of-room=isLux
+                .room-card__paragraph
+                    span.room-card__price=cost
+                    span.room-card__price ₽
+                    span.room-card__in-time   в сутки
+            .room-card__row
+                .room-card__underline
+                    img.room-card__image-underline(src=("underline.svg"), alt="line")
+            .room-card__row
+                .room-card__star-button
+                    +rating
+                .room-card__reviews-block
+                    span.room-card__reviews-number=votes
+                    a.room-card__reviews(href = '/mock-address/change-me') Отзывов

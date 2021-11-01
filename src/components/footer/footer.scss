@@ -5,7 +5,7 @@
     box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
     display: flex;
     justify-content: center;
-    min-height: 372px;
+    padding: 77px 0 81px;
 
     @media (max-width: 768px) {
         display: none;
@@ -14,7 +14,6 @@
     &__wrapper {
         align-items: flex-start;
         display: flex;
-        max-height: 355px;
         max-width: 1180px;
         padding-left: 10px;
         padding-right: 10px;
@@ -26,7 +25,6 @@
             flex-wrap: wrap;
             justify-content: center;
             margin-bottom: 20px;
-            max-height: unset;
         }
     }
 
@@ -62,11 +60,10 @@
     &__subscribe-text {
         display: flex;
         margin-bottom: 23px;
-        margin-top: -3px;
     }
 
     &__toxin-icon {
-        margin-bottom: 17px;
+        margin-bottom: 13px;
     }
 
     &__header {
@@ -87,7 +84,7 @@
         padding-top: 24px;
 
         &:first-child {
-            max-height: 132px;
+
             max-width: 260px;
             padding-top: 19px;
 
@@ -96,7 +93,6 @@
             }
 
             @media (max-width: 366px) {
-                max-height: 132px;
                 max-width: 260px;
                 padding-top: 19px;
             }

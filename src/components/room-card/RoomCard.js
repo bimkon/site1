@@ -1,4 +1,4 @@
-class SlickSliders {
+class RoomCard {
     constructor(elem) {
         this.$slickSlider = $(elem);
         this.initSlickSlider();
@@ -15,18 +15,18 @@ class SlickSliders {
 
     hideAllArrows() {
         $('.slick-arrow').text('');
-        this.$slider = $('.slick-sliders');
+        this.$slider = $('.room-card');
         this.$slider.find('.slick-arrow').hide();
     }
 
     toggleArrows() {
-        this.$slider
+        this.$slickSlider
             .on('mouseenter', function () {
                 $(this).find('.slick-arrow').show();
             })
             .on('mouseleave', () => {
-                $('.slick-sliders').find('.slick-arrow').hide();
+                $('.room-card').find('.slick-arrow').hide();
             });
     }
 }
-export default SlickSliders;
+export default RoomCard;

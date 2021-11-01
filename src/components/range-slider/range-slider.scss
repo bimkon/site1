@@ -49,13 +49,14 @@
         }
 
         .irs-handle {
+            position: absolute;
+            top: 20px;
             background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
             border: 2px solid #fff;
             border-radius: 50%;
             box-sizing: border-box;
             cursor: pointer;
             height: 100%;
-            margin-top: -2px;
             max-height: 16px;
             min-width: 16px;
             outline: none;

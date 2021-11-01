@@ -1,0 +1,12 @@
+.base-ui {
+    &__logo-container {
+        display: flex;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    &__background {
+        background: #f4f4f6;
+        height: unset;
+    }
+}

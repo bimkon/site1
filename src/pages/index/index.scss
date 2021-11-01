@@ -1,13 +1,13 @@
 .test-page {
     display: flex;
-    height: 450px;
-    margin-top: 150px;
+    height: 100%;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 0 auto;
+        padding: 0;
     }
 
     &__title {
@@ -34,5 +34,8 @@
 
     &__list {
         list-style: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid black;
     }
 }

@@ -1,6 +1,6 @@
 include ../../components/button/button.pug
 include ../../components/submenu/submenu.pug
-mixin navigation-bar({ values= [{link, text, links}], isLogged, subMenu})
+mixin navigation-bar({ values= [{ link, text, links }], isLogged, subMenu })
     case isLogged
         when 'logged'
             .navigation-bar

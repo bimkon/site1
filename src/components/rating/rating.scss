@@ -14,8 +14,8 @@
 
 .rating__button {
     display: inline-block;
-    height: 21px;
-    width: 21px;
+    max-height: 21px;
+    max-width: 21px;
 }
 
 .rating__star {

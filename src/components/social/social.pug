@@ -1,7 +1,7 @@
-mixin social({ values = [{href:'/mock-address/change-me', textIcon }] })
+mixin social({ values = [{ href:'/mock-address/change-me', image }] })
     .social
         .social__wrapper
                 each value in values
-                    - const {href, textIcon } = value
-                    .social__links
-                         a.social__images(href=href target="_blank" rel="noopener noreferrer")=textIcon
+                    - const {href, image } = value
+                    a.social__links(href=href target="_blank" rel="noopener noreferrer")
+                        img.social__image(src=(image), alt="Иконка социальной сети")

@@ -1,5 +1,5 @@
 include ../heading/heading.pug
-mixin dropdown-option({ text = 'Option', number = 0, group, } = {})
+mixin dropdown-option({ text = 'Option', number = 0, group })
     section.dropdown-option.js-dropdown-option(data-group=group || text)
         .dropdown-option__header.js-dropdown-option__header
             +heading({ text, type: 'h3', })

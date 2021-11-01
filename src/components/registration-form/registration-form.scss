@@ -5,11 +5,9 @@
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     max-width: 380px;
-    min-height: 646px;
 
     @media (max-width: 430px) {
         margin: 10px;
-        min-height: unset;
     }
 
     &__wrapper {

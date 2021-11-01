@@ -1,26 +1,31 @@
-extends ../../components/base/layout/main
+extends ../base-ui/base-ui
 block variables
     - var title = 'Colors & Type'
 block content
     include ../../components/colors-block/colors-block.pug
-    include ../../components/colors-block-type/colors-block-type.pug
+    include ../../components/font-intro/font-intro.pug
     main.colors-and-type
-        .colors-and-type__colors
-            +colors-block({ text: 'Dark Shade 100%', description: '#1F2041', backgroundColor: 'darkest shade', })
-            +colors-block({ text: 'Dark Shade 75%', description: '#1F2041', backgroundColor: 'dark shade', })
-            +colors-block({ text: 'Dark Shade 50%', description: '#1F2041', backgroundColor: 'shade', })
-            +colors-block({ text: 'Dark Shade 25%', description: '#1F2041', backgroundColor: 'light shade', })
-            +colors-block({ text: 'Dark Shade 5%', description: '#1F2041', backgroundColor: 'lightest shade', })
-            +colors-block({ text: 'Purple', description: '#BC9CFF', backgroundColor: 'purple', })
-            +colors-block({ text: 'Green', description: '#6FCF97', backgroundColor: 'green', })
-        .colors-and-type__types
-            .colors-block-types__item
-                +colors-block-type({ blockNumber:'block-1',blockText: 'H1',typeOfTextBlock: 'text-1',textOfBlock: 'This one is the sub-section or widget title'})
-            .colors-block-types__item
-                +colors-block-type({ blockNumber:'block-2',blockText: 'H2',typeOfTextBlock: 'text-2',textOfBlock: 'Next one is the item title inside widgets'})
-            .colors-block-types__item
-                +colors-block-type({ blockNumber:'block-3',blockText: 'H3',typeOfTextBlock: 'text-3',textOfBlock: 'This is a label or CTA text'})
-            .colors-block-types__item
-                +colors-block-type({ blockNumber:'block-4',blockText: 'Body',typeOfTextBlock: 'text-4',textOfBlock: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.'})
-
-
+        .colors-and-type__color-intro
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Dark Shade 100%', description: '#1F2041', backgroundColor: 'darkest shade', })
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Dark Shade 75%', description: '#1F2041', backgroundColor: 'dark shade', })
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Dark Shade 50%', description: '#1F2041', backgroundColor: 'shade', })
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Dark Shade 25%', description: '#1F2041', backgroundColor: 'light shade', })
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Dark Shade 5%', description: '#1F2041', backgroundColor: 'lightest shade', })
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Purple', description: '#BC9CFF', backgroundColor: 'purple', })
+            .colors-and-type__color-item
+                +colors-intro({ text: 'Green', description: '#6FCF97', backgroundColor: 'green', })
+        .colors-and-type__font-intro
+            .colors-and-type__font-item
+                +font-intro({ typeOfBlock: 'H1', blockText: 'H1', textOfBlock: 'This one is the sub-section or widget title'})
+            .colors-and-type__font-item
+                +font-intro({ typeOfBlock: 'H2', blockText: 'H2', textOfBlock: 'Next one is the item title inside widgets'})
+            .colors-and-type__font-item
+                +font-intro({ typeOfBlock: 'H3', blockText: 'H3', textOfBlock: 'This is a label or CTA text'})
+            .colors-and-type__font-item
+                +font-intro({ typeOfBlock: 'Body', blockText: 'Body', textOfBlock: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.'})

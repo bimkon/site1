@@ -1,16 +1,16 @@
-extends ../../components/base/layout/main
+extends ../base-ui/base-ui
+include ../../components/filter/filter.pug
+include ../../components/sign-in-form/sign-in-form.pug
+include ../../components/range-slider/range-slider.pug
+include ../../components/button/button.pug
+include ../../components/registration-form/registration-form.pug
+include ../../components/reservation-form/reservation-form.pug
+include ../../components/heading/heading.pug
+include ../../components/room-card/room-card.pug
 block variables
     - var pageTitle = 'Cards';
-    - var pageClass = "GreyBackground";
+    - var pageClass = "background";
 block content
-    include ../../components/filter/filter.pug
-    include ../../components/sign-in-form/sign-in-form.pug
-    include ../../components/range-slider/range-slider.pug
-    include ../../components/button/button.pug
-    include ../../components/registration-form/registration-form.pug
-    include ../../components/reservation-form/reservation-form.pug
-    include ../../components/heading/heading.pug
-    include ../../components/slick-sliders/slick-sliders.pug
     article.cards
         .cards__body
             section.cards__column
@@ -27,6 +27,6 @@ block content
                 .cards__row-datepicker
                     +datepicker-container({ inputField: 'inline',  })
                 .cards__row
-                    +slick-sliders({ values: [{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'}], number: '888', isLux: ' Люкс', cost: '9 990', votes: '145', rating: '5',})
+                    +room-card({ values: [{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'},{image:'room-image-one.jpg'}], number: '888', isLux: ' Люкс', cost: '9 990', votes: '145', rating: '5',})
                 .cards__row
-                    +slick-sliders({ values: [{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'}], number: '840', cost: '9 900', votes: '65', rating: '4',  })
+                    +room-card({ values: [{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'},{image:'room-image-two.jpg'}], number: '840', cost: '9 900', votes: '65', rating: '4',  })

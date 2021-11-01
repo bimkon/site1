@@ -1,3 +1,4 @@
+include ../../components/logo-icon/logo-icon.pug
 block variables
 - var pageClass
   - keywords = 'task number 2'
@@ -13,7 +14,7 @@ html(lang='en')
         link(rel="icon", href="favicon.png", type="image/png", sizes="16x16 32x32")
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
     body(class=`${pageClass}`)
-        include ../../logo-icon/logo-icon.pug
-        .logo__container
-            +logo-icon()
-        block content
+        .base-ui
+            .base-ui__logo-container
+                +logo-icon()
+            block content

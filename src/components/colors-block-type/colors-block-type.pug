@@ -1,8 +1,0 @@
-mixin colors-block-type({blockNumber, blockText, typeOfTextBlock , textOfBlock})
-    - const blockModifiers = { 'block-1': 'colors-block-type_block-1', 'block-2': 'colors-block-type_block-2', 'block-3': 'colors-block-type_block-3', 'block-4': 'colors-block-type_block-4',  }
-    - const blockTextModifiers = { 'text-1': 'colors-block-type_text-1', 'text-2': 'colors-block-type_text-2', 'text-3': 'colors-block-type_text-3', 'text-4': 'colors-block-type_text-4',  }
-    - const blockNumberClasses = ['colors-block-type', blockModifiers[blockNumber]]
-    - const typeOfTextBlockClasses = ['colors-block-type', blockTextModifiers[typeOfTextBlock]]
-    .colors-block-type
-        div(class=blockNumberClasses)=blockText
-        div(class=typeOfTextBlockClasses)=textOfBlock

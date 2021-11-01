@@ -1,8 +1,8 @@
-mixin colors-block({ text = 'Color', description = 'Description', backgroundColor } = {})
-    - const colorModifiers = { 'darkest shade': 'colors__squares_shade100', 'dark shade': 'colors__squares_shade75', 'shade': 'colors__squares_shade50', 'light shade': 'colors__squares_shade25', 'lightest shade': 'colors__squares_shade5', 'purple': 'colors__squares_purple', 'green': 'colors__squares_green'  }
-    - const classes = ['colors__squares', colorModifiers[backgroundColor]]
-    .colors-block
+mixin colors-intro({ text = 'Color', description = 'Description', backgroundColor })
+    - const colorModifiers = { 'darkest shade': 'colors-intro__squares_color_shade100', 'dark shade': 'colors-intro__squares_color_shade75', 'shade': 'colors-intro__squares_color_shade50', 'light shade': 'colors-intro__squares_color_shade25', 'lightest shade': 'colors-intro__squares_color_shade5', 'purple': 'colors-intro__squares_color_purple', 'green': 'colors-intro__squares_color_green'  }
+    - const classes = ['colors-intro__squares', colorModifiers[backgroundColor]]
+    .colors-intro
         div(class=classes)
-        .colors-block__text
-            .colors-block__text-bold=text
-            span.colors-block__description=description
+        .colors-intro__text
+            .colors-intro__text-bold=text
+            span.colors-intro__description=description

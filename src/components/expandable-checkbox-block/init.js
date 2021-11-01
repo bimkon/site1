@@ -1,12 +1,12 @@
-import ExpandableCheckbox from './Expandable-checkbox-block';
+import ExpandableCheckboxBox from './ExpandableCheckboxBlock';
 
 $(() => {
     const $ExpandableCheckbox = $(
-        '.js-expandable-checkbox-block > .expandable-checkbox-block__arrow',
+        '.js-expandable-checkbox-block',
     );
 
     $ExpandableCheckbox.each((_i, val) => {
         /* eslint-disable no-unused-vars */
-        const newExpandableCheckbox = new ExpandableCheckbox(val);
+        const newExpandableCheckbox = new ExpandableCheckboxBox(val);
     });
 });

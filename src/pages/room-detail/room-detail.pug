@@ -1,19 +1,18 @@
 extends ../basepage/basepage.pug
+include ../../components/filter/filter.pug
+include ../../components/range-slider/range-slider.pug
+include ../../components/checkbox-buttons/checkbox-buttons.pug
+include ../../components/expandable-checkbox-block/expandable-checkbox-block.pug
+include ../../components/pagination/pagination.pug
+include ../../components/icon-text/icon-text.pug
+include ../../components/bullet-list/bullet-list.pug
+include ../../components/comment/comment.pug
+include ../../components/like-button/like-button.pug
+include ../../components/reservation-form/reservation-form.pug
+include ../../components/donut-chart/donut-chart.pug
 block variables
     - var pageTitle='Search-room'
 block content
-    include ../../components/filter/filter.pug
-    include ../../components/range-slider/range-slider.pug
-    include ../../components/checkbox-buttons/checkbox-buttons.pug
-    include ../../components/expandable-checkbox-block/expandable-checkbox-block.pug
-    include ../../components/slick-sliders/slick-sliders.pug
-    include ../../components/pagination/pagination.pug
-    include ../../components/icon-text/icon-text.pug
-    include ../../components/bullet-list/bullet-list.pug
-    include ../../components/comment/comment.pug
-    include ../../components/like-button/like-button.pug
-    include ../../components/reservation-form/reservation-form.pug
-    include ../../components/donut-chart/donut-chart.pug
     main.room-page
         .room-detail
             .room-detail__preview

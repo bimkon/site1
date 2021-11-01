@@ -97,7 +97,7 @@ module.exports = {
                 to: PATHS.dist,
             },
             {
-                from: path.resolve(__dirname, 'src/components/slick-sliders/img'),
+                from: path.resolve(__dirname, 'src/components/room-card/img'),
                 to: PATHS.dist,
             },
             {
@@ -109,7 +109,7 @@ module.exports = {
                 to: PATHS.dist,
             },
             {
-                from: path.resolve(__dirname, 'src/components/base/layout/img'),
+                from: path.resolve(__dirname, 'src/pages/base-ui/img'),
                 to: PATHS.dist,
             },
             {

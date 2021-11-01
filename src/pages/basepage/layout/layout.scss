@@ -1,0 +1,19 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    &__header {
+        flex: 0 0 auto;
+    }
+
+    &__main {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+    }
+
+    &__footer {
+        flex: 0 0 auto;
+    }
+}
