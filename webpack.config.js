@@ -173,7 +173,7 @@ module.exports = {
                             reloadAll: true,
                         },
                     },
-                    'css-loader',
+                    'css-loader', 'postcss-loader',
                     {
                         loader: 'resolve-url-loader',
                         options: {

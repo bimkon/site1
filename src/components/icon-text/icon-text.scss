@@ -21,8 +21,6 @@
             to(#8ba4f9)
         );
 
-        -webkit-background-clip: text;
-        background-clip: text;
         background-clip: text;
         display: inline-block;
         font-family: 'Material Icons';
@@ -30,7 +28,7 @@
         font-style: normal;
         font-weight: normal;
         line-height: 41px;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         text-transform: none;
     }
 

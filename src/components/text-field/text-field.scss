@@ -1,4 +1,4 @@
-.input-field {
+.text-field {
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
     box-sizing: border-box;
@@ -36,39 +36,14 @@
 }
 
 .subscription {
-    &__subtext {
-        color: #1f2041;
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: bold;
-        letter-spacing: -0.3px;
-        line-height: 15px;
-        margin-top: 4px;
-        text-transform: uppercase;
-    }
-
-    &__latest-news {
-        color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: normal;
-        height: 48px;
-        letter-spacing: -0.15px;
-        line-height: 24px;
-        margin-top: 18px;
-        min-width: 196px;
-    }
-
     &__form {
         position: relative;
+    }
 
-        &_short {
-            display: flex;
-            max-width: 260px;
-            width: 100%;
-        }
+    &__form_short {
+        display: flex;
+        max-width: 260px;
+        width: 100%;
     }
 
     &__input {
@@ -115,7 +90,7 @@
             to(#8ba4f9)
         );
 
-        -webkit-background-clip: text;
+        background-clip: text;
         border-radius: 4px;
         border-style: none;
         box-sizing: border-box;
@@ -133,7 +108,7 @@
         position: absolute;
         right: 0;
         text-align: center;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         top: 0;
     }
 }
