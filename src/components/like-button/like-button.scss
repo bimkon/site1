@@ -6,6 +6,8 @@
         color: rgba(31, 32, 65, 0.25);
         font-family: 'Material icons';
         user-select: none;
+        left: 5px;
+        position: relative;
     }
 
     &__button {
@@ -22,36 +24,30 @@
         text-decoration: none;
     }
 
+    &_type_counter {
+        &::after {
+            color: rgba(31, 32, 65, 0.25);
+            content: attr(data-count);
+            left: 20px;
+            position: absolute;
+            top: 2px;
+            text-shadow: none;
+        }
+
+        &:hover::after {
+            text-shadow: none;
+        }
+    }
+
     &_type_active {
         border-color: #bc9cff;
+
+        .like-button__icon {
+            color: #bc9cff;
+        }
+
+        &::after {
+            color: #bc9cff;
+        }
     }
-}
-
-.like-button_type_counter::after,
-.like-button_type_counter:hover::after {
-    text-shadow: none;
-}
-
-.like-button_type_counter::after {
-    color: rgba(31, 32, 65, 0.25);
-    content: attr(data-count);
-    left: 20px;
-    position: absolute;
-    top: 2px;
-}
-
-.like-button_type_counter.like-button_type_active::after {
-    color: #bc9cff;
-}
-
-.like-button .like-button__icon {
-    color: rgba(31, 32, 65, 0.25);
-    font-family: 'Material icons';
-    left: 5px;
-    position: relative;
-
-}
-
-.like-button__button.like-button_type_active .like-button__icon {
-    color: #bc9cff;
 }

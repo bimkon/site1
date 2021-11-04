@@ -1,66 +1,57 @@
 .font-intro {
+    $block: &;
     display: flex;
 
+    &__description {
+        color: #1f2041;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-style: normal;
+    }
+
+    &__name {
+        color: rgba(31, 32, 65, 0.25);
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin-right: 30px;
+    }
+
     &_type_h1 {
-        .font-intro__name {
-            color: rgba(31, 32, 65, 0.25);
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__name {
             font-size: 24px;
-            font-style: normal;
-            font-weight: normal;
             line-height: 29px;
-            margin-right: 30px;
         }
 
-        .font-intro__description {
-            color: #1f2041;
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__description {
             font-size: 24px;
-            font-style: normal;
             font-weight: bold;
             line-height: 29px;
         }
     }
 
     &_type_h2 {
-        .font-intro__name {
-            color: rgba(31, 32, 65, 0.25);
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__name {
             font-size: 19px;
-            font-style: normal;
-            font-weight: normal;
             line-height: 23px;
-            margin-right: 30px;
         }
 
-        .font-intro__description {
-            color: #1f2041;
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__description {
             font-size: 19px;
-            font-style: normal;
             font-weight: bold;
             line-height: 23px;
         }
     }
 
     &_type_h3 {
-        .font-intro__name {
-            color: rgba(31, 32, 65, 0.25);
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__name {
             font-size: 12px;
-            font-style: normal;
-            font-weight: normal;
             line-height: 15px;
-            margin-right: 30px;
             text-align: right;
             text-transform: uppercase;
         }
 
-        .font-intro__description {
-            color: #1f2041;
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__description {
             font-size: 12px;
-            font-style: normal;
             font-weight: bold;
             line-height: 15px;
             text-transform: uppercase;
@@ -68,21 +59,13 @@
     }
 
     &_type_body {
-        .font-intro__name {
-            color: rgba(31, 32, 65, 0.25);
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__name {
             font-size: 14px;
-            font-style: normal;
-            font-weight: normal;
             line-height: 24px;
-            margin-right: 30px;
         }
 
-        .font-intro__description {
-            color: rgba(31, 32, 65, 0.75);
-            font-family: 'Montserrat', Arial, sans-serif;
+        #{$block}__description {
             font-size: 14px;
-            font-style: normal;
             font-weight: normal;
             line-height: 24px;
             min-width: 301px;

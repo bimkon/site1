@@ -5,18 +5,10 @@
     padding: 0;
     text-align: center;
 
-    a:hover:not(.pagination__items_active) {
+    &__items:hover:not(.pagination__items_active) {
         background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
         border-radius: 22px;
         color: #fff;
-        text-decoration: none;
-    }
-
-    .pagination__items_active {
-        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-        border-radius: 22px;
-        color: #fff;
-        font-family: 'Montserrat', Arial, sans-serif;
         text-decoration: none;
     }
 
@@ -49,6 +41,14 @@
             line-height: 40px;
             min-height: 40px;
             min-width: 40px;
+        }
+
+        &_active {
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            border-radius: 22px;
+            color: #fff;
+            font-family: 'Montserrat', Arial, sans-serif;
+            text-decoration: none;
         }
     }
 }

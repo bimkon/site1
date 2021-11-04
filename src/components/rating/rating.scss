@@ -1,66 +1,75 @@
-.svg {
-    height: 0;
-    opacity: 0;
-    width: 0;
-}
-
 .rating {
+    $block: &;
     display: flex;
     font-size: 0;
     justify-content: space-between;
     min-width: 115px;
     width: 100%;
-}
 
-.rating__button {
-    display: inline-block;
-    max-height: 21px;
-    max-width: 21px;
-}
+    &:hover {
+        #{$block}__star {
+            fill: url('#my-cool-gradient');
+        }
+    }
 
-.rating__star {
-    fill: #fff;
-    height: 100%;
-    width: 100%;
-}
+    &__svg {
+        height: 0;
+        opacity: 0;
+        width: 0;
+    }
 
-.rating:hover .rating__star,
-.rating.has--rating .rating__star {
-    fill: url('#my-cool-gradient');
-}
+    &__button {
+        display: inline-block;
+        max-height: 21px;
+        max-width: 21px;
 
-.rating__button:hover ~ .rating__button .rating__star,
-.rating__button.is--active ~ .rating__button .rating__star {
-    fill: #fff;
-}
+        &:hover {
+            ~ .rating__button .rating__star {
+                fill: #fff;
+            }
+        }
 
-.rating.has--rating:hover
-.rating__button:hover
-~ .rating__button
-.rating__star {
-    fill: lightgray;
-}
+        &_active {
+            ~ .rating__button .rating__star {
+                fill: #fff;
+            }
+        }
+    }
 
-.rating.has--rating:hover
-.rating__button.is--active
-~ .rating__button
-.rating__star {
-    fill: url('#my-cool-gradient');
-}
+    &__star {
+        fill: #fff;
+        height: 100%;
+        width: 100%;
+    }
 
-.rating.has--rating:hover
-.rating__button:hover
-~ .rating__button.is--active
-~ .rating__button
-.rating__star,
-.rating.has--rating:hover
-.rating__button.is--active:hover
-~ .rating__button
-.rating__star,
-.rating.has--rating:hover
-.rating__button.is--active
-~ .rating__button:hover
-~ .rating__button
-.rating__star {
-    fill: #fff;
+    &_rated {
+        #{$block}__star {
+            fill: url('#my-cool-gradient');
+        }
+
+        &:hover {
+            #{$block}__button:hover ~ .rating__button .rating__star {
+                fill: lightgray;
+            }
+
+            #{$block}__button.rating__button_active
+                ~ .rating__button
+                .rating__star {
+                fill: url('#my-cool-gradient');
+            }
+            .rating__button:hover
+                ~ .rating__button.rating__button_active
+                ~ .rating__button
+                .rating__star,
+            .rating__button.rating__button_active:hover
+                ~ .rating__button
+                .rating__star,
+            .rating__button.rating__button_active
+                ~ .rating__button:hover
+                ~ .rating__button
+                .rating__star {
+                fill: #fff;
+            }
+        }
+    }
 }

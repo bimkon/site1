@@ -36,14 +36,11 @@
 }
 
 .subscription {
-    &__form {
-        position: relative;
-    }
-
     &__form_short {
         display: flex;
         max-width: 260px;
         width: 100%;
+        position: relative;
     }
 
     &__input {
@@ -82,14 +79,7 @@
 
     &__button {
         align-items: center;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#bc9cff),
-            to(#8ba4f9)
-        );
-
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         background-clip: text;
         border-radius: 4px;
         border-style: none;

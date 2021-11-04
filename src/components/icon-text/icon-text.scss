@@ -13,14 +13,7 @@
     }
 
     &__icon {
-        background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#bc9cff),
-            to(#8ba4f9)
-        );
-
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         background-clip: text;
         display: inline-block;
         font-family: 'Material Icons';

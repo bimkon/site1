@@ -24,7 +24,11 @@ class ExpandableCheckboxBlock {
                 document.querySelector('.js-expandable-checkbox-block'),
                 event.target,
             )
-        ) this.textElement.hide();
+        ) {
+            $('.js-expandable-checkbox-block').removeClass(
+                'expandable-checkbox-block_rotated',
+            );
+        }
     }
 
     bindEventListenersToDocument() {

@@ -41,7 +41,11 @@
     }
 
     &__item {
-        &-short {
+        display: flex;
+        justify-content: space-between;
+        max-width: 239px;
+
+        &_short {
             margin-top: 3px;
         }
     }
@@ -53,16 +57,16 @@
         font-style: normal;
         font-weight: bold;
         line-height: 18px;
+    }
 
-        &-text {
-            color: rgba(31, 32, 65, 0.5);
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 18px;
-            margin-left: 4px;
-        }
+    &__price-text {
+        color: rgba(31, 32, 65, 0.5);
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+        margin-left: 4px;
     }
 
     &__type-of-room {
@@ -104,52 +108,43 @@
         font-weight: normal;
         line-height: 24px;
 
-        &-short {
+        &_short {
             line-height: 18px;
         }
+    }
 
-        &-row {
-            margin-bottom: 10px;
+    &__text-icon {
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        color: rgba(31, 32, 65, 0.25);
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        height: 20px;
+        line-height: 20px;
+        margin-left: 5px;
+        text-align: center;
+        vertical-align: bottom;
+        width: 20px;
+    }
 
-            &:nth-child(2) {
-                margin-bottom: 10px;
-            }
-
-            &:last-child {
-                margin-bottom: 30px;
-            }
-        }
-
-        &-up {
-            align-self: flex-start;
-        }
-
-        &-icon {
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            border-radius: 50%;
-            color: rgba(31, 32, 65, 0.25);
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: bold;
-            height: 20px;
-            line-height: 20px;
-            margin-left: 5px;
-            text-align: center;
-            vertical-align: bottom;
-            width: 20px;
-        }
+    &__text-up {
+        align-self: flex-start;
     }
 
     &__text-row {
+        margin-bottom: 10px;
         display: flex;
         justify-content: space-between;
-    }
 
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        max-width: 239px;
+        &:nth-child(2) {
+            margin-bottom: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
     }
 
     &__summary {
@@ -162,22 +157,22 @@
         justify-content: space-around;
         line-height: 23px;
         margin-bottom: 21px;
+    }
 
-        &-text-right {
-            left: 10px;
-            position: relative;
-        }
+    &__summary-text-right {
+        left: 10px;
+        position: relative;
+    }
 
-        &-dashed-border {
-            border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
-            bottom: 4px;
-            max-width: 182px;
-            position: relative;
-            width: 100%;
+    &__summary-dashed-border {
+        border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+        bottom: 4px;
+        max-width: 182px;
+        position: relative;
+        width: 100%;
 
-            @media (max-width: 430px) {
-                max-width: 130px;
-            }
+        @media (max-width: 430px) {
+            max-width: 130px;
         }
     }
 }

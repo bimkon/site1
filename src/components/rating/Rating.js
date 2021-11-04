@@ -10,12 +10,17 @@ class Rating {
             const $parentClickedStar = $clickedStar.parent();
             $clickedStar
                 .siblings()
-                .removeClass('is--active')
+                .removeClass('rating__button_active')
                 .end()
-                .toggleClass('is--active');
-            $parentClickedStar.find('.rating__button.is--active').length
-                ? $parentClickedStar.addClass('has--rating')
-                : $parentClickedStar.removeClass('has--rating');
+                .toggleClass('rating__button_active');
+            const isActive = Boolean($parentClickedStar.find(
+                '.rating__button.rating__button_active',
+            ).length);
+            if (isActive) {
+                $parentClickedStar.addClass('rating_rated');
+            } else {
+                $parentClickedStar.removeClass('rating_rated');
+            }
         });
     }
 }
