@@ -5,12 +5,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: auto;
     justify-content: center;
-    min-height: 683px;
-    min-height: 701px;
     position: relative;
     width: 100%;
+    padding: 172px 0 173px 0;
     @media (max-width: 1000px) {
         min-height: 450px;
     }

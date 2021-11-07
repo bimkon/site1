@@ -21,7 +21,7 @@ class RoomCard {
 
     toggleArrows() {
         this.$slickSlider
-            .on('mouseenter', function () {
+            .on('mouseenter', function show() {
                 $(this).find('.slick-arrow').show();
             })
             .on('mouseleave', () => {

@@ -5,31 +5,34 @@
     background-size: cover;
     height: auto;
     justify-content: center;
-    min-height: 830px;
     position: relative;
     width: 100%;
+    padding: 70px 134px 21px 140px;
 
     @media (max-width: 1000px) {
-        min-height: 540px;
+        padding: 20px 20px 20px 20px;
     }
-    @media (max-width: 650px) {
-        min-height: 460px;
+
+    @media (max-width: 380px) {
+        padding: 5px;
     }
 
     &__container {
         display: flex;
-        height: 100%;
         margin: 0 auto;
         max-width: 1180px;
-        padding-left: 10px;
         padding-right: 10px;
         position: relative;
         width: 100%;
+
+        @media (max-width: 650px) {
+            justify-content: center;
+        }
     }
 }
 
 .landing-page__quote {
-    bottom: 21px;
+    bottom: 0;
     color: rgba(31, 32, 65, 0.75);
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
@@ -37,27 +40,30 @@
     margin: unset;
     max-width: 300px;
     position: absolute;
-    right: 5px;
+    right: 0;
     text-align: right;
     @media (max-width: 650px) {
-        align-self: center;
-        top: 0;
-    }
-    @media (max-width: 1200px) {
-        padding-right: 20px;
+        display: none;
     }
 }
 
 .landing-page__filter {
-    padding-top: 70px;
+    margin-bottom: 364px;
+
+    @media (max-width: 1000px) {
+        margin-bottom: 50px;
+    }
+
     @media (max-width: 650px) {
         align-items: center;
         display: flex;
         justify-content: center;
         padding-left: unset;
         padding-top: 20px;
+        margin-bottom: unset;
     }
 }
+
 @media (max-width: 430px) {
     .landing-page__quote {
         display: none;

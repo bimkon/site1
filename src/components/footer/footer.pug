@@ -1,4 +1,4 @@
-include ../../components/text-field/text-field.pug
+include ../../components/subscribe-field/subscribe-field.pug
 include ../../components/heading/heading.pug
 mixin footer({ values = [{ headerOfLink, links }], mainfooterDescribtion, headerOfSubscribe, subscribeText })
     .footer
@@ -21,4 +21,4 @@ mixin footer({ values = [{ headerOfLink, links }], mainfooterDescribtion, header
                     +heading({ type: 'h3', text: `${headerOfSubscribe}`, })
                 .footer__subscribe-text=subscribeText
                 .footer__subscribe-button
-                    +text-field({ placeholder: 'Email',  typeOfField: 'Subscribe', size: 'short' })
+                    +subscribe-field({ placeholder: 'Email', size: 'short' })

@@ -1,6 +1,7 @@
 extends ../base-ui/base-ui
 include ../../components/heading/heading.pug
 include ../../components/text-field/text-field.pug
+include ../../components/subscribe-field/subscribe-field.pug
 include ../../components/dropdown/dropdown.pug
 include ../../components/datepicker-container/datepicker-container.pug
 include ../../components/checkbox-buttons/checkbox-buttons.pug
@@ -50,7 +51,7 @@ block content
                 .form-elements__wrapper
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'subscription text field', })
-                    +text-field({ placeholder: 'Email',  typeOfField: 'Subscribe', })
+                    +subscribe-field({ placeholder: 'Email' })
                 .form-elements__wrapper
                     .form-elements__heading
                         +heading({ type: 'h3', text: 'dropdown', })

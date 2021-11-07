@@ -10,10 +10,10 @@
 
     &__item {
         position: relative;
-    }
 
-    &__item:hover {
-        background: rgb(190, 190, 190);
+        &:hover {
+            background: rgb(190, 190, 190);
+        }
     }
 
     &__link {

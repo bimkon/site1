@@ -57,14 +57,14 @@
                 .rating__star {
                 fill: url('#my-cool-gradient');
             }
-            .rating__button:hover
+            #{$block}__button:hover
                 ~ .rating__button.rating__button_active
                 ~ .rating__button
                 .rating__star,
-            .rating__button.rating__button_active:hover
+            #{$block}__button.rating__button_active:hover
                 ~ .rating__button
                 .rating__star,
-            .rating__button.rating__button_active
+            #{$block}__button.rating__button_active
                 ~ .rating__button:hover
                 ~ .rating__button
                 .rating__star {

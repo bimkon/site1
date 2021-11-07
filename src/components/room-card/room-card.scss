@@ -1,12 +1,13 @@
 .room-card {
+    $block: &;
     background: #fff;
     border-radius: 4px;
     max-width: 270px;
     padding: 0 0 20px 0;
 
     &:hover {
-        .room-card__content::before,
-        .room-card__content::after {
+        #{$block}__content::before,
+        #{$block}__content::after {
             display: block;
         }
     }

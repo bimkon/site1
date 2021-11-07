@@ -98,17 +98,14 @@
         margin-right: 17px;
         margin-top: 41px;
     }
+
+    &__border {
+        border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+        display: flex;
+        min-height: 1px;
+    }
 }
 
-.search-room__border {
-    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
-    display: flex;
-    min-height: 1px;
-}
-
-.search-room__rich-button {
-    margin-top: -1px;
-}
 @media (max-width: 1150px) {
     .search-room {
         flex-direction: column;

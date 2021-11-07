@@ -1,4 +1,5 @@
 .navigation-bar {
+    $block: &;
     align-items: center;
     background: #fff;
     box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
@@ -40,12 +41,12 @@
         @media (max-width: 1000px) {
             flex-direction: column;
 
-            .navigation-bar__top-menu,
-            .navigation-bar__buttons {
+            #{$block}__top-menu,
+            #{$block}__buttons {
                 display: block;
             }
 
-            .navigation-bar__top-menu {
+            #{$block}__top-menu {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 20px;
@@ -53,17 +54,17 @@
                 width: 100%;
             }
 
-            .navigation-bar__password-button {
+            #{$block}__password-button {
                 margin: 20px 0 0;
             }
 
-            .navigation-bar__login-button {
+            #{$block}__login-button {
                 display: flex;
                 justify-content: center;
                 margin: 0;
             }
 
-            .navigation-bar__links {
+            #{$block}__links {
                 margin: 0;
             }
         }
@@ -123,7 +124,6 @@
     }
 
     &__links {
-        top: -1px;
         position: relative;
 
         &:hover .submenu {

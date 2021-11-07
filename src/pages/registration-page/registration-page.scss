@@ -5,16 +5,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: auto;
     justify-content: center;
-    min-height: 683px;
+    padding: 18px 20px;
     position: relative;
     width: 100%;
-    @media (max-width: 1000px) {
-        min-height: 640px;
-    }
-    @media (max-width: 342px) {
-        min-height: 550px;
+
+    @media (max-width: 400px) {
+        padding: 0;
     }
 
     &__form {
@@ -22,7 +19,7 @@
         display: flex;
         margin-left: 5px;
         margin-top: 1px;
-        @media (max-width: 342px) {
+        @media (max-width: 352px) {
             margin-left: unset;
         }
     }

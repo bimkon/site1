@@ -1,4 +1,5 @@
 .like-button {
+    $block: &;
     display: block;
     min-width: 40px;
 
@@ -42,7 +43,7 @@
     &_type_active {
         border-color: #bc9cff;
 
-        .like-button__icon {
+        #{$block}__icon {
             color: #bc9cff;
         }
 

@@ -27,21 +27,21 @@
 
     &__login {
         max-width: 320px;
+    }
+    
+    &__login-text {
+        align-items: center;
+        color: #000;
+        display: flex;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+    }
 
-        &-button {
-            margin-top: 20px;
-        }
-
-        &-text {
-            align-items: center;
-            color: #000;
-            display: flex;
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 18px;
-        }
+    &__login-button {
+        margin-top: 20px;
     }
 
     &__register {

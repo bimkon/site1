@@ -1,0 +1,6 @@
+mixin subscribe-field({ type = 'text', name, placeholder, size })
+    - const sizeModifiers = { short: 'subscribe-field__form_short' }
+    - const classes = [sizeModifiers[size]]
+        form.subscribe-field(action="", method="get", class=classes)
+            input(type="text", name="email", placeholder=placeholder, class='subscribe-field__input')
+            button.subscribe-field__button(type='submit') arrow_forward
