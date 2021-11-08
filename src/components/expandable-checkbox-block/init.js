@@ -5,8 +5,5 @@ $(() => {
         '.js-expandable-checkbox-block',
     );
 
-    $ExpandableCheckbox.each((_i, val) => {
-        /* eslint-disable no-unused-vars */
-        const newExpandableCheckbox = new ExpandableCheckboxBox(val);
-    });
+    $ExpandableCheckbox.each((_i, val) => new ExpandableCheckboxBox(val));
 });

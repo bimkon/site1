@@ -17,12 +17,14 @@ mixin navigation-bar({ values= [{ link, text, links }], isLogged, subMenu })
                                                 li.navigation-bar__links
                                                     a.navigation-bar__link.navigation-bar__link_active(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
-                                                        +submenu({links})
+                                                        .navigation-bar__submenu-container
+                                                            +submenu({links})
                                             default
                                                 li.navigation-bar__links
                                                     a.navigation-bar__link(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
-                                                        +submenu({links})
+                                                        .navigation-bar__submenu-container
+                                                            +submenu({links})
                             .navigation-bar__user
                                 img.navigation-bar__arrow(src="rectangle.svg", alt="вертикальная линия")
                                 .navigation-bar__text='Юлий Цезарь'
@@ -42,12 +44,14 @@ mixin navigation-bar({ values= [{ link, text, links }], isLogged, subMenu })
                                                 li.navigation-bar__links
                                                     a.navigation-bar__link.navigation-bar__link_active(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
-                                                        +submenu({links})
+                                                        .navigation-bar__submenu-container
+                                                            +submenu({links})
                                             default
                                                 li.navigation-bar__links
                                                     a.navigation-bar__link(href=link)=text
                                                     if Array.isArray(links) && links.length != 0
-                                                        +submenu({links})
+                                                        .navigation-bar__submenu-container
+                                                            +submenu({links})
                                 .navigation-bar__buttons
                                     .navigation-bar__login-button
                                         +button({type: 'button', text: 'Войти', color: 'white', size: 'short'})

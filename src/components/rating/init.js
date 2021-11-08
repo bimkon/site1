@@ -3,8 +3,5 @@ import Rating from './Rating';
 $(() => {
     const $rating = $('.rating__button');
 
-    $rating.each((_i, item) => {
-        /* eslint-disable no-unused-vars */
-        const newSlider = new Rating(item);
-    });
+    $rating.each((_i, item) => new Rating(item));
 });

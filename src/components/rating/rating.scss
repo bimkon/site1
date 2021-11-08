@@ -52,19 +52,15 @@
                 fill: lightgray;
             }
 
-            #{$block}__button.rating__button_active
-                ~ .rating__button
-                .rating__star {
+            .rating__button_active ~ .rating__button .rating__star {
                 fill: url('#my-cool-gradient');
             }
             #{$block}__button:hover
                 ~ .rating__button.rating__button_active
                 ~ .rating__button
                 .rating__star,
-            #{$block}__button.rating__button_active:hover
-                ~ .rating__button
-                .rating__star,
-            #{$block}__button.rating__button_active
+            .rating__button_active:hover ~ .rating__button .rating__star,
+            .rating__button_active
                 ~ .rating__button:hover
                 ~ .rating__button
                 .rating__star {
