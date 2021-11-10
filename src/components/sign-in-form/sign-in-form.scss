@@ -6,8 +6,17 @@
     box-sizing: border-box;
     min-width: 380px;
 
+    @media (max-width: 480px) {
+        min-width: unset;
+        width: 100%;
+    }
+
     &__wrapper {
         padding: 40px 30px 32px 29px;
+
+        @media (max-width: 480px) {
+            padding: 20px 15px 15px 15px;
+        }
     }
 
     &__heading {
@@ -28,7 +37,7 @@
     &__login {
         max-width: 320px;
     }
-    
+
     &__login-text {
         align-items: center;
         color: #000;
@@ -38,6 +47,10 @@
         font-style: normal;
         font-weight: normal;
         line-height: 18px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 6px;
+        }
     }
 
     &__login-button {
@@ -49,5 +62,10 @@
         display: flex;
         justify-content: space-between;
         margin-top: 29px;
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            margin-top: 7px;
+        }
     }
 }

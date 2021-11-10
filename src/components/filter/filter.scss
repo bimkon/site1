@@ -26,5 +26,9 @@
 
     &__wrapper {
         padding: 39px 29px 29px;
+
+        @media (max-width: 430px) {
+            padding: 15px;
+        }
     }
 }

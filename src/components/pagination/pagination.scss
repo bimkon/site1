@@ -1,6 +1,5 @@
 .pagination {
     display: flex;
-    margin: 0;
     max-width: 240px;
     padding: 0;
     text-align: center;
@@ -28,11 +27,13 @@
         text-decoration: none;
         user-select: none;
 
-        &:hover:not(.pagination__items_active) {
-            background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-            border-radius: 22px;
-            color: #fff;
-            text-decoration: none;
+        &:hover {
+            &:not(.pagination__items_active) {
+                background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+                border-radius: 22px;
+                color: #fff;
+                text-decoration: none;
+            }
         }
 
         &_arrow {

@@ -7,6 +7,10 @@
     padding-right: 10px;
     width: 100%;
 
+    @media (max-width: 1150px) {
+        flex-direction: column;
+    }
+
     &__checkbox-heading {
         margin-bottom: 18px;
     }
@@ -17,18 +21,38 @@
 
     &__filter {
         margin-top: 31px;
+
+        @media (max-width: 829px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 1150px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__column {
         display: flex;
         flex-direction: column;
         max-width: 834px;
+
+        @media (max-width: 1150px) {
+            align-self: center;
+        }
     }
 
     &__row {
         display: flex;
         justify-content: space-between;
         min-width: 834px;
+
+        @media (max-width: 829px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            min-width: unset;
+        }
 
         &:first-child {
             margin-bottom: 20px;
@@ -57,6 +81,10 @@
     }
 
     &__item {
+        @media (max-width: 1150px) {
+            margin: 10px;
+        }
+
         &:first-child {
             margin-bottom: 20px;
         }
@@ -88,6 +116,10 @@
         background: #fff;
         border-radius: 4px;
         box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+
+        @media (max-width: 829px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__pagination {
@@ -104,46 +136,11 @@
         display: flex;
         min-height: 1px;
     }
-}
 
-@media (max-width: 1150px) {
-    .search-room {
-        flex-direction: column;
-
-        &__column {
-            align-self: center;
-        }
-
-        &__filter {
+    &__rooms {
+        @media (max-width: 829px) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        &__item {
-            margin: 10px;
-        }
-    }
-}
-@media (max-width: 829px) {
-    .search-room {
-        &__filter {
-            justify-content: center;
-        }
-
-        &__rooms {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        &__row {
-            flex-wrap: wrap;
-            justify-content: space-around;
-            min-width: unset;
-        }
-
-        &__number {
-            margin-bottom: 10px;
         }
     }
 }

@@ -8,41 +8,18 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    padding: 172px 0 173px 0;
+
     @media (max-width: 1000px) {
         min-height: 450px;
     }
 
     &__form {
+        padding: 172px 0 173px 0;
         align-self: center;
         display: flex;
-    }
-}
-@media (max-width: 480px) {
-    .sign-in-form__wrapper {
-        padding: 10px;
-    }
 
-    .sign-in-form {
-        height: 100%;
-        min-width: unset;
-        width: 100%;
-    }
-
-    .sign-in-page__form {
-        padding-top: 0;
-    }
-
-    .sign-in-page {
-        min-height: 320px;
-    }
-
-    .sign-in-form__login-text {
-        margin-bottom: 6px;
-    }
-
-    .sign-in-form__register {
-        flex-direction: column;
-        margin-top: 7px;
+        @media (max-width: 480px) {
+            padding: 50px;
+        }
     }
 }

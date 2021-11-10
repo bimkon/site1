@@ -6,7 +6,6 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    padding: 18px 20px;
     position: relative;
     width: 100%;
 
@@ -15,10 +14,9 @@
     }
 
     &__form {
+        padding: 19px 0 20px 5px;
         align-self: center;
         display: flex;
-        margin-left: 5px;
-        margin-top: 1px;
         @media (max-width: 352px) {
             margin-left: unset;
         }
