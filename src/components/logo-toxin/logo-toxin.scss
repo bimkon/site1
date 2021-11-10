@@ -3,4 +3,8 @@
     display: inline-flex;
     justify-content: space-between;
     min-width: 106px;
+
+    &__block {
+        padding-top: 1px;
+    }
 }

@@ -15,8 +15,9 @@
         max-width: 1180px;
         position: relative;
         flex-direction: column;
+        margin: 0 auto;
         width: 100%;
-        margin: 70px 134px 21px 140px;
+        padding: 69px 0 19px 10px;
 
         @media (max-width: 1350px) {
             margin: 10px 0 5px 10px;
@@ -37,7 +38,7 @@
         max-width: 300px;
         align-self: flex-end;
         text-align: right;
-        padding-right: 14px;
+        padding-right: 4px;
 
         @media (max-width: 430px) {
             display: none;
@@ -49,7 +50,7 @@
     }
 
     &__filter {
-        margin-bottom: 317px;
+        margin-bottom: 318px;
 
         @media (max-width: 430px) {
             margin: 10px;

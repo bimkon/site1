@@ -1,0 +1,11 @@
+.headers-and-footers {
+    margin-top: 62px;
+
+    &__item {
+        margin-bottom: 40px;
+
+        &:nth-child(2) {
+            margin-bottom: 37px;
+        }
+    }
+}

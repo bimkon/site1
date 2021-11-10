@@ -19,9 +19,9 @@
 ## UI kit pages
 
 ### [Cards](https://bimkon.github.io/site1/cards.html)
-### [Colors & type](https://bimkon.github.io/site1/color&type.html)
+### [Colors & type](https://bimkon.github.io/site1/colors-and-type.html)
 ### [Form elements](https://bimkon.github.io/site1/form-elements.html)
-### [Headers and footers](https://bimkon.github.io/site1/headers&footers.html)
+### [Headers and footers](https://bimkon.github.io/site1/headers-and-footers.html)
 
 ## Website pages
 
