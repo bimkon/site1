@@ -1,3 +1,6 @@
+import 'air-datepicker/dist/css/datepicker.min.css';
+import 'air-datepicker/dist/js/datepicker.min.js';
+
 class DatePickerSingleInput {
     constructor(index, elem) {
         this.index = index;

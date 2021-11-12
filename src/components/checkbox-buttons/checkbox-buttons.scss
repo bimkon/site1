@@ -15,6 +15,15 @@
         position: relative;
         text-transform: none;
         user-select: none;
+
+        &_rich {
+            color: rgba(31, 32, 65, 0.75);
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 18px;
+        }
     }
 
     &__input {
@@ -78,15 +87,6 @@
             transform: rotate(45deg);
             width: 5px;
         }
-    }
-
-    &_rich {
-        color: rgba(31, 32, 65, 0.75);
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 18px;
     }
 
     &__rich-text {

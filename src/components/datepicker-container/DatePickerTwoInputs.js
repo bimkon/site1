@@ -1,3 +1,6 @@
+import 'air-datepicker/dist/css/datepicker.min.css';
+import 'air-datepicker/dist/js/datepicker.min.js';
+
 class DatePickerTwoInputs {
     constructor(index, elem) {
         this.index = index;
@@ -25,12 +28,13 @@ class DatePickerTwoInputs {
             position: 'bottom left',
         });
 
-        const okButton = '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>';
+        const okButton =
+            '<span class="datepicker--button datepicker--button-apply" data-action="hide">Применить</span>';
         $(okButton).insertAfter(
-            $('.datepicker--button[data-action="clear"]').eq(this.index),
+            $('.datepicker--button[data-action="clear"]').eq(this.index)
         );
         const twoInputs = document.querySelectorAll(
-            '.datepicker-two-inputs_end',
+            '.datepicker-two-inputs_end'
         );
         twoInputs[this.index].addEventListener('focus', () => {});
         $('.datepicker-two-inputs_end')

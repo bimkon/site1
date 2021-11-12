@@ -1,3 +1,5 @@
+import 'jquery-mask-plugin/dist/jquery.mask.min.js';
+
 class TextField {
     constructor(elem) {
         this.$textField = $(elem);

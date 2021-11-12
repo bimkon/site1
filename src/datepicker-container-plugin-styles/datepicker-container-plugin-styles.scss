@@ -1,0 +1,212 @@
+.datepicker {
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+    box-sizing: border-box;
+    padding: 15px 3px 20px;
+    width: unset;
+
+    @media (max-width: 700px) {
+        max-width: 250px;
+    }
+
+    .datepicker--cell-day.-other-month-,
+    .datepicker--cell-year.-other-decade- {
+        align-items: center;
+        color: rgba(31, 32, 65, 0.25);
+        display: flex;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .datepicker--days-names {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        min-width: 280px;
+        @media (max-width: 700px) {
+            min-width: 210px;
+        }
+    }
+
+    .datepicker--buttons {
+        border: unset;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 280px;
+        padding: 0;
+    }
+
+    .datepicker--nav {
+        border-bottom: unset;
+        margin: 0 auto;
+        max-width: 286px;
+        padding: 0;
+
+        .datepicker--nav-arrow-left,
+        .datepicker--nav-arrow-right {
+            align-items: center;
+            color: #bc9cff;
+            display: flex;
+            font-family: 'Material Icons';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        &-title {
+            color: #1f2041;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    .-range-from-::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            180deg,
+            rgba(188, 156, 255, 0.25) 0%,
+            rgba(139, 164, 249, 0.25) 100%
+        );
+
+        z-index: -1;
+        left: 20px;
+    }
+
+    .-range-to-::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 50%;
+        background: linear-gradient(
+            180deg,
+            rgba(188, 156, 255, 0.25) 0%,
+            rgba(139, 164, 249, 0.25) 100%
+        );
+
+        z-index: -1;
+        right: 20px;
+    }
+
+    &--cell {
+        min-height: 40px;
+
+        &.-current- {
+            align-items: center;
+            background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+            border-radius: 22px;
+            color: #fff;
+            display: flex;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 15px;
+            text-align: center;
+        }
+
+        &-day {
+            align-items: center;
+            color: rgba(31, 32, 65, 0.5);
+            display: flex;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 15px;
+            text-align: center;
+        }
+    }
+
+    &--button {
+        color: #bc9cff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        height: min-content;
+        line-height: 15px;
+        max-width: min-content;
+        text-align: left;
+        text-transform: uppercase;
+        user-select: none;
+
+        &-apply {
+            color: #bc9cff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+    }
+
+    &--day-name {
+        align-items: center;
+        color: #bc9cff;
+        display: flex;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 15px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &--content {
+        margin: 25px 12px 16px;
+
+        .datepicker--cell {
+            &:hover {
+                background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+                border-radius: 22px;
+                color: #fff;
+            }
+
+            &.-selected- {
+                align-items: center;
+                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+                border-radius: 22px;
+                color: #fff;
+                display: flex;
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                line-height: 15px;
+                text-align: center;
+            }
+
+            &.-selected-.-focus- {
+                background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            }
+
+            &.-in-range- {
+                background: linear-gradient(
+                    180deg,
+                    rgba(188, 156, 255, 0.25) 0%,
+                    rgba(139, 164, 249, 0.25) 100%
+                );
+                color: rgba(31, 32, 65, 0.5);
+            }
+        }
+    }
+}

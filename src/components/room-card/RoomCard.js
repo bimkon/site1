@@ -1,3 +1,5 @@
+import 'slick-carousel/slick/slick.min.js';
+
 class RoomCard {
     constructor(elem) {
         this.$slickSlider = $(elem);

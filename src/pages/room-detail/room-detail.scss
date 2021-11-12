@@ -8,6 +8,7 @@
     &__container {
         display: flex;
         width: 100%;
+        margin-bottom: 69px;
     }
 
     &__icon-text {
@@ -24,7 +25,7 @@
     &__room {
         display: flex;
         flex-direction: column;
-        padding-bottom: 69px;
+
 
         @media (max-width: 642px) {
             width: 100%;

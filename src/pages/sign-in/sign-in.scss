@@ -10,9 +10,7 @@
     width: 100%;
 
     &__form {
-        padding: 171px 0 172px 0;
-        align-self: center;
-        display: flex;
+        margin: 171px 0 172px;
 
         @media (max-width: 480px) {
             padding: 50px;
